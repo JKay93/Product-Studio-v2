@@ -1,0 +1,10 @@
+.runtime/
+node_modules/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+*.sqlite*
+.DS_Store
+Thumbs.db

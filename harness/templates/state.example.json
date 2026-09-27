@@ -1,0 +1,113 @@
+{
+  "schema": "dexter.product_studio.harness_state.v1",
+  "version": 1,
+  "run": {
+    "runId": "example-run",
+    "product": "example-product",
+    "repo": ".",
+    "status": "active",
+    "startedAt": "2026-09-11T00:00:00.000Z",
+    "updatedAt": "2026-09-11T00:00:00.000Z",
+    "activeTaskId": "example-task",
+    "candidateRevision": null,
+    "reviews": [],
+    "blockers": [],
+    "activeAgents": [],
+    "nextAction": "Ingest the next candidate-bound completion.",
+    "merge": null,
+    "preview": null,
+    "budget": {
+      "softMinutes": null,
+      "hardMinutes": null,
+      "activeElapsedSeconds": 0,
+      "pausedHumanWaitSeconds": 0,
+      "active": false,
+      "humanPaused": false,
+      "workersStopped": true,
+      "lastAccountingAt": "2026-09-11T00:00:00.000Z",
+      "extensions": [],
+      "checkpointCount": 0,
+      "lastCheckpointAt": null,
+      "lastCheckpointElapsedSeconds": 0,
+      "nextCheckpointElapsedSeconds": null,
+      "softCheckpointDue": false,
+      "hardExceeded": false
+    },
+    "authority": {
+      "spendLimitUsd": 0,
+      "externalPublication": false,
+      "credentialsApproved": false
+    }
+  },
+  "tasks": {
+    "example-task": {
+      "taskId": "example-task",
+      "runId": "example-run",
+      "attempt": 1,
+      "contractFile": "harness/templates/bounded-task.example.json",
+      "contractVersion": "example-task.v1",
+      "contractHash": "e9a71a4a6c0b05b22e955a45790afc6b63b435dd0bbdafb7ae83a48d8cad624d",
+      "previewOrigin": null,
+      "mode": "implement",
+      "repo": "products/example-product",
+      "baseRevision": "e639ab4662253e2c68a7dbab123d0a7748f7818b",
+      "candidateRevision": null,
+      "status": "ready",
+      "deliveryState": null,
+      "reviews": [],
+      "blockers": [],
+      "activeAgents": [],
+      "nextAction": "Provide a completion event.",
+      "merge": null,
+      "preview": null,
+      "requiredReviewers": [
+        "qaRelease"
+      ],
+      "retryCounts": {
+        "implementation": 0,
+        "testDebug": 0,
+        "reviewFix": 0
+      },
+      "retryLimits": {
+        "implementation": 2,
+        "testDebug": 2,
+        "reviewFix": 1
+      },
+      "writeScope": [
+        "src/**",
+        "tests/**"
+      ],
+      "checks": [
+        {
+          "id": "CHECK-01",
+          "command": "npm test",
+          "cwd": ".",
+          "required": true
+        }
+      ],
+      "acceptance": [
+        {
+          "id": "AC-01",
+          "criterion": "The bounded slice is implemented inside the approved write scope."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "E-01",
+          "acceptanceCriteria": ["AC-01"],
+          "checks": ["CHECK-01"],
+          "required": true
+        }
+      ],
+      "filesChanged": [],
+      "completionHistory": [],
+      "createdAt": "2026-09-11T00:00:00.000Z",
+      "updatedAt": "2026-09-11T00:00:00.000Z"
+    }
+  },
+  "events": [],
+  "archivedEvents": [],
+  "pendingEvents": [],
+  "processedEventIds": [],
+  "notifications": []
+}

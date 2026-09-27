@@ -1,0 +1,13 @@
+{
+  "name": "product-studio-v2",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "check": "node harness/cli.mjs check",
+    "test": "node --test harness/tests/*.test.mjs",
+    "index": "node harness/cli.mjs index build",
+    "retrieve": "node harness/cli.mjs retrieve"
+  }
+}

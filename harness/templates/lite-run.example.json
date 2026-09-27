@@ -1,0 +1,51 @@
+{
+  "schema": "dexter.product_studio.lite_run.v1",
+  "id": "example-run",
+  "product": "example-project",
+  "title": "Illustrative locally accepted run; no delivery claimed",
+  "status": "accepted",
+  "classification": "non-trivial",
+  "contract": {
+    "goal": "Demonstrate the lite harness manifest shape.",
+    "scope": [
+      "Validate required gates and evidence records."
+    ],
+    "nonScope": [
+      "No runtime automation activation."
+    ],
+    "acceptanceCriteria": [
+      {
+        "id": "AC-01",
+        "criterion": "The run manifest validates."
+      }
+    ],
+    "hardStops": []
+  },
+  "requiredGates": [
+    "contractScope",
+    "buildReviewQa"
+  ],
+  "gates": {
+    "contractScope": {
+      "status": "passed",
+      "reviewer": "example-builder",
+      "verdict": "Goal, scope, non-scope, acceptance criteria, and hard stops are explicit.",
+      "evidence": [
+        {
+          "path": "harness/templates/lite-run.example.json"
+        }
+      ]
+    },
+    "buildReviewQa": {
+      "status": "passed",
+      "reviewer": "example-independent-reviewer",
+      "verdict": "Illustrative local review gate only. Replace with actual builder checks and independent review evidence for a real task; this template judges no product implementation.",
+      "evidence": [
+        {
+          "path": "harness/templates/lite-run.example.json"
+        }
+      ]
+    }
+  },
+  "ledger": []
+}

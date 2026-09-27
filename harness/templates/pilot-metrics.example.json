@@ -1,0 +1,140 @@
+{
+  "schema": "dexter.product_studio.pilot_metrics.v1",
+  "version": 1,
+  "recordType": "pilot-metrics",
+  "runId": "pilot-example-run",
+  "routingPolicyVersion": "dexter.product_studio.role_routing.v1",
+  "sameRunId": true,
+  "sameRoutingPolicyVersion": true,
+  "baseline": {
+    "schema": "dexter.product_studio.pilot_metrics.v1",
+    "version": 1,
+    "recordType": "pilot-metrics-record",
+    "phase": "baseline",
+    "runId": "pilot-example-run",
+    "routingPolicyVersion": "dexter.product_studio.role_routing.v1",
+    "measuredAt": "2026-09-11T00:00:00.000Z",
+    "source": {
+      "kind": "authoritative-state",
+      "stateSchema": "dexter.product_studio.harness_state.v1",
+      "stateVersion": 1,
+      "routingPolicy": "measurement input"
+    },
+    "taskScope": [
+      {
+        "taskId": "pilot-task",
+        "attempt": 1,
+        "mode": "implement",
+        "contractFile": "harness/contract.json",
+        "contractVersion": "pilot.v1",
+        "writeScope": ["harness/**"]
+      }
+    ],
+    "acceptanceDeliveryStates": [
+      {
+        "taskId": "pilot-task",
+        "status": "ready",
+        "deliveryState": null,
+        "acceptance": []
+      }
+    ],
+    "activeElapsedSeconds": 0,
+    "duplicateEvents": null,
+    "duplicateEventsReason": "duplicate outcomes are not retained until a duplicate is explicitly recorded",
+    "staleEvents": 0,
+    "suppressedEvents": {
+      "duplicate": null,
+      "stale": 0
+    },
+    "retries": {
+      "implementation": 0,
+      "testDebug": 0,
+      "reviewFix": 0,
+      "total": 0,
+      "byTask": [
+        {
+          "taskId": "pilot-task",
+          "counts": {
+            "implementation": 0,
+            "testDebug": 0,
+            "reviewFix": 0
+          }
+        }
+      ]
+    },
+    "correctionCycles": 0,
+    "founderInterruptions": null,
+    "founderInterruptionsReason": "not supplied for the baseline",
+    "escapedDefects": null,
+    "escapedDefectsReason": "not applicable until a final observation",
+    "costUsd": null,
+    "costUsdReason": "cost telemetry is unavailable",
+    "tokens": null,
+    "tokensReason": "token telemetry is unavailable"
+  },
+  "final": {
+    "schema": "dexter.product_studio.pilot_metrics.v1",
+    "version": 1,
+    "recordType": "pilot-metrics-record",
+    "phase": "final",
+    "runId": "pilot-example-run",
+    "routingPolicyVersion": "dexter.product_studio.role_routing.v1",
+    "measuredAt": "2026-09-11T00:18:00.000Z",
+    "source": {
+      "kind": "authoritative-state",
+      "stateSchema": "dexter.product_studio.harness_state.v1",
+      "stateVersion": 1,
+      "routingPolicy": "measurement input"
+    },
+    "taskScope": [
+      {
+        "taskId": "pilot-task",
+        "attempt": 1,
+        "mode": "implement",
+        "contractFile": "harness/contract.json",
+        "contractVersion": "pilot.v1",
+        "writeScope": ["harness/**"]
+      }
+    ],
+    "acceptanceDeliveryStates": [
+      {
+        "taskId": "pilot-task",
+        "status": "PASS",
+        "deliveryState": "accepted",
+        "acceptance": [{"id": "AC-01", "result": "PASS"}]
+      }
+    ],
+    "activeElapsedSeconds": 1080,
+    "duplicateEvents": 1,
+    "staleEvents": 1,
+    "suppressedEvents": {
+      "duplicate": 1,
+      "stale": 1
+    },
+    "retries": {
+      "implementation": 1,
+      "testDebug": 1,
+      "reviewFix": 0,
+      "total": 2,
+      "byTask": [
+        {
+          "taskId": "pilot-task",
+          "counts": {
+            "implementation": 1,
+            "testDebug": 1,
+            "reviewFix": 0
+          }
+        }
+      ]
+    },
+    "correctionCycles": 0,
+    "founderInterruptions": null,
+    "founderInterruptionsReason": "not supplied; check the founder interruption log",
+    "escapedDefects": null,
+    "escapedDefectsReason": "not supplied; post-run defect observation is pending",
+    "costUsd": null,
+    "costUsdReason": "cost telemetry is unavailable",
+    "tokens": null,
+    "tokensReason": "token telemetry is unavailable"
+  }
+}

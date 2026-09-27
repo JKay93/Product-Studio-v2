@@ -1,0 +1,76 @@
+{
+  "schema": "dexter.product_studio.bounded_checkpoint.v1",
+  "version": 1,
+  "contractVersion": "example-task.v1",
+  "taskId": "example-task",
+  "attempt": 1,
+  "mode": "implement",
+  "eventId": "example-task-attempt-1-implemented",
+  "repo": "products/example-product",
+  "baseRevision": "e639ab4662253e2c68a7dbab123d0a7748f7818b",
+  "candidateRevision": "1111111111111111111111111111111111111111",
+  "taskState": "review_pending",
+  "status": "PASS",
+  "filesChanged": [],
+  "checks": [
+    {
+      "id": "CHECK-01",
+      "command": "npm test",
+      "result": "PASS"
+    }
+  ],
+  "acceptanceCriteria": [
+    {
+      "id": "AC-01",
+      "result": "PASS"
+    }
+  ],
+  "deviations": [],
+  "unresolved": [],
+  "evidence": [
+    {
+      "id": "E-01",
+      "path": "harness/README.md",
+      "acceptanceCriteria": [
+        "AC-01"
+      ],
+      "checks": [
+        "CHECK-01"
+      ]
+    }
+  ],
+  "routing": {
+    "requested": {
+      "orchestrator": {
+        "model": "gpt-6-astra",
+        "reasoning_effort": "low",
+        "fork_turns": "none"
+      },
+      "builder": {
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "max",
+        "fork_turns": "none"
+      },
+      "productDesign": {
+        "model": "gpt-5.6-sol",
+        "reasoning_effort": "medium",
+        "fork_turns": "none"
+      },
+      "qaRelease": {
+        "model": "gpt-5.6-sol",
+        "reasoning_effort": "medium",
+        "fork_turns": "none"
+      }
+    },
+    "actual": {
+      "status": "unknown",
+      "reason": "The advisory CLI does not observe native activation."
+    }
+  },
+  "eventType": "completion",
+  "deliveryState": "implemented",
+  "reviews": [],
+  "blockers": [],
+  "activeAgents": [],
+  "nextAction": "Collect independent reviews before acceptance."
+}

@@ -1,0 +1,62 @@
+{
+  "schema": "dexter.product_studio.bounded_task.v1",
+  "version": 1,
+  "contractVersion": "example-task.v1",
+  "taskId": "example-task",
+  "attempt": 1,
+  "mode": "implement",
+  "role": "builder",
+  "repo": "products/example-product",
+  "baseRevision": "e639ab4662253e2c68a7dbab123d0a7748f7818b",
+  "goal": "Implement one approved bounded slice.",
+  "nonGoals": [
+    "Do not change the product contract or publish externally."
+  ],
+  "writeScope": [
+    "src/**",
+    "tests/**"
+  ],
+  "acceptanceCriteria": [
+    {
+      "id": "AC-01",
+      "criterion": "The bounded slice is implemented inside the approved write scope."
+    }
+  ],
+  "checks": [
+    {
+      "id": "CHECK-01",
+      "command": "npm test",
+      "cwd": ".",
+      "required": true
+    }
+  ],
+  "evidenceMatrix": [
+    {
+      "id": "E-01",
+      "acceptanceCriteria": ["AC-01"],
+      "checks": ["CHECK-01"],
+      "required": true
+    }
+  ],
+  "stopBudget": {
+    "maxImplementationRetries": 2,
+    "maxTestDebugRetries": 2,
+    "maxReviewFixCycles": 1
+  },
+  "requiredReviewers": [
+    "builder",
+    "qaRelease"
+  ],
+  "routing": {
+    "requested": {
+      "orchestrator": {"model": "gpt-6-astra", "reasoning_effort": "low", "fork_turns": "none"},
+      "builder": {"model": "gpt-5.6-luna", "reasoning_effort": "max", "fork_turns": "none"},
+      "productDesign": {"model": "gpt-5.6-sol", "reasoning_effort": "medium", "fork_turns": "none"},
+      "qaRelease": {"model": "gpt-5.6-sol", "reasoning_effort": "medium", "fork_turns": "none"}
+    },
+    "observed": {
+      "status": "unknown",
+      "reason": "The advisory contract does not observe native activation."
+    }
+  }
+}
