@@ -8,6 +8,53 @@ This is a separate successor to Product-Studio. It does not change the existing
 OpenClaw setup. No background automation, paid service, remote repository or
 production deployment is enabled by creating this folder.
 
+## How the studio works
+
+The usual path is a bounded assignment, implementation, one relevant independent
+review, and orchestrator acceptance. Planning roles join only when needed; agents
+retain freedom over implementation choices within the agreed boundaries.
+
+```mermaid
+flowchart TD
+    G["You give a goal"] --> O["Orchestrator: scope and task breakdown"]
+    O --> N{"Need new or changed requirements, design or architecture?"}
+    N -->|No: reuse existing foundations| A["Bounded assignment"]
+    N -->|Yes| P["Relevant planning: PM, Designer and/or Technical Specialist"]
+    P --> A
+    A --> B["Builder: implement and run checks"]
+    B --> R["Independent reviewer: assess candidate and evidence"]
+    R --> J{"Orchestrator decision"}
+    J -->|Corrections needed| C["Route cause to Builder, PM, Designer or Technical Specialist"]
+    C --> L["Focused correction or replan within retry policy"]
+    L --> A
+    J -->|Accepted| D["Record acceptance and complete authorized delivery"]
+    D --> M{"Goal complete?"}
+    M -->|More work| O
+    M -->|Yes| Z["Report outcome and evidence"]
+    O -. Missing authority only .-> U["User decision"]
+    C -. Missing authority only .-> U
+    U -. Resolved .-> O
+```
+
+The planning box selects the roles needed for the uncertainty; it does not require
+all three. For a new product, establish enough shared design and architecture to
+support the first feature, then evolve them. Record consequential decisions where
+they arise; routine coding choices do not need extra documents. Failed checks can
+return directly to correction before formal review.
+
+The orchestrator resolves failures at their source, with bounded retries and no
+elapsed-time approval gates. Push, merge and deployment happen only within existing
+authority and are reported separately from acceptance. This diagram describes the
+agent workflow; the CLI does not dispatch agents automatically.
+
+| Source of truth | Contents |
+| --- | --- |
+| This studio, under `products/<project>/` | PRDs, design/technical specifications, decisions and acceptance records |
+| Separate application repository | Code, tests, dependencies and deployment configuration |
+
+Reviews reference both the code candidate and the relevant specification revisions.
+See the [delivery workflow](operating-system/WORKFLOW.md) for the short operating rules.
+
 ## Start here
 
 1. Read [AGENTS.md](AGENTS.md) and [standing orders](operating-system/STANDING_ORDERS.md).
