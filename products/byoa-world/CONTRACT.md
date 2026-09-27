@@ -28,11 +28,13 @@ The user authorized the working-name skeleton and organization in the conversati
 that initiated this project on 2026-09-28. The durable organization decision is
 [001-project-organization.md](decisions/001-project-organization.md).
 
-No application repository or implementation path has been selected. New external
-spending defaults to zero. Application-repository push and merge, sensitive access
-changes, external publication and production release are not authorized by this
-draft contract. Existing studio-repository authority continues to govern updates to
-these project documents.
+Application repository: https://github.com/JKay93/BYOA-World.git.
+Local application path: `../BYOA-World/` relative to the studio repository root.
+The user authorized creating that folder and pushing a simple initial README on
+2026-09-28. This bootstrap authorization does not select a stack or authorize product
+implementation, production deployment or new external spending. Future repository
+actions follow the user's task scope. Existing studio-repository authority continues
+to govern updates to these project documents.
 
 ## Acceptance for the current skeleton
 

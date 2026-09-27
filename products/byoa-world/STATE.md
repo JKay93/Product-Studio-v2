@@ -11,7 +11,8 @@
 - Relevant decision: [project organization](decisions/001-project-organization.md).
 - Product definition: pending. The designated handoff PDF was not digested during
   this structure task; its local provenance is recorded in [sources](sources/README.md).
-- Implementation: not started; no application repository, technology stack, domains
-  or features have been selected.
+- Application repository: https://github.com/JKay93/BYOA-World.git, local sibling
+  `BYOA-World/`; initial README bootstrap authorized by the user on 2026-09-28.
+- Implementation: not started; no technology stack, domains or features selected.
 - Next action: review the designated product handoff and draft the product contract,
   requirements and proposed domain map, distinguishing source facts from open decisions.
