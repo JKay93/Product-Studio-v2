@@ -7,6 +7,7 @@ export const TASK_CONTRACT_SCHEMA = "dexter.product_studio.bounded_task.v1";
 export const CHECKPOINT_SCHEMA = "dexter.product_studio.bounded_checkpoint.v1";
 
 const ROUTED_ROLES = ["orchestrator", "builder", "productDesign", "qaRelease"];
+const OPTIONAL_ROUTED_ROLES = ["productManager", "technicalSpecialist"];
 const ROLE_ALIASES = {
   orchestrator: ["orchestrator"],
   builder: ["builder"],
@@ -339,7 +340,7 @@ export function validateRoleRouting(root, filePath = "harness/role-routing.json"
   if (!isObject(roles)) {
     addError(errors, "role routing roles must be an object");
   } else {
-    for (const role of [...ROUTED_ROLES, ...(Object.hasOwn(roles, "productManager") ? ["productManager"] : [])]) {
+    for (const role of [...ROUTED_ROLES, ...OPTIONAL_ROUTED_ROLES.filter((role) => Object.hasOwn(roles, role))]) {
       validateRoutingEntry(roleEntry(roles, role, errors, "role routing roles"), role, errors);
     }
   }
@@ -358,7 +359,10 @@ function validateActualRouting(actual, errors, label, expectedRoles = null) {
   if (!["unknown", "confirmed"].includes(actual.status)) addError(errors, `${label}.status must be unknown or confirmed`);
   if (actual.status === "confirmed") {
     if (!isObject(actual.roles)) addError(errors, `${label}.roles is required when routing is confirmed`);
-    else for (const role of ROUTED_ROLES) validateRoutingEntry(roleEntry(actual.roles, role, errors, `${label}.roles`), role, errors, expectedRoles?.[role]);
+    else for (const role of [...ROUTED_ROLES, ...OPTIONAL_ROUTED_ROLES.filter((role) => Object.hasOwn(actual.roles, role))]) {
+      const expected = isObject(expectedRoles) ? expectedRoles[role] ?? expectedRoles[ROLE_ALIASES[role]?.[1]] : null;
+      validateRoutingEntry(roleEntry(actual.roles, role, errors, `${label}.roles`), role, errors, expected);
+    }
     if (!validDate(actual.observedAt)) addError(errors, `${label}.observedAt is required when routing is confirmed`);
   }
   if (actual.status === "unknown" && Object.hasOwn(actual, "confirmedBy")) {
@@ -376,7 +380,7 @@ function validateRequestedRouting(requested, errors, label = "requestedRouting")
     addError(errors, `${label}.roles must be an object`);
     return;
   }
-  for (const role of [...ROUTED_ROLES, ...(Object.hasOwn(roles, "productManager") ? ["productManager"] : [])]) {
+  for (const role of [...ROUTED_ROLES, ...OPTIONAL_ROUTED_ROLES.filter((role) => Object.hasOwn(roles, role))]) {
     validateRoutingEntry(roleEntry(roles, role, errors, label), role, errors);
   }
 }
@@ -1056,7 +1060,7 @@ export function validateCheckpoint(root, checkpointFile, contractFile, options =
   const expectedRouting = routingRoles(contract.routing?.requested ?? contract.routing?.requestedRouting);
   const reportedRouting = routingRoles(checkpointRouting?.requested ?? checkpointRouting?.requestedRouting);
   if (isObject(expectedRouting) && isObject(reportedRouting)) {
-    for (const role of ROUTED_ROLES) {
+    for (const role of [...ROUTED_ROLES, ...OPTIONAL_ROUTED_ROLES.filter((role) => Object.hasOwn(expectedRouting, role) || Object.hasOwn(reportedRouting, role))]) {
       validateRoutingEntry(roleEntry(reportedRouting, role, errors, "checkpoint routing.requested"), role, errors,
         roleEntry(expectedRouting, role, errors, "contract routing.requested"));
     }

@@ -10,4 +10,7 @@ links when the design is durable.
 - Migration/rollback if relevant:
 - Verification and open questions:
 
-The technical builder owns correctness; the PM coordinates product consistency.
+The Technical Specialist owns this design and its technical correctness; the PM
+coordinates product consistency. The builder implements the agreed design and owns
+implementation notes and tests. For settled tasks, reference the existing design
+without requiring a specialist checkpoint.

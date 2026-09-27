@@ -52,6 +52,9 @@ projects and template material. Read an exact source directly when already known
 - No elapsed-time approval gates; time remains diagnostic.
 - Explicit delegation and operational authority, with one relevant review by default.
 - PM available for product ambiguity and documentation, without becoming a gate.
+- Optional [Technical Specialist](operating-system/roles/TECHNICAL_SPECIALIST.md) owns
+  architecture/API/data/security planning, technical documents and difficult debugging.
+  Builder implements the agreed design and owns implementation notes and tests.
 - Approved project decisions travel with assignments.
 - Project-scoped, incremental section retrieval and source-derived graph links.
 - No imported product history or project-specific validation in the studio check.

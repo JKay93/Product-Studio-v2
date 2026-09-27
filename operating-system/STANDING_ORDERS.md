@@ -22,7 +22,7 @@ Do not use urgency or convenience to silently take over substantive implementati
 If delegation is unavailable, surface the limitation and continue useful nondependent work.
 
 For a bounded change, use one compact assignment, builder verification, one relevant
-independent review and orchestrator acceptance. Add product, design, security or QA
+independent review and orchestrator acceptance. Add product, technical, design, security or QA
 specialists only for a concrete uncertainty or risk. The PM is available, never a
 universal checkpoint. Routine tasks do not require a new PRD or a committee.
 

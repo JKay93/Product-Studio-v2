@@ -4,7 +4,9 @@
 1. Select the project and read its contract, current state and applicable decisions.
 2. Define a compact assignment: goal, owner, edit scope, preserved decisions, open
    implementation choices, acceptance criteria and required evidence/reviewer.
-3. Delegate the implementation. Send relevant excerpts and source paths, not the
+3. Resolve concrete technical uncertainty with an optional Technical Specialist
+   compact assignment before implementation; use its agreed design for the builder.
+   Delegate the implementation. Send relevant excerpts and source paths, not the
    whole studio history. Workers may read additional dependencies when needed.
 4. Builder implements, runs affected checks and returns a concise evidence-backed report.
 5. A separate reviewer checks the candidate against the assignment. Consolidate fixes
@@ -17,10 +19,14 @@
 | Administrative correction | Orchestrator and direct check |
 | Settled bug or bounded implementation | Builder and one independent reviewer |
 | Product ambiguity/new feature | PM clarification, then builder/relevant reviewer |
+| Architecture, API/data/security planning or difficult debugging | Technical Specialist input, then builder and independent review |
 | New screen/journey | Design input before build, UI/functional review |
 | Auth, payment, permissions, migration | Specialist risk review and stronger checks |
 
-Choose a capable available model using the host's settings. Route by task complexity,
+Explicitly request the configured model and effort when dispatching a specialist:
+Technical Specialist uses gpt-5.6-sol at medium effort; builder remains gpt-5.6-luna
+at max effort. Verify host availability and surface any unavailable requested route.
+Choose other capable available models using the host's settings. Route by task complexity,
 uncertainty and consequence; escalate after a concrete capability failure. Record
 requested and observed routing separately. Configuration alone does not prove activation.
 Use deterministic tooling for formatting, indexing and mechanical validation.

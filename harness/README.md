@@ -34,8 +34,15 @@ This is keyword/graph retrieval, not embedding-based semantic search.
 The JSON templates illustrate the inherited contract/state interface. Replace example
 IDs, paths and revisions with the real task. Example PASS outcomes are schema examples,
 not evidence for this studio. A model routing file is advisory; verify requested versus
-observed routing with the actual host. PM uses the compact assignment/document workflow;
+observed routing with the actual host. Explicitly request the configured specialist
+model and effort at dispatch; the file cannot activate it. PM and Technical Specialist
+use the compact assignment/document workflow;
 the structured implementation/review protocol retains builder/productDesign/qaRelease roles.
+Optional productManager and technicalSpecialist routing entries are validated when
+present, including confirmed observations and checkpoint consistency. A configured
+optional role need not be dispatched or have a confirmed observation. The inherited
+builder technical-plan mode remains compatible; use compact specialist assignments
+for new architecture/API/data/security planning and technical documents.
 
 ```sh
 node harness/cli.mjs handoff routing validate

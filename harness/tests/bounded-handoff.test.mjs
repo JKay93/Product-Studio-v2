@@ -336,3 +336,53 @@ test("configured models and optional product manager routing are not hard-coded"
     rmSync(root, { recursive: true, force: true });
   }
 });
+
+
+test("optional specialist and PM routing validates requested, observed and checkpoint consistency", () => {
+  const root = copyStudio();
+  const entry = { model: "gpt-5.6-sol", reasoning_effort: "medium", fork_turns: "none" };
+  try {
+    const routingFile = path.join(root, "harness", "role-routing.json");
+    const routing = JSON.parse(readFileSync(routingFile, "utf8"));
+    assert.deepEqual(routing.roles.technicalSpecialist, entry);
+    assert.equal(routing.roles.builder.model, "gpt-5.6-luna");
+    assert.equal(routing.roles.builder.reasoning_effort, "max");
+    const core = Object.fromEntries(["orchestrator", "builder", "productDesign", "qaRelease"].map((role) => [role, routing.roles[role]]));
+    routing.actualRouting = { status: "confirmed", observedAt: "2026-09-10T00:00:00Z", roles: core };
+    writeFileSync(routingFile, JSON.stringify(routing));
+    assert.equal(run(root, ["handoff", "routing", "validate"]).ok, true, "unused optional roles need no observations");
+    for (const role of ["productManager", "technicalSpecialist"]) {
+      routing.actualRouting.roles[role] = { ...entry };
+      writeFileSync(routingFile, JSON.stringify(routing));
+      assert.equal(run(root, ["handoff", "routing", "validate"]).ok, true);
+      routing.actualRouting.roles[role].model = "wrong-model";
+      writeFileSync(routingFile, JSON.stringify(routing));
+      assert.equal(run(root, ["handoff", "routing", "validate"]).ok, false);
+      routing.actualRouting.roles[role] = { ...entry, reasoning_effort: "invalid" };
+      writeFileSync(routingFile, JSON.stringify(routing));
+      assert.equal(run(root, ["handoff", "routing", "validate"]).ok, false);
+      delete routing.actualRouting.roles[role];
+      routing.roles[role] = { ...entry, fork_turns: "all" };
+      writeFileSync(routingFile, JSON.stringify(routing));
+      assert.equal(run(root, ["handoff", "routing", "validate"]).ok, false);
+      routing.roles[role] = { ...entry };
+      for (const variation of ["valid", "missing", "mismatch", "invalid-request", "observed-mismatch"]) {
+        const files = checkpoint(root, (value, contract) => {
+          contract.routing.requested[role] = { ...entry };
+          value.routing.requested[role] = { ...entry };
+          if (variation === "missing") delete value.routing.requested[role];
+          if (variation === "mismatch") value.routing.requested[role].model = "wrong-model";
+          if (variation === "invalid-request") contract.routing.requested[role].reasoning_effort = "invalid";
+          if (variation === "observed-mismatch") value.routing.actual = {
+            status: "confirmed", observedAt: "2026-09-10T00:00:00Z",
+            roles: { ...core, [role]: { ...entry, model: "wrong-model" } }
+          };
+        });
+        const result = run(root, ["handoff", "checkpoint", "validate", "--file", path.relative(root, files.checkpointFile), "--contract", path.relative(root, files.contractFile)]);
+        assert.equal(result.ok, variation === "valid", JSON.stringify({ role, variation, result }));
+      }
+    }
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});

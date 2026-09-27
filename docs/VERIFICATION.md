@@ -22,7 +22,7 @@ coupling and two CLI path issues; targeted regressions accompany their correctio
 
 This is a local harness foundation, not an automatic agent runtime. Host tooling
 launches agents and enforces tool permissions. Financial approval is a governance/host
-boundary, not a billing interceptor. Structured PM tasks use compact assignments;
+boundary, not a billing interceptor. PM and Technical Specialist tasks use compact assignments;
 the inherited state protocol retains implementation/review role names.
 
 No live product has been migrated. Design-skill selection and token/cost comparison
