@@ -7,3 +7,9 @@ as approved requirements. Project PRDs never belong in the studio root.
 Application code may live in a separate repository. Record that location and push,
 merge and production authority in the project's contract. Existing Product-Studio
 projects are not automatically migrated into this new studio.
+
+## Current projects
+
+- [BYOA World](byoa-world/README.md) (`byoa-world`): working name; project structure
+  and governance established. Product requirements and application architecture
+  will be defined from the source handoff and subsequent decisions.
