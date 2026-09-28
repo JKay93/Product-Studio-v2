@@ -2,8 +2,9 @@
 
 These are optional authoring aids. Copy only the templates that resolve the current
 work into `products/<project>/`, adapt them, and delete unused prompts. The PM chooses
-which product documents and sections to add, omit or merge. Template use does not add
-an approval gate, require specialist sign-off or prove that a workflow step occurred.
+the smallest useful document set; adaptation follows the authoring rules below.
+Template use does not add an approval gate, require specialist sign-off or prove that
+a workflow step occurred.
 
 | Need | Template | Accountable content owner | Normal project location |
 | --- | --- | --- | --- |
@@ -27,8 +28,18 @@ reviewer's findings.
   existing records.
 - Completed records live in their project. Narrow from strategy or contract to feature
   detail and link upward instead of copying decisions.
-- The accountable owner may combine sections or remove irrelevant ones. The Technical
-  Specialist owns technical accuracy; the Designer owns experience accuracy; builders
+- Once a template is selected, preserve its core sections and key tables/fields by
+  default so the reference remains recognizable. Tailor content freely and add
+  project-specific detail beneath that structure. Optional prompts may be removed.
+  For material structural departures (including merging or omitting core sections
+  or replacing key tables), record a brief rationale and map the affected template
+  content to its new location, or explain why it is not applicable. This is authoring
+  judgment, not a new approval gate or a requirement for exact heading matching.
+- Document assignments name the selected template and make alignment with its
+  essential content and recognizable structure an acceptance criterion. Reviewers
+  compare the actual document with that template and assess any recorded departures;
+  reading the template or passing metadata checks alone does not establish alignment.
+- The Technical Specialist owns technical accuracy; the Designer owns experience accuracy; builders
   own implementation notes and tests; reviewers own findings; the orchestrator owns
   final acceptance.
 - Separate observed state from proposals. Draft plans do not authorize implementation

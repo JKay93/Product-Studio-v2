@@ -19,6 +19,10 @@ improvements separately.
 When authoring project documents, consult `operating-system/templates/README.md`
 for relevant templates and content owners. PM selects and adapts the smallest useful
 set; completed documents stay in the project. Do not load every template for each task.
+For selected templates, preserve core sections and key tables/fields by default;
+explain material structural departures with a content mapping or applicability rationale.
+Document assignments name the template and alignment criteria; review compares the
+actual document with it. Follow the catalog's authoring rules without adding approval gates.
 Use one project ROADMAP.md for milestone status, exit criteria and completion evidence.
 
 Elapsed time is diagnostic, never an approval gate. Keep bounded retries and

@@ -1,8 +1,12 @@
-# Backlog
+# Planning follow-ups
+
+The additional [MoSCoW product backlog](PRODUCT_BACKLOG.md) holds capabilities
+and deferred ideas. This file holds documentation follow-ups only.
 
 ## Ready for a separately scoped task
 
-- Confirm which source material is authoritative and digest it with provenance.
+- Review the PM strategy, roadmap and MoSCoW product backlog with the user;
+  provenance is now recorded in [sources](sources/README.md).
 - Update the product contract with approved problem, users, outcomes, scope,
   exclusions and authority.
 

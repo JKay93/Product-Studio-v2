@@ -1,9 +1,12 @@
 # BYOA World
 
-BYOA World is the working project name. This folder currently records only the
-approved project organization and delivery governance. Product requirements,
-features, application architecture, technology choices and implementation remain
-to be defined from authoritative product sources and user decisions.
+BYOA World hosts a shared working environment for humans and independent agents.
+The project now contains product planning drafts for user review. Implementation,
+technology choices and release remain unapproved.
+
+Start with [product strategy](STRATEGY.md), [roadmap](ROADMAP.md), and the
+[MoSCoW product backlog](PRODUCT_BACKLOG.md). The backlog is a reference for
+candidate capabilities and deferred ideas, including the optional visual World.
 
 ## Project map
 
@@ -12,7 +15,9 @@ to be defined from authoritative product sources and user decisions.
 | [AGENTS.md](AGENTS.md) | Project-specific working instructions |
 | [CONTRACT.md](CONTRACT.md) | Current scope and authority boundary |
 | [STATE.md](STATE.md) | Concise current status and next action |
-| [BACKLOG.md](BACKLOG.md) | Pending work, without invented product scope |
+| [BACKLOG.md](BACKLOG.md) | Planning and documentation follow-ups |
+| [STRATEGY.md](STRATEGY.md) | PM-authored product strategy for review |
+| [PRODUCT_BACKLOG.md](PRODUCT_BACKLOG.md) | MoSCoW capability and deferred-idea inventory |
 | [ROADMAP.md](ROADMAP.md) | Milestone outcomes, dependencies, exit criteria and evidence |
 | [architecture/](architecture/README.md) | Shared technical records and module boundaries |
 | [design-system/](design-system/README.md) | Shared design-system records when approved |

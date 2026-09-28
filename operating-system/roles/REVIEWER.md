@@ -2,6 +2,11 @@
 
 Inspect the actual candidate and relevant source, not just the builder's claims.
 Check acceptance criteria, preserved decisions, regressions and required evidence.
+For documents using a selected template, compare the actual document with the source
+template for essential content, recognizable core sections and key tables/fields.
+Assess the rationale and content mapping for material structural departures under
+the catalog's authoring rules. Template-read claims and metadata validation alone
+are not evidence of alignment; exact heading matching is not required.
 Use PASS, PARTIAL or FAILED with concrete findings and revision references. Do not
 request unrelated enhancements as blockers. Missing required verification is not PASS.
 Remain independent from implementation; let the builder address findings. The

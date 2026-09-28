@@ -3,9 +3,30 @@
 
 ## Current purpose
 
-Establish a durable, retrievable home for a product using the working name BYOA
-World. Product problem, users, outcomes and core journeys are pending review of
-authoritative product material and explicit approval.
+Maintain a durable product record for BYOA World and prepare planning drafts for
+user review. The handoff has been read; proposed users, outcomes and journeys are
+not yet an approved implementation baseline.
+
+## Planning authorization: 2026-09-29
+
+The user requested a documented roadmap, PM-authored product strategy, and an
+additional MoSCoW product backlog for review. This authorizes drafting and linking
+those records; it does not approve their proposed scope or authorize implementation.
+
+The user's stated near-term direction is to establish how the platform fits
+together by investigating connections to independent agents through subscription
+and API access, then useful shared work with separation of agent-private and
+company-private knowledge. Subscription feasibility remains to be verified.
+The Gather/Pokemon-style interface is explicitly optional and deferred.
+
+[STRATEGY.md](STRATEGY.md), [ROADMAP.md](ROADMAP.md), and
+[PRODUCT_BACKLOG.md](PRODUCT_BACKLOG.md) are the review package. Source facts,
+user direction and PM recommendations must remain distinguishable.
+
+The user subsequently authorized correcting the studio's template guidance and
+this strategy, then pushing the complete planning package to the Product-Studio-v2
+GitHub repository for review. Publication of these drafts does not approve their
+product recommendations or application implementation.
 
 ## Authorized scope
 

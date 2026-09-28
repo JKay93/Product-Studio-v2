@@ -6,7 +6,9 @@ These instructions apply only to BYOA World. Before project work, read
 records under [decisions/](decisions/). Follow the shared studio
 [standing orders](../../operating-system/STANDING_ORDERS.md).
 
-The current authorization covers the project skeleton and useful governance. Do
+The current authorization covers the project skeleton, useful governance, and
+product planning drafts requested on 2026-09-29 for user review. See the contract
+and source register for the latest direction. Drafts do not authorize implementation. Do
 not infer product requirements from the working name, example projects, templates,
 or undigested source material. In particular, authentication, OAuth,
 email-and-password access, agents and organizations are examples only and are not
