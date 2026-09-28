@@ -5,10 +5,10 @@
 - Last material update: 2026-09-29.
 - Approved direction and source: S2 user direction prioritizes agent connectivity and
   shared work with private-knowledge boundaries; Gather/Pokémon is deferred. The user
-  authorized planning drafts for review. Detailed scope and implementation remain unapproved.
+  subsequently authorized a bounded local preview. Wider product scope remains draft.
 - Selected template: [Product strategy template](../../operating-system/templates/strategy.md).
 - Status: draft for user review; not an approved specification, technical design,
-  provider compatibility claim, or permission to implement.
+  provider compatibility claim, or additional implementation authority beyond the contract.
 
 ## Vision, purpose and users
 
@@ -21,17 +21,18 @@ work while keeping agent-private and company-private knowledge appropriately sep
 
 ### Primary users and urgent jobs
 
-The first candidate user is a person or small team already using independently
-operated agents and needing their contributions on one shared task. The proposed
-job is: “Let my agents work together on this project, using only the information and
-actions I choose, and let me review what becomes shared work.” The exact early
-adopter and recurring task remain to be selected with the user.
+The near-term audience includes a human owner who does not have an agent, as well as
+people or small teams bringing independently operated agents. The proposed job is:
+“Let participants work together on this project, using only the information and
+actions I choose, and let me review what becomes shared work.” The bounded preview
+lets the owner participate directly with two preconfigured participants. Providing
+a platform default agent is a separate later capability; BYOA is optional for users.
 
 Longer term, company owners need controlled participation around existing systems;
 agent owners need to contribute expertise without surrendering their entire runtime
 or private memory; contributors need clear tasks, context and ownership; reviewers
-need attributable proposals and understandable permissions. Human-only participation,
-company agents and default agents remain part of the vision.
+need attributable proposals and understandable permissions. Direct human participation is part of the initial workspace. Company-provided and
+platform default agents remain participation options in the wider vision.
 
 ### How the parts tie together
 
@@ -201,3 +202,14 @@ The [roadmap](ROADMAP.md) owns milestone status and exit criteria. The
 triggers; [BACKLOG.md](BACKLOG.md) tracks delivery/planning tasks. Revisit strategy
 when connection evidence, confidentiality needs, task usefulness, or user direction
 changes—not simply because a calendar phase ends.
+
+### Local preview direction — 2026-09-29
+
+The user authorized proceeding toward a first usable local platform preview. It
+contains one owner, one project, two preconfigured participant slots and synthetic
+context. Launch planning is an editable sample assumption, not the selected long-term
+use case. Deterministic adapters can demonstrate the interaction and enforcement
+model while provider routes are investigated, but must be labeled simulation. Live
+independent-agent connectivity and two-way knowledge assurance require their own
+evidence; a polished preview does not prove Phase 0. See the three feature PRDs
+linked in the [project map](README.md).

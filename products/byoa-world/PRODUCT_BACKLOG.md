@@ -37,7 +37,7 @@ changing its MoSCoW label. Select actual providers and protocols only after rese
 | PB-009 | Audit trace of meaningful actions, context supplied, approvals, outputs and Session end | Must | S1 §§5,8,12; owner needs to inspect what happened | Phase 0; expand retention/export when operational needs emerge |
 | PB-010 | Expiry/revocation and synthetic unauthorized-access/private-context tests | Must | S2 boundaries; S3 negative tests needed alongside a useful demo | Phase 0; acceptance covers specified cases, never universal non-leakage |
 | PB-011 | Explicit deliverable ownership, retention/learning expectations and operator visibility for the experiment | Must | S1 §15; distinguish policy from enforceable deletion in remote runtimes | Phase 0; revisit whenever runtime control or data sensitivity changes |
-| PB-012 | Basic owner control surface to assign, inspect, review and end work; headless participation | Must | S1 §16; S2 spatial UI deferred, basic control still necessary | Phase 0; choose simplest usable surface during specification |
+| PB-012 | Basic owner control surface, usable by a human without their own agent, to assign, inspect, review and end work; headless agent participation | Must | S1 §16; S2 spatial UI deferred, basic control still necessary | Phase 0; choose simplest usable surface during specification |
 | PB-013 | Clear failure/disconnect handling and recovery, avoiding duplicate accepted outputs | Should | S3 reliability recommendation; happy-path demos can conceal coordination burden | Phase 0 if practical; promote if task integrity depends on retries |
 | PB-014 | Dollar-oriented usage visibility for available runtime/inference/tool charges; label unknown costs | Should | S1 §13; useful cost understanding distinct from commerce | Phase 0; allowance remains required in PB-004; promote metering if needed to enforce it |
 | PB-015 | A selected external context/tool connection for the chosen workflow | Should | S1 §10; real context matters, broad connector catalogue can wait | Phase 0 if workflow needs it; otherwise next pilot; promote if essential to task |
@@ -49,7 +49,7 @@ changing its MoSCoW label. Select actual providers and protocols only after rese
 | --- | --- | --- | --- | --- |
 | PB-017 | Personal World creation, persistent projects, resources and work state | Won't this scope | S1 §§7,17; feasibility needs a bounded workspace before general product administration | RM-06 or chosen pilot; revisit demonstrated repeat workflow |
 | PB-018 | Shared/team/company Worlds, memberships, teams, roles and concurrent work coordination | Won't this scope | S1 §§7,17; broad multiplayer product is beyond two-agent feasibility | RM-07; small-team-first may move this ahead of PB-017 |
-| PB-019 | Human-only mode, company agents and a platform/reference default agent | Won't this scope | S1 §§7,13; BYOA remains optional in the vision | Pilot phases; revisit onboarding needs and chosen audience |
+| PB-019 | Additional company-agent provisioning and a platform/reference default agent | Won't this scope | S1 §§7,13; BYOA remains optional; direct human owner participation is included in PB-012, not deferred here | Pilot phases; revisit onboarding needs and chosen audience |
 | PB-020 | Nontechnical policy configuration, safe templates, layered policy administration and controlled exceptions | Won't this scope | S1 §§4,12,17; minimal enforcement is already PB-005 | RM-08; revisit when owners need to configure differing rules themselves |
 | PB-021 | Broader consequential-action approvals and explicit resource-specific direct-edit grants | Won't this scope | S1 §§5,11,12; direct edit does not grant delete/export/permission changes | RM-07/08; revisit concrete trusted workflow requiring these actions |
 | PB-022 | General branch/proposal/diff/review/merge across Git, documents, design tools, databases and APIs | Won't this scope | S1 §11; Phase 0 supports only the chosen artifact | RM-07/08; add abstractions when a second resource type proves necessary |
@@ -77,3 +77,14 @@ changing its MoSCoW label. Select actual providers and protocols only after rese
   are not promised by any backlog item. Record evidence and limitations before claims.
 - Revisit deferred items when their trigger is met; keep user-selected priorities
   distinct from PM proposals and link the applicable roadmap item when promoted.
+
+### Bounded preview scope — 2026-09-29
+
+The user asked to proceed toward the first platform preview. Seven capabilities
+are grouped into three feature owners: [connection](features/agents/connection/PRD.md),
+[session](features/work/session/PRD.md) and
+[document review](features/collaboration/document-review/PRD.md). PB-001–PB-012 guide
+the bounded slice; this does not pull their general-purpose or enterprise versions
+into scope. A deterministic local demonstration is acceptable preview progress,
+not evidence that PB-002 live independent-agent interoperability is complete.
+PB-019 now separates deferred agent provisioning from included human participation.

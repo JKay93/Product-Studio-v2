@@ -3,9 +3,9 @@
 
 ## Current purpose
 
-Maintain a durable product record for BYOA World and prepare planning drafts for
-user review. The handoff has been read; proposed users, outcomes and journeys are
-not yet an approved implementation baseline.
+Deliver a bounded Phase 0 local preview alongside its durable product records.
+The user authorized the three-feature scope below; broader product horizons remain
+proposals. Live interoperability and remote-data assurances require actual evidence.
 
 ## Planning authorization: 2026-09-29
 
@@ -28,20 +28,30 @@ this strategy, then pushing the complete planning package to the Product-Studio-
 GitHub repository for review. Publication of these drafts does not approve their
 product recommendations or application implementation.
 
-## Authorized scope
+## Authorized Phase 0 scope: 2026-09-29
 
-The current task authorizes:
+The user accepted the proposed three feature areas and instructed the team to
+proceed, expecting a first working platform preview. This supersedes the earlier
+planning-only boundary for this bounded slice. The team may select routine technical
+implementation choices, author the seven main records, implement and test locally.
 
-- the project folder and concise governance records;
-- future organization by `features/<domain>/<feature>/` after domains and features
-  are approved;
-- shared `architecture/`, `design-system/` and `decisions/` areas; and
-- project-local source references and optional run evidence.
+- Agent connection: investigate supported subscription/API routes and provide two
+  preconfigured participant connections, distinguishing live from synthetic adapters.
+- Work session: one human owner, one project/task, selected synthetic context,
+  server-enforced access, activity/status, stop and revocation.
+- Document collaboration: attributable contributions, proposed document, request
+  changes, and explicit human acceptance into canonical state.
+- One responsive workspace preview; human participation does not require an agent.
+- Domain/feature organization applies to code and feature records. No spatial UI,
+  general onboarding, marketplace, production deployment or broad integrations.
 
-No product feature, application behavior, data model, API, security boundary,
-technology stack or executable application is approved by this contract. References
-to authentication, OAuth, email-and-password access, agents or organizations are
-not requirements.
+A local synthetic demonstration is useful preview evidence, not proof of independent
+live-agent interoperability. Missing credentials or supported routes must remain
+explicit limitations. New external spending remains zero. Existing host subscription
+use is allowed within its supported interfaces; no credential extraction or new
+sensitive access is authorized. Local preview is authorized; public production
+release is not. Repository publication remains subject to the user's existing
+project-specific authority and requested delivery scope.
 
 ## Authority
 
@@ -57,7 +67,7 @@ implementation, production deployment or new external spending. Future repositor
 actions follow the user's task scope. Existing studio-repository authority continues
 to govern updates to these project documents.
 
-## Acceptance for the current skeleton
+## Historical acceptance for the initial skeleton
 
 - Project documents stay within `products/byoa-world/`.
 - Links and retrieval metadata validate.
@@ -65,5 +75,5 @@ to govern updates to these project documents.
 - The source register identifies candidate handoff material without treating it as
   digested or approved product direction.
 
-Later product and implementation work requires an updated contract or applicable
-approved decisions grounded in authoritative sources.
+Expansion beyond the authorized Phase 0 scope requires an updated contract or
+applicable decision grounded in user direction.

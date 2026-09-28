@@ -3,23 +3,28 @@
 
 Owner: PM; final acceptance: orchestrator within delegated authority.
 Last material update: 2026-09-29. Planning horizon: feasibility first, followed by
-candidate product horizons. Product direction remains draft; this roadmap does not authorize
-features, a technology stack or deployment. Existing foundation acceptance is historical.
+candidate product horizons. The user authorized a bounded local platform preview;
+later horizons remain proposals. This roadmap is not production deployment or
+spending authority. Existing foundation acceptance is historical.
 
 ## Outcomes and sequence
 
 | Item | Intended outcome | Status | Owner | Dependencies | Exit criteria | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | RM-01 | Project foundation available for new chats | accepted | Orchestrator | Organization decision | Project records and modularity rules exist; source provenance recorded; scoped retrieval and links checked; independent review accepted | [Foundation snapshot and acceptance record](https://github.com/JKay93/Product-Studio-v2/blob/f10e4a4/products/byoa-world/STATE.md); [repository bootstrap record](https://github.com/JKay93/Product-Studio-v2/commit/d441600) |
-| RM-02 | Initial product direction is clear enough to plan | candidate | PM | RM-01; handoff and latest user direction | Sources digested; strategy, roadmap and MoSCoW inventory reviewed; first task, agent setups, required assurances and scope chosen; required direction approval recorded | Draft [strategy](STRATEGY.md), this roadmap and [product backlog](PRODUCT_BACKLOG.md); user review pending |
-| RM-03 | First implementation slice has sufficient design and architecture | proposed | Technical Specialist / Designer as needed | Relevant RM-02 requirements | Supported connection routes assessed; Session, context and action boundaries defined for selected setups; remote-execution limits stated; task rubric, negative tests and data/retention inspection approach specified | Pending; no stack, protocol or security design selected |
-| RM-04 | First bounded slice proves connection and shared work within stated boundaries (Phase 0) | proposed | Builder; independent reviewer | Applicable RM-02 and RM-03 records; implementation authorization | Meet Phase 0 criteria below; resolve material review findings; record code candidate, specification revisions, limitations and orchestrator acceptance | Pending; no prototype or validation results |
+| RM-02 | Initial product direction is clear enough to plan | active | PM | RM-01; handoff and latest user direction | Sources digested; strategy, roadmap and MoSCoW inventory reviewed; first task, agent setups, required assurances and scope chosen; required direction approval recorded | Draft [strategy](STRATEGY.md), this roadmap and [product backlog](PRODUCT_BACKLOG.md); bounded local preview direction received; feature PRDs linked below |
+| RM-03 | First implementation slice has sufficient design and architecture | active | Technical Specialist / Designer as needed | Relevant RM-02 requirements | Supported connection routes assessed; Session, context and action boundaries defined for selected setups; remote-execution limits stated; task rubric, negative tests and data/retention inspection approach specified | [Technical plan](architecture/PHASE-0-TECHNICAL.md), [design](features/collaboration/document-review/DESIGN.md), and [verification](features/collaboration/document-review/EVIDENCE/VERIFICATION.md) support the local slice; live runtime boundaries remain open |
+| RM-04 | First bounded slice proves connection and shared work within stated boundaries (Phase 0) | active | Builder; independent reviewer | Applicable RM-02 and RM-03 records; implementation authorization | Meet Phase 0 criteria below; resolve material review findings; record code candidate, specification revisions, limitations and orchestrator acceptance | Synthetic local preview accepted at `748edf9`; 17 checks and independent review passed. [Evidence](features/collaboration/document-review/EVIDENCE/VERIFICATION.md). Full live connection/shared-work proof remains pending |
 | RM-05 | Accepted slice reaches its authorized delivery state | proposed | Orchestrator | Accepted RM-04 candidate; delivery authority | Requested repository/release actions verified against the delivered revision; environment verification and recovery reference supplied if deployment is in scope | Pending; initial README push is not product delivery |
 
 ## Phase 0: connect agents and share work within boundaries
 
 User-directed priority: first establish how the platform fits together through two
-linked feasibility questions. The following experiment is a PM proposal for review.
+linked feasibility questions. A bounded local preview is now authorized. Live
+target routes selected by the user are Codex Subscription and Claude API; supported
+access and actual end-to-end operation remain to be verified. Claude API execution
+requires an explicit bounded spending allowance and available credentials. Missing
+live access does not prevent synthetic local implementation.
 
 | Track | Deliverable | Proposed exit criteria |
 | --- | --- | --- |
@@ -51,12 +56,11 @@ roadmap; RM-05 remains the authorized-delivery checkpoint for the first accepted
 
 ## Now, next and later
 
-- Now: user review of [strategy](STRATEGY.md), this roadmap and the
-  [MoSCoW product backlog](PRODUCT_BACKLOG.md). [Sources](sources/README.md) distinguish
-  the original handoff, latest user direction and recommendations.
-- Next: choose the first task, candidate agent setups and acceptable information
-  boundary; then specify the bounded feasibility work. The [contract](CONTRACT.md)
-  records current authority. No provider connection has been validated by these drafts.
+- Now: build and verify the bounded local workspace against the three feature PRDs
+  linked below, while investigating the selected live routes.
+- Next: show the preview, collect user feedback, and validate live connections when
+  access and any necessary spending authority are available. No provider connection
+  has been validated by these documents.
 - Design and technical planning may proceed together once their inputs are sufficiently
   clear. These items are outcomes, not compulsory sequential committees.
 - Later: use evidence to refine horizons rather than commit to the entire platform.
@@ -82,3 +86,22 @@ inputs, not approved direction. RM-03/RM-04 are refined toward the proposed feas
 slice; RM-05 retains its delivery meaning. RM-06–RM-11 add provisional later horizons.
 This refines earlier generic placeholders; it does not retroactively accept product
 work or approve the assistant's previously suggested personal-first sequence.
+
+### Bounded preview and evidence split — 2026-09-29
+
+The user asked to proceed toward a first platform preview, then selected Codex
+Subscription and Claude API as live targets. Requirements are owned by
+[agent connection](features/agents/connection/PRD.md),
+[work session](features/work/session/PRD.md) and
+[document review](features/collaboration/document-review/PRD.md). The preview uses
+one human owner (no personal agent required), one project, synthetic context and
+an editable launch-plan example. Seven capabilities are implemented through these
+three cohesive feature areas.
+
+A visibly labeled deterministic demo may satisfy a local-preview checkpoint: task
+setup, selected context, two adapter contributions, human review and acceptance,
+activity trace, and stop/revocation with real negative enforcement checks. This
+checkpoint is not RM-04 acceptance. RM-04 still requires independently operated live
+agent evidence and the stated boundary tests; unmet routes remain explicit. No new
+production release, external spending or sensitive-data access follows from preview
+authorization. Verification records must separate local, simulated and live results.

@@ -6,13 +6,10 @@ These instructions apply only to BYOA World. Before project work, read
 records under [decisions/](decisions/). Follow the shared studio
 [standing orders](../../operating-system/STANDING_ORDERS.md).
 
-The current authorization covers the project skeleton, useful governance, and
-product planning drafts requested on 2026-09-29 for user review. See the contract
-and source register for the latest direction. Drafts do not authorize implementation. Do
-not infer product requirements from the working name, example projects, templates,
-or undigested source material. In particular, authentication, OAuth,
-email-and-password access, agents and organizations are examples only and are not
-approved BYOA World features.
+The current authorization includes the bounded Phase 0 local implementation and
+preview described in CONTRACT.md, following the user's 2026-09-29 instruction to
+proceed. Broader strategy remains draft. Do not infer extra features from examples,
+templates or the working name. Preserve explicit synthetic-versus-live labeling.
 
 When product scope is approved, organize feature-owned material as
 `features/<domain>/<feature>/`. Create actual domain or feature folders only from
