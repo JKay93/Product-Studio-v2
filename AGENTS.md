@@ -16,6 +16,11 @@ and evidence belong under products/<project>/. Shared templates are not approved
 project requirements. Preserve applicable approved decisions; record optional
 improvements separately.
 
+When authoring project documents, consult `operating-system/templates/README.md`
+for relevant templates and content owners. PM selects and adapts the smallest useful
+set; completed documents stay in the project. Do not load every template for each task.
+Use one project ROADMAP.md for milestone status, exit criteria and completion evidence.
+
 Elapsed time is diagnostic, never an approval gate. Keep bounded retries and
 financial authority. Do not repeat an unchanged failure or policy denial.
 Do not claim accepted, pushed, merged or deployed without corresponding evidence.

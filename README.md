@@ -63,7 +63,8 @@ See the [delivery workflow](operating-system/WORKFLOW.md) for the short operatin
    Drafts become approved only when backed by an actual user decision.
 3. Keep that project's PRDs, design records, decisions and evidence in its folder.
    The application may live in its own repository; identify it in the contract.
-4. Give the builder a compact [assignment](operating-system/templates/assignment.md).
+4. Select only useful records from the [document template catalog](operating-system/templates/README.md),
+   then give the builder a compact [assignment](operating-system/templates/assignment.md).
    Preserve relevant decisions and select only necessary reviews.
 5. Verify the candidate, obtain the selected review, and record acceptance and
    the next action. Push/merge/deploy are separate delivery states.
@@ -109,6 +110,11 @@ projects and template material. Read an exact source directly when already known
 See [the harness guide](harness/README.md), [migration notes](docs/MIGRATION.md)
 and [verification record](docs/VERIFICATION.md) for implementation limits.
 The CLI records and validates work; the host agent runtime dispatches agents.
+
+Shared templates are optional and excluded from project retrieval. Completed records
+belong under `products/<project>/`; the PM chooses the smallest useful set and the
+relevant specialist owns its accuracy. A project's `ROADMAP.md` is its single source for
+milestone status, exit criteria and evidence.
 
 ## Repository handoff
 

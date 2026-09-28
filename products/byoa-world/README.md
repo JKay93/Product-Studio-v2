@@ -13,7 +13,7 @@ to be defined from authoritative product sources and user decisions.
 | [CONTRACT.md](CONTRACT.md) | Current scope and authority boundary |
 | [STATE.md](STATE.md) | Concise current status and next action |
 | [BACKLOG.md](BACKLOG.md) | Pending work, without invented product scope |
-| [MILESTONES.md](MILESTONES.md) | Provisional delivery sequence |
+| [ROADMAP.md](ROADMAP.md) | Milestone outcomes, dependencies, exit criteria and evidence |
 | [architecture/](architecture/README.md) | Shared technical records and module boundaries |
 | [design-system/](design-system/README.md) | Shared design-system records when approved |
 | [decisions/](decisions/001-project-organization.md) | Durable approved and draft decisions |

@@ -19,6 +19,12 @@ assignment and one relevant independent review normally suffice for implementati
 6. Orchestrator accepts or requests focused corrections. Save the result and next action
    in the project. Separate local acceptance from repository and release delivery.
 
+Choose project records from the [document template catalog](templates/README.md). The PM
+may omit or merge sections and should use only the documents that resolve the work.
+Templates guide authorship; they do not add mandatory stages, approvals or runtime
+routing. Draft plans do not authorize implementation. Completed records live under the
+selected project and link to authoritative sources rather than copying them.
+
 ## Establish foundations, then reuse them
 
 For a new product, the orchestrator selects only the roles needed for its initial
@@ -47,6 +53,11 @@ outside it need the user. Mark proposals as draft. Do not manufacture user appro
 Routine coding details need no decision document. Preserve reversed decisions as
 superseded, create a replacement linked with `supersedes`, and update affected sources
 and assignments. Documents remain the source of truth; generated indexes follow them.
+
+Use the project `ROADMAP.md` as the single milestone-status source. Requirements,
+current-state notes and reports reference roadmap item IDs instead of maintaining
+parallel dates or statuses. Each milestone needs an observable outcome, measurable exit
+criteria and evidence before it can be accepted or released.
 
 ## Correct the cause of failure
 

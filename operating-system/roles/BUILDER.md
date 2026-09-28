@@ -8,3 +8,7 @@ decisions. Read relevant dependencies; report missing context rather than guessi
 Do not revert other workers' changes. Run affected checks and report candidate identity,
 changed files, evidence and limitations. PASS means ready for review, not final acceptance.
 Do not add optional improvements or change approved product decisions uninvited.
+
+Use the compact [assignment](../templates/assignment.md) and the selected project's
+records. The [template catalog](../templates/README.md) is authoring guidance; builders
+do not create planning records merely because a template exists.

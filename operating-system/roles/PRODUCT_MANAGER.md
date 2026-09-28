@@ -12,3 +12,10 @@ The Technical Specialist owns technical designs, API/data/security planning and 
 documents. Builders own implementation notes and tests; designers own experience specifications,
 and reviewers own verification findings. Coordinate those documents without inventing
 technical sign-off. Return unresolved product choices to the orchestrator.
+
+Choose, omit or merge sections from the [template catalog](../templates/README.md).
+The PM normally owns [strategy](../templates/strategy.md),
+[product requirements](../templates/prd.md) and the single project
+[roadmap](../templates/roadmap.md), and may own optional
+[discovery evidence](../templates/discovery-evidence.md). A polished draft is neither
+authorization nor evidence of completion.

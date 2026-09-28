@@ -15,3 +15,10 @@ documentation. A separate independent reviewer still checks the implementation.
 Request gpt-5.6-sol with medium reasoning and isolated context (fork_turns: none)
 when dispatching this role. Verify availability and record requested versus observed
 routing; advisory configuration does not activate a model or change a host session.
+
+Use [technical context](../templates/technical-context.md) for observed system facts
+and planned system-level change, and a
+[technical specification](../templates/technical-specification.md) for feature
+interfaces and constraints. The [template catalog](../templates/README.md) describes
+project-local locations and shared authoring rules. Adapt or omit sections as needed;
+template use is not a new checkpoint.

@@ -1,5 +1,10 @@
 # Current state
 
+- Planning source: [ROADMAP.md](ROADMAP.md) owns milestone status and exit criteria.
+- Shared document templates are available under
+  [the studio template library](../../operating-system/templates/README.md); PM selects
+  and adapts what this project needs. Template approval does not approve product scope.
+
 - Approved goal: establish the BYOA World working-name project skeleton and governance.
 - Acceptance: accepted by the orchestrator after independent review on 2026-09-28.
 - Contributors: Technical Specialist authored the records; a separate QA reviewer
