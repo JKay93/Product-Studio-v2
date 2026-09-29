@@ -1,4 +1,8 @@
-# Phase 1 handoff
+# Phase 1 handoff — historical
+
+**Superseded:** use [Stage 1 foundation handoff](STAGE-1-FOUNDATION-HANDOFF.md) and the approved [roadmap](../ROADMAP.md). The pilot/baseline next steps below are retained history; do not execute them.
+
+Continuation update: saved-work continuity is fixed and book-swap accepted. User selected weekly-project-brief pilot; three fixed fictional fixtures and bounded runner passed independent review. No actual baseline or weekly live run exists. Read [STATE](../STATE.md), [readiness](../features/work/session/EVIDENCE/WEEKLY-PILOT.md) and [baseline exercise](../features/work/session/BASELINE.md). The baseline exercise and save fields now live directly in World and passed review. Collect real human baseline through that form before at most three authorized attempts. No automatic retry/acceptance; preserve prior evidence.
 
 Owner: orchestrator. Last material update: 2026-09-29.
 
@@ -68,3 +72,14 @@ run is needed to start Phase 1 planning. Preserve failed attempts as evidence.
 User is token-conscious: targeted reading, one bounded specialist/builder and relevant
 independent review when needed; no standing committees. This handoff prepares a new
 chat but does not create or start one automatically.
+
+
+## Reliability-only pilot delivery — 2026-09-30
+
+Baseline removal passed independent review (19 relevant checks); same-version runtime relocation and safe failure projection passed 33 affected checks. Isolated browser checks confirmed enabled start and optional local-note save. The old unsaved user brief was not recovered; preserve the old 4319 page.
+
+Updated preview: http://127.0.0.1:4321/, state .phase1/weekly-pilot/world.json. Original accepted book-swap remains preserved. Cycle 1 failed preflight because the pinned executable moved; reservation and original unknown-usage failure remain preserved, with startup-diagnosis.json added separately. No retry/reset. Reviewed replacement db24ee4aeff81dee retains version 0.158.0-alpha.2.1 and runtime restrictions; version/login checks passed.
+
+Cycle 2 produced a real Codex draft plus synthetic checklist: session e960b1b1-2ae4-451e-a087-5512137ddd4e; attempt 03555b76-7d17-48ee-8f71-772ce3e7cdd5; proposal 2777d942-9c14-42b3-8719-ff89f6a036ac revision 1. Evidence: application .phase1/weekly-pilot/weekly-brief-2/. Elapsed 7335 ms; subscription usage unmeasured; human acceptance pending.
+
+Next: owner reviews cycle 2; cycle 3 is unused. Do not retry cycle 1, claim three successful cycles, time savings or Phase 1 completion. Changes remain local, not pushed/deployed. This supersedes earlier baseline-required next steps.

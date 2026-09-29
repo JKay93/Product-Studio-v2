@@ -89,3 +89,10 @@ Phase 1 staging before a confidential pilot. The chronological checks above reta
 their original scope; pending statements are historical. Current acceptance and
 verified repository delivery are in [PHASE-0-CLOSEOUT.md](../../../../closeouts/PHASE-0-CLOSEOUT.md).
 This supersession changes milestone scope/status, not the results of any privacy test.
+
+
+## Phase 1 saved-work continuity verification
+
+Candidate: exact changed-file hashes in [independent review](../../../../runs/phase1-continuity-review.md); governed by current contract continuity authorization and review/session requirements. Builder 90 full tests plus added expiry regression (91 distinct), reviewer 29 relevant checks pass. Saved owner revision/acceptance survives new session, restart and expiry, preserves later current session, rejects stale/unauthorized writes and late agent results. Historical audit attribution and safe session summaries verified. Root browser selected actual retained proposal 40ea6e23-a50b-41ed-ac41-ce07de45e47c and applied user's explicit acceptance to revision 1. Persisted canonical/acceptance verified; newer session unchanged and grants empty. Evidence: ignored .phase1/launch-diagnosis/world-verification/canonical-acceptance.json and accepted-preview.png.
+
+Orchestrator accepts this bounded local fix following independent PASS and browser evidence. No provider calls, push, merge or deployment. Existing state is retained; no destructive migration. Legacy sessions may lack original task metadata and show Earlier saved work. Pilot definition is planning only; RM-06 and RM-06A remain governed by roadmap.

@@ -165,3 +165,75 @@ runtime environment. The interface must not assume a CLI, provider or hosting lo
 This turn authorizes inspection and the smallest clean architectural proposal; it does
 not authorize implementing a remote connector, selecting all transports, or unrelated
 redesign. Detailed protocol/authentication design remains proposed for Phase 1 review.
+
+## Phase 1 route-first continuation: 2026-09-29
+
+After reviewing the external-agent proposal, the user questioned repeating Phase 0
+with a scripted harness. The assistant proposed connecting one real, independently
+running Codex runtime using existing subscription access, first verifying its supported
+interface, then defining and implementing the bounded connection. The user replied
+"ok". Preserve that real-agent outcome; a scripted harness is verification support,
+not the new capability being demonstrated.
+
+The immediate route assessment uses official documentation, installed command help
+and sanitized authentication status, without a new model call or credential extraction.
+The bounded follow-on remains owner-local fictional-data work, with provider access
+on the runtime side, World-scoped authentication and human acceptance. This does not
+authorize public service operation, remote deployment, new purchases, an API-key
+fallback, private inputs or personal-memory import. Existing Phase 0 checks should
+be reused as regressions; new evidence must demonstrate the external connection.
+
+## One diagnostic attempt authorization: 2026-09-30
+
+The user replied "sure" to one fresh, 60-second diagnostic attempt using the existing
+Codex subscription after the indeterminate runtime failure. Authorize exactly one
+new attempt with the corrected safe diagnostics, fixed fictional input, a fresh
+exclusive evidence reservation and no automatic retry. Preserve both previous
+attempt histories and all budget records. This does not authorize API fallback,
+new purchases, private inputs, publication or human acceptance by the assistant.
+
+## Launch repair authorization: 2026-09-30
+
+The user instructed "sure proceed" with capturing the CLI error safely, comparing
+the Phase 0 launch, correcting the evidenced mismatch, verifying it in isolation,
+then testing the World flow. This authorizes bounded diagnostic and verification
+work using existing subscription access, with 60-second runtime limits, preserved
+attempt records and no unchanged retry loops. No API fallback, new spending,
+credential extraction, weaker sandbox, private input or assistant acceptance.
+
+
+## Saved-work continuity and pilot definition authorization
+
+The user instructed "Ok proceed" after agreeing that the next task fixes saved-work continuity and defines a bounded recurring-workflow pilot. Authorize local implementation and regression verification so past proposals remain discoverable and owner-reviewable after newer sessions or restart. Keep agent grants expired/revoked and deny late external writes. Preserve existing state and evidence. The user has explicitly accepted the displayed book-swap revision 1 in chat; if the exact saved proposal remains available, recording that decision through the ordinary owner acceptance path is authorized. Do not fabricate recovery if unavailable.
+
+Define pilot audience, workflow, baseline and success measures as a reviewable proposal; this task does not launch the repeatability pilot, add a second provider, call models, expand spending, introduce private inputs, or publish/deploy. Private-data readiness remains a separate checkpoint.
+
+
+## Weekly project brief pilot authorization
+
+After asking to start items 1–3 (continuity, pilot definition, repeatability), the user confirmed the weekly project brief with "yea this is fine". Authorize preparation of three fixed fictional weekly-brief fixtures and their bounded external Codex workflow, a comparable manual baseline, and at most three separately reserved subscription drafting attempts with 60-second inference limits and no automatic retries. Existing provider authentication stays at the owner runtime. Preserve all original evidence and budgets; unknown usage remains unknown. Human baseline effort and final draft acceptance require actual user input and must never be fabricated or inferred from this workflow approval. No second provider, API fallback, new spending, private inputs, personal memory, publication or deployment is authorized. Baseline observations and measures are frozen before live pilot dispatch; useful implementation and fixture tests may proceed while the baseline awaits the user.
+
+
+## In-app baseline usability repair
+
+The user reported being unable to proceed in the preview and explicitly asked to fix it. Authorize the baseline exercise, actual user-written brief, elapsed hands-on time and handoff fields directly in World, with authenticated local save, clear missing/saved/frozen states and an actionable next step. Preserve the existing baseline protocol, no fabricated observations, freeze after pilot starts, one attempt per cycle, and owner-launched external runtime boundary. No provider call is needed for this UX repair; use isolated temporary test data only. Preserve real accepted work and pilot evidence.
+
+
+## Reliability-only pilot revision
+
+The user explicitly approved removing the manual-baseline requirement after explaining it was confusing and unnecessary for the current goal. This supersedes the manual exercise, timer/copy-count requirements and pre-dispatch baseline gate. Preserve the user's rewritten brief as optional local notes, without attributing it as measured independent human performance. Preserve any earlier baseline evidence; do not reset consumed attempts. Continue the already-authorized at most three fixed-fictional external Codex attempts with 60-second runtime bounds, no retries and explicit human acceptance. Assess dispatch/result reliability, factual quality, saved history and enforced boundaries, not time savings. Provider credentials remain runtime-side; no new spending/private inputs/publication.
+
+
+## Platform-first roadmap revision requested — 2026-09-30
+
+The user identified the current Phase 1 direction as failing to deliver the intended platform and requested a new roadmap aligned to the original ChatGPT PDF handoff. Preserve verified code, tests, saved work and all attempt/budget evidence. The requested sequence is connection feasibility, then a World skeleton with human participation, two connected agents cooperating and enforced boundaries, then useful platform features. This authorizes roadmap drafting and review only: the user will approve the roadmap before a new-chat handoff is prepared. Do not continue the weekly pilot, launch new model calls, implement the proposed skeleton, or infer roadmap approval from the request. Existing evidence is reusable; the weekly pilot is not a platform-building prerequisite.
+
+
+## Discuss/design then deliver structure — 2026-09-30
+
+The user refined the requested roadmap: discuss features, appearance, architecture, stack, file organisation, design system and relevant UI skills before implementation. Use main stages for discussion/design and their .1 stages for implementation, verification and user review. The user requests a highly detailed roadmap that also guides bounded agent orchestration. Draft this structure without preselecting technical or visual choices. The roadmap still awaits approval; provide the new-chat handoff only afterward. Preserve existing work. This is planning authority, not authorization to implement the proposed stages or resume the weekly pilot.
+
+
+## Detailed roadmap approved and publication authorized — 2026-09-30
+
+The user explicitly said "Approve, push to github and give me the handoff" after reviewing the detailed discuss/design → build/verify roadmap. Record ROADMAP.md as approved for its sequence and planning scope; publish the roadmap, supporting project records and Stage 1 foundation handoff to the existing Product-Studio-v2 GitHub repository. Next chat begins FND-01 discussion and FND-02 reuse inspection; concrete features, screens, stack and architecture are still to be decided before Stage 1.1. No immediate application implementation, new inference, new spending or production release follows. Historical app changes and ignored evidence remain local and preserved.
