@@ -223,6 +223,6 @@ CLI, application, cloud/company-hosted and custom runtimes are architectural cas
 not all promised launch integrations. See the [technical assessment](architecture/AGENT-WORLD-BOUNDARY.md)
 for observed prototype gaps and proposed minimal changes. Humans without agents remain
 in scope; this principle does not require every user to bring or host an agent.
-The [Phase 0 closeout](PHASE-0-CLOSEOUT.md) records the accepted prototype scope and
+The [Phase 0 closeout](closeouts/PHASE-0-CLOSEOUT.md) records the accepted prototype scope and
 Phase 1's required private-data readiness checkpoint. Broader strategy recommendations
 remain draft; these explicit directions do not approve every candidate horizon.

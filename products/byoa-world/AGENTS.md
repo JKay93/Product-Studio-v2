@@ -29,3 +29,9 @@ access, or publish or deploy an application without authority recorded in the
 contract or a later approved decision. Existing studio-repository authority governs
 documentation updates to this project; application repository push, merge and
 release authority must be recorded separately when that repository is selected.
+
+## Closeout and handoff organisation
+
+User direction, 2026-09-29: keep phase closeouts in `closeouts/` and next-chat
+handoffs in `handoffs/`, using phase-specific filenames. Keep these growing record
+collections out of the project root. STATE.md links to the current records.

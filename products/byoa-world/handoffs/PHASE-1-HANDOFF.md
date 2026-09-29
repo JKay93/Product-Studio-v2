@@ -5,8 +5,8 @@ Owner: orchestrator. Last material update: 2026-09-29.
 ## Read first
 
 Read studio AGENTS.md and standing orders, then project AGENTS.md, CONTRACT.md,
-STATE.md, [Phase 0 closeout](PHASE-0-CLOSEOUT.md), and
-[Agent-World architecture proposal](architecture/AGENT-WORLD-BOUNDARY.md).
+STATE.md, [Phase 0 closeout](../closeouts/PHASE-0-CLOSEOUT.md), and
+[Agent-World architecture proposal](../architecture/AGENT-WORLD-BOUNDARY.md).
 Use ROADMAP.md for status and PRODUCT_BACKLOG.md for MoSCoW priorities.
 
 ## What is settled

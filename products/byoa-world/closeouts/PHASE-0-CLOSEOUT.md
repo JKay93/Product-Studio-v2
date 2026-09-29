@@ -1,7 +1,7 @@
 # Phase 0 closeout
 
 Owner: orchestrator. Last material update: 2026-09-29.
-Milestone status: [ROADMAP.md](ROADMAP.md), RM-04 and RM-05.
+Milestone status: [ROADMAP.md](../ROADMAP.md), RM-04 and RM-05.
 
 ## Accepted scope and explicit change
 
@@ -24,12 +24,12 @@ No claim of confidential-data readiness or portable personal-agent memory is mad
 Candidate: application `0312413` includes live implementation `831e324`, preview
 `748edf9`, and standalone native diagnostic. Requirements/design/specification are the
 Phase 0 revision-1 records and their September 29 addenda, with the explicit scope
-amendment in [CONTRACT.md](CONTRACT.md). Existing evidence is reused because application
+amendment in [CONTRACT.md](../CONTRACT.md). Existing evidence is reused because application
 behaviour has not changed in this closeout.
-Independent evidence: [preview](runs/phase0-preview-review.md),
-[integrated workflow](runs/integrated-live-workflow-review.md),
-[boundary tests](runs/knowledge-boundary-review.md),
-[native diagnostic](runs/local-isolation-review.md).
+Independent evidence: [preview](../runs/phase0-preview-review.md),
+[integrated workflow](../runs/integrated-live-workflow-review.md),
+[boundary tests](../runs/knowledge-boundary-review.md),
+[native diagnostic](../runs/local-isolation-review.md).
 
 ## Completion and delivery state
 
@@ -45,7 +45,7 @@ Independent evidence: [preview](runs/phase0-preview-review.md),
 
 ## Residuals and Phase 1 handoff
 
-[HANDOFF.md](HANDOFF.md) is the next-chat entry point. Infrastructure readiness must
+[HANDOFF.md](../handoffs/PHASE-1-HANDOFF.md) is the next-chat entry point. Infrastructure readiness must
 verify tenant/agent/session isolation, revocation and late writes using fictional
 fixtures in staging that mirrors intended production, plus applicable provider data
 handling and external-runtime trust assumptions, before any private pilot.
@@ -54,7 +54,7 @@ No personal-memory import, general remote admission or remote deletion guarantee
 Current Claude estimate US$0.005369 of original US$1; held reservations US$0.00.
 No paid requests in closeout. Local ignored evidence and credentials are not pushed.
 
-Independent documentation review: [PASS](runs/phase0-closeout-architecture-review.md)
+Independent documentation review: [PASS](../runs/phase0-closeout-architecture-review.md)
 for scope supersession, architecture assessment and handoff; orchestrator accepts
 this closeout package for the user-authorized repository publication. No new privacy
 assurance or external-connector implementation is accepted by that review.

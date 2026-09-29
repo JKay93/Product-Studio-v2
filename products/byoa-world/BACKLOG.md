@@ -1,7 +1,7 @@
 # Delivery follow-ups
 
 Milestone status: [ROADMAP.md](ROADMAP.md). Capability priorities:
-[MoSCoW backlog](PRODUCT_BACKLOG.md). Continuation: [HANDOFF.md](HANDOFF.md).
+[MoSCoW backlog](PRODUCT_BACKLOG.md). Continuation: [HANDOFF.md](handoffs/PHASE-1-HANDOFF.md).
 
 - Review the external-agent architecture proposal and choose one Phase 1 connector slice.
 - Bound its requirements and acceptance checks before implementation; retain the three

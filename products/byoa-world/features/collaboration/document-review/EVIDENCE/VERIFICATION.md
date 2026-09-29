@@ -87,5 +87,5 @@ Final updated-server browser inspection was performed by the orchestrator and re
 The user accepted the bounded prototype and deferred private-data readiness to
 Phase 1 staging before a confidential pilot. The chronological checks above retain
 their original scope; pending statements are historical. Current acceptance and
-verified repository delivery are in [PHASE-0-CLOSEOUT.md](../../../../PHASE-0-CLOSEOUT.md).
+verified repository delivery are in [PHASE-0-CLOSEOUT.md](../../../../closeouts/PHASE-0-CLOSEOUT.md).
 This supersession changes milestone scope/status, not the results of any privacy test.
