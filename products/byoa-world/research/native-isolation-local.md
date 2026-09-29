@@ -33,3 +33,30 @@ The feature-owned diagnostic is `BYOA-World/src/features/agents/connection/nativ
 - Keep the existing live route limited to fixed fictional inputs. This result neither establishes whole-client containment nor resolves account-specific retention/settings.
 
 Discovery supports decisions; this record does not establish validation.
+
+### Read-only home-resolution diagnosis: 2026-09-29
+
+Technical Specialist source trace, checked by orchestrator: current public Codex
+[env.rs](https://github.com/openai/codex/blob/main/codex-rs/windows-sandbox-rs/src/env.rs)
+contains the exact error in `ensure_denybin`. Network-disabled preparation calls it
+without a path override. It resolves the Windows account home before creating
+`.sbx-denybin`; this lookup does not use the supplied child environment or CODEX_HOME.
+The declared dirs-next 2.0 dependency uses
+[SHGetKnownFolderPath for FOLDERID_Profile](https://docs.rs/dirs-next/2.0.0/dirs_next/fn.home_dir.html)
+on Windows, not the fixture HOME variable. Adding HOMEDRIVE/HOMEPATH is therefore
+not an evidenced fix. See also the official
+[preparation code](https://github.com/openai/codex/blob/main/codex-rs/windows-sandbox-rs/src/spawn_prep.rs).
+
+This is a likely failure-site explanation, not a proven trace of the installed
+0.158.0-alpha.2.1 binary: matching alpha source was unavailable, and the underlying
+Windows API failure reason is unknown. No new sandbox attempt was made. Fixing this
+lookup alone could cause setup files to be created in the actual account profile;
+later preparation also includes filesystem ACL operations. Do not bypass the error
+using the real profile or disabling network protection.
+
+Recommendation: stop treating environment variables as a substitute for OS-level
+account separation. For whole-client isolation, evaluate a separately managed VM with
+no personal-profile sharing before requesting an installation. Native investigation
+would require a source-matched runtime and verified fixture-local setup paths; its
+command boundary alone still would not prove whole-client containment. No application
+code, provider usage, account settings or machine configuration changed in this diagnosis.

@@ -71,3 +71,11 @@ could not resolve its test home (`windows sandbox failed: no home dir`) after re
 an unsupported CLI flag. This is not a confidentiality pass. No provider calls or
 global settings changes occurred. Evidence and next options are in the boundary report;
 full private-data readiness and main-process containment remain unverified.
+
+Read-only follow-up found a likely failure site in current public Codex source:
+network-disabled setup resolves the Windows account profile through an OS API,
+not the fixture HOME/CODEX_HOME settings. Exact installed-alpha behavior and the OS
+failure cause remain unproven. No retry with the real profile or new sandbox execution.
+See native-isolation-local.md for sources and why fixing startup alone would not
+establish whole-client containment. A separately managed VM is the recommended
+next architecture to evaluate; no installation is authorized or required yet.
