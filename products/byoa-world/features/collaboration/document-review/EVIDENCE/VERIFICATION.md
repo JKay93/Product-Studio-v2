@@ -22,6 +22,33 @@
 
 ## Completion and delivery state
 
+Integrated live user acceptance, September 29: `.data/live-workspace.json` records
+Session `fa2a8dc5-98d7-4e4e-9960-09f6409888df`, two real attributed contributions,
+accepted proposal revision 1, canonical document and completed Session with empty
+grants. User acceptance timestamp: `2026-09-28T19:37:46.358Z`. Codex's draft hash
+matches Claude's recorded handoff hash, and disclosure prompt hashes match their
+saved text. Claude added an explicit pre-event donation drop-off window. Usage:
+253 input / 287 output tokens, US$0.001688 estimated; cumulative Claude estimate
+US$0.003000. Budget settlement is retained alongside the reservation in
+`.data/live-budget/`. User accepted without revising; revision controls were tested
+with mocked providers, not asserted as exercised in this real run. This establishes
+the integrated fictional-data workflow and human acceptance, while private isolation,
+remote retention and imported private agent knowledge remain unproven.
+
+Follow-up live experiment, September 29: orchestrator observed a real Codex
+subscription draft, then user ran Claude API review of that exact saved draft.
+Application `.data/collaboration-live-review.json` records `collaboration_completed`
+and draft SHA256 `8fd3d4355fb4f8630a60d1371a17ffe7b03a536284e489746a30d415adf12645`.
+Claude preserved the plan's structure and added pre-event collection to reduce
+day-of sorting. Usage: 180 input / 213 output tokens, estimated US$0.001245 for
+review; US$0.001312 cumulative Claude estimate including initial smoke. Codex
+subscription usage is separate. Both prior failed attempts made no Claude request.
+This is accepted as observed sequential synthetic handoff evidence only. Human
+acceptance, integrated UI, private isolation, remote retention and direct
+agent-to-agent communication are not verified. The original preview table above
+records the earlier candidate; this paragraph supersedes its no-Claude-live-call
+finding, not its broader limitations. No additional request made during inspection.
+
 - Local acceptance: accepted by `/root` on 2026-09-29 for the synthetic local preview at `748edf9`, after independent PASS, 17 passing automated checks and final rendered verification. This does not accept the live interoperability milestone.
 - Repository: local application commit `748edf9`; no application push or merge asserted.
 - Release: not released; local loopback preview only.
@@ -35,6 +62,20 @@
 
 
 ## Rendered evidence
+
+### Integrated fictional live workflow follow-up
+
+The bounded live UI implementation received independent PASS; see
+[integrated review](../../../../runs/integrated-live-workflow-review.md).
+Independent 48-test full suite passed, followed by the final 9-test affected
+workflow/budget suite including added history-chain and stop-during-Codex cases.
+Integrated HTTP/browser verification used mocked providers, not paid calls.
+Orchestrator verified exact disclosure inspection, local changes and revision 2
+acceptance, stop rejecting late work, preservation of earlier canonical content,
+and desktop/mobile layout. Actual live startup with a fake key reached ready
+without dispatch. The real integrated provider run remains unverified; prior
+standalone success remains distinct evidence. Original US$1 cumulative budget,
+fixed fictional inputs and explicit human acceptance govern this candidate.
 
 Final updated-server browser inspection was performed by the orchestrator and relayed to the independent reviewer. Desktop and 390x844 mobile views were checked; no horizontal overflow was observed. Current-session timeline attribution and stopped read-only state were rechecked after the final fix.
 

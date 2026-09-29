@@ -14,7 +14,7 @@ spending authority. Existing foundation acceptance is historical.
 | RM-01 | Project foundation available for new chats | accepted | Orchestrator | Organization decision | Project records and modularity rules exist; source provenance recorded; scoped retrieval and links checked; independent review accepted | [Foundation snapshot and acceptance record](https://github.com/JKay93/Product-Studio-v2/blob/f10e4a4/products/byoa-world/STATE.md); [repository bootstrap record](https://github.com/JKay93/Product-Studio-v2/commit/d441600) |
 | RM-02 | Initial product direction is clear enough to plan | active | PM | RM-01; handoff and latest user direction | Sources digested; strategy, roadmap and MoSCoW inventory reviewed; first task, agent setups, required assurances and scope chosen; required direction approval recorded | Draft [strategy](STRATEGY.md), this roadmap and [product backlog](PRODUCT_BACKLOG.md); bounded local preview direction received; feature PRDs linked below |
 | RM-03 | First implementation slice has sufficient design and architecture | active | Technical Specialist / Designer as needed | Relevant RM-02 requirements | Supported connection routes assessed; Session, context and action boundaries defined for selected setups; remote-execution limits stated; task rubric, negative tests and data/retention inspection approach specified | [Technical plan](architecture/PHASE-0-TECHNICAL.md), [design](features/collaboration/document-review/DESIGN.md), and [verification](features/collaboration/document-review/EVIDENCE/VERIFICATION.md) support the local slice; live runtime boundaries remain open |
-| RM-04 | First bounded slice proves connection and shared work within stated boundaries (Phase 0) | active | Builder; independent reviewer | Applicable RM-02 and RM-03 records; implementation authorization | Meet Phase 0 criteria below; resolve material review findings; record code candidate, specification revisions, limitations and orchestrator acceptance | Synthetic local preview accepted at `748edf9`; 17 checks and independent review passed. [Evidence](features/collaboration/document-review/EVIDENCE/VERIFICATION.md). Full live connection/shared-work proof remains pending |
+| RM-04 | First bounded slice proves connection and shared work within stated boundaries (Phase 0) | active | Builder; independent reviewer | Applicable RM-02 and RM-03 records; implementation authorization | Meet Phase 0 criteria below; resolve material review findings; record code candidate, specification revisions, limitations and orchestrator acceptance | Application candidate `831e324`: integrated Codex/Claude output accepted by the user; 58 automated tests, 18 local access checks and three live boundary observations. [Evidence](features/collaboration/document-review/EVIDENCE/VERIFICATION.md) and [limitations](research/knowledge-boundaries.md). Supported private-knowledge/isolation scope decision remains open |
 | RM-05 | Accepted slice reaches its authorized delivery state | proposed | Orchestrator | Accepted RM-04 candidate; delivery authority | Requested repository/release actions verified against the delivered revision; environment verification and recovery reference supplied if deployment is in scope | Pending; initial README push is not product delivery |
 
 ## Phase 0: connect agents and share work within boundaries
@@ -22,7 +22,7 @@ spending authority. Existing foundation acceptance is historical.
 User-directed priority: first establish how the platform fits together through two
 linked feasibility questions. A bounded local preview is now authorized. Live
 target routes selected by the user are Codex Subscription and Claude API; supported
-access and actual end-to-end operation remain to be verified. Claude API execution
+access and bounded end-to-end operation have been demonstrated with fictional data. Claude API execution
 requires an explicit bounded spending allowance and available credentials. Missing
 live access does not prevent synthetic local implementation.
 
@@ -56,17 +56,30 @@ roadmap; RM-05 remains the authorized-delivery checkpoint for the first accepted
 
 ## Now, next and later
 
-- Now: build and verify the bounded local workspace against the three feature PRDs
-  linked below, while investigating the selected live routes.
-- Next: show the preview, collect user feedback, and validate live connections when
-  access and any necessary spending authority are available. No provider connection
-  has been validated by these documents.
-- Design and technical planning may proceed together once their inputs are sufficiently
-  clear. These items are outcomes, not compulsory sequential committees.
-- Later: use evidence to refine horizons rather than commit to the entire platform.
-  The Gather/Pokémon interface stays in the optional backlog with no scheduled phase.
+- Now: preserve the reviewed local implementation and completed live evidence.
+- Next: decide the supported knowledge/isolation scope before expanding live inputs.
+  Subscription/API collaboration is demonstrated; private-memory portability and
+  confidential-data readiness remain unproven.
+- Later: refine candidate horizons from evidence. The Gather/Pokemon interface stays
+  in the optional backlog with no scheduled phase.
 
 ## Updates
+
+Knowledge-boundary live results: all three fixed Claude probes completed and the
+orchestrator inspected their responses. No fictional private code/fact disclosure
+was observed; direct and indirect override attempts were refused. Recorded cumulative
+Claude estimate is US$0.005369, no outstanding reservations. This complements the
+18 local enforcement checks, but does not prove broad model confidentiality, private
+memory migration or runtime isolation. See [completed observations](research/knowledge-boundaries.md).
+RM-04 remains active pending an explicit supported knowledge/isolation scope decision;
+the evidence has not silently expanded the platform's assurances.
+
+Integrated live evidence: the user accepted revision 1 of the Codex subscription /
+Claude API result at `2026-09-28T19:37:46.358Z`. Session completed, grants ended and
+canonical output persisted. Application candidate `831e324` includes the reviewed
+live workflow and boundary runner. Historical implementation reviews and the
+verification report preserve earlier checkpoints; pending statements there do not
+supersede these completed observations. Closeout commits are local, not publication.
 
 This is the single milestone-status source. [Backlog](BACKLOG.md) holds actionable
 work; [state](STATE.md) holds the current handoff and links here rather than duplicating

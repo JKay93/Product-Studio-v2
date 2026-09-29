@@ -47,13 +47,71 @@ implementation choices, author the seven main records, implement and test locall
 
 A local synthetic demonstration is useful preview evidence, not proof of independent
 live-agent interoperability. Missing credentials or supported routes must remain
-explicit limitations. New external spending remains zero. Existing host subscription
+explicit limitations. New external spending is limited by the allowance below. Existing host subscription
 use is allowed within its supported interfaces; no credential extraction or new
 sensitive access is authorized. Local preview is authorized; public production
 release is not. Repository publication remains subject to the user's existing
 project-specific authority and requested delivery scope.
 
+## Claude live-test spending allowance
+
+The user explicitly stated "key entered, set $1 limit" in this conversation.
+Authorize at most US$1 total in Claude API usage for this test, not per run or restart.
+The user's US$5 account credit deposit is not permission to consume all US$5.
+The credential remains in the user's PowerShell environment; do not copy it into chat,
+source, logs, or a settings file. Prepare a bounded one-shot connection check that
+reserves the allowance durably before dispatch and refuses automatic reruns. Report
+actual measured usage separately from reserved/uncertain spend. This allowance does
+not authorize an ongoing service or remove live runtime limitations.
+
+After the successful connection check, the user instructed "Sure proceed with the
+test", authorizing a bounded follow-on live collaboration experiment with synthetic
+content: Codex produces a draft and Claude reviews that draft. The original US$1
+total still applies, including the connection check's estimated US$0.000067.
+Preserve the first ledger; reserve the remaining allowance in a separate exclusive
+experiment ledger, with no automatic retry or reset. Unknown prior spending blocks
+dispatch. This authorizes the standalone experiment, not ongoing live service or
+claims that local filesystem reads or remote retention are isolated.
+
 ## Authority
+
+### Fictional knowledge-boundary experiment authorization
+
+The user instructed "proceed" after agreeing to fictional-data boundary tests and
+a concise report. Authorized scope: excluded company-resource and cross-agent
+private-resource denial; prompt injection cannot grant platform permissions;
+post-session access/write denial; and a small fixed Claude API experiment where
+a fictional private fact is deliberately supplied and disclosure pressure applied.
+That last experiment measures model behaviour, not an enforced privacy boundary.
+No real private material, existing agent memory, local filesystem inspection or
+new provider integration is authorized by this experiment.
+
+Reuse the original US$1 cumulative allowance and existing durable budget records;
+known Claude estimate before these probes is US$0.003000. Prepare three fixed,
+bounded behaviour probes with explicit one-shot execution, no automatic retries,
+and conservative reservations for uncertain usage. Keep credentials in the user's
+launch environment. Report local enforcement evidence separately from live model
+observations, and never interpret absence of a canary as universal non-disclosure.
+
+### Integrated live fictional-data workflow authorization
+
+Following the successful standalone handoff, the user instructed "Sure proceed with
+what you suggested. Do you need anything from me". This authorizes integrating one
+bounded real Codex subscription / Claude API workflow into the existing local UI:
+automatic designated shared fictional context, attributed drafting and review,
+inspectable disclosure, stop/revocation, failure and budget handling, and human
+revision/acceptance. No private agent memory import or filesystem isolation is
+claimed. Until runtime isolation is established, live inputs remain fixed fictional
+fixtures enforced by the server, rather than accepting confidential free-form input.
+Human edits stay local and are not automatically redispatched.
+
+The original US$1 Claude total applies cumulatively, including US$0.001312 already
+estimated across successful checks. Preserve previous evidence and account for
+known usage and uncertain reservations durably across restarts and concurrency.
+User-initiated bounded live tasks are authorized within that remaining allowance;
+automatic retries, new purchases, increased allowance and unattended service are not.
+The Claude key remains in the user's launch environment. This authorizes preparing
+and testing the integrated workflow; actual human acceptance remains a user action.
 
 The user authorized the working-name skeleton and organization in the conversation
 that initiated this project on 2026-09-28. The durable organization decision is

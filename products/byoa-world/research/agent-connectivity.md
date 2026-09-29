@@ -23,6 +23,17 @@ only this machine's current tool availability. Provider documentation can change
 
 ## Findings
 
+### Follow-up: Claude connection verified, September 29
+
+The user ran the bounded standalone check from their own PowerShell environment.
+The sanitized local application report `.data/claude-live-check.json` records
+`connected`, the expected response marker, model `claude-haiku-4-5-20251001`,
+17 input tokens and 10 output tokens. Estimated API cost is US$0.000067 under the
+original US$1 allowance. The report completed at `2026-09-28T18:22:38.342Z`.
+The earlier matrix below is the initial discovery baseline; its missing-Claude-access
+finding is superseded for this single connection check. This does not yet demonstrate
+two-agent collaboration, privacy isolation or an integrated live workspace.
+
 ### Capability matrix
 
 | Candidate route | Documented interface and authentication | Local evidence | Billing / retention boundary | Phase 0 assessment |
