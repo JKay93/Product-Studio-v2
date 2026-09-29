@@ -25,3 +25,8 @@ Use the established feature/domain folder layout, concise assignments and propor
 review. Avoid unnecessary agent rounds and broad repeated reads. No deployment,
 installation, new spend or private-data use is implied by Phase 0 acceptance.
 Studio publication evidence is recorded in the closeout, after verified pushes.
+
+Publication confirmed: studio package `8b6ff53` pushed to origin/main, including the
+architecture proposal, reviewed Phase 0 closeout and Phase 1 handoff. Application
+remote main was independently confirmed at `0312413`. The closeout delivery receipt
+records exact revisions and excluded local evidence. RM-05 delivery is accepted.

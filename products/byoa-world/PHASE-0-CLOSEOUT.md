@@ -37,8 +37,7 @@ Independent evidence: [preview](runs/phase0-preview-review.md),
 - Application: pushed to [BYOA-World main at 0312413](https://github.com/JKay93/BYOA-World/commit/0312413), verified push advanced remote from 87aa539 to 0312413 on September 29.
 - Included: three feature areas, local UI, bounded live workflow, durable budget handling,
   automated tests and no-provider diagnostic; README documents startup and organisation.
-- Studio: closeout, scope amendment, architecture proposal and Phase 1 handoff pending
-  publication verification. See delivery receipt below once pushed.
+- Studio: closeout, scope amendment, architecture proposal and Phase 1 handoff pushed at `8b6ff53`; see verified delivery receipt below.
 - Release: local prototype only; no hosted service or production deployment.
 - Recovery: recover code by Git revision; preserve local `.data/` before moving machines.
   Never reset spending records to rerun probes. A Git clone alone has no live evidence,
@@ -59,3 +58,16 @@ Independent documentation review: [PASS](runs/phase0-closeout-architecture-revie
 for scope supersession, architecture assessment and handoff; orchestrator accepts
 this closeout package for the user-authorized repository publication. No new privacy
 assurance or external-connector implementation is accepted by that review.
+
+## Verified publication receipt — 2026-09-29
+
+| Repository / branch | Published content revision | Verification |
+| --- | --- | --- |
+| [BYOA-World / main](https://github.com/JKay93/BYOA-World) | [0312413](https://github.com/JKay93/BYOA-World/commit/0312413) | Successful push 87aa539..0312413; remote refs/heads/main independently returned 0312413d556767efae1d692198aa8edc7845e11b |
+| [Product-Studio-v2 / main](https://github.com/JKay93/Product-Studio-v2) | [8b6ff53](https://github.com/JKay93/Product-Studio-v2/commit/8b6ff53) | Successful push e2cfedf..8b6ff53, including previously local implementation records, closeout, scope amendments, architecture assessment, independent review and handoff |
+
+This receipt is a subsequent documentation commit recording those already successful
+pushes; the source package revision above remains the delivery anchor. No PR merge,
+hosted release, confidential-data certification, keys or local `.data/` upload occurred.
+Studio integrity/metadata check passed. Application code was unchanged during closeout;
+its recorded tests/reviews remain applicable. RM-05 repository delivery is accepted.
