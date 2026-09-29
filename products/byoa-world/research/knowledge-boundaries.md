@@ -26,3 +26,79 @@
 
 Discovery supports decisions. This optional record is not a gate and does not by itself
 establish validation.
+
+## Follow-up investigation: 2026-09-29
+
+Owner: orchestrator, with a read-only technical-specialist assessment. Method:
+inspect the existing adapter, local runtime help and machine capability indicators;
+read current official documentation. No settings changed or provider requests made.
+
+The user approved fresh project sessions with explicitly shared context for the
+proper test run. Personal-agent memory import remains unsupported for this test;
+this does not abandon the longer-term product goal. Live inputs remain fictional
+until a broader input boundary is implemented and verified.
+
+Observed locally: Windows EditionID is Core (Home); build 26200. The registry's
+legacy ProductName says Windows 10, so it is not used to infer the OS generation.
+WSL reports not installed. Docker was not found on PATH or at its standard Desktop
+location; WindowsSandbox.exe was absent. Hardware virtualization readiness could
+not be determined because the read-only CIM queries returned access denied.
+Installed Codex 0.158.0-alpha.2.1 exposes sandbox permission-profile and readable-root
+options in help. Help availability is not enforcement evidence.
+
+The specialist confirmed that empty temporary cwd, ephemeral execution and disabled
+tools do not confine the complete Codex process. Existing CODEX_HOME and personal
+profile locations are inherited; output rejection happens after an action can begin.
+
+Recommendation: first evaluate native workspace-only permission profiles using
+fictional local fixtures and no provider calls. Official [permissions documentation](https://learn.chatgpt.com/docs/permissions)
+describes restricted filesystem rules and platform differences. Verify allowed reads,
+excluded reads, child processes, path/junction escapes, session separation, credential
+separation and all process surfaces. A command sandbox alone is insufficient evidence
+for the main client process. Do not alter global permissions or copy authentication
+files to make a test pass. If full containment cannot be established, prefer a separately
+managed VM with no personal-profile mounts and supported fresh sign-in; determine
+hardware support before selecting or installing it.
+
+[Windows Sandbox](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/)
+is not supported on Home. [Microsoft's WSL security model](https://wsl.dev/technical-documentation/security/)
+explicitly says WSL is not a security sandbox; disabling automount/interop does not
+create a host isolation boundary. Do not prescribe a plain WSL installation as the fix.
+
+Provider handling is separate from local containment. Anthropic's commercial
+[retention policy](https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data)
+states API inputs/outputs are deleted within 30 days, with service, agreement,
+policy-enforcement and legal exceptions. Its [training policy](https://privacy.claude.com/en/articles/7996885-how-do-you-use-personal-data-in-model-training)
+excludes commercial chats/coding sessions from training absent specified opt-ins or
+feedback. No account-specific zero-retention arrangement has been verified.
+OpenAI [authentication documentation](https://learn.chatgpt.com/docs/auth) distinguishes
+ChatGPT subscription handling from API-organization handling. Exact subscription
+plan/workspace settings and applicable retention/deletion controls remain unverified;
+do not apply OpenAI API retention terms to this subscription route or claim zero retention.
+
+Next evidence needed: native containment feasibility, including scope of enforcement;
+then account-specific provider settings before real confidential data. No installation,
+new account, key, payment or user configuration action is required for this research.
+
+### Native local evaluation outcome: blocked before probes
+
+The authorized no-provider evaluation attempted the installed Windows sandbox with
+fresh fixture-owned home/config paths, restricted filesystem profiles and only
+fictional files. First invocation rejected an unsupported `--strict-config` option;
+the single corrected invocation exited with `windows sandbox failed: no home dir`.
+Both returned no probe output. No allowed-read control or excluded-read assertion ran.
+This is a startup prerequisite failure, not proof of denied access or a privacy pass.
+The cause of home resolution failure has not been established; it does not establish
+that native containment is impossible or that an administrator installation is required.
+
+Local evidence: application `.data/native-isolation/attempt-5rleC7/result.json` and
+`.data/native-isolation/attempt-nZxblj/result.json`. Fictional file contents remained
+unchanged. No provider request, credential inspection/copy, global configuration
+change, installation or elevated setup was performed. These tests concern a sandboxed
+command only; the main Codex client remains a distinct unresolved boundary.
+
+Preserve the current fictional-only live restriction. Next technical choice is a
+bounded investigation of isolated-home startup, or a separately managed VM if native
+whole-process isolation cannot be demonstrated. Neither a new machine nor changes
+to the user's account are justified by this startup error alone. Independent review:
+[local isolation review](../runs/local-isolation-review.md).

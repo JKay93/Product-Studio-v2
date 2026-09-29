@@ -33,10 +33,9 @@ and general model confidentiality are unproven. Three non-disclosure observation
 are not a privacy guarantee. RM-04 remains open for an explicit supported
 knowledge/isolation scope decision; the original private-knowledge goal is preserved.
 
-Next discussion: choose the first supported knowledge model and required isolation
-before expanding live inputs. A fresh project-scoped task session is a recommendation,
-not an approved replacement for bringing personal agent knowledge. It does not require
-a new Codex account. No further paid probe or feature work is needed for this closeout.
+The user approved fresh project sessions with explicitly shared context for the test,
+without importing personal-agent memory. Local no-provider isolation evaluation is
+now authorized; private inputs remain unsupported until separate verification.
 
 ## Continuation and operations
 
@@ -57,3 +56,18 @@ A new clone does not contain this evidence or the spending ledger.
 Code and documentation closeout are saved as local commits. This closeout does not
 publish the application, push repositories or deploy a service. Consult Git history
 for exact documentation revision and verify remote state before claiming publication.
+
+## Approved test scope and isolation investigation
+
+The user subsequently approved fresh project sessions with explicitly shared context
+for the proper test run; personal-agent memory import stays unsupported for that test.
+This supersedes the recommendation-only wording above. Runtime isolation remains open.
+See the [follow-up investigation](research/knowledge-boundaries.md#follow-up-investigation-2026-09-29)
+for local capabilities, provider-policy findings and the recommended no-provider
+containment evaluation. No machine settings changed and no paid tests ran.
+
+Local isolation check outcome: blocked before any file probe. The restricted sandbox
+could not resolve its test home (`windows sandbox failed: no home dir`) after removing
+an unsupported CLI flag. This is not a confidentiality pass. No provider calls or
+global settings changes occurred. Evidence and next options are in the boundary report;
+full private-data readiness and main-process containment remain unverified.

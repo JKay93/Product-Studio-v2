@@ -135,3 +135,13 @@ to govern updates to these project documents.
 
 Expansion beyond the authorized Phase 0 scope requires an updated contract or
 applicable decision grounded in user direction.
+
+## Local isolation evaluation authorization: 2026-09-29
+
+The user approved fresh project sessions with explicitly shared context for a proper
+test run, excluding existing personal-agent memory import. They subsequently said
+"Sure proceed" to the proposed local, no-provider isolation checks with fictional
+files. This authorizes preparing and running bounded local fixture checks and recording
+their evidence. It does not authorize provider requests, credential inspection/copying,
+installations, global permission/configuration changes or expansion to private live inputs.
+The current fixed-fictional live workflow and original cumulative budget remain unchanged.
