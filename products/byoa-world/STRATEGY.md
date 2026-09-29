@@ -213,3 +213,16 @@ model while provider routes are investigated, but must be labeled simulation. Li
 independent-agent connectivity and two-way knowledge assurance require their own
 evidence; a polished preview does not prove Phase 0. See the three feature PRDs
 linked in the [project map](README.md).
+
+## User-directed refinement: external-agent participation — 2026-09-29
+
+The user requires that externally operated agents can retain model-provider credentials
+in their existing environments. BYOA should integrate with the agent/harness through
+a runtime/provider-agnostic boundary, not require users to hand over provider keys.
+CLI, application, cloud/company-hosted and custom runtimes are architectural cases,
+not all promised launch integrations. See the [technical assessment](architecture/AGENT-WORLD-BOUNDARY.md)
+for observed prototype gaps and proposed minimal changes. Humans without agents remain
+in scope; this principle does not require every user to bring or host an agent.
+The [Phase 0 closeout](PHASE-0-CLOSEOUT.md) records the accepted prototype scope and
+Phase 1's required private-data readiness checkpoint. Broader strategy recommendations
+remain draft; these explicit directions do not approve every candidate horizon.

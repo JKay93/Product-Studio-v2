@@ -415,3 +415,12 @@ Desktop and narrow-viewport review must verify the locked fictional brief, autom
 context label, budget language, live/synthetic labeling, disclosure details, Stop control
 and readable provider failure state. No additional live call is required for implementation
 or review; a future real integrated run remains separate evidence.
+
+## Phase 0 closeout / external-runtime direction
+
+The user accepted the bounded prototype with private-data readiness deferred to
+Phase 1 staging. See [closeout](../PHASE-0-CLOSEOUT.md). Current direct-provider/local
+execution is historical prototype evidence, not the required external-agent model.
+The [Agent-World boundary assessment](AGENT-WORLD-BOUNDARY.md) proposes the smallest
+extension under the newly approved runtime-owned credential principle; no external
+connector is implemented by this record.

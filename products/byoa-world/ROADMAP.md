@@ -14,8 +14,8 @@ spending authority. Existing foundation acceptance is historical.
 | RM-01 | Project foundation available for new chats | accepted | Orchestrator | Organization decision | Project records and modularity rules exist; source provenance recorded; scoped retrieval and links checked; independent review accepted | [Foundation snapshot and acceptance record](https://github.com/JKay93/Product-Studio-v2/blob/f10e4a4/products/byoa-world/STATE.md); [repository bootstrap record](https://github.com/JKay93/Product-Studio-v2/commit/d441600) |
 | RM-02 | Initial product direction is clear enough to plan | active | PM | RM-01; handoff and latest user direction | Sources digested; strategy, roadmap and MoSCoW inventory reviewed; first task, agent setups, required assurances and scope chosen; required direction approval recorded | Draft [strategy](STRATEGY.md), this roadmap and [product backlog](PRODUCT_BACKLOG.md); bounded local preview direction received; feature PRDs linked below |
 | RM-03 | First implementation slice has sufficient design and architecture | active | Technical Specialist / Designer as needed | Relevant RM-02 requirements | Supported connection routes assessed; Session, context and action boundaries defined for selected setups; remote-execution limits stated; task rubric, negative tests and data/retention inspection approach specified | [Technical plan](architecture/PHASE-0-TECHNICAL.md), [design](features/collaboration/document-review/DESIGN.md), and [verification](features/collaboration/document-review/EVIDENCE/VERIFICATION.md) support the local slice; live runtime boundaries remain open |
-| RM-04 | First bounded slice proves connection and shared work within stated boundaries (Phase 0) | active | Builder; independent reviewer | Applicable RM-02 and RM-03 records; implementation authorization | Meet Phase 0 criteria below; resolve material review findings; record code candidate, specification revisions, limitations and orchestrator acceptance | Application candidate `831e324`: integrated Codex/Claude output accepted by the user; 58 automated tests, 18 local access checks and three live boundary observations. [Evidence](features/collaboration/document-review/EVIDENCE/VERIFICATION.md) and [limitations](research/knowledge-boundaries.md). Supported private-knowledge/isolation scope decision remains open |
-| RM-05 | Accepted slice reaches its authorized delivery state | proposed | Orchestrator | Accepted RM-04 candidate; delivery authority | Requested repository/release actions verified against the delivered revision; environment verification and recovery reference supplied if deployment is in scope | Pending; initial README push is not product delivery |
+| RM-04 | First bounded slice proves connection and shared work within stated boundaries (Phase 0) | accepted | Builder; independent reviewer | Applicable RM-02 and RM-03 records; implementation authorization | Meet Phase 0 criteria below; resolve material review findings; record code candidate, specification revisions, limitations and orchestrator acceptance | Application candidate `831e324`: integrated Codex/Claude output accepted by the user; 58 automated tests, 18 local access checks and three live boundary observations. [Evidence](features/collaboration/document-review/EVIDENCE/VERIFICATION.md) and [limitations](research/knowledge-boundaries.md). User approved bounded prototype closeout; private-data readiness deferred to RM-06A. See [closeout](PHASE-0-CLOSEOUT.md) |
+| RM-05 | Accepted slice reaches its authorized delivery state | active | Orchestrator | Accepted RM-04 candidate; delivery authority | Requested repository/release actions verified against the delivered revision; environment verification and recovery reference supplied if deployment is in scope | Application main 0312413 pushed; studio closeout publication being verified in [delivery receipt](PHASE-0-CLOSEOUT.md) |
 
 ## Phase 0: connect agents and share work within boundaries
 
@@ -26,7 +26,9 @@ access and bounded end-to-end operation have been demonstrated with fictional da
 requires an explicit bounded spending allowance and available credentials. Missing
 live access does not prevent synthetic local implementation.
 
-| Track | Deliverable | Proposed exit criteria |
+The original proposed criteria below are historical. The closeout amendment at the end of this roadmap governs RM-04 acceptance; independently operated external-runtime connection moves to RM-06 and private-data readiness to RM-06A.
+
+| Track | Deliverable | Historical proposed exit criteria |
 | --- | --- | --- |
 | A — Connect independent agents | Supported-route assessment and minimal connection prototype | Assess subscription-supported routes and APIs separately using current official evidence. Identify authentication/identity, retained state, task/status/result exchange, billing and limitations. Demonstrate a complete Session across at least two independently operated agent setups. Record any subscription or API route not demonstrated as an unresolved limitation; do not label it supported. |
 | B — Share useful work with knowledge boundaries | One joint task, controlled shared artifact and inspectable trace | Both agents make necessary, attributable contributions; a human accepts the combined output against a pre-agreed rubric. Agent-private material is not automatically imported; company context is disclosed only as authorized. Test unauthorized requests and private-context probes with synthetic data; inspect disclosure and persistence; demonstrate proposal review and expiry/revocation. State what the platform enforces and what the remote runtime cannot guarantee. |
@@ -47,7 +49,8 @@ roadmap; RM-05 remains the authorized-delivery checkpoint for the first accepted
 
 | Item / phase | What we are proving / deliverable | Status | Owner | Dependencies | Proposed exit criteria | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| RM-06 / 1 — Useful personal World | One person repeatedly completes useful work with their agent, selected context and reviewable output | proposed | PM + delivery team | RM-04 evidence; pilot scope decision; RM-05 where delivery is needed | A selected recurring workflow reaches accepted output across agreed pilot runs; record completion, manual coordination, rework and cost visibility against a baseline set before pilot | Pending |
+| RM-06 / 1 — Usable World and external-agent pilot | Select and validate a repeatable workflow with a runtime-independent agent connection; personal-first vs team-first still to decide | planning | PM + delivery team | RM-04 evidence; pilot scope decision; RM-05 where delivery is needed | A selected recurring workflow reaches accepted output across agreed pilot runs; record completion, manual coordination, rework and cost visibility against a baseline set before pilot | Pending |
+| RM-06A / 1 — Private-data readiness | Verify intended infrastructure and data-handling boundaries in staging before a private-data pilot | deferred checkpoint | Technical Specialist / independent reviewer | Chosen infrastructure, external-agent design and actual account/provider arrangements | Fictional tenant/agent/session isolation, credential separation, revocation and late-write tests pass; provider and external-runtime retention/trust limits documented and accepted before private inputs | [Deferred findings](research/native-isolation-local.md); not passed |
 | RM-07 / 2 — Shared World | People and agents coordinate on persistent projects | proposed | PM + delivery team | Shared-work feasibility; pilot decision; RM-06 only if personal-first chosen | A small team completes the chosen joint workflow with membership/roles, attributable handoffs, concurrent contribution handling and review; identify who can see and change each resource | Pending |
 | RM-08 / 3 — Organizational control and context | Teams work around existing systems and rules | proposed | PM + technical specialist + delivery team | Proven pilot workflow; organizational requirements | Selected connectors preserve source access restrictions; owners can configure and inspect required approvals, budgets, retention and audit; test denied access and policy changes | Pending |
 | RM-09 / 4 — External-agent engagements | A World safely commissions an agent it does not operate | proposed | PM + technical specialist + delivery team | Bounded Sessions and tested assurance model | Verify expected agent/operator at the agreed evidence level; invite with scoped access; agree output/retention terms; review deliverables; expire/revoke access and document residual data exposure | Pending |
@@ -56,8 +59,8 @@ roadmap; RM-05 remains the authorized-delivery checkpoint for the first accepted
 
 ## Now, next and later
 
-- Now: preserve the reviewed local implementation and completed live evidence.
-- Next: decide the supported knowledge/isolation scope before expanding live inputs.
+- Now: publish the accepted Phase 0 prototype and closeout; prepare Phase 1 handoff.
+- Next: review the external-agent boundary proposal and choose one Phase 1 vertical slice.
   Subscription/API collaboration is demonstrated; private-memory portability and
   confidential-data readiness remain unproven.
 - Later: refine candidate horizons from evidence. The Gather/Pokemon interface stays
@@ -71,15 +74,14 @@ was observed; direct and indirect override attempts were refused. Recorded cumul
 Claude estimate is US$0.005369, no outstanding reservations. This complements the
 18 local enforcement checks, but does not prove broad model confidentiality, private
 memory migration or runtime isolation. See [completed observations](research/knowledge-boundaries.md).
-RM-04 remains active pending an explicit supported knowledge/isolation scope decision;
-the evidence has not silently expanded the platform's assurances.
+The user subsequently accepted RM-04 with isolation deferred to RM-06A; this is a scope revision, not expanded privacy evidence.
 
 Integrated live evidence: the user accepted revision 1 of the Codex subscription /
 Claude API result at `2026-09-28T19:37:46.358Z`. Session completed, grants ended and
 canonical output persisted. Application candidate `831e324` includes the reviewed
 live workflow and boundary runner. Historical implementation reviews and the
 verification report preserve earlier checkpoints; pending statements there do not
-supersede these completed observations. Closeout commits are local, not publication.
+supersede these completed observations. Current publication is tracked in the Phase 0 closeout receipt.
 
 This is the single milestone-status source. [Backlog](BACKLOG.md) holds actionable
 work; [state](STATE.md) holds the current handoff and links here rather than duplicating
@@ -114,7 +116,24 @@ three cohesive feature areas.
 A visibly labeled deterministic demo may satisfy a local-preview checkpoint: task
 setup, selected context, two adapter contributions, human review and acceptance,
 activity trace, and stop/revocation with real negative enforcement checks. This
-checkpoint is not RM-04 acceptance. RM-04 still requires independently operated live
+checkpoint was not RM-04 acceptance under the criteria then in force. Those criteria required independently operated live
 agent evidence and the stated boundary tests; unmet routes remain explicit. No new
 production release, external spending or sensitive-data access follows from preview
 authorization. Verification records must separate local, simulated and live results.
+
+### Agreed Phase 0 closeout and Phase 1 transition — 2026-09-29
+
+The user explicitly accepted Phase 0 as the bounded prototype and deferred private-data
+isolation/provider verification to staging on the intended infrastructure before a
+confidential pilot (RM-06A). This supersedes prior pending-isolation and independently-operated-agent Phase 0 exit criteria;
+it does not claim that isolation passed. Historical criteria/evidence above are retained
+for provenance. Fresh sessions with explicitly shared context are the agreed test model;
+actual live code still enforces fixed fictional fixtures. Personal-memory import stays out.
+
+User-approved principle: provider keys remain with external agents; BYOA integrates
+with agents rather than requiring their underlying model credentials. The technical
+[boundary proposal](architecture/AGENT-WORLD-BOUNDARY.md) is for Phase 1 review, not
+implemented remote capability. Basic known-owner external connection is an early
+pilot need; RM-09 retains richer unfamiliar-operator engagements and Passport breadth.
+RM-06 is planning only; later horizon numbering is unchanged and detailed audience,
+transport and implementation scope remain to be selected.

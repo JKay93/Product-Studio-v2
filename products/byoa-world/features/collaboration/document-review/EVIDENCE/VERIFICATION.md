@@ -81,3 +81,11 @@ Final updated-server browser inspection was performed by the orchestrator and re
 
 - [Stopped desktop workspace](C:/Users/jingk/.codex/visualizations/2026/09/28/01a0e889-46ec-7ad1-abf9-7b01eca77548/byoa-stopped.png)
 - [Mobile workspace](C:/Users/jingk/.codex/visualizations/2026/09/28/01a0e889-46ec-7ad1-abf9-7b01eca77548/byoa-mobile.png)
+
+## Phase 0 closeout supersession — 2026-09-29
+
+The user accepted the bounded prototype and deferred private-data readiness to
+Phase 1 staging before a confidential pilot. The chronological checks above retain
+their original scope; pending statements are historical. Current acceptance and
+verified repository delivery are in [PHASE-0-CLOSEOUT.md](../../../../PHASE-0-CLOSEOUT.md).
+This supersession changes milestone scope/status, not the results of any privacy test.

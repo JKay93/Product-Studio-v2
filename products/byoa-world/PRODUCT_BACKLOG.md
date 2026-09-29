@@ -8,7 +8,7 @@ tracks planning/delivery tasks; [ROADMAP.md](ROADMAP.md) alone owns milestone st
 
 ## How to read and use this backlog
 
-**All priorities are relative to the initial feasibility milestone, RM-04 / Phase 0.**
+**The original inventory priorities are relative to the initial feasibility milestone, RM-04 / Phase 0; the final carry-forward section explicitly uses Phase 1 priorities.**
 They are proposed priorities, not a permanent ranking of the full platform.
 
 - **Must:** without it, the chosen connection/shared-work experiment cannot establish its claim.
@@ -71,8 +71,8 @@ changing its MoSCoW label. Select actual providers and protocols only after rese
 
 - 2026-09-29: initial inventory drafted from S1 and S2, with S3 priorities relative
   to Phase 0. No implementation items are complete by virtue of appearing here.
-- First task, selected agent setups, context source, artifact type and acceptable
-  remote-data assurance remain open. Their selection may change Must/Should labels.
+- At initial drafting, task, selected agent setups, context source, artifact type and acceptable
+  remote-data assurance were open. Phase 0 selections are now in the feature PRDs; broader assurances remain open.
 - Remote forgetting, universal non-leakage, provider compatibility and market demand
   are not promised by any backlog item. Record evidence and limitations before claims.
 - Revisit deferred items when their trigger is met; keep user-selected priorities
@@ -88,3 +88,20 @@ the bounded slice; this does not pull their general-purpose or enterprise versio
 into scope. A deterministic local demonstration is acceptable preview progress,
 not evidence that PB-002 live independent-agent interoperability is complete.
 PB-019 now separates deferred agent provisioning from included human participation.
+
+## Phase 1 carry-forward priorities — 2026-09-29
+
+The original tables above retain Phase 0-relative priorities for provenance. The user
+accepted its bounded prototype scope; this does not complete general-purpose versions.
+These additional priorities are relative to Phase 1; ROADMAP.md owns status.
+
+| ID | Candidate / intended outcome | MoSCoW | Source and rationale | Horizon / trigger |
+| --- | --- | --- | --- | --- |
+| PB-036 | External agent connection with provider credentials retained by its runtime; canonical semantic boundary and one initial adapter | Must | Explicit user principle; current adapters run inside the prototype server | RM-06; review architecture proposal then scope one vertical slice |
+| PB-037 | Staging verification of tenant/agent/session isolation, credential separation, revocation, and provider/external-runtime data handling | Must before private pilot | Explicitly deferred from Phase 0 by user, not waived | RM-06A; before any real confidential input |
+| PB-038 | Additional runtime adapters, SDKs and alternate transports | Could | Runtime-agnostic design should permit extensions without building them all now | After the first connector exposes actual interoperability needs |
+
+PB-026/RM-09 still defer general unfamiliar-operator engagements; they do not defer
+PB-036's basic known-owner connection. PB-006/PB-011's full private-data assurances
+carry into PB-037; the Phase 0 observations did not certify them. PB-034 spatial UI
+remains Won't this scope. Personal-agent memory import remains unsupported initially.

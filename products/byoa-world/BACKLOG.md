@@ -1,23 +1,12 @@
-# Planning follow-ups
+# Delivery follow-ups
 
-The additional [MoSCoW product backlog](PRODUCT_BACKLOG.md) holds capabilities
-and deferred ideas. This file holds documentation follow-ups only.
+Milestone status: [ROADMAP.md](ROADMAP.md). Capability priorities:
+[MoSCoW backlog](PRODUCT_BACKLOG.md). Continuation: [HANDOFF.md](HANDOFF.md).
 
-## Ready for a separately scoped task
-
-- Review the PM strategy, roadmap and MoSCoW product backlog with the user;
-  provenance is now recorded in [sources](sources/README.md).
-- Update the product contract with approved problem, users, outcomes, scope,
-  exclusions and authority.
-
-## Blocked on approved product direction
-
-- Define domains and features.
-- Define journeys, requirements and acceptance criteria.
-- Select technology stack and implementation boundaries; the application repository
-  is already recorded in [CONTRACT.md](CONTRACT.md).
-- Define design-system conventions, data/API contracts and security boundaries.
-- Plan implementation milestones and builder assignments.
-
-Items in the blocked section are prompts for future decisions, not approved scope.
-Milestone status and exit criteria live only in [ROADMAP.md](ROADMAP.md).
+- Review the external-agent architecture proposal and choose one Phase 1 connector slice.
+- Bound its requirements and acceptance checks before implementation; retain the three
+  existing feature owners instead of inventing unrelated domains.
+- Plan RM-06A infrastructure readiness in staging before real private data.
+- Keep broader strategy/audience choices distinguishable from the approved agent-first
+  credential principle; preserve support for humans without their own agents.
+- No further laptop sandbox investigation or installation required for Phase 0 closeout.

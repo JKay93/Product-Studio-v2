@@ -145,3 +145,23 @@ files. This authorizes preparing and running bounded local fixture checks and re
 their evidence. It does not authorize provider requests, credential inspection/copying,
 installations, global permission/configuration changes or expansion to private live inputs.
 The current fixed-fictional live workflow and original cumulative budget remain unchanged.
+
+## Phase 0 closeout and Phase 1 direction: 2026-09-29
+
+The user explicitly accepted closing Phase 0 as a bounded fictional/public-data
+prototype and deferring runtime isolation and provider-handling verification to
+Phase 1 infrastructure readiness, before any private-data pilot. This is a recorded
+scope revision, not evidence that confidentiality has been established. Current live
+implementation still accepts only its fixed fictional fixture; public-data input is
+not newly implemented. Initial tests use fresh sessions without personal-memory import.
+
+The user authorized pushing the reviewed application and studio records to their
+existing GitHub repositories, documenting what was delivered, and preparing the next
+chat's Phase 1 handoff. Publication is not production deployment.
+
+Approved architecture principle: BYOA integrates with an agent/harness, not necessarily
+its model provider. External users should retain provider credentials in their own
+runtime environment. The interface must not assume a CLI, provider or hosting location.
+This turn authorizes inspection and the smallest clean architectural proposal; it does
+not authorize implementing a remote connector, selecting all transports, or unrelated
+redesign. Detailed protocol/authentication design remains proposed for Phase 1 review.
