@@ -237,3 +237,38 @@ The user refined the requested roadmap: discuss features, appearance, architectu
 ## Detailed roadmap approved and publication authorized — 2026-09-30
 
 The user explicitly said "Approve, push to github and give me the handoff" after reviewing the detailed discuss/design → build/verify roadmap. Record ROADMAP.md as approved for its sequence and planning scope; publish the roadmap, supporting project records and Stage 1 foundation handoff to the existing Product-Studio-v2 GitHub repository. Next chat begins FND-01 discussion and FND-02 reuse inspection; concrete features, screens, stack and architecture are still to be decided before Stage 1.1. No immediate application implementation, new inference, new spending or production release follows. Historical app changes and ignored evidence remain local and preserved.
+
+## Human foundation approved — 2026-10-01
+
+The user said "Looks good, approved" to foundation revision 2 and the Calm workspace
+preview. [Decision 002](decisions/002-world-foundation.md) records exact candidate
+hashes and selected scope/design/stack. Authorize local Stage 1.1 implementation,
+compatible project-local dependencies, isolated checks/browser preview, independent
+review and walkthrough. Preserve existing source, saved work, ignored evidence,
+attempt identities and budgets. No weekly pilot, provider/agent calls, credentials,
+private inputs, new spending, application push/merge or deployment is authorized.
+
+## Foundation accepted; Stage 2 planning authorized — 2026-10-01
+
+After positive feedback on the delivered foundation, the user stated: "I have also
+checked the 200% zoom btw, its fine. Sure proceed with stage 2". Record the manual
+zoom result as user-reported PASS and close Stage 1.1 against its reviewed candidate.
+Begin Stage 2 discussion/design under ROADMAP.md; present the participation package
+for approval before Stage 2.1 implementation or live execution. The user wants two
+agents working together through complementary expertise and linked deliverables,
+rather than limiting the second agent to reviewing the first. Preserve the accepted
+foundation, original work and authority boundaries. No weekly pilot, credentials,
+private input, new spending, live provider runs or publication is authorized here.
+
+## Participation package approved; delivery held and publication authorized — 2026-10-01
+
+The user approved the reviewed Stage 2 package, then explicitly instructed:
+"Do not start anything yet, push to github then i would like some discussion".
+The user selected "Studio plans and application foundation" for publication scope.
+[Decision 003](decisions/003-agent-participation.md) binds the reviewed four-file
+candidate and records the immediate implementation hold. Publish the current studio
+records/model-routing updates to Product-Studio-v2 and the accepted Stage 1.1 human
+foundation to BYOA-World. Keep historical uncommitted pilot/connector application
+changes and all ignored stores/credentials/budgets local. No Stage 2.1 coding,
+runtime/account preflight or live execution begins before the user's discussion.
+The proposed live allowance remains unapproved; weekly pilot remains stopped.

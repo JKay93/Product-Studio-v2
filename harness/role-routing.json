@@ -4,7 +4,7 @@
   "mode": "advisory",
   "activation": {
     "autoSessionChange": false,
-    "note": "Advisory routing. Explicitly request the configured specialist model and effort when dispatching that role, verify host availability, and record observed routing separately; this file does not change sessions or dispatch agents."
+    "note": "Mandatory orchestrator dispatch policy; advisory describes this harness's lack of native activation. Read this file before every dispatch, verify host support, explicitly pass the role model, reasoning effort and fork_turns none, and record the request and returned agent ID. Unsupported routes block dispatch until an authorized substitute is selected. This file does not change sessions or launch agents; actual activation remains separately evidenced."
   },
   "roles": {
     "orchestrator": {
@@ -13,43 +13,43 @@
       "fork_turns": "none"
     },
     "builder": {
-      "model": "gpt-5.6-luna",
-      "reasoning_effort": "max",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
       "fork_turns": "none"
     },
     "productDesign": {
-      "model": "gpt-5.6-sol",
+      "model": "gpt-6.1-sol",
       "reasoning_effort": "medium",
       "fork_turns": "none"
     },
     "designer": {
-      "model": "gpt-5.6-sol",
+      "model": "gpt-6.1-sol",
       "reasoning_effort": "medium",
       "fork_turns": "none"
     },
     "qaRelease": {
-      "model": "gpt-5.6-sol",
+      "model": "gpt-6.1-sol",
       "reasoning_effort": "medium",
       "fork_turns": "none"
     },
     "qa": {
-      "model": "gpt-5.6-sol",
+      "model": "gpt-6.1-sol",
       "reasoning_effort": "medium",
       "fork_turns": "none"
     },
     "productManager": {
-      "model": "gpt-5.6-sol",
+      "model": "gpt-6.1-sol",
       "reasoning_effort": "medium",
       "fork_turns": "none"
     },
     "technicalSpecialist": {
-      "model": "gpt-5.6-sol",
+      "model": "gpt-6.1-sol",
       "reasoning_effort": "medium",
       "fork_turns": "none"
     }
   },
   "actualRouting": {
     "status": "unknown",
-    "reason": "Native activation is confirmed by the orchestrator, not by this advisory file."
+    "reason": "Actual activation requires independent host evidence and is not established by this advisory file or an orchestrator assertion."
   }
 }

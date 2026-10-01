@@ -3,7 +3,7 @@
 
 - **Owner:** Product Manager; orchestrator maintains status and evidence.
 - **Authority:** [CONTRACT.md](CONTRACT.md), latest discuss/design direction; [organization decision](decisions/001-project-organization.md) and [modularity rules](architecture/MODULARITY.md).
-- **Updated:** 2026-09-30. No committed dates.
+- **Updated:** 2026-10-01. No committed dates.
 - **Status:** **approved by the user on 2026-09-30**, with publication and new-chat handoff requested. Approval settles the stage sequence and planning scope; concrete designs, stack and implementation scope remain subject to each design-stage decision. It does not authorize model runs, installation, new spending or production release.
 - **Sources:** original ChatGPT PDF handoff S1 and latest user direction S2. The PDF supplies the product thesis, not these stage boundaries.
 
@@ -31,10 +31,10 @@ Work-package IDs such as `BYOA-FND-01` are separate from stage numbers and remai
 | Stage | Outcome and measure | Status | Lead | Dependency | Exit evidence |
 | --- | --- | --- | --- | --- | --- |
 | **0 — Connection feasibility** | Know which routes work and their limits | Existing evidence retained | Technical Specialist | Existing observations | Original closeout and external-route evidence |
-| **1 — Define World foundation** | Agree minimum features, appearance, architecture, stack, file layout, design system and skills | Proposed; next | PM with relevant specialists | Roadmap approval | User-reviewed foundation package and decisions |
-| **1.1 — Deliver World foundation** | Create/reopen a World and work as a human in a saved workspace | Proposed | Builder | Approved Stage 1 package | Human journey, independent review and user walkthrough |
-| **2 — Define agent participation** | Agree how two real agents connect, cooperate and obey boundaries | Proposed | PM / Technical Specialist | Working foundation | Approved route, interaction and verification plan |
-| **2.1 — Deliver agent participation** | Connect two independent agents and review their cooperative work | Proposed | Builder | Approved Stage 2 package and execution authority | Real journey, enforced denials and saved work |
+| **1 — Define World foundation** | Agree minimum features, appearance, architecture, stack, file layout, design system and skills | Approved, 2026-10-01 | PM with relevant specialists | Roadmap approval | [Decision 002](decisions/002-world-foundation.md); reviewed revision 2 |
+| **1.1 — Deliver World foundation** | Create/reopen a World and work as a human in a saved workspace | Accepted, 2026-10-01 | Orchestrator / user | Approved Stage 1 package | [Closeout](runs/stage1-foundation-delivery.md); positive user feedback and user-reported native 200% zoom PASS |
+| **2 — Define agent participation** | Agree how two real agents connect, cooperate and obey boundaries | Approved, 2026-10-01 | PM / Technical Specialist / Designer | Accepted foundation | [Reviewed participation package](runs/stage2-participation-design.md); independent QA PASS; [Decision 003](decisions/003-agent-participation.md) |
+| **2.1 — Deliver agent participation** | Connect two independent agents and review their cooperative work | Paused by user, 2026-10-01 | Builder | Approved Stage 2 package and execution authority | Real journey, enforced denials and saved work |
 | **3 — Define ongoing work** | Select useful workflow, resources, team needs and resumption behaviour | Proposed | PM / Designer | Observed Stage 2.1 use | Focused feature/design package |
 | **3.1 — Deliver ongoing work** | Repeat selected workflow across tasks and Sessions | Proposed | Builder | Approved Stage 3 package | Integrated workflow and recovery evidence |
 | **4 — Define organizational readiness** | Agree integrations, policies, infrastructure and private-data handling | Proposed; can move earlier if needed | Technical Specialist / PM | Selected team use and data classes | Concrete assurance/operations design |
@@ -302,7 +302,10 @@ Maintain this ledger in the relevant stage when execution begins; do not create 
 
 | Package ID | Status | Assigned owner | Candidate / approved record revisions | Acceptance criteria result | Evidence / review / user decision | Blocker or next action |
 | --- | --- | --- | --- | --- | --- | --- |
-| BYOA-FND-01 | proposed | PM role; not dispatched | Roadmap approved; design package pending | Pending | User approved roadmap 2026-09-30 | Begin foundation discussion in next chat |
+| BYOA-FND-01–12 | approved | User; orchestrator records | Foundation revision 2, [Decision 002](decisions/002-world-foundation.md) | Coherent reviewed package approved | User: "Looks good, approved", 2026-10-01; [QA review](runs/stage1-61-reassessment.md) | Foundation delivered and accepted |
+| BYOA-WLD-01–06 | accepted | Orchestrator / user | [32-file candidate](runs/stage1-foundation-delivery.md), manifest e1326773… | Reviewed automated/browser checks passed; user-reported native 200% zoom PASS | User positive preview feedback, zoom confirmation and "Sure proceed with stage 2", 2026-10-01 | Preserved human foundation; no publication implied |
+| BYOA-AGD-01–08 | approved | PM / Technical Specialist / Designer | [Four-file candidate](runs/stage2-participation-design.md), manifest 5525b408… | Coherent complementary work, route/authority/UI/limits proposal reviewed | Independent QA PASS; actual concept flow/narrow checks; current pair still unverified | Package approved under Decision 003; discuss concrete expertise/fixture before delivery resumes |
+| BYOA-AGD-09 | approved | User / orchestrator | Same reviewed package | User package approval recorded | Decision 003; subsequent user instruction holds implementation | Publish both repositories then discuss; no live allowance approved |
 
 No manual baseline, copy count, time-saving claim or successful-cycle quota is added as a gate. Verification supports the agreed journey. Later scope is selected from need, not implemented because it appears in this document.
 
@@ -358,10 +361,10 @@ Historical identifiers keep their original meanings. New `BYOA-*` packages repla
 
 ## Now, next and later
 
-- **Now:** roadmap approved; publish the records and provide the [Stage 1 handoff](handoffs/STAGE-1-FOUNDATION-HANDOFF.md). No implementation, model run or stack choice is part of this publication task.
-- **Handoff:** begin Stage 1 discussion and reuse inspection from the approved roadmap. Preserve data, evidence and authority limits; do not start immediate two-agent implementation.
-- **First work in new chat:** discuss FND-01 and inspect FND-02; develop screen options and architecture choices, then present a coherent foundation package before coding.
-- **Next delivery:** approved human World foundation, reviewed with user. Then design two-agent participation.
+- **Now:** Stage 1.1 is [accepted](runs/stage1-foundation-delivery.md), including user-reported 200% zoom PASS. Stage 2 [participation package](architecture/STAGE-2-PARTICIPATION-PLAN.md) is approved under [Decision 003](decisions/003-agent-participation.md). Stage 2.1 is held by the user for discussion. Weekly pilot remains stopped.
+- **Handoff:** continue [participation design](runs/stage2-participation-design.md) from the accepted foundation. Preserve originals, authority and configured model routing; do not repeat settled Stage 1 planning.
+- **First work in new chat:** discuss the approved participation package and settle any task/role/pair changes. Preserve the accepted foundation and original evidence. Do not start Stage 2.1 while the user's hold remains active.
+- **Next delivery:** Stage 2.1 implementation only after the user resumes it; real execution requires a separately approved live allowance. No two-agent run follows from planning alone.
 - **Later:** ongoing work, organization and outside expertise depend on their own discussions and demonstrated needs. Bring readiness forward if private data is needed; never bypass it.
 
 ## Change control

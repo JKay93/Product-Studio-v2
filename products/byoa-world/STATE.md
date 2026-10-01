@@ -1,10 +1,38 @@
 # Current state
 
-## Current direction — approved roadmap; Stage 1 design next
+## Current direction â€” participation approved; delivery held for discussion
 
-The user approved the detailed [roadmap](ROADMAP.md) on 2026-09-30 and requested GitHub publication and a new-chat handoff. Start from [Stage 1 foundation handoff](handoffs/STAGE-1-FOUNDATION-HANDOFF.md): discuss minimum features, appearance, architecture, stack, file organisation, design system and UI skills before coding. Stage 1.1 delivers the agreed human foundation; Stage 2/2.1 handles real agents. Prior pilot-led Phase 1 did not deliver the intended platform. Preserve useful code and evidence; do not resume weekly cycles. Historical notes below retain provenance, not current next-step instructions. Application Phase 1 changes remain local/uncommitted; this publication covers studio records.
+The user approved foundation revision 2 on 2026-10-01: "Looks good, approved".
+[Decision 002](decisions/002-world-foundation.md) records the selected features, Calm
+workspace, React/TypeScript/Vite + Node/SQLite, ownership/save/recovery and preservation
+rules. Stage 1.1 local implementation is accepted against its reviewed candidate.
+The existing application was snapshotted before edits; the clean human workspace
+is running at http://127.0.0.1:4330 with its separate foundation database. Follow
+[delivery evidence](runs/stage1-foundation-delivery.md) and ROADMAP.md for status.
+The 32-file candidate passed independent source review, 12 focused tests and
+typecheck/build. Actual browser checks cover saved restart, two-World separation,
+save failure/recovery, keyboard, narrow layout and conflicts. The user responded
+"looks good" to the delivered preview on 2026-10-01; positive feedback is recorded.
+The user subsequently confirmed that their manual 200% zoom check was fine and
+requested Stage 2. The zoom PASS is user-reported, not a new automated observation.
+The reviewed foundation is closed; [Stage 2 design assignments](runs/stage2-participation-design.md)
+now develop cooperative agents with complementary roles and linked deliverables.
+The participation package is approved under [Decision 003](decisions/003-agent-participation.md). The user then instructed an immediate hold: publish first, then discuss. Do not start Stage 2.1, runtime preflight or live execution.
+The [participation plan](architecture/STAGE-2-PARTICIPATION-PLAN.md),
+[route/contract assessment](research/STAGE-2-ROUTE-ASSESSMENT.md) and
+[design/concept](design-system/STAGE-2-PARTICIPATION-DESIGN.md) now form a reviewed
+four-file candidate; independent QA PASS is recorded in the Stage 2 assignment.
+Recommendation: two external Codex bridges with complementary briefâ†’plan work;
+actual current pair/preflight remains unverified. Package approval is recorded;
+the separately bounded live allowance remains unapproved. User explicitly authorized
+publication of both studio records and the accepted application foundation.
+No weekly pilot, provider calls, private input, new spending or deployment is authorized.
 
-Last material update: 2026-09-30. Owner: orchestrator.
+On 2026-10-01 the user approved trying Builder at GPT-6.1 Sol Low and PM/Designer/Technical Specialist/QA at Medium, then requested a fresh Stage 1 plan. Explicitly routed specialists reassessed the same journey. [Assignments/review evidence](runs/stage1-61-reassessment.md) distinguish submitted routing from unobserved backend activation. The reviewed recommendations are now approved under Decision 002.
+
+The user approved the detailed [roadmap](ROADMAP.md) on 2026-09-30 and requested GitHub publication and a new-chat handoff. Start from [Stage 1 foundation handoff](handoffs/STAGE-1-FOUNDATION-HANDOFF.md): discuss minimum features, appearance, architecture, stack, file organisation, design system and UI skills before coding. Stage 1.1 delivers the agreed human foundation; Stage 2/2.1 handles real agents. Prior pilot-led Phase 1 did not deliver the intended platform. Preserve useful code and evidence; do not resume weekly cycles. Historical notes below retain provenance, not current next-step instructions. Historical application Phase 1 changes remain local/uncommitted. The accepted Stage 1.1 foundation is now published at `fe4a8db`; [publication evidence](runs/publication-20261001.md) records scope, checks and preservation. Current studio publication includes the reviewed records and implementation hold.
+
+Last material update: 2026-10-01. Owner: orchestrator.
 
 Phase 0 is accepted under the user's explicitly revised prototype scope; see
 [roadmap](ROADMAP.md) for milestone status and [closeout](closeouts/PHASE-0-CLOSEOUT.md) for
@@ -72,7 +100,7 @@ remote main was independently confirmed at `0312413`. The closeout delivery rece
 records exact revisions and excluded local evidence. RM-05 delivery is accepted.
 
 
-## Launch repair verification — 2026-09-30
+## Launch repair verification â€” 2026-09-30
 
 The restricted outer launch failed during Codex initialization with filesystem access denied. The invocation matched Phase 0. An isolated verification with normal owner runtime-state access succeeded (234-character draft), followed by a successful complete external World handoff. Codex read-only sandbox, disabled tools, ephemeral execution and child environment allowlist were unchanged. No global permissions or configuration changed.
 
@@ -100,7 +128,7 @@ Builder full 90-test suite passed and a subsequently added expiry check passed w
 
 ## Weekly project brief pilot selected
 
-The user confirmed the proposed weekly project brief and proceeding with items 1–3. Three fixed fictional cycle fixtures and bounded external execution are being prepared under the current contract. Baseline human effort and final proposal acceptance require actual user observations, so no success or speed comparison is yet claimed. No weekly pilot call has run. The existing book-swap and accepted history remain preserved.
+The user confirmed the proposed weekly project brief and proceeding with items 1â€“3. Three fixed fictional cycle fixtures and bounded external execution are being prepared under the current contract. Baseline human effort and final proposal acceptance require actual user observations, so no success or speed comparison is yet claimed. No weekly pilot call has run. The existing book-swap and accepted history remain preserved.
 
 
 ## Weekly pilot implementation ready, baseline pending
@@ -120,7 +148,7 @@ User-requested baseline form now appears prominently on opening the weekly pilot
 User explicitly approved removing the manual baseline and testing actual external-agent workflow. PILOT revision 3 supersedes the exercise/timer/handoff prerequisite and excludes time-saving claims. Builder removes gating while retaining fixed fixtures, durable attempt caps, no retries and human acceptance. Any existing baseline records remain preserved; optional local notes are not agent inputs. Unsaved rewritten text was reported by the user but browser inventory currently exposes no tab and no baseline.json exists; user asked to paste it for preservation. Do not claim it recovered or refresh their existing page.
 
 
-## Reliability-only pilot delivery — 2026-09-30
+## Reliability-only pilot delivery â€” 2026-09-30
 
 Baseline removal passed independent review (19 relevant checks); same-version runtime relocation and safe failure projection passed 33 affected checks. Isolated browser checks confirmed enabled start and optional local-note save. The old unsaved user brief was not recovered; preserve the old 4319 page.
 

@@ -107,11 +107,12 @@ goal work and authorized delivery; stop for completion, user pause or a genuine 
 | New screen/journey | Design input before build, UI/functional review |
 | Auth, payment, permissions, migration | Specialist risk review and stronger checks |
 
-Explicitly request the configured model and effort when dispatching a specialist:
-Technical Specialist uses gpt-5.6-sol at medium effort; builder remains gpt-5.6-luna
-at max effort. Verify host availability and surface any unavailable requested route.
-Choose other capable available models using the host's settings. Route by task complexity,
-uncertainty and consequence; escalate after a concrete capability failure. Record
+Read `harness/role-routing.json` before every dispatch and explicitly request its
+model, effort and isolated context. The user-approved trial uses gpt-6.1-sol at low
+effort for Builder and medium for PM, Designer, Technical Specialist and QA.
+Verify host availability and surface any unavailable requested route. Substitution
+or effort escalation requires user authorization under the mandatory routing policy.
+Route assignments by task complexity, uncertainty and consequence. Record
 requested and observed routing separately. Configuration alone does not prove activation.
 Use deterministic tooling for formatting, indexing and mechanical validation.
 

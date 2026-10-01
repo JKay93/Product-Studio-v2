@@ -4,6 +4,16 @@ The studio coordinates separate projects. Read operating-system/STANDING_ORDERS.
 and only the selected project's instructions before project work. Explicit user
 instructions and host permissions take precedence.
 
+Before every sub-agent dispatch, read `harness/role-routing.json` and follow its
+configured role model, reasoning effort and `fork_turns: "none"`. Supply those fields
+explicitly to the host tool; omitting them and inheriting the parent model is not
+compliant. Check the host's available models/efforts first. If the configured route
+is unavailable, report the blocked role and ask for a substitute only when needed;
+do not silently fall back or rename a role to evade its route. Record requested
+routing and the returned agent ID in the task's compact assignment or review record.
+Keep actual model activation unknown unless the host exposes evidence. See
+`operating-system/STANDING_ORDERS.md` for dispatch and follow-up rules.
+
 Delegate substantive implementation to a builder sub-agent with a bounded goal,
 write scope, preserved decisions and acceptance checks. The orchestrator owns
 coordination and final acceptance; administrative edits may be made directly.

@@ -6,6 +6,11 @@ substantive implementation. Resolve within-scope issues without repeated user ap
 Escalate concrete missing authority, not elapsed time. Save concise durable state and
 report evidence, outstanding limitations and the next action honestly.
 
+Follow mandatory routing in [standing orders](../STANDING_ORDERS.md) for every
+dispatch and follow-up. Read `harness/role-routing.json`, verify host support, and
+explicitly request the configured model/effort with isolated context. Record the
+request and agent ID; do not infer actual model activation from configuration.
+
 Select the smallest useful records from the [template catalog](../templates/README.md).
 For document assignments, name the selected template and include essential content
 and recognizable structural alignment in acceptance criteria. Ensure review compares

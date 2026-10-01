@@ -12,8 +12,9 @@ an agreed design, interfaces, constraints and verification guidance. The builder
 owns implementation, implementation notes and tests; the PM coordinates product
 documentation. A separate independent reviewer still checks the implementation.
 
-Request gpt-5.6-sol with medium reasoning and isolated context (fork_turns: none)
-when dispatching this role. Verify availability and record requested versus observed
+Read the current `harness/role-routing.json` entry when dispatching this role. The
+user-approved trial requests gpt-6.1-sol with medium reasoning and isolated context
+(fork_turns: none). Verify availability and record requested versus observed
 routing; advisory configuration does not activate a model or change a host session.
 
 Use [technical context](../templates/technical-context.md) for observed system facts

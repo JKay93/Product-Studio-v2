@@ -33,9 +33,12 @@ This is keyword/graph retrieval, not embedding-based semantic search.
 
 The JSON templates illustrate the inherited contract/state interface. Replace example
 IDs, paths and revisions with the real task. Example PASS outcomes are schema examples,
-not evidence for this studio. A model routing file is advisory; verify requested versus
-observed routing with the actual host. Explicitly request the configured specialist
-model and effort at dispatch; the file cannot activate it. PM and Technical Specialist
+not evidence for this studio. The model routing file is advisory at the harness level
+because this CLI cannot launch agents; its routes are mandatory under the studio
+standing orders. Read it before every dispatch, verify host availability, explicitly
+request model/effort/isolated context, and record the returned agent ID. Block an
+unsupported route rather than silently inheriting or substituting a model. Distinguish
+requested from observed activation; the file cannot activate it. PM and Technical Specialist
 use the compact assignment/document workflow;
 the structured implementation/review protocol retains builder/productDesign/qaRelease roles.
 Optional productManager and technicalSpecialist routing entries are validated when

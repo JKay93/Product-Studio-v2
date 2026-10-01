@@ -340,18 +340,15 @@ test("configured models and optional product manager routing are not hard-coded"
 
 test("optional specialist and PM routing validates requested, observed and checkpoint consistency", () => {
   const root = copyStudio();
-  const entry = { model: "gpt-5.6-sol", reasoning_effort: "medium", fork_turns: "none" };
   try {
     const routingFile = path.join(root, "harness", "role-routing.json");
     const routing = JSON.parse(readFileSync(routingFile, "utf8"));
-    assert.deepEqual(routing.roles.technicalSpecialist, entry);
-    assert.equal(routing.roles.builder.model, "gpt-5.6-luna");
-    assert.equal(routing.roles.builder.reasoning_effort, "max");
     const core = Object.fromEntries(["orchestrator", "builder", "productDesign", "qaRelease"].map((role) => [role, routing.roles[role]]));
     routing.actualRouting = { status: "confirmed", observedAt: "2026-09-10T00:00:00Z", roles: core };
     writeFileSync(routingFile, JSON.stringify(routing));
     assert.equal(run(root, ["handoff", "routing", "validate"]).ok, true, "unused optional roles need no observations");
     for (const role of ["productManager", "technicalSpecialist"]) {
+      const entry = { ...routing.roles[role] };
       routing.actualRouting.roles[role] = { ...entry };
       writeFileSync(routingFile, JSON.stringify(routing));
       assert.equal(run(root, ["handoff", "routing", "validate"]).ok, true);

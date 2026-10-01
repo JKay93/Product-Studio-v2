@@ -1,0 +1,105 @@
+<div id="byoa-participation-concept" aria-label="BYOA World two-agent concept">
+  <header><span>BYOA World</span><span>Local owner · Concept</span></header>
+  <div class="world-layout">
+    <nav aria-label="World navigation"><button type="button" data-view="worlds">All Worlds</button><h2>Garden gathering</h2><button type="button" data-view="note">Planning note</button><button type="button" data-view="details">World details</button><button type="button" data-view="agents">Agents</button><button type="button" data-view="session" aria-current="page">Work sessions</button></nav>
+    <main>
+      <div class="eyebrow">CONCEPT · fictional material · no agents running</div>
+      <h1>From a note to an action plan</h1>
+      <div class="toolbar"><label for="byoa-preview-state">Preview state</label><select id="byoa-preview-state"><option value="setup">Setup</option><option value="a">A working</option><option value="b">B working</option><option value="review">Human review</option><option value="partial">B disconnected</option><option value="timeout">Result unconfirmed</option><option value="conflict">Note changed</option><option value="stopped">Stopped</option></select></div>
+      <ol class="steps" aria-label="Session steps"><li>Setup</li><li>A brief</li><li>B plan</li><li>Human review</li><li>Closed</li></ol>
+      <div id="byoa-status" role="status" aria-live="polite"></div>
+      <section id="byoa-content" aria-label="Current work"></section>
+      <footer id="byoa-actions"></footer>
+    </main>
+  </div>
+</div>
+<style>
+#byoa-participation-concept { --bw-canvas:light-dark(#f8f9f6,#181c19);--bw-panel:light-dark(#ffffff,#222923);--bw-ink:light-dark(#21342a,#ecf2eb);--bw-muted:light-dark(#53685b,#b7c8b9);--bw-line:light-dark(#d5dfd5,#465549);--bw-green:light-dark(#256947,#81d7a2);--bw-action-ink:light-dark(#ffffff,#102719);--bw-warn:light-dark(#7b4813,#f6cc8d);--bw-soft:light-dark(#edf4ed,#2b382e);font:16px/1.5 system-ui,sans-serif;color:var(--bw-ink);background:var(--bw-canvas);border:1px solid var(--bw-line);border-radius:10px;overflow-wrap:anywhere;}
+#byoa-participation-concept * {box-sizing:border-box;}
+#byoa-participation-concept header {display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:16px 22px;border-bottom:1px solid var(--bw-line);background:var(--bw-panel);font-weight:500;}
+#byoa-participation-concept .world-layout {display:grid;grid-template-columns:190px minmax(0,1fr);}
+#byoa-participation-concept nav {padding:18px 12px;border-right:1px solid var(--bw-line);background:var(--bw-panel);}
+#byoa-participation-concept nav button {display:block;width:100%;text-align:left;margin-bottom:6px;background:transparent;}
+#byoa-participation-concept nav [aria-current] {background:var(--bw-soft);color:var(--bw-green);font-weight:500;}
+#byoa-participation-concept main {padding:24px;min-width:0;}
+#byoa-participation-concept h1 {font-size:24px;font-weight:500;margin:8px 0 20px;}
+#byoa-participation-concept h2 {font-size:18px;font-weight:500;margin:12px 0;}
+#byoa-participation-concept h3 {font-size:16px;font-weight:500;margin:0 0 8px;}
+#byoa-participation-concept p {margin:8px 0;}
+#byoa-participation-concept .eyebrow,#byoa-participation-concept .secondary {color:var(--bw-muted);font-size:13px;}
+#byoa-participation-concept .toolbar {display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+#byoa-participation-concept button,#byoa-participation-concept select {font:inherit;min-height:44px;max-width:100%;padding:8px 12px;border:1px solid var(--bw-line);border-radius:6px;color:var(--bw-ink);background:var(--bw-panel);}
+#byoa-participation-concept .primary {background:var(--bw-green);color:var(--bw-action-ink);border-color:var(--bw-green);}
+#byoa-participation-concept button:disabled {opacity:.6;}
+#byoa-participation-concept .steps {display:flex;gap:8px 18px;flex-wrap:wrap;padding:0;list-style:none;margin:22px 0;color:var(--bw-muted);}
+#byoa-participation-concept .steps li.active {color:var(--bw-green);font-weight:500;text-decoration:underline;text-underline-offset:7px;}
+#byoa-participation-concept #byoa-status {padding:12px 14px;background:var(--bw-soft);border-radius:6px;margin-bottom:18px;}
+#byoa-participation-concept .warning {color:var(--bw-warn);}
+#byoa-participation-concept .participant {display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 0;border-bottom:1px solid var(--bw-line);}
+#byoa-participation-concept details {padding:14px 0;border-bottom:1px solid var(--bw-line);}
+#byoa-participation-concept summary {font-weight:500;}
+#byoa-participation-concept .paper {padding:16px;background:var(--bw-panel);border:1px solid var(--bw-line);border-radius:6px;white-space:pre-wrap;}
+#byoa-participation-concept .review-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+#byoa-participation-concept footer {display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;}
+#byoa-participation-concept textarea {width:100%;min-height:200px;font:inherit;padding:12px;border:1px solid var(--bw-line);border-radius:6px;background:var(--bw-panel);color:var(--bw-ink);resize:vertical;}
+@media(max-width:700px){#byoa-participation-concept .world-layout{grid-template-columns:1fr;}#byoa-participation-concept nav{border-right:0;border-bottom:1px solid var(--bw-line);display:flex;gap:8px;flex-wrap:wrap;}#byoa-participation-concept nav h2{width:100%;order:-1;margin:0;}#byoa-participation-concept nav button{width:auto;margin:0;}#byoa-participation-concept main{padding:18px;}#byoa-participation-concept .review-grid{grid-template-columns:1fr;}}
+</style>
+<script>
+(() => {
+const root = document.getElementById('byoa-participation-concept');
+const picker = root.querySelector('#byoa-preview-state');
+const content = root.querySelector('#byoa-content');
+const status = root.querySelector('#byoa-status');
+const actions = root.querySelector('#byoa-actions');
+const note = 'Arrange a fictional community garden gathering in four weeks. Invite neighbours to learn about planting herbs. Use the garden space and volunteer help. Weather and accessibility arrangements still need confirmation. No budget or attendance target has been set.';
+const brief = 'Purpose: a welcoming herb-planting gathering in four weeks. Audience: neighbours with varied gardening experience. Scope: a short demonstration, hands-on planting and a simple welcome area. Resources: garden space and volunteer help. Open decisions: weather fallback, accessibility, budget and attendance. Success: visitors can take part safely and understand the next planting steps.';
+const plan = '1. This week: name a human coordinator and confirm accessible paths, seating and weather fallback.\n2. Next week: confirm volunteer roles, herb supplies and a modest budget; then publish an invitation with access details.\n3. One week before: check the forecast, supplies and attendance; choose the fallback if needed.\n4. On the day: welcome visitors, demonstrate planting and offer supported hands-on participation.\nAssumptions: the garden is available; volunteers agree to the roles. The human must confirm these before commitments.';
+const valid = ['setup','a','b','review','partial','timeout','conflict','stopped'];
+const saved = window.openai?.widgetState?.privateContent;
+const restoredStep = valid.includes(saved?.step) ? saved.step : 'setup';
+const state = {step:restoredStep, draft: typeof saved?.draft === 'string' ? saved.draft : plan, accepted:!!saved?.accepted, savedPlan:typeof saved?.savedPlan==='string'?saved.savedPlan:null, savedRevision:saved?.savedRevision||3, aDone:!!saved?.aDone||['b','review','conflict','partial','timeout'].includes(restoredStep), bDone:!!saved?.bDone||['review','conflict'].includes(restoredStep), confirm:false, prepared:false, paired:false, density:'Comfortable'};
+function el(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;}
+function persist(){window.openai?.setWidgetState?.({modelContent:{concept:'two-agent-handoff',step:state.step},privateContent:{step:state.step,draft:state.draft,accepted:state.accepted,savedPlan:state.savedPlan,savedRevision:state.savedRevision,aDone:state.aDone,bDone:state.bDone}})?.catch(()=>{});}
+function button(text,fn,primary=false){const b=el('button',text,primary?'primary cursor-interaction':'cursor-interaction');b.type='button';b.onclick=fn;actions.append(b);return b;}
+function paper(title,text){const section=el('section');section.append(el('h3',title),el('div',text,'paper'));return section;}
+function disclosure(title,text){const d=el('details');d.append(el('summary',title),el('p',text,'paper'));content.append(d);}
+function go(step){state.step=step;state.confirm=false;if(step!=='stopped'){state.accepted=false;state.aDone=['b','review','conflict','partial','timeout'].includes(step);state.bDone=['review','conflict'].includes(step);}render();persist();}
+function render(){
+picker.value=state.step;content.replaceChildren();actions.replaceChildren();
+root.querySelector('main').style.padding=state.density==='Compact'?'16px':'24px';
+const index={setup:0,a:1,b:2,review:3,conflict:3,partial:2,timeout:2,stopped:4}[state.step];
+root.querySelectorAll('.steps li').forEach((n,i)=>n.classList.toggle('active',i===index));
+const labels={setup:'Ready to prepare one A → B round. Runtime routes await selection.',a:'A is creating the project brief. B is waiting for that brief.',b:'A’s brief is complete. B is using it to create an action plan.',review:'Both contributions are ready for human review. Planning note unchanged.',partial:'B disconnected. A’s brief is retained; no complete action plan is available.',timeout:'B’s result is unconfirmed. Usage may be unknown; no automatic retry.',conflict:'The planning note changed after this Session began. Your proposed plan is retained.',stopped:'World access closed. Already shared material may remain with the runtimes.'};
+status.textContent=state.step==='stopped'?(labels.stopped+(state.accepted?' Your selected plan remains saved.':'')):state.accepted?'Selected plan saved in this concept. Prior note revision and contributions retained.':labels[state.step];
+['A · Project brief','B · Action plan'].forEach((label,i)=>{const row=el('div',undefined,'participant');const left=el('div');left.append(el('div',label),el('div','Operated by you · route provisional','secondary'));const right=el('span',state.step==='setup'?(state.paired?'Connected — concept · idle':'Not connected in concept'):state.step==='stopped'?'Access closed':i===0?(index>1?'Brief retained':'Working — concept'):(state.step==='a'?'Waiting for A':state.step==='partial'?'Disconnected — concept':state.step==='timeout'?'Unconfirmed — concept':index>=3?'Plan retained':'Working — concept'));row.append(left,right);content.append(row);});
+if(state.step==='setup'){
+content.append(el('h2','Shared goal'),el('p','Create a project brief, then a practical action plan for the garden gathering.'));
+disclosure('A receives · saved planning note, revision 3',note);
+disclosure('B receives · same saved note + A’s committed brief + role',note+'\n\nHuman goal: create a project brief, then a practical action plan.\n\nA’s committed brief will be added after A completes; inspect its exact text before B dispatch.\n\nInstruction: use the note and A’s brief to propose a practical sequence. Apply your planning expertise. Identify assumptions and decisions for the human. No other World resources or private memory are imported.');
+content.append(el('p','Only these fictional inputs are shared. Runtime operators and configured providers may see sent material.','secondary'));
+content.append(el('p',state.prepared?(state.paired?'Prepared Session · both participant slots connected in concept.':'Prepared Session · connect its A and B slots next.'):'Task → prepare Session → connect participants → review context → Start. No grant carries into another Session.','secondary'));
+if(!state.prepared)button('Prepare Session — concept',()=>{state.prepared=true;render();});
+else if(!state.paired)button('Connect A and B — concept',()=>{state.paired=true;render();});
+const start=button('Start preview A working',()=>go('a'),true);start.disabled=!state.paired;
+}else if(state.step==='a'){
+disclosure('Inspect A’s sent context · frozen note revision 3',note);button('Preview A → B handoff',()=>go('b'),true);button('Stop access',()=>go('stopped'));
+}else if(state.step==='b'||state.step==='partial'||state.step==='timeout'){
+content.append(paper('A’s project brief · original contribution',brief));disclosure('Inspect B’s exact handoff · note + committed brief',note+'\n\nHuman goal: create a project brief, then a practical action plan.\n\nA’s committed brief:\n'+brief+'\n\nInstruction: turn the note and brief into a practical action plan. Identify assumptions and human decisions.');
+if(state.step==='b')button('Preview human review',()=>go('review'),true);else content.append(el('p','No complete B plan to save. A’s work and the attempt record remain available. Resolve the route or close this Session; a fresh attempt needs its own authority.','warning'));
+button('Stop access',()=>go('stopped'));
+}else if(state.step==='review'||state.step==='conflict'){
+disclosure('A’s project brief · original contribution',brief);disclosure('B’s action plan · uses A’s brief',plan);
+if(state.step==='conflict')content.append(paper('Current saved planning note · revision 4',note+'\nNew human decision: use the covered seating area if it rains.'));
+const label=el('label','Selected plan · human review draft');label.htmlFor='byoa-plan-draft';const area=el('textarea');area.id='byoa-plan-draft';area.value=state.draft;area.oninput=()=>{state.draft=area.value;persist();};content.append(el('h2','Choose what becomes saved work'),label,area,el('p','Edits are attributed to you. Original A and B outputs stay unchanged.','secondary'));
+if(state.confirm){content.append(el('p',state.step==='conflict'?'Replace the current revision 4 with your selected plan? Confirm you have incorporated the newer human decision.':'Replace planning note revision 3 with your selected plan? The previous revision will remain saved.','warning'));button('Confirm save selected plan',()=>{state.accepted=true;state.savedPlan=state.draft;state.savedRevision=state.step==='conflict'?5:4;state.confirm=false;render();persist();},true);button('Keep reviewing',()=>{state.confirm=false;render();});}
+else if(!state.accepted){button(state.step==='conflict'?'Review replacement of current note':'Save selected plan to note',()=>{state.confirm=true;render();},true);button('Stop access',()=>go('stopped'));}
+else {content.append(paper('Planning note · saved selected plan',state.savedPlan));button('Stop access',()=>go('stopped'));}
+}else{content.append(paper(state.savedPlan?'Saved planning note · selected plan, revision '+state.savedRevision:'Saved planning note · revision 3, unchanged',state.savedPlan||note));if(state.aDone)disclosure('Retained contribution · A’s brief',brief);if(state.bDone)disclosure('Retained contribution · B’s complete action plan',plan);if(!state.aDone)content.append(el('p','No completed contributions were available when access closed.','secondary'));if(state.accepted)content.append(el('p','Your acceptance remains recorded. The original note revision and both original contributions are retained.','secondary'));content.append(el('p','Stop closes future World access and rejects late writes. It does not promise process termination, zero billing or erasure.','secondary'));}
+}
+picker.onchange=()=>go(picker.value);
+root.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{if(b.dataset.view==='session'){render();return;}status.textContent=b.dataset.view==='agents'?'Connection concept: A and B have distinct participant identities. Operator: you. Real routes await technical selection.':b.dataset.view==='note'?'Planning note stays available for human work. No proposal changes it until explicit acceptance.':b.dataset.view==='details'?'Garden gathering · owned by the local human. Agent authority is separate from ownership.':'All Worlds remains the entry point; this Session belongs only to Garden gathering.';});
+window.addEventListener('openai:set_globals',event=>{const incoming=event.detail?.globals?.widgetState?.privateContent;if(valid.includes(incoming?.step)){state.step=incoming.step;if(typeof incoming.draft==='string')state.draft=incoming.draft;state.accepted=!!incoming.accepted;state.savedPlan=typeof incoming.savedPlan==='string'?incoming.savedPlan:null;state.savedRevision=incoming.savedRevision||3;state.aDone=!!incoming.aDone;state.bDone=!!incoming.bDone;state.confirm=false;render();}});
+render();
+if(globalThis.Tweak){const tweak=new Tweak({container:root,onChange:render});tweak.addSelect(state,'density',{label:'Workspace spacing',options:['Comfortable','Compact']});}
+})();
+</script>
