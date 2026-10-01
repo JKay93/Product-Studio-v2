@@ -3,9 +3,12 @@
 
 ## Current purpose
 
-Deliver a bounded Phase 0 local preview alongside its durable product records.
-The user authorized the three-feature scope below; broader product horizons remain
-proposals. Live interoperability and remote-data assurances require actual evidence.
+Maintain the accepted Stage 1.1 human World foundation and its durable records.
+The Stage 2 participation design is approved under Decision 003, with implementation
+held by the user for discussion after GitHub publication. Follow the latest dated
+authority entries below. Historical Phase 0 and pilot authorizations remain evidence;
+they do not authorize resuming the weekly pilot. Live interoperability and remote-data
+assurances require actual evidence and applicable execution authority.
 
 ## Planning authorization: 2026-09-29
 

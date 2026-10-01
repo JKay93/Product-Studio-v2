@@ -45,6 +45,15 @@ every platform.
 Actual GitHub studio tip is recorded after the push in the follow-up receipt below;
 local acceptance and publication are separate observations.
 
+### Verified studio push
+
+Studio repository: https://github.com/JKay93/Product-Studio-v2
+Remote main independently confirmed at `994a702ad93a20f2724cc619dc604aa2aa6b7f4f`,
+containing the 30-file records/preview/routing package. Published from
+`6a17e98695864a2232ac19413b0121a2be2eb9ca`, without force. This follow-up receipt
+records the verified content revision; its own administrative commit is additional.
+Both repository pushes succeeded. No deployment occurred.
+
 ## Hold and next action
 
 Stage 2 package is approved. Stage 2.1 is paused by the user for discussion after
