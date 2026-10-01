@@ -1,8 +1,5 @@
-<!-- studio {"id":"byoa-world:design:stage-2-participation","scope":"byoa-world","type":"design","status":"superseded","links":[{"relation":"requires","target":"byoa-world:roadmap:main"},{"relation":"requires","target":"byoa-world:contract:main"},{"relation":"requires","target":"byoa-world:decision:world-foundation"}]} -->
+<!-- studio {"id":"byoa-world:design:stage-2-participation","scope":"byoa-world","type":"design","status":"draft","links":[{"relation":"requires","target":"byoa-world:roadmap:main"},{"relation":"requires","target":"byoa-world:contract:main"},{"relation":"requires","target":"byoa-world:decision:world-foundation"}]} -->
 # Design: two agents working in a World
-
-> Historical external-pair package. [Decision 004](../decisions/004-native-agents-company-funding.md) supersedes the external-first route, manual pairing onboarding and funding assumptions. Reuse compatible Session, contribution, review and stop rules; this is not the current native-agent specification. Its review-time body remains below for reference. Read the [Stage 2 handoff](../handoffs/STAGE-2-NATIVE-AGENTS-HANDOFF.md) before new work.
-
 
 - Mode: feature composition across agent connection, work Session and document review.
 - Designer owner and last material update: Designer specialist; 2026-10-01.

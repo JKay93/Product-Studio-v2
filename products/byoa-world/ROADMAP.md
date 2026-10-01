@@ -2,7 +2,7 @@
 # BYOA World roadmap — discuss, design, build, verify
 
 - **Owner:** Product Manager; orchestrator maintains status and evidence.
-- **Authority:** [CONTRACT.md](CONTRACT.md), latest discuss/design direction; [organization decision](decisions/001-project-organization.md) and [modularity rules](architecture/MODULARITY.md).
+- **Authority:** [CONTRACT.md](CONTRACT.md), [native-first direction](decisions/004-native-agents-company-funding.md), latest discuss/design direction; [organization decision](decisions/001-project-organization.md) and [modularity rules](architecture/MODULARITY.md).
 - **Updated:** 2026-10-01. No committed dates.
 - **Status:** **approved by the user on 2026-09-30**, with publication and new-chat handoff requested. Approval settles the stage sequence and planning scope; concrete designs, stack and implementation scope remain subject to each design-stage decision. It does not authorize model runs, installation, new spending or production release.
 - **Sources:** original ChatGPT PDF handoff S1 and latest user direction S2. The PDF supplies the product thesis, not these stage boundaries.
@@ -33,16 +33,16 @@ Work-package IDs such as `BYOA-FND-01` are separate from stage numbers and remai
 | **0 — Connection feasibility** | Know which routes work and their limits | Existing evidence retained | Technical Specialist | Existing observations | Original closeout and external-route evidence |
 | **1 — Define World foundation** | Agree minimum features, appearance, architecture, stack, file layout, design system and skills | Approved, 2026-10-01 | PM with relevant specialists | Roadmap approval | [Decision 002](decisions/002-world-foundation.md); reviewed revision 2 |
 | **1.1 — Deliver World foundation** | Create/reopen a World and work as a human in a saved workspace | Accepted, 2026-10-01 | Orchestrator / user | Approved Stage 1 package | [Closeout](runs/stage1-foundation-delivery.md); positive user feedback and user-reported native 200% zoom PASS |
-| **2 — Define agent participation** | Agree how two real agents connect, cooperate and obey boundaries | Approved, 2026-10-01 | PM / Technical Specialist / Designer | Accepted foundation | [Reviewed participation package](runs/stage2-participation-design.md); independent QA PASS; [Decision 003](decisions/003-agent-participation.md) |
-| **2.1 — Deliver agent participation** | Connect two independent agents and review their cooperative work | Paused by user, 2026-10-01 | Builder | Approved Stage 2 package and execution authority | Real journey, enforced denials and saved work |
-| **3 — Define ongoing work** | Select useful workflow, resources, team needs and resumption behaviour | Proposed | PM / Designer | Observed Stage 2.1 use | Focused feature/design package |
+| **2 — Define agent participation** | Design two built-in agents, cooperative work, company payer and bounded usage | Ready for native-first revision, 2026-10-01 | PM / Technical Specialist / Designer | Accepted foundation | [Decision 004](decisions/004-native-agents-company-funding.md); original external package/reference review retained; revised native package pending |
+| **2.1 — Deliver agent participation** | Verify two real built-in agents, controlled usage and human acceptance | Paused by user, 2026-10-01 | Builder | Revised native Stage 2 package, user resume and applicable execution authority | Real journey, enforced denials, usage/budget evidence and saved work |
+| **3 — Define ongoing work** | Select useful SME/team workflows, funding administration, resumption and optional BYOA | Proposed | PM / Designer | Observed Stage 2.1 use | Focused feature/design package |
 | **3.1 — Deliver ongoing work** | Repeat selected workflow across tasks and Sessions | Proposed | Builder | Approved Stage 3 package | Integrated workflow and recovery evidence |
-| **4 — Define organizational readiness** | Agree integrations, policies, infrastructure and private-data handling | Proposed; can move earlier if needed | Technical Specialist / PM | Selected team use and data classes | Concrete assurance/operations design |
+| **4 — Define organizational readiness** | Agree company/private-data readiness and billing for a selected paid pilot | Proposed; can move earlier if needed | Technical Specialist / PM | Selected team use and data classes | Concrete assurance/operations design |
 | **4.1 — Deliver organizational use** | Run selected workflow with verified access and understood handling | Proposed | Builder | Approved Stage 4 package | Readiness evidence before authorized private pilot |
 | **5 — Define outside expertise** | Decide whether engagements, commerce or discovery solve a real need | Conditional | PM | Useful platform and observed demand | Bounded engagement design |
 | **5.1 — Deliver selected expansion** | Commission attributable outside work under scoped terms | Conditional | Builder | Approved Stage 5 package | Selected engagement and failure/termination evidence |
 
-**Principles:** “We host the World, not the intelligence.” Humans need no personal agent. BYOA, company-provided agents and optional platform defaults are choices. Provider credentials stay runtime-side; personal-agent memory is not imported by default. A World persists; a Session is a bounded engagement inside it. Ending access must not erase accepted work. Headless participation remains possible; spatial presentation is optional and unscheduled.
+**Principles:** World's work/permission contract remains runtime/provider-neutral. Built-in agents are the initial participation route for SME usability; optional BYOA follows verified native work. Humans need no personal agent. Provider credentials stay with the runtime component, including a platform-operated runtime. Company work uses company-funded access with no silent personal employee fallback or duplicate provider-compute charge. Personal memory is not imported by default. A World persists; a Session is bounded; ending access preserves accepted work. Basic usage/reservations are required before native execution; payment collection is a later readiness increment. Headless participation remains possible; spatial presentation is optional.
 
 The previous Phase 1 produced useful components but failed to deliver the intended platform. This roadmap preserves them, removes the weekly pilot as a gate and inserts the missing design discussion. **Stage 1.1 is human-first; two-agent collaboration belongs in Stage 2.1.**
 
@@ -135,43 +135,43 @@ Use the smallest useful record set; combine small documents when clearer. Propos
 
 ## Stage 2 — Discuss and design agent participation
 
-**Goal:** make two real agents participants with comprehensible human controls. **Entry:** working Stage 1.1 foundation. Inspect existing [connection](features/agents/connection/PRD.md), [Session](features/work/session/PRD.md), [document review](features/collaboration/document-review/PRD.md) and [boundary proposal](architecture/AGENT-WORLD-BOUNDARY.md) as historical inputs to reconcile, not automatic scope approval.
+**Goal:** design two real built-in agents with comprehensible human controls and bounded company-funded work. **Entry:** accepted Stage 1.1 foundation and [Decision 004](decisions/004-native-agents-company-funding.md). Stage means a roadmap stage, not a Phase 1 substage. The original external-pair package is retained as reference; its route approval does not authorize native implementation.
 
-**Minimum proposed delivery:** owner connects A and B, creates scoped Session, selects context/actions, assigns common task, observes B using A's contribution, reviews proposal, accepts or requests revision, ends access and reopens saved work. Two genuine independently running participants are required; different providers are not inherently required. Supported routes remain a design decision.
+**Minimum proposed delivery:** owner selects ready-made A/B roles, prepares a scoped Session using a saved note, previews recipients and limits, observes A's brief becoming B's input for a complementary plan, reviews/edits and explicitly accepts work, ends access and reopens retained results. No customer-launched runtime/pairing is required in the native default journey. Two genuine attributable agent executions are required; different models/providers and a large role catalogue are not. Exact task/roles and models remain to be selected.
 
 | Package | Decisions / discussion | Lead / contributors | Output / criterion | Dependency |
 | --- | --- | --- | --- | --- |
-| BYOA-AGD-01 | Which task needs both agents? What roles and handoff make cooperation useful? | PM; user | One fictional/public journey; dependent attributable contributions, not unrelated answers | Stage 1.1 |
-| BYOA-AGD-02 | Which supported runtime routes? How does owner launch/connect them? What if unavailable? | Technical Specialist | Evidence-based route matrix, auth/version limits, minimal recommended pair and blocked dependencies | AGD-01; reuse observed routes |
-| BYOA-AGD-03 | Distinguish human/agent/operator identity; pairing, reconnect, revoke and connection states | Technical Specialist; Designer | Enrollment lifecycle and truthful idle/working/failed/stopped UI; no credential import | AGD-02 |
-| BYOA-AGD-04 | Session purpose, participants, context/actions, expiry, allowance, request/result correlation and deduplication | Technical Specialist; builder | Minimal versioned contract, state transitions, enforced authority table and safe diagnostics | AGD-01–03 |
-| BYOA-AGD-05 | Exactly what does each agent receive? What stays private? What can operator/provider observe? | Technical Specialist; PM/Designer | Inspectable context preview, truthful disclosures and negative boundary cases | AGD-04 |
-| BYOA-AGD-06 | How do status, handoffs, contributions, partial output and failure appear in World? | Designer; PM | Integrated mockups using existing design system; understandable recovery | AGD-01/03–05 |
-| BYOA-AGD-07 | Review/revise/accept rules; what changes canonical work; old proposals after new Session/restart | PM/Designer; Technical Specialist | Interaction/state rules reusing continuity; human acceptance separate from execution success | AGD-04/06 |
-| BYOA-AGD-08 | Execution allowance, timeout, stop, usage uncertainty and checks before live runs | Technical Specialist; reviewer | Concrete attempt/test plan, no auto retry/reset and blocked-route handling | AGD-02–07 |
-| BYOA-AGD-09 | Agree routes, workflow, UI and limitations; determine actual execution authority | User; orchestrator records | Approved package and bounded assignments; resolve specific missing authority only if needed | AGD-08 |
+| BYOA-AGD-01 | Which SME-relevant fictional/public task needs both agents? What complementary roles and handoff? | PM; user | One bounded brief → plan journey and acceptance rubric; role examples are not selected fixtures | Stage 1.1 |
+| BYOA-AGD-02 | Which supported API/runtime/model route supplies native agents? Who operates it and protects provider access? | Technical Specialist | Evidence-based route, component ownership, auth/usage/limit support, alternatives and failure handling; reuse compatible external contract | AGD-01 |
+| BYOA-AGD-03 | Distinguish human, agent, operator and payer; provision native roles without external pairing | Technical Specialist; Designer | Session-scoped identity/grants, truthful readiness/revoke states; credentials outside World domain/browser/prompts | AGD-02 |
+| BYOA-AGD-04 | Session purpose, frozen inputs, expiry, attempt/result correlation and deduplication | Technical Specialist | Minimal runtime-neutral contract and enforced authority/lifecycle; native route gains no privileged canonical writes | AGD-01–03 |
+| BYOA-AGD-05 | Exactly what does each agent receive? Who can observe it and what is retained? | Technical Specialist; PM/Designer | Inspectable recipient inputs and B's actual committed A handoff; truthful handling and negative cases | AGD-04 |
+| BYOA-AGD-06 | Native selection/setup, work, contribution review, budget and failure screens | Designer; PM | Calm workspace mockups including preparing, working, partial/stopped, insufficient allowance, unknown cost and narrow/keyboard states | AGD-01/03–05/10 |
+| BYOA-AGD-07 | Review/edit/accept/conflict and retained-work rules | PM/Designer; Technical Specialist | Explicit acceptance into existing note; retained outputs after end/restart without revived authority | AGD-04/06 |
+| BYOA-AGD-08 | Execution ceilings, stop, failed attempts, uncertainty and permitted demonstration | Technical Specialist; reviewer | Separate offline checks and proposed bounded real-run allowance; no implicit spend or retries | AGD-02–07/10 |
+| BYOA-AGD-10 | Company payer, per-call usage/prices, task totals, reservations, concurrency and reconciliation | Technical Specialist; PM | Basic accounting/execution design; raw provider cost distinct from proposed customer charge; test balances only in prototype; no fixed credit conversion/markup selected | AGD-02–04 |
+| BYOA-AGD-09 | Agree revised native package and determine actual implementation/execution authority | User; orchestrator records | Coherent approved native PRD, technical/design package, checks and preserved data; maintain hold until user resumes | AGD-01–08/10 |
 
-**Required boundaries:** effective permission respects platform, World, agent-owner, Session and resource ceilings; narrower grants cannot expand them. Enforce authority outside the model. Credentials stay runtime-side. Stop denies future access/writes but cannot promise external process cancellation or erasure of already disclosed information. Proposed and canonical work remain distinct. Runtime cost, inference usage and future service price are separate; unknown is not zero.
+Package identifiers remain stable; numerical order is not a dependency order. **Required boundaries:** platform/World/operator/Session/resource ceilings; scoped context; runtime-side provider access; no direct agent acceptance of canonical work; stop denies future World access/writes with truthful cancellation/retention limits. Bind funding source to work; never use employee personal funds silently. Record provider usage and applicable rate basis without assuming every route exposes exact dollar cost. Unknown usage is not zero. Reserve before work, account for concurrent/in-flight calls, settle once, retain uncertain reservations and reconcile. Bound each call and overall work; a spending limit cannot promise task completion.
 
-**Artifacts:** reconcile existing three feature PRDs; add needed `TECHNICAL.md`/`DESIGN.md` in those feature directories; update architecture/decisions, preserving historical evidence. **Parallelism:** route assessment and interaction design overlap; authentication, Session contract and UI converge before build. **Exit:** approved participation package with supported pair and executable checks. **Exclusions:** arbitrary runtime support, private-memory import, marketplace, private connectors, implicit new spending and production deployment.
+**Artifacts:** revise the native participation package and supersede relevant historical external-only requirements/design; keep reviewed snapshots. Technical Specialist owns runtime/component/API/data and minimal cost contract; PM owns task and funding policy; Designer owns native onboarding/work/review/limit states. **Parallelism:** focused technical and design work after the task/payer requirements; no worker per table row. **Exit:** revised package approved before Stage 2.1. **Exclusions:** full checkout/credit sales, selected commercial rates, real company/tenant production identity, arbitrary runtime support, private memory/input, marketplace, implicit spending and deployment. Real provider runs require separate bounded authority; fake accounting is labelled test evidence.
 
 ## Stage 2.1 — Build and verify agent participation
 
-**Goal:** complete real cooperative journey in the foundation. **Entry:** AGD-09 and applicable execution authority. **Minimum for Stage 3:** scoped Sessions, independent participants, attributable proposals, human review, saved history and recoverable failure.
+**Goal:** verify real native cooperation in the accepted foundation. **Entry:** revised AGD-09 approval, user ends implementation hold, settled interfaces/preservation and applicable installation/execution authority. **Minimum for Stage 3:** bounded native work, attributable proposals, human acceptance, retained history, usage/budget accounting and understandable failures.
 
 | Package | Bounded work | Owner | Dependency | Acceptance evidence |
 | --- | --- | --- | --- | --- |
-| BYOA-AGT-01 | Enrollment/grants, scoped exchange, request/result identity | Builder; Technical Specialist for contract changes | AGD-09 | Auth, wrong-World/resource, expiry and duplicate denials without live inference |
-| BYOA-AGT-02 | Two selected real runtime adapters; runtime-side operation/auth | Builder | AGT-01 contract; parallel UI possible | Preflight/adapter checks, safe diagnostics, credential separation; simulations marked test-only |
-| BYOA-AGT-03 | Connect/status, Session setup, disclosure, activity and recovery UI | UI builder; Designer | AGT-01 interfaces / approved mockups | Owner identifies operators/context/controls; keyboard/responsive states work |
-| BYOA-AGT-04 | A-to-B work, proposal/revision/acceptance and history | Builder | AGT-01–03 | B uses A's actual contribution; authorized acceptance alone changes canonical work |
-| BYOA-AGT-05 | Denial, stop, expiry, disconnect, restart, duplicate and late-result checks | Builder; independent reviewer | AGT-01–04 | No revived grants, unauthorized write, silent acceptance or duplicate completion |
-| BYOA-AGT-06 | Approved bounded real demonstration after local checks | Orchestrator / runtime operators | AGT-05 and live authority | Actual runtime/Session/contribution IDs, dependent work and truthful usage/failure record |
-| BYOA-AGT-07 | User walkthrough and closeout | Orchestrator; user | Reviewed real candidate | Full journey, limitations and feedback; assistant does not substitute for human acceptance |
+| BYOA-AGT-01 | Native participant/grant binding, scoped exchange and request/result identities | Builder | Revised AGD-09 | Forged identity, wrong World/resource, expiry/duplicate denials without paid inference |
+| BYOA-AGT-02 | Selected native runtime/model adapter and provider access separation | Builder; Technical Specialist for contract deviations | AGT-01 | Two real attributable executions possible; credentials never in domain/browser/prompts; fake routes test-only |
+| BYOA-AGT-03 | Native roles/readiness, Session context/limits, status and recovery UI | UI builder; Designer | AGT-01/08 interfaces and approved mockups | Useful selection without external pairing; readable usage states and keyboard/responsive journey |
+| BYOA-AGT-04 | A-to-B work, proposal/edit/acceptance and retained history | Builder | AGT-01–03 | B gets A's actual committed contribution; explicit authorized human acceptance alone changes the note |
+| BYOA-AGT-08 | Basic payer/usage/price-basis ledger, reservations and execution ceilings | Builder; independent reviewer | AGT-01/02 and AGD-10 | Test per-call/task totals, concurrent reservations, duplicate settlement, insufficient allowance, failed/unknown usage, no personal fallback and no double compute billing; no real credit sale |
+| BYOA-AGT-05 | Stop/expiry/restart/late results and accounting failure regressions | Builder; independent reviewer | AGT-01–04/08 | Retained work, no revived grants/duplicate accepted output; unresolved cost not released as zero |
+| BYOA-AGT-06 | Separately approved bounded real cooperative demonstration | Orchestrator / user | AGT-01–05/08 review and concrete live allowance | Exact disclosed inputs, real A/B handoff, reported usage/prices/limitations; human document acceptance remains separate |
+| BYOA-AGT-07 | Integrated independent review and actual user walkthrough | Reviewer / orchestrator / user | Actual candidate and applicable demonstrations | Useful work, boundaries, UI and budget evidence; recorded limitations and disposition |
 
-**Verification:** human-only path still works; wrong-agent/World/Session/resource requests and prompt attempts to expand authority are denied by code. Stop/expiry rejects new work/late writes; replay does not duplicate state; restart preserves work without reopening grants. Compare actual screens to mockups, including pending, partial, timeout, disconnected and review states. Main actions work by keyboard and at narrow widths.
-
-**Completion:** full journey with selected real participants, enforced boundaries and user-visible retained work. If second route is unavailable, record/resolve that dependency; synthetic review does not satisfy it. Preserve failed attempts; do not loop unchanged or reset reservations. Existing weekly attempts are not a fresh allowance. **Exclusions:** weekly-cycle quotas, manual time/copy baseline, confidentiality guarantees and universal interoperability claims.
+**Completion:** agreed native journey and cost guards work on the reviewed candidate, human-only writing remains usable, saved work survives end/restart and the user reviews the delivered experience. Usage reporting/cost reconciliation is verified for the selected route, not promised for every runtime. No synthetic second agent substitutes for real cooperation. **Exclusions:** payment collection, commercial pricing launch, private-data assurance without readiness, arbitrary external runtime integrations, unattended recurring work and production release. Preserve original stores, historical attempts/budgets and additive migration/backup/fallback requirements.
 
 ## Stage 3 — Discuss and design ongoing work
 
@@ -183,8 +183,9 @@ Use the smallest useful record set; combine small documents when clearer. Propos
 | BYOA-WKD-02 | Need projects, tasks, another human, invitations, roles or concurrency? | PM; Designer/Technical Specialist | Selected hierarchy, membership/conflict rules; personal/team scope clear | WKD-01 |
 | BYOA-WKD-03 | Which document/note/artifact types, history, context, navigation/search are necessary? | Designer; PM/Technical Specialist | Resource lifecycle, permission-aware discovery and screens | WKD-01/02 |
 | BYOA-WKD-04 | What persists between Sessions? Templates, roles, handoffs, resume without revived grants? | Technical Specialist; PM | Resume/new-Session model and selected reusable workflow; no implicit memory transfer | WKD-02/03 |
-| BYOA-WKD-05 | Is company-provided/default-agent onboarding needed? How are access and compute authorized? | PM; Technical Specialist | Select/defer options; human-only and BYOA remain usable | WKD-01 / route limits |
-| BYOA-WKD-06 | Agree features, screens, architecture deltas and checks | User; orchestrator | Approved bounded delivery package; separate deferred backlog | WKD-01–05 |
+| BYOA-WKD-05 | How do company admins fund native/BYOA work and allocate employee/project limits? | PM; Technical Specialist | Selected company membership/payer/admin controls; no personal fallback; readiness requirements before real use | WKD-01/02; basic native route already Stage 2 |
+| BYOA-WKD-07 | Which optional BYOA connection adds value after native work is verified? | Technical Specialist; PM/Designer | Reuse external Codex route; select one supported runtime and company-funded access, or defer; no universal compatibility claim | Verified Stage 2.1; observed need |
+| BYOA-WKD-06 | Agree features, screens, architecture deltas and checks | User; orchestrator | Approved bounded delivery package; explicit optional BYOA selection/deferment | WKD-01–05/07 |
 
 **Artifacts:** selected feature PRD/design/technical deltas, material decisions and workflow test matrix. **Parallelism:** resource/navigation and membership design overlap after workflow choice; settle persistence/conflict interfaces before concurrent builders. **Exit:** user understands what ongoing work becomes possible and what is deferred. **Exclusions:** entire PDF resource inventory, broad agent catalogue, private data before readiness, spatial UI or assumed productivity savings.
 
@@ -194,10 +195,11 @@ Use the smallest useful record set; combine small documents when clearer. Propos
 
 | Package | Work and measurable criterion | Owner | Dependency / evidence |
 | --- | --- | --- | --- |
-| BYOA-WRK-01 | Selected task/project/member structure and access rules | Builder | WKD-06; scope/lifecycle checks |
+| BYOA-WRK-01 | Selected task/project/member structure, access and company payer/admin limits | Builder | WKD-06; scope/lifecycle/payer checks; real company identity and readiness selected explicitly |
 | BYOA-WRK-02 | Selected resources, history and discovery | Builder / Designer | WRK-01 interfaces; create/find/review/reopen evidence |
 | BYOA-WRK-03 | Template/resumption/concurrency rules | Builder | WRK-01/02; fresh grants, correct context and retained history |
 | BYOA-WRK-04 | Multi-task/Session integration, conflict and recovery | Builder / independent reviewer | Actual candidate; stale-write/interruption checks, search permissions if selected, Stage 1/2 regressions |
+| BYOA-WRK-06 | Optional selected BYOA connection through the existing World contract | Builder / independent reviewer | WKD-07 selection; verified native work; supported route/auth and usage authority; preserve denied access and honest reported/unknown costs |
 | BYOA-WRK-05 | User walkthrough across return visits | Orchestrator / user | Reviewed screens, keyboard/narrow layouts, empty/error/resume states and user disposition |
 
 **Completion:** selected ongoing workflow succeeds with usable navigation, retained work and controlled contributions. Unselected candidates remain proposed. **Exclusions:** unattended runs, external messages, extra spending or private sources without their authority; no automatic production release.
@@ -212,10 +214,10 @@ Use the smallest useful record set; combine small documents when clearer. Propos
 | BYOA-ORD-02 | Data classes, execution locations, storage/backup, operator/provider exposure and actual isolation? | Technical Specialist | Threat/boundary model, enforceable controls, prior findings reconciled; model behaviour is not isolation proof | ORD-01 |
 | BYOA-ORD-03 | Which first source/action? Preserve source permissions, consent, provenance, revocation and side-effect control? | Technical Specialist / Designer | Source-specific contract and UI; GitHub/Drive/Notion examples are not commitments | ORD-01/02 |
 | BYOA-ORD-04 | Ownership, retention/deletion/learning limits, export/delete/approval/permission authority? | PM / Technical Specialist | Human/agent matrix and truthful handling; direct edit is not destructive authority | ORD-02/03 |
-| BYOA-ORD-05 | Operations, observability, restore, incidents, budgets, usage and hosting? Is managed inference justified? | Technical Specialist / PM | Selected operational requirements, distinct cost types and concrete recovery/release plan | ORD-02–04 |
-| BYOA-ORD-06 | Agree pilot scope, infrastructure and verification; identify blockers | User / orchestrator | Approved package; actual private input waits for demonstrated delivery readiness | ORD-01–05 |
+| BYOA-ORD-05 | Operations, hosting and company billing for native/BYOA work? Which prepaid/payment, rate, refund/failure and reconciliation policy is justified? | Technical Specialist / PM | Selected operational/billing requirements, distinct provider/platform charges, testable funding limits and recovery/release plan; basic metering already Stage 2 | ORD-02–04 |
+| BYOA-ORD-06 | Agree pilot scope, infrastructure and verification; identify blockers | User / orchestrator | Approved package; paid/private pilot waits for demonstrated identity, funding, handling and operational readiness | ORD-01–05 |
 
-**Artifacts:** architecture/assurance records, selected integration feature records, handling/operations decisions and readiness matrix. **Parallelism:** administration UX and infrastructure assessment overlap; integration follows resulting data/authority contracts. **Exit:** bounded team/data plan with testable controls and explicit limits. **Exclusions:** universal confidentiality, remote forgetting, broad connectors, managed inference by default and automatic production launch.
+**Artifacts:** architecture/assurance records, selected integration feature records, handling/operations decisions and readiness matrix. **Parallelism:** administration UX and infrastructure assessment overlap; integration follows resulting data/authority contracts. **Exit:** bounded team/data plan with testable controls and explicit limits. **Exclusions:** universal confidentiality, remote forgetting, broad connectors, unbounded managed inference, employee-funded company work and automatic production launch.
 
 ## Stage 4.1 — Deliver the selected organizational workflow
 
@@ -225,9 +227,9 @@ Use the smallest useful record set; combine small documents when clearer. Propos
 | --- | --- | --- | --- |
 | BYOA-ORG-01 | Selected identity/tenant/World/agent/Session/resource isolation and policy ceilings | Builder / Technical Specialist | ORD-06; positive/negative boundary checks on actual infrastructure |
 | BYOA-ORG-02 | Selected source/tool with permissions/provenance/action controls | Builder | ORG-01; source revocation, denied resource, partial failure and safe errors |
-| BYOA-ORG-03 | Selected administration, usage, retention, audit and recovery | Builder / Designer | Approved plan; UI explains limits; restore, uncertainty and budget checks |
+| BYOA-ORG-03 | Selected company administration, payments/prepaid usage, reconciliation, retention, audit and recovery | Builder / Designer | Approved plan; UI explains limits; restore, uncertainty and budget checks |
 | BYOA-ORG-04 | Independent readiness review before private input | Reviewer; specialist only for concrete expertise gap | ORG-01–03; findings resolved, unsupported claims removed |
-| BYOA-ORG-05 | Separately authorized selected pilot and user review | Orchestrator / user/operators | ORG-04 plus authority; audit, outcome and accepted handling limits |
+| BYOA-ORG-05 | Separately authorized selected paid/private SME pilot and user review | Orchestrator / user/operators | ORG-04 plus authority; audit, outcome and accepted handling limits |
 
 **Completion:** selected team workflow works under verified source permissions and understood handling. Review admin/integration screens for keyboard, responsiveness, visual consistency and error states. Revocation proves future denial, not retraction of disclosed information. **Exclusions:** unrelated integrations and public production launch; release requires its own concrete readiness/authority decision.
 
@@ -304,8 +306,8 @@ Maintain this ledger in the relevant stage when execution begins; do not create 
 | --- | --- | --- | --- | --- | --- | --- |
 | BYOA-FND-01–12 | approved | User; orchestrator records | Foundation revision 2, [Decision 002](decisions/002-world-foundation.md) | Coherent reviewed package approved | User: "Looks good, approved", 2026-10-01; [QA review](runs/stage1-61-reassessment.md) | Foundation delivered and accepted |
 | BYOA-WLD-01–06 | accepted | Orchestrator / user | [32-file candidate](runs/stage1-foundation-delivery.md), manifest e1326773… | Reviewed automated/browser checks passed; user-reported native 200% zoom PASS | User positive preview feedback, zoom confirmation and "Sure proceed with stage 2", 2026-10-01 | Foundation published at fe4a8db under separate user authority; [receipt](runs/publication-20261001.md) |
-| BYOA-AGD-01–08 | approved | PM / Technical Specialist / Designer | [Four-file candidate](runs/stage2-participation-design.md), manifest 5525b408… | Coherent complementary work, route/authority/UI/limits proposal reviewed | Independent QA PASS; actual concept flow/narrow checks; current pair still unverified | Package approved under Decision 003; discuss concrete expertise/fixture before delivery resumes |
-| BYOA-AGD-09 | approved | User / orchestrator | Same reviewed package | User package approval recorded | Decision 003; subsequent user instruction holds implementation | Publish both repositories then discuss; no live allowance approved |
+| BYOA-AGD-01–08/10 | ready | PM / Technical Specialist / Designer | [Decision 004](decisions/004-native-agents-company-funding.md); original reviewed external package retained | Native-first direction settled; revised package not yet produced | User requested native-first/company-funded roadmap update and Stage 2 handoff | Revise task, native route/experience and basic usage/payer contract; no code/live runs |
+| BYOA-AGD-09 | proposed | User / orchestrator | Revised native package pending | Original external approval does not accept native implementation | Decision 004 retains Stage 2.1 hold | Present revised package for approval and user resume; live allowance remains separate |
 
 No manual baseline, copy count, time-saving claim or successful-cycle quota is added as a gate. Verification supports the agreed journey. Later scope is selected from need, not implemented because it appears in this document.
 
@@ -336,7 +338,7 @@ S1: **BYOA WORLD — Product & Architecture Handoff, 27 September 2026**, nine p
 | §9: agent/operator identity and Passport | Minimal identity in 2; richer declared/verified identity/provenance in conditional 5 |
 | §10: native knowledge, external KMS, context, optional graphs | One native resource in 1.1; richer work/context in 3; selected sources in 4; graphs unscheduled |
 | §§11–12: proposal/review, gateway and policy | Proposal/gateway in 2.1; broader resource/policy in 3/4 |
-| §§13–15: runtime/inference/budgets, engagements, ownership/memory/retention | Bounded execution in 2; accountable costs/handling in 4; outside engagements in 5; no default memory import/remote forgetting |
+| §§13–15: runtime/inference/budgets, engagements, ownership/memory/retention | Bounded execution and basic usage/reservations in 2; company administration and optional BYOA in 3; paid billing/accountable handling in 4; outside engagements in 5; no default memory import/remote forgetting |
 | §§16–20: headless core, optional visualization, inventory, business/network | Non-spatial core first; conditional business/discovery in 5; no automatic full inventory commitment |
 
 ### Legacy mapping
@@ -361,17 +363,17 @@ Historical identifiers keep their original meanings. New `BYOA-*` packages repla
 
 ## Now, next and later
 
-- **Now:** Stage 1.1 is [accepted](runs/stage1-foundation-delivery.md), including user-reported 200% zoom PASS. Stage 2 [participation package](architecture/STAGE-2-PARTICIPATION-PLAN.md) is approved under [Decision 003](decisions/003-agent-participation.md). Stage 2.1 is held by the user for discussion. Weekly pilot remains stopped.
-- **Handoff:** continue [participation design](runs/stage2-participation-design.md) from the accepted foundation. Preserve originals, authority and configured model routing; do not repeat settled Stage 1 planning.
-- **First work in new chat:** discuss the approved participation package and settle any task/role/pair changes. Preserve the accepted foundation and original evidence. Do not start Stage 2.1 while the user's hold remains active.
-- **Next delivery:** Stage 2.1 implementation only after the user resumes it; real execution requires a separately approved live allowance. No two-agent run follows from planning alone.
-- **Later:** ongoing work, organization and outside expertise depend on their own discussions and demonstrated needs. Bring readiness forward if private data is needed; never bypass it.
+- **Now:** the human foundation remains accepted and published. Native-first/company-funded direction is approved under [Decision 004](decisions/004-native-agents-company-funding.md). Stage 2 is ready for the revised design discussion; Stage 2.1 remains paused. Weekly pilot remains stopped.
+- **Handoff:** continue [Stage 2 native participation design](handoffs/STAGE-2-NATIVE-AGENTS-HANDOFF.md). Keep stable package IDs and prior useful controls; original external-pair plans are reference rather than native approval.
+- **First work in new chat:** settle one SME-relevant fictional task and complementary roles, inspect reuse, then reconcile native runtime/API access, permissions, company payer, usage/reservations and UI. Present a coherent revised package before coding. Do not repeat foundation planning or launch preflight/inference.
+- **Next delivery:** Stage 2.1 only after the revised package is approved and the user resumes implementation. Real inference additionally requires concrete bounded spending/execution authority; the new external-spending allowance remains zero.
+- **Later:** ongoing company work and optional BYOA in 3/3.1; billing and private/paid SME readiness in 4/4.1; conditional outside expertise in 5/5.1. Bring any needed private-data readiness earlier; no broad marketplace/payment system is a Stage 2 prototype prerequisite.
 
 ## Change control
 
 This is the single milestone-status source. [STATE.md](STATE.md) retains context; contract/decisions retain authority; verification/reviews/closeouts retain evidence. Old handoffs and obsolete pilot next steps are historical, not instructions to resume them.
 
-The material revision replaces immediate two-agent skeleton implementation with **define/design, then build/verify**, beginning with a human foundation. Roadmap approval settles sequence/planning scope. Each design stage then resolves its concrete choices with the user. Record them once; delegate routine implementation details and corrections without repeated approval.
+The original material revision replaced immediate two-agent skeleton implementation with **define/design, then build/verify**, beginning with a human foundation. Decision 004 now brings native-agent onboarding and basic cost control into Stage 2, preserves optional BYOA after native verification, and requires company-funded work. This direction update is not approval of an unseen native technical/UI package. Roadmap approval settles sequence/planning scope. Each design stage then resolves its concrete choices with the user. Record them once; delegate routine implementation details and corrections without repeated approval.
 
 | Change / risk | Owner | Response / review trigger |
 | --- | --- | --- |

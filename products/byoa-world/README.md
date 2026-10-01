@@ -1,8 +1,12 @@
 # BYOA World
 
-BYOA World hosts a shared working environment for humans and independent agents.
-The project contains product plans and requirements for an authorized bounded local
-preview. Live connection feasibility and wider product plans remain unverified.
+BYOA World hosts a shared working environment for humans and agents. The human
+foundation is accepted. Current direction is native agents first for SMEs, company-
+funded work, early usage/budget controls and optional BYOA after native verification.
+The revised native participation package is not yet approved or implemented.
+
+Continue with the [Stage 2 handoff](handoffs/STAGE-2-NATIVE-AGENTS-HANDOFF.md) and
+[Decision 004](decisions/004-native-agents-company-funding.md). Stage 2.1 remains held.
 
 Start with [product strategy](STRATEGY.md), [roadmap](ROADMAP.md), and the
 [MoSCoW product backlog](PRODUCT_BACKLOG.md). The backlog is a reference for
@@ -29,12 +33,14 @@ candidate capabilities and deferred ideas, including the optional visual World.
 Markdown source files are authoritative. Generated retrieval data is rebuildable
 and must not replace these records.
 
-## First local platform slice
+## Historical Phase 0 local slice
 
 - [Agent connection requirements](features/agents/connection/PRD.md): two participant routes; Codex Subscription and Claude API are selected live targets.
 - [Work session requirements](features/work/session/PRD.md): task, scoped context, lifecycle, trace and stop.
 - [Document review requirements](features/collaboration/document-review/PRD.md): attributable contributions and human acceptance.
 
+These records retain historical scope; they are reference inputs for the revised
+native package, not current provider/model or implementation authority.
 The preview can use clearly labeled deterministic adapters while live access is
 verified. Simulation is not proof of independent-agent interoperability. Application
 code belongs in the separate BYOA-World repository; these folders contain product

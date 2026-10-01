@@ -3,12 +3,13 @@
 
 ## Current purpose
 
-Maintain the accepted Stage 1.1 human World foundation and its durable records.
-The Stage 2 participation design is approved under Decision 003, with implementation
-held by the user for discussion after GitHub publication. Follow the latest dated
-authority entries below. Historical Phase 0 and pilot authorizations remain evidence;
-they do not authorize resuming the weekly pilot. Live interoperability and remote-data
-assurances require actual evidence and applicable execution authority.
+Maintain the accepted Stage 1.1 human foundation and design native agents first for
+an SME audience under [Decision 004](decisions/004-native-agents-company-funding.md).
+Company work uses company-funded access. Keep the World runtime/provider-neutral,
+move basic usage/reservations into Stage 2 and preserve optional later BYOA.
+This update authorizes records and the Stage 2 handoff. Stage 2.1 coding and live
+execution remain held pending a revised package and applicable authority.
+Historical Phase 0/pilot entries do not authorize resuming the weekly pilot.
 
 ## Planning authorization: 2026-09-29
 
@@ -275,3 +276,19 @@ foundation to BYOA-World. Keep historical uncommitted pilot/connector applicatio
 changes and all ignored stores/credentials/budgets local. No Stage 2.1 coding,
 runtime/account preflight or live execution begins before the user's discussion.
 The proposed live allowance remains unapproved; weekly pilot remains stopped.
+
+## Native-first direction and Stage 2 handoff authorized — 2026-10-01
+
+After discussing native agents, SME onboarding and company-paid usage, the user
+said: "Sure, update what is necessary, then give me the handoff to the next chat
+for stage 2". [Decision 004](decisions/004-native-agents-company-funding.md)
+records approved direction: ready-made native agents first, optional BYOA after
+verified native collaboration, company-funded work without employee personal
+fallback, and basic usage/price-basis/reservation controls in Stage 2. Update
+project roadmap/strategy/backlog/state and prepare the native Stage 2 handoff.
+Studio documentation publication remains within existing authority. No application
+change/publication, Stage 2.1 implementation, credential entry/runtime preflight,
+installation, provider call, real credit sale, new spending or deployment is
+authorized. External spending allowance remains zero; prototype live allowance,
+commercial pricing and complete native specification are not selected by this
+request. Preserve accepted foundation, original attempts/budgets and all saved work.

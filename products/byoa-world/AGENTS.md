@@ -6,10 +6,13 @@ These instructions apply only to BYOA World. Before project work, read
 records under [decisions/](decisions/). Follow the shared studio
 [standing orders](../../operating-system/STANDING_ORDERS.md).
 
-The current authorization includes the bounded Phase 0 local implementation and
-preview described in CONTRACT.md, following the user's 2026-09-29 instruction to
-proceed. Broader strategy remains draft. Do not infer extra features from examples,
-templates or the working name. Preserve explicit synthetic-versus-live labeling.
+Current direction is native agents first for SMEs and company-funded work under
+[Decision 004](decisions/004-native-agents-company-funding.md). The human foundation
+is accepted; Stage 2 revises participation design before Stage 2.1. Follow latest
+CONTRACT.md authority: documentation/handoff work is authorized, implementation and
+live execution remain held. Historical pilot/Phase 0 entries are not next-step
+instructions. Preserve explicit synthetic-versus-live labeling; proposed pricing,
+model/provider choices and unseen native designs are not approved by examples.
 
 When product scope is approved, organize feature-owned material as
 `features/<domain>/<feature>/`. Create actual domain or feature folders only from

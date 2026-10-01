@@ -1,12 +1,16 @@
 # Delivery follow-ups
 
 Milestone status: [ROADMAP.md](ROADMAP.md). Capability priorities:
-[MoSCoW backlog](PRODUCT_BACKLOG.md). Continuation: [HANDOFF.md](handoffs/PHASE-1-HANDOFF.md).
+[MoSCoW backlog](PRODUCT_BACKLOG.md). Continuation:
+[Stage 2 handoff](handoffs/STAGE-2-NATIVE-AGENTS-HANDOFF.md).
 
-- Review the external-agent architecture proposal and choose one Phase 1 connector slice.
-- Bound its requirements and acceptance checks before implementation; retain the three
-  existing feature owners instead of inventing unrelated domains.
-- Plan RM-06A infrastructure readiness in staging before real private data.
-- Keep broader strategy/audience choices distinguishable from the approved agent-first
-  credential principle; preserve support for humans without their own agents.
-- No further laptop sandbox investigation or installation required for Phase 0 closeout.
+- Select one SME-relevant fictional task and complementary native A/B roles under Decision 004.
+- Reconcile native runtime operation, scoped Session/proposal controls, company payer,
+  usage/price basis, reservations/limits and Calm UI before revised package approval.
+- Inspect existing code for reuse; preserve accepted foundation and historical data.
+- Keep optional BYOA after native verification; company identity/funding and paid/private
+  readiness belong to their selected packages in ROADMAP.md.
+- Resolve provider/model, live allowance and commercial pricing separately; example
+  credit rates/markup are not approvals. No new spend, preflight or inference now.
+- Stage 2.1 remains held. No weekly pilot, legacy Phase 1 connector dispatch or
+  foundation replanning is the next assignment.

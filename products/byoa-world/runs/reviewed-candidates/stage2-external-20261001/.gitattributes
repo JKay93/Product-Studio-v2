@@ -1,0 +1,2 @@
+# Preserve the exact reviewed source bytes independently of checkout line endings.
+*.snapshot -text

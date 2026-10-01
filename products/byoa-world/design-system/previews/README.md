@@ -9,7 +9,10 @@ Actual Stage 1.1 application captures: [desktop](foundation-desktop.jpg),
 The note content is fictional. [Stage 2 concept capture](stage2-checked-preview.jpg)
 shows the rendered concept, not live product agents.
 
-Approval and hold: [Decision 002](../../decisions/002-world-foundation.md),
+The Stage 2 external-pair concept is now historical reference; native role/setup and
+usage UI must be revised under [Decision 004](../../decisions/004-native-agents-company-funding.md).
+
+Original approval and hold: [Decision 002](../../decisions/002-world-foundation.md),
 [Decision 003](../../decisions/003-agent-participation.md). Actual evidence and limits:
 [foundation delivery](../../runs/stage1-foundation-delivery.md),
 [participation design](../../runs/stage2-participation-design.md).

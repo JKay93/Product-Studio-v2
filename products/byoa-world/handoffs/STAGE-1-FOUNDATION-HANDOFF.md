@@ -3,6 +3,8 @@
 
 Owner: orchestrator. Updated: 2026-09-30.
 
+> Historical handoff: Stage 1/1.1 is now accepted. Use the [Stage 2 native-agent handoff](STAGE-2-NATIVE-AGENTS-HANDOFF.md) and latest contract/roadmap for new work. Original foundation planning and preservation facts below retain their original dated meaning.
+
 ## Start here
 
 The user approved the detailed roadmap and requested its GitHub publication and this

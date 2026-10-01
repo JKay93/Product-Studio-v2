@@ -1,8 +1,5 @@
-<!-- studio {"id":"byoa-world:discovery:stage2-route-assessment","scope":"byoa-world","type":"discovery","status":"superseded","links":[{"relation":"reference","target":"byoa-world:contract:main"},{"relation":"reference","target":"byoa-world:decision:world-foundation"},{"relation":"reference","target":"byoa-world:rule:modularity"}]} -->
+<!-- studio {"id":"byoa-world:discovery:stage2-route-assessment","scope":"byoa-world","type":"discovery","status":"draft","links":[{"relation":"reference","target":"byoa-world:contract:main"},{"relation":"reference","target":"byoa-world:decision:world-foundation"},{"relation":"reference","target":"byoa-world:rule:modularity"}]} -->
 # Stage 2 route assessment and minimum technical contract
-
-> Historical external-pair package. [Decision 004](../decisions/004-native-agents-company-funding.md) supersedes the external-first route, manual pairing onboarding and funding assumptions. Reuse compatible Session, contribution, review and stop rules; this is not the current native-agent specification. Its review-time body remains below for reference. Read the [Stage 2 handoff](../handoffs/STAGE-2-NATIVE-AGENTS-HANDOFF.md) before new work.
-
 
 - Researcher / Technical Specialist owner: Stage 2 Technical Specialist; orchestrator owns scope reconciliation and acceptance.
 - Last material update: 2026-10-01.

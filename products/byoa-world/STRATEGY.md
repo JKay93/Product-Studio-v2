@@ -2,10 +2,9 @@
 # Product strategy: BYOA World
 
 - Product Manager owner: Product Manager.
-- Last material update: 2026-09-29.
-- Approved direction and source: S2 user direction prioritizes agent connectivity and
-  shared work with private-knowledge boundaries; Gather/Pokémon is deferred. The user
-  subsequently authorized a bounded local preview. Wider product scope remains draft.
+- Last material update: 2026-10-01. Native-first/company-funded direction is recorded under Decision 004; unrelated hypotheses remain draft.
+- Approved direction and source: [Decision 004](decisions/004-native-agents-company-funding.md), 2026-10-01: SMEs, built-in agents first, company-funded work, basic early cost controls and optional BYOA after native verification. Stage 2 is design work; no new implementation/spend authority. Original S1/S2 sources remain historical context.
+
 - Selected template: [Product strategy template](../../operating-system/templates/strategy.md).
 - Status: draft for user review; not an approved specification, technical design,
   provider compatibility claim, or additional implementation authority beyond the contract.
@@ -14,38 +13,40 @@
 
 ### Long-term outcome and near-term purpose
 
-**We host the World, not the intelligence.** BYOA World aims to give people and
-independently owned agents a persistent place to work together under explicit rules.
-The near-term question is whether heterogeneous agents can connect and share useful
-work while keeping agent-private and company-private knowledge appropriately separated.
+BYOA World provides a persistent workspace where humans and agents cooperate under
+explicit rules. The World work/permission contract remains runtime/provider-neutral.
+The initial agent experience uses ready-made, platform-operated agents for SME
+onboarding; externally operated agents remain optional after native workflow
+verification. This expands runtime operation responsibility without selecting model
+training, universal runtime support or imported personal memory.
 
 ### Primary users and urgent jobs
 
-The near-term audience includes a human owner who does not have an agent, as well as
-people or small teams bringing independently operated agents. The proposed job is:
-“Let participants work together on this project, using only the information and
-actions I choose, and let me review what becomes shared work.” The bounded preview
-lets the owner participate directly with two preconfigured participants. Providing
-a platform default agent is a separate later capability; BYOA is optional for users.
+The intended initial audience is SME owners/admins and employees completing company
+work. They should be able to select ready-made roles, supply scoped project context,
+inspect linked deliverables and explicitly accept saved work. Requiring employees
+to operate runtimes or configure personal provider access is not the default journey.
+Human-only work remains usable, and optional BYOA remains part of the product.
 
-Longer term, company owners need controlled participation around existing systems;
-agent owners need to contribute expertise without surrendering their entire runtime
-or private memory; contributors need clear tasks, context and ownership; reviewers
-need attributable proposals and understandable permissions. Direct human participation is part of the initial workspace. Company-provided and
-platform default agents remain participation options in the wider vision.
+Company work uses company-funded access. The person requesting work, the agent
+operator and the payer are separate identities. A company may fund native usage
+through an eventual purchased balance or supply its own approved agent/provider
+access. No personal employee balance fallback or duplicate charge for directly
+paid provider compute. This is a design principle, not an implemented billing system.
+SME usability, recurring need, willingness to pay and profitability remain unvalidated.
 
 ### How the parts tie together
 
 | Concept | Product responsibility |
 | --- | --- |
-| Agent | Independently owned intelligence, skills and private state; its runtime can remain with its owner. |
+| Agent | Attributable worker with roles/skills and scoped work access; native runtimes are platform-operated, BYOA runtimes can remain with their owner. |
 | World | Persistent personal/team/company environment with members, projects, resources and rules. |
 | Universe | Enforcement layer for identity, allowed actions, isolation, Session lifecycle and audit. |
 | Session | One engagement: purpose, participants, context, permitted actions, budget, outputs and expiry. |
 | Grant | Explicit permission scoped to an agent, resource, action, purpose and time. |
 | Passport | Evidence of the exact agent and owner/operator; not a universal trust score. |
 
-An owner connects an agent, a World admits it to a bounded Session, and it receives
+An owner selects native agents or later connects a supported BYOA agent; World admits it to a bounded Session, and it receives
 selected context and requests permitted actions. It exchanges contributions with
 other participants, submits a proposed result, and an authorized reviewer decides
 what becomes shared state. The Session ends with attributable outputs, revoked or
@@ -59,7 +60,7 @@ BYOA, company/default and external-agent participation; layered rules and approa
 policy templates; scoped grants, approvals, audit and safe contributions; native
 artifacts plus external KMS/tool connections, search and context packaging; Passport
 evidence and invitations; ownership, retention and learning controls; budgets,
-metering and optional managed inference; paid expertise and portable work history;
+metering and initially native execution with optional company-provided access; paid expertise and portable work history;
 eventual discovery, marketplace and cross-World collaboration. Optional graph and
 Gather/Pokémon visualizations remain referenceable candidates.
 
@@ -93,8 +94,7 @@ proof of feasibility or market demand:
   user approval, including the personal-World-before-shared-World order.
 
 The [contract](CONTRACT.md) and [organization decision](decisions/001-project-organization.md)
-retain their existing authority. The documentation request authorizes these planning documents; it does not
-approve their proposed implementation scope.
+retain their existing authority. Decision 004 approves the named native-first/company-funded direction and documentation update. The revised native technical/UI package and implementation remain subject to their actual authority.
 
 ### Alternatives, strengths and constraints
 
@@ -108,69 +108,57 @@ moat, and a public marketplace is not needed to establish initial value.
 
 | Pillar | Intended outcome | Measure | Assumption | Risk |
 | --- | --- | --- | --- | --- |
-| Connect independent agents | Existing agents participate without full recreation | Assess subscription/API routes separately; demonstrate at least two independent setups | Selected providers offer usable, permitted connection routes | Subscription access may not support integration; interoperability may require narrow adapters |
+| Make agent work approachable for SMEs | Ready-made roles produce useful linked work before runtime setup is required | Native A/B handoff, owner acceptance and observed onboarding success; optional BYOA verified separately | Selected native provider/runtime supports bounded execution and useful role outputs | Usability/SME demand unvalidated; native operation adds cost and credential responsibility |
+| Fund company work accountably | Company access funds employee work with understood charges | Payer binding, per-call/task usage, reservations/limits and later paid-pilot unit economics | Usage/prices/limits can be verified for selected routes | Missing usage, concurrent overruns, failure costs and commercial mispricing |
 | Share useful work within boundaries | Agents produce accepted joint work with controlled disclosure and actions | Task acceptance rubric; attributable contributions; no unauthorized gateway actions in agreed tests | A bounded task can use sufficiently limited context | Private information may appear in outputs; remote retention cannot be fully controlled |
 | Make participation inspectable | Owners can understand, review and stop work | Owner identifies participants, supplied context, permissions, accepted output and stop control | A basic control surface and trace are sufficient initially | Audit gaps or confusing controls hide unintended access |
-| Establish standalone value before expansion | One workflow justifies continued use | Completion, manual interventions and rework against a baseline set before pilot | A person or small team has a recurring coordination problem | Platform overhead exceeds benefit; network effects cannot rescue a weak initial workflow |
+| Establish standalone value before expansion | One workflow justifies continued use | Useful accepted output, observed coordination/rework and user feedback; any later comparison requires real observations | A person or small team has a recurring coordination problem | Platform overhead exceeds benefit; network effects cannot rescue a weak initial workflow |
 
-### Application to the first milestone
+### Application to the current design milestone
 
-**Connect agents before attempting to recreate them.** The handoff explicitly keeps
-the agent in its own environment. Test the minimum participation contract across
-independent setups; do not require memory, tools, credentials and orchestration to
-be migrated into a uniform runtime. APIs and subscription-supported integrations
-are separate feasibility questions. A paid subscription is not evidence that an
-integration route exists or is permitted. An unsupported route is a research result,
-not a reason to bypass provider restrictions.
+The foundation remains accepted. Stage 2 now designs native agents first and basic
+usage/reservation controls; Stage 2.1 remains held until the revised package is
+approved and implementation resumed. Preserve the runtime-neutral contract and
+the external Codex route as reuse evidence; it does not verify a native pair or
+automated cost accounting. No training/recreation of an employee's existing private
+agent is required. Optional BYOA follows native collaboration verification.
 
-**Prove collaboration and boundaries together.** Identity, Session scope, context
-access, action permissions, attributable proposals, review and audit need small
-versions from the start. A chat relay alone does not prove safe shared work.
-Security-sensitive restrictions must be enforced outside the model; prompts can
-guide behavior but cannot grant authority.
+Pricing remains to be designed using measured complete-workflow costs, including
+failed/uncertain attempts and selected tool charges. Currency balances, abstract
+credits, markup and company subscription/seat charges are proposals. The illustrative
+$10 provider cost / $13 company charge does not approve a 30% markup or establish
+profitability. Basic execution limits come before real native calls; actual payments
+and purchased balances come before a separately approved paid SME pilot.
 
-**Separate three kinds of information.** Agent-private material stays private unless
-deliberately contributed; company-private material is shared only as authorized;
-accepted work products become shared according to agreed ownership. Expertise can
-inform a deliverable without automatically importing an agent's memory into a
-company KMS. Preventing automatic import is not proof that generated text can never
-reveal a secret: evaluate that risk and bound the claims explicitly.
-
-**State the remote-execution limit honestly.** Sending context to an external runtime
-discloses it to that runtime. Revocation can prevent future access; it cannot retract
-previously disclosed information or prove deletion from an uncontrolled remote
-system. Retention policy, operator visibility, and enforceable controls must be
-distinguished. If the required assurance needs controlled execution or less context,
-that becomes a product/technical decision before use with sensitive data.
-
-**Start with one useful workflow.** Use synthetic private information for boundary
-experiments and a deliberately bounded task requiring both agents' contributions.
-Choose the first shared artifact and context source for that task. Broader KMS,
-connector coverage, policy administration, commerce and visual representation follow
-evidence of need. Core participation must remain possible headlessly.
+Historical feasibility experiments and Phase 0/pilot directions below retain their
+original evidence meaning. They do not instruct a new weekly pilot or supersede
+the latest authority. ROADMAP.md owns the current sequence and milestone status.
 
 ## Success and boundaries
 
 ### Outcome metric and baseline
 
-The proposed outcome is accepted joint work through supported connection routes.
-Record task completion, manual interventions and rework against the current workflow;
-select the task and rubric before testing. All baselines and results are pending.
+Proposed native outcome: A produces an attributable brief, B uses that actual
+committed brief for a substantive complementary plan, and the owner deliberately
+accepts the selected revision. Task/roles/rubric are Stage 2 choices. SME usability
+and productivity remain unvalidated; no manual baseline, copy count, time-saving
+claim or weekly-success quota gates this design task. Record actual observations
+if a later comparison is selected; never fabricate them.
 
-### Guardrail metric and proposed evidence
+### Guardrail metric and next-stage evidence
 
-| Question | Proposed evidence | Interpretation / limitation |
+| Question | Proposed evidence | Interpretation or readiness boundary |
 | --- | --- | --- |
-| Can agents connect? | Capability matrix with official supported routes, subscription/API entitlement, identity/state retained, limitations and billing visibility; an end-to-end demonstration across at least two independently operated setups. | Cover both subscription-supported and API routes in the assessment; if either cannot be demonstrated, record that gap explicitly. Two setups do not establish universal compatibility. |
-| Can they share useful work? | One agreed task needing both contributions; attributable exchange, combined reviewable output and a human acceptance rubric. Record completion, manual interventions and rework. | Select rubric and task before running; compare with the user's current coordination method when practical. |
-| Do boundaries hold in the tested setup? | Synthetic private-context probes, unauthorized resource/action requests, proposal review, expiry/revocation checks, and inspection of disclosed/persisted data. | Zero unauthorized gateway actions in the agreed tests; unexpected private disclosure is a finding to resolve. Passing tests is not proof of universal non-leakage or remote forgetting. |
-| Can an owner understand and control it? | Owner can identify who participated, which context was supplied, what was allowed, who accepted output, and how to stop further access. | A simple control surface and readable trace are sufficient; no spatial interface required. |
-| Is operation bounded? | Explicit usage allowance, known costs and unavailable cost fields; failure/disconnect behavior documented. | Unknown costs must remain unknown rather than be shown as zero. No new spending is authorized here. |
+| Does native cooperation produce useful work? | Real separately attributable A/B executions, exact handoff, source trace and owner rubric/acceptance | Requires revised package and bounded live authority; simulations test flow only |
+| Do World permissions hold? | Fictional unauthorized context/action, cross-World/resource, stale/duplicate result, stop/expiry/restart cases | No unauthorized writes in agreed tests; remote handling/isolation needs separate evidence |
+| Can an owner understand work and limits? | Owner identifies roles/operators/payer, recipient inputs, proposed/canonical state, allowance, uncertainty and stop | Calm workspace and readable controls; no external pairing in default onboarding |
+| Is company work funded and bounded? | Company payer binding, step/task usage/rate basis, concurrent reservations, insufficient funds, duplicate settlement and failed/unknown usage | No employee personal fallback or duplicate compute charge; unknown remains unknown; test balances are not payment evidence |
+| Is a paid/private SME pilot ready? | Selected identity, access, company administration, billing/reconciliation, retention/recovery and actual reviewed controls | Later separately authorized pilot; bring readiness forward before private input; no commercial rate selected here |
 
-Proceed to a product pilot only when the chosen task is useful and its supported
-connection routes and assurance limits are acceptable. Narrow the workflow or
-execution model if it requires unavailable access, excessive manual rescue, or
-confidentiality guarantees the selected runtime cannot support.
+Native operation adds runtime, credential, spend-control and reconciliation
+responsibilities. All of these need verification for the selected route. Current
+provider usage reports may not expose every billable item; calculate using applicable
+price rules and reconcile rather than present an unverifiable exact charge.
 
 ### Non-goals and dependencies
 
@@ -178,7 +166,7 @@ Non-goals include replacing existing SaaS by default, training foundation models
 universal trust scoring, mandatory crypto, a permanently running machine per agent,
 and treating World networking itself as proprietary differentiation.
 
-The first experiment depends on selecting agent setups, supported routes, a bounded
+The native prototype depends on selecting roles, supported runtime/model access, a bounded
 task and artifact, acceptable disclosure/retention limits, and implementation authority.
 Broader feature scope remains in the backlog rather than becoming a dependency by default.
 
@@ -188,14 +176,15 @@ Review when connection evidence, confidentiality needs, task usefulness or user
 direction changes. Unavailable supported access, unexpected disclosure, or excessive
 manual rescue calls for reconsidering the workflow or execution model.
 
-### Decisions for review
+### Decisions for the native Stage 2 package
 
-1. Confirm the two-track feasibility milestone and choose the first recurring task,
-   participating agent setups and shared artifact.
-2. Define the required knowledge boundary: what may leave the company, who may
-   observe it, what may persist, and which assurances require controlled execution.
-3. Review the later sequence after feasibility evidence. Personal-first versus a
-   small-team-first pilot remains open; neither is treated as approved.
+1. Select one SME-relevant fictional/public task, two complementary roles and rubric.
+2. Select supported native provider/model/runtime operation, access protection,
+   scope/disclosure, failure handling and preserved World interfaces.
+3. Define company payer and prototype allowance, usage/prices, reservations/ceilings,
+   reconciliation and honest UI; no live allowance or commercial price is inferred.
+4. Present revised technical/design/verification package before implementation.
+   Add optional BYOA after native verification; paid/private company use needs readiness.
 
 The [roadmap](ROADMAP.md) owns milestone status and exit criteria. The
 [MoSCoW product backlog](PRODUCT_BACKLOG.md) preserves candidate features and revisit
@@ -203,7 +192,7 @@ triggers; [BACKLOG.md](BACKLOG.md) tracks delivery/planning tasks. Revisit strat
 when connection evidence, confidentiality needs, task usefulness, or user direction
 changes—not simply because a calendar phase ends.
 
-### Local preview direction — 2026-09-29
+### Historical local preview direction — 2026-09-29
 
 The user authorized proceeding toward a first usable local platform preview. It
 contains one owner, one project, two preconfigured participant slots and synthetic
@@ -214,7 +203,7 @@ independent-agent connectivity and two-way knowledge assurance require their own
 evidence; a polished preview does not prove Phase 0. See the three feature PRDs
 linked in the [project map](README.md).
 
-## User-directed refinement: external-agent participation — 2026-09-29
+## Historical user-directed refinement: external-agent participation — 2026-09-29
 
 The user requires that externally operated agents can retain model-provider credentials
 in their existing environments. BYOA should integrate with the agent/harness through

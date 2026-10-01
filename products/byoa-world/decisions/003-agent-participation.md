@@ -6,6 +6,8 @@
 - Publication scope: user explicitly selected "Studio plans and application foundation".
 - Governs: ROADMAP Stage 2/2.1; supplements Decision 002. The immediate hold supersedes any instruction to begin Stage 2.1 now. Weekly pilot remains stopped.
 
+> Subsequent direction: [Decision 004](004-native-agents-company-funding.md) supersedes the external-first route and onboarding/funding assumptions. The user-approved original candidate identities below remain historical; exact text snapshots are retained in [the archive manifest](../runs/reviewed-candidates/stage2-external-20261001/manifest.json). The implementation hold and preserved work/authority rules remain in force.
+
 ## Context and decision
 
 Approve the reviewed participation package: two independently operated Codex bridges,

@@ -1,7 +1,7 @@
 <!-- studio {"id":"byoa-world:backlog:product","scope":"byoa-world","type":"backlog","status":"draft","links":[{"relation":"requires","target":"byoa-world:strategy:main"},{"relation":"requires","target":"byoa-world:roadmap:main"}]} -->
 # BYOA World product backlog — MoSCoW
 
-Owner: Product Manager. Last material update: 2026-09-29. Draft for user review.
+Owner: Product Manager. Last material update: 2026-10-01. General inventory remains draft; Decision 004 governs the native-first overlay below.
 This is the durable inventory of product candidates, including deferred ideas.
 It does not approve features or assign implementation work. [BACKLOG.md](BACKLOG.md)
 tracks planning/delivery tasks; [ROADMAP.md](ROADMAP.md) alone owns milestone status.
@@ -21,6 +21,27 @@ Sources are [S1 handoff, S2 user direction, S3 recommendations](sources/README.m
 when moving items; record priority changes and their reason here. Pulling an item
 into delivery requires a bounded requirement and applicable authority, not just
 changing its MoSCoW label. Select actual providers and protocols only after research.
+
+## Current native-first overlay — Decision 004
+
+Historical MoSCoW tables below retain their Phase 0/1 scope; they are not current
+delivery priorities. ROADMAP.md alone owns milestone status. [Decision 004](decisions/004-native-agents-company-funding.md)
+promotes native onboarding and basic cost controls without approving unseen designs.
+
+| Existing ID | Current priority / intended slice | Roadmap destination / boundary |
+| --- | --- | --- |
+| PB-019 | Must for selected native Stage 2 journey: two ready-made complementary roles | AGD-01–03 / AGT-02–03; small role set, no broad catalogue or private-agent cloning |
+| PB-004/014/028 | Must: bounded native work, company payer, per-call/task usage and price basis, reservations/settlement/unknown cost | AGD-08/10 / AGT-08; test accounting and approved prototype allowance; no real credit sales |
+| PB-002/003 | Preserve common participant/grant semantics; external BYOA route optional after native verification | WKD-07 / WRK-06; supported route and company-funded access selected before integration |
+| PB-007/008/009/010/013 | Must: attributable linked deliverables, human acceptance, trace, revocation and recoverable failure | Reuse compatible Stage 2 controls; verify changed runtime integration |
+| PB-018 | Selected company membership/payer/admin controls when ongoing team work is designed | Stage 3; minimum required real identity/readiness cannot be deferred past actual company use |
+| PB-028/029 | Company payments/prepaid usage and operational reconciliation before a paid SME pilot | ORD-05 / ORG-03/05; provider/platform charges distinct; rate, processor, conversion and refund policy open |
+| PB-029 | Outside-expertise engagement pricing/settlement remains conditional | Stage 5; separate from earlier company compute billing |
+
+No employee personal-funding fallback, duplicate provider-compute charge, automatic
+top-up or unbounded usage is selected. The illustrative credit/markup examples are
+not approved rates. This overlay is a planning inventory, not permission to implement
+or run models; revised native package approval and current authority still apply.
 
 ## Initial feasibility candidates
 
