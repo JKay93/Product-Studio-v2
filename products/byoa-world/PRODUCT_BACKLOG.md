@@ -1,10 +1,59 @@
 <!-- studio {"id":"byoa-world:backlog:product","scope":"byoa-world","type":"backlog","status":"draft","links":[{"relation":"requires","target":"byoa-world:strategy:main"},{"relation":"requires","target":"byoa-world:roadmap:main"}]} -->
 # BYOA World product backlog — MoSCoW
 
-Owner: Product Manager. Last material update: 2026-10-01. General inventory remains draft; Decision 004 governs the native-first overlay below.
+Owner: Product Manager. Last material update: 2026-10-03. Current direction is Decision 008; older inventories below retain their historical scope.
 This is the durable inventory of product candidates, including deferred ideas.
 It does not approve features or assign implementation work. [BACKLOG.md](BACKLOG.md)
 tracks planning/delivery tasks; [ROADMAP.md](ROADMAP.md) alone owns milestone status.
+
+## Current priorities and deferred work — 2026-10-03
+
+The [five-step roadmap](ROADMAP.md) is the current build order. [Decision 008](decisions/008-account-agents-world-experience.md) replaces the old fixed-trial-first sequence. The older inventories below are reference, not active assignments. Review deferred candidates once the core journey works; nothing is automatically pulled into delivery.
+
+| Item | Priority / when to revisit |
+| --- | --- |
+| **PB-043 — Replace brittle document validators** | High priority for agent document actions and collaboration, before another paid document trial. Preserve technical, access and usage controls; use instructions and human review for natural writing. |
+| **PB-039 — Starter templates and user-created agents** | Reuse in Agent Creation. Agents belong to the account; multiple orchestrators and selecting teams for Worlds replace the old World-bound restriction. No fixed catalogue is required. |
+| **PB-044 — Authorized orchestrator creates direct sub-agents** | Later, after manual creation and selected-team delegation work. Creation and execution require explicit authority. Nested/sub-sub-agents remain deferred. |
+| **PB-036 / PB-038 — External agents and additional runtime adapters** | After the hosted journey works. Owners retain runtime, model credentials and ownership; preserve shared World-facing interfaces now. |
+| **PB-040 / PB-041 — Broader Universe harness and OpenClaw-style configuration** | Future discussion. A small hosted runtime is needed for Chat; a broad framework or OpenClaw organization is not selected now. |
+| **PB-042 / PB-034 / PB-035 — Welcome, spatial World and knowledge graph** | Deferred. Keep a simple Chat entry and current workspace surfaces. |
+| **PB-018 / PB-023 / PB-024 / PB-028 / PB-029 / PB-030 / PB-037 — Team administration, connected knowledge, commercial billing and private-data readiness** | Later selected scope; readiness must precede actual private/company production use. Basic scoped access, company funding and usage limits stay in the current journey. |
+| **PB-025–027 / PB-031–033 — Rich Passport, outside engagements, portable history, marketplace and World networks** | No current implementation commitment. Revisit only for an observed need. |
+| **PB-045 — Remaining manual accessibility verification** | Retain outstanding screen-reader, native zoom, forced-colour and reduced-motion checks. Apply to the actual changed experience before wider release; do not claim previous partial checks complete. |
+| **PB-046 — Unfinished historical bakery workflow** | Park the unproved B execution, checkpoint, acceptance and reopen outcomes. Not a new milestone gate or retry instruction; retain failed attempts, receipts, usage and technical lessons. |
+
+Account ownership grants no automatic access to another World. Company-funded work and human review remain. The weekly pilot, publication and commercial expansion are not resumed.
+
+## High-priority document validator replacement — user direction 2026-10-03
+
+| ID | Candidate / intended outcome | MoSCoW | Source and rationale | Horizon / trigger |
+| --- | --- | --- | --- | --- |
+| PB-043 | Replace brittle document-content validators so natural writing is not rejected solely for using different words | Must; high priority for BYOA-04/05 | User explicitly requested high priority after the failed trial and validator discussion. [Actual outcome](runs/stage21-final-live-outcome.md) and [technical diagnosis](runs/stage21-final-failure-analysis.md) show duplicated keyword gates rejected paraphrases despite a complete provider response | Address before another paid document trial and in BYOA-04/05; planned, not implemented |
+
+Instructions should guide document structure and content; human review should assess usefulness and meaning. Replace the narrative keyword gates in both `minimumRemainingContent` and `eligible`, without weakening permissions, authorized knowledge access, budget accounting, provenance, protocol validity or completion/size limits. Do not impose a mandatory script or structured JSON format on ordinary document writing.
+
+Review the replacement offline using retained real responses, equivalent paraphrases, genuine omissions, incorrect calculations and unsupported claims. Distinguish technical failures from content needing human review; vocabulary alone must not determine success. Passing keywords must not count as proof of factual correctness. Preserve the human checkpoint and final acceptance.
+
+This records priority for future work, not implementation or spending approval. Preserve the failed trial, consumed grant, receipts and usage; no reset, relabelled success or paid retry. ROADMAP remains the milestone authority.
+
+## Agent configuration and future harness — user direction2026-10-02
+
+| ID | Candidate / intended outcome | MoSCoW | Source and rationale | Horizon / trigger |
+| --- | --- | --- | --- | --- |
+| PB-039 | BYOA-built starter definitions plus user-built agents, mixed and replaceable in explicitly selected teams | Must for selected Incubator slice | User-confirmed direction, [Decision007](decisions/007-default-and-user-built-agents.md); simple Orchestrator/Researcher/Planner/Reviewer definitions selected for current build | Bounded saved configuration; milestone evidence in ROADMAP |
+| PB-040 | Universe and default-agent execution harness | Won't this slice | User expects this later and requests keeping current agents simple; execution remains separate from saved definitions | Design after simple configuration/use exposes needs; readiness, scoped permissions, company funding and separate live authority first |
+| PB-041 | Evaluate OpenClaw-style agent instructions/configuration organization | Won't current readiness slice | User asked to note it and settle it next time; no architecture choice or implementation implied | Future configuration discussion; preserve current definitions until a concrete replacement is selected |
+
+Initial hierarchy remains orchestrator → direct sub-agents. Sub-sub-agents/nested delegation stay deferred. Missing specialists are suggested for approval, never silently added. This backlog records intent, not a grant to start harness/runtime work.
+
+## Deferred new-conversation welcome — user direction 2026-10-02
+
+| ID | Candidate / intended outcome | MoSCoW | Source and rationale | Horizon / trigger |
+| --- | --- | --- | --- | --- |
+| PB-042 | Lightweight welcome above a new Chat composer: World's purpose, suggested tasks and work needing attention | Won't current Chat-first proposal or initial delivery slice | User explicitly said “We don't need this yet. So backlog it.” Keep a simple new conversation and composer; the World name remains navigation context | Revisit only when the user selects this enhancement after the core Chat → Work → reviewed document → Knowledge journey is useful |
+
+This deferral does not select a dashboard or authorize implementation.
 
 ## How to read and use this backlog
 

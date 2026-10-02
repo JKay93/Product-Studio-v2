@@ -1,0 +1,9 @@
+# Stage 2.1 final readiness — technical assignment
+
+Technical Specialist;2026-10-03. Fresh routing/provenance requested Sol/medium/no-history matches; backend activation unknown. Existing studio/project authority, Decision006, actual outcome and native source read locally. No original DB, credential/environment, provider/count/preflight accessed. No app edits.
+
+[Specification](../architecture/STAGE-21-FINAL-READINESS.md) uses technical-specification core sections, existing task/PRD applicability and no new PRD. New fixed prospective identity stage21-bakery-20261003-final-readiness; own isolated storage/package; final512-token profile, separately validated authority/ledger and v2 descriptor actually consumed at A/B. Old validators/profiles/IDs/digests/manifests/data remain preserved and consumed.
+
+Critical funding correction: carry419177 =415000 unknown+975 probe+3202 priorA. Fresh208323 inside cumulative627500. Each conservative maximum202560; new B admission requires complete settled A expense≤5763 (old8965 applies only old remaining identity). Arithmetic remainder is not credit/authority. Separate final validator/controls/inspector/worker branch cannot reuse consumed remaining profile211525/carry415975.
+
+Builder scope and complete tests are specified: real existing NativeWork/HTTP/SQLite/journal paths with injected fake provider, source/instruction/carry freeze and independent review, durable acceptance/reopen, dormant credential-free inspection/helper and affected accessibility walkthrough. No new actual approval/profile/store/registry or paid action during preparation. Missing actual approval must fail before key reads/children/writes. User later needs only concrete new approval, existing-key runtime handoff, actual A checkpoint and semantic final acceptance. Model usefulness and invoice expense remain unproven until observed.

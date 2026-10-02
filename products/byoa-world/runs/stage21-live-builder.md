@@ -1,0 +1,19 @@
+# Stage2.1 live-compatible builder candidate — 2026-10-02
+
+Frozen bounded implementation; no credentials inspected, no authenticated preflight or provider request performed. Actual sponsor/project/exposure confirmation remains root/user work. Default startup remains live disabled. Original stores and old synthetic history were not migrated or relabeled.
+
+The optional fresh version3 store binds immutable sponsor/project/allowance/rates to the approved 420000 microUSD cap and pinned Haiku4.5 snapshot. Start reserves A207500+B210000 before dispatch; independent FULL SQLite authority pins store owner/path/profile and consumes the single trial before local Start commit. Same-path backup restoration, absent registry row, duplicate supervisor, or crash lock fails closed. Acknowledgement checks deadline/status/funding inside the store transaction. The 240-second deadline includes owner checkpoint; B requires explicit owner Continue. Unknown holds remain retained; live reconciliation is deliberately unavailable.
+
+Only the explicitly approved runtime supervisor reads a runtime credential after validated nonsecret profile/plan/exposure gating. World child has a sanitized environment; private per-attempt workers receive the credential privately. Fixed two HTTPS endpoints, streamed byte/time limits, no redirects, retries, tools or caching. Messages pins standard_only; Haiku4.5 omits unsupported inference_geo. Documented standard/global zero usage metadata is narrowly accepted; unknown charge classes retain uncertainty. Provider-reported usage is preserved separately from synthetic tests.
+
+Validation: all 69 foundation/native/configuration/readiness/live/worker/journal/transport/protocol checks pass; TypeScript and Vite production build pass. Tests use only injected fake provider chunks and loopback machine HTTP. New evidence covers live accounting/reopen/tampered funding, external consumed latch after backup restoration, process lock/crash, real private A/B wrapper and owner stop between count and inference, metadata compatibility. Baseline 60 checks reused and rerun; nine additional checks. Test output: tmp/byoa-stage21-live-20261002/test-results.txt.
+
+Source freeze: 20-file final-manifest.json SHA256 05B86CED307228826C6381B5335BB6941FFD788ED93A4A4E2EAD34311EB5D790. Pre-edit source snapshot is in the same temporary directory. No further production edits pending independent review.
+
+Fake UI preview: tmp/byoa-stage21-live-20261002/fake-preview.ts, port4348, isolated fresh temporary store, visible INJECTED FAKE PROVIDER / VERIFICATION ONLY banner. Launch from workspace root using bundled Node and that helper path. This helper never reads credentials or calls a provider; its injected provider is local, machine HTTP loopback only. Running process session63751. This evidence helper is outside shipping source.
+
+Accessibility: quiet lifecycle aria-live status excludes second-by-second countdown and artifact bodies; commands restore keyboard focus to the prior control or Work region. Root earlier full keyboard journey passed. Final fake live journey, actual screenreader, forced colors, and zoom remain root/manual checks; no universal accessibility claim.
+
+Remaining activation gates: independent QA freeze review, root fake UI retest, trusted actual sponsor/project/exposure/rate evidence, root-only authenticated preflight and exact one-trial launch. No general live harness or old-store migration is included.
+
+Final review copy correction: Inputs and usage read-model now separate provider raw-token expense estimate (not invoice-confirmed) from platform/customer charge (not charged — development test). Sponsor still pays provider. Only UI/read-model presentation changed; no ledger/pricing/authority change. Affected 21 native/live/readiness checks rerun PASS, typecheck and build PASS. Unaffected independent 69-check evidence retained. New client asset index-XtBg5eK6.js.

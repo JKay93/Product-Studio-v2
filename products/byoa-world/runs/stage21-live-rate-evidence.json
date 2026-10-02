@@ -1,0 +1,18 @@
+{
+  "verifiedAt": "2026-10-02T04:14:11Z",
+  "verifiedBy": "orchestrator public documentation review",
+  "sourceURLs": [
+    "https://platform.claude.com/docs/en/models/overview",
+    "https://platform.claude.com/docs/en/about-claude/pricing",
+    "https://platform.claude.com/docs/en/build-with-claude/token-counting"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "contextTokens": 200000,
+  "inputMicroUSD": 1,
+  "outputMicroUSD": 5,
+  "tokenCountingPrice": "free",
+  "route": "first-party standard global Messages API",
+  "reservedMicroUSD": 417500,
+  "approvedCapMicroUSD": 420000,
+  "limitations": "Public documentation supports model and rate basis only. Actual account entitlement, funding project and historic exposure remain unverified. No account or authenticated request occurred."
+}

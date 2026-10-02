@@ -1,12 +1,16 @@
 # BYOA World
 
-BYOA World hosts a shared working environment for humans and agents. The human
-foundation is accepted. Current direction is native agents first for SMEs, company-
-funded work, early usage/budget controls and optional BYOA after native verification.
-The revised native participation package is not yet approved or implemented.
+BYOA is a World where humans and independently owned agents work together. Prove
+the experience with hosted agents first: **Agent Creation → Chat → Knowledge →
+Agent Actions → Sub-agent Collaboration**. Agents belong to accounts; World access
+and runtime execution stay separate. External agents eventually retain their own
+runtime, model credentials and ownership.
 
-Continue with the [Stage 2 handoff](handoffs/STAGE-2-NATIVE-AGENTS-HANDOFF.md) and
-[Decision 004](decisions/004-native-agents-company-funding.md). Stage 2.1 remains held.
+Continue with the [Step 1 Agent Creation handoff](handoffs/STEP-1-AGENT-CREATION-HANDOFF.md)
+and [Decision 008](decisions/008-account-agents-world-experience.md). The human
+foundation is accepted; the new account-owned agent design is not implemented.
+Preserve Ink Clay, existing data, scoped access, company funding and usage controls.
+The old bakery trial is historical evidence, not the next delivery gate.
 
 Start with [product strategy](STRATEGY.md), [roadmap](ROADMAP.md), and the
 [MoSCoW product backlog](PRODUCT_BACKLOG.md). The backlog is a reference for

@@ -1,0 +1,44 @@
+# Stage 2.1 one-trial failure — 2026-10-02
+
+## Technical inspection — read-only
+
+Owner: Technical Specialist. Current routing reread: requested Sol/medium/fork_turns none retains recorded provenance; actual backend unknown. Scope: sanitized existing SQLite/journal evidence, source/protocol inspection and one deterministic in-memory response-validation comparison. Both live databases opened with `readOnly:true`. No key/capability read, provider request, rerun, live database/journal mutation, ledger reset or financial release performed. Root owns actual user journey, sponsor/provider account reconciliation and trial disposition.
+
+| Retained evidence | Actual observation |
+| --- | --- |
+| Session | `f98f504f-2978-4df1-9146-0ea10a7cdfa3`, failed, epoch2, synthetic0 |
+| A | `451e9062-e93f-462a-a2db-793d42fb8d9c`, unknown,207500microUSD maximum, expense null |
+| B | `51e24ae0-4c09-4ba5-98de-a44f75cb7dc1`, released,210000microUSD maximum, expense null |
+| Work content/usage | Contributions0, usage_reports0; no retained provider output/usage or accepted agent contribution |
+| Provider-call row | One for A; requestId/messageId/requestedModel/reportedModel/eventId all null. Rate basis is `anthropic-haiku45-standard-20261002`; dispatchDigest is `429b162324b973bee78cd180e42710bb56701643a889b803a213fdadd34aab9a`. A row is not evidence of a completed or billed provider call. |
+| Worker journal | A reservation, `.count` intent and `.intent` dispatch-intent exist; `.response` absent. Request digest `e50e6fce7488450975432e5b4db7ad86db47a2fec74555682a0257aa77626e8c`. |
+| Allowance |420000microUSD cap, frozen0. A's unknown hold remains207500; frozen0 does not establish another task allowance because the separate one-trial latch governs admission. |
+| Additional preparation | Another live Session `ba0d4df7-4e73-4dae-8bdc-550698b0a7ec` is prepared, epoch1, deadline0, with no attempts; it is not a second executed task. |
+
+### What the journal establishes and cannot establish
+
+Current `NativeWorker.execute` validates envelope/request, records reservation and count-intent, awaits `AnthropicAdapter.count`, checks deadline, writes dispatch-intent, then awaits the World dispatch acknowledgment **before** inference. Thus retained dispatch-intent establishes the count operation returned parsed/admitted input within the code's limit and the worker reached the next phase. It does not prove the World acknowledgment succeeded, that an inference request reached Anthropic, that a paid response returned, or any billed amount.
+
+The missing response record bounds failure to the interval after dispatch-intent and before durable successful response retention. Possible locations are dispatch permission/acknowledgment, inference transport/HTTP status/body limits/deadline/JSON, provider receipt validation, or response-journal persistence. These are alternatives supported by source control flow, not claims any one happened. World result submission follows durable `.response`, so no evidence here supports selecting that later phase as the cause.
+
+`boundedHttpTransport` discards status/request ID/body and maps errors to one generic transport failure. `NativeWorker.execute` catches all failures and replaces their cause with provider outcome unknown; `runLiveAttempt` maps them to a generic ended/no-retry error; the runtime CLI/supervisor prints only generic failure text. No diagnostic event or raw response survives. Consequently the exact original failure category, provider status/request ID and response usage cannot be recovered from these retained artifacts. Do not attribute this attempt to rate-limit, timeout, permission or schema rejection without new independent evidence. Request new account-side evidence only through root's authorized reconciliation, not another inference attempt.
+
+### Independently reproduced offline defect
+
+The current `result()` guard declares cache total counters optional but requires `u.cache_creation_input_tokens!==0 || u.cache_read_input_tokens!==0` before its later nullish-zero checks. Omission evaluates as undefined≠0 and rejects. This contradicts the agreed omitted-only optional-counter behavior in the activation specification.
+
+A deterministic direct `result()` comparison used the existing read-only A envelope and a fabricated bounded text response with pinned model, `end_turn`,100 input/10 output tokens and no transport. With cache-total fields omitted it rejected `provider_response_validation`; with the same two fields explicitly numeric0 it accepted. This proves a concrete validator defect independently of real provider work. Because the actual response was discarded, it **does not prove that defect caused this trial's failure**. Builder is assigned the smallest absent-only default: omission→0, explicitnull/wrongtype/nonzero→reject, preserving usage classes and spending holds.
+
+### Minimal diagnostics correction for future attempts
+
+Coordinate with the existing builder; no application edits by this Technical Specialist. Add separate exclusive `diagnostics/<validatedAttemptId>.failure.json` outside the canonical one-shot journal, at most2048UTF8 bytes, first failure only, no overwrite or journal/schema migration. Do not fabricate a new diagnostic for this past attempt. Fields: schemaVersion1, attemptId, phase, category, recordedAt; optional bounded integer HTTP status and request ID only if matching `^req_[A-Za-z0-9_-]{1,100}$`. No headers, key/capability, body/prompt, URL, environment, stack or raw exception message.
+
+Phases: claim, binding, journal_reserve, count, dispatch_permission, inference, response_validation, receipt_journal, world_submit. Categories: http_status, timeout, aborted, network, response_limit, response_utf8, response_json, provider_usage, provider_content, world_denied, journal, internal_unknown. Choose typed internal enums at the actual failure site rather than classifying untrusted error text. Capture sanitized status/request ID before transport rejects a provider response. Keep permission failure distinct from a possible inference send. Diagnostic-write failure never triggers provider retry or changes accounting; diagnostics are best effort, not new authority/durability proof.
+
+Required fake-only checks: omitted-cache response accepted; explicitnull/nonzero/wrongtype rejected; non200/status, timeout and schema categories distinguished; all secret/body/header canaries excluded; duplicate failure cannot overwrite; diagnostics unavailable preserves unknown hold/no retry. Existing trial/store/journal/authority registry and every original historical ledger remain untouched. An offline correction does not recover lost output/usage, release A's hold or authorize B/repeated A. Root records any later verified provider expense and renewed task authority separately.
+## Root UI/accounting disposition
+Root inspected actual4349UI: selected originalfailedtrial; Aunknown usage notsettled, aggregateheldUSD0.207500, settledestimate0 doesnotmeanactualproviderchargezero; Bunsent/released. Anotherpreparedsessionhasnoattempt, mustnotStart/reset. Screenshot actual-trial-failed.png saved. Rootperformed noRetry, Stop, settlement/reconciliation or acceptance. Stage2.1 remains incomplete. Nativezoom/forcedcolours/screenreader remainuntested. Consumedtrial/accountingauthoritypreserved. Offlinecodecorrection doesnot retroactivelyidentifyactualcause orauthorizeanotherpaidcall. CurrentserverownsactiveSQLitehandles, rawfilehashofconfigurationDBblockedbyWindows sharing; readonlySQLandhashableauthority/journalprovideboundedproof, notwholecanonicalfilepreservation.
+## Offline correction candidate
+Builder froze separate nine-file failure-fix manifest64DAAB04E809943F12AE6A92B0ABAE70812947BCC8EB8FF7A552554BE9B43804, with42 affectedfake-only checks/typecheck/build passing. Root independently matches allninehashes. Source changes invalidate the old20-source launcher pin; oldhelper mustrefuse, neverupdatedtoauthorizea retry. Independent QA reviewing. No actualfailed-attempt diagnostic isbackfilled; no historical holds released. Current failure remains unknown, no output, Stage2.1 incomplete.
+## Final disposition
+Independent QA confirms54 affectedfake-only checks, typecheck/build and nine frozenhashes. Authority/journalhashes unchanged and readonlyfailure/accountingfacts stable; activeconfigurationfile sharing-lock limits wholefilestateproof. Root accepts boundedofflinefix only. [Independent failure review](stage21-live-failure-review.md) records evidence. No paid rerun/release/reset, no actualcauseclaim or acceptedoutput. Current consumedtrial remainsfailed withAunknownUSD0.2075held andBunsent/released. Stoplocalserver normally iffinished; preservecanonicalfiles. Future paidtask needs separateconcreteauthority/reconciliation and reviewedlauncher, notthiscorrection.

@@ -1,0 +1,55 @@
+<!-- studio {"id":"byoa-world:technical-specification:stage21-retry-plan","scope":"byoa-world","type":"technical-specification","status":"draft","links":[{"relation":"requires","target":"byoa-world:contract:main"},{"relation":"requires","target":"byoa-world:technical-specification:stage21-live-activation"}]} -->
+# Stage 2.1: prepare one separately approved second trial
+
+Owner: Technical Specialist; orchestrator records approval and final candidate. Updated2026-10-02. **Preparation only.** User “ok proceed” follows the offer to prepare a separately approved retry and exact command; it does not approve another paid attempt. No provider/auth/count/inference, credential inspection, actual new live registry/store or approved retry profile is authorized by this preparation. The original one-trial authority remains consumed. Technical-specification interfaces/approach/readiness structure is retained; this compact delta references the existing full task/activation contracts instead of duplicating them.
+
+Sources: CONTRACT/STATE, [real test plan](STAGE-21-REAL-TEST-PLAN.md), [activation specification](STAGE-21-LIVE-ACTIVATION.md), [failure investigation](../runs/stage21-live-failure.md) and [54-check independent correction review](../runs/stage21-live-failure-review.md). The optional-cache-field fix and new safe diagnostics are verified offline; the actual lost failure cause remains unknown. Current root/source candidate pins must be regenerated for the new reviewed helper without refreshing the old consumed trial's helper.
+
+## Interfaces and behavior
+
+### Proposed exposure and actual approval boundary
+
+Propose exactly **one additional fixed A/B trial**, with its ownUS$0.42 raw-token cap. Retain the original A unknown maximum207500microUSD, never release it to fund another task. Proposed Stage2.1 aggregate ceiling is `207500 +420000 =627500microUSD`, **US$0.6275**, covering original unknown exposure plus the complete additional allowance. The new trial reserves417500microUSD before Start (A207500+B210000); rounded allowance420000 is not expected price or zero-cost guarantee. Historical5369microUSD usage estimate remains separately preserved, neither refunded nor invoice-confirmed nor included in the Stage2.1 ceiling. This proposal increases Stage2.1 authorized exposure and therefore needs explicit user spending approval after the concrete candidate is reviewed.
+
+Keep the fictional bakery fixture, exact text/hash/instructions/model, first-party standard Haiku4.5 rate1/5microUSD, output/input/byte/request limits, two count/two inference maximum and no fallback/retry/top-up unchanged. Messages uses standard_only and omits unsupported inference_geo; count body is model/system/messages only.240s total includes actual human A inspection. Missed checkpoint expires B; no extension or automatic replacement. Actual final title/body acceptance remains a separate human action. Four saved Incubator definitions and Universe/OpenClaw/nested-agent/pilot/publication remain outside scope.
+
+Existing Inputs/Usage disclosure needs only conditional second-trial text: **additional trial limitUS$0.42; preserved original unresolved exposureUS$0.2075; combined Stage2.1 exposure ceilingUS$0.6275**. These are allowance/hold figures, not provider invoice or confirmed bill; legacy5369microUSD estimate remains separately identified. No workspace redesign or extra agent flow. Any isolated review preview must show an obvious injected-fake banner and use temporary parent/second fixtures;4351 may serve that preview, reserving4350 for a later actually approved second launch. Preparation never creates the canonical retry directory/profile/store.
+
+### Fixed second identity and profile delta
+
+Only two explicit identities are supported: original `stage21-bakery-20261002-one-trial` and proposed `stage21-bakery-20261002-second-trial`. No arbitrary trial IDs, retry count or generic framework. Original profile/validator behavior is preserved. The second profile uses a distinct allowance ID, new planDigest for this file, distinct authorityRef `CONTRACT separately approved Stage2.1 second trial` and the same actually confirmed sponsor/provider route; root must supply nonsecret confirmed account/exposure evidence, never copied fictional values or a new-zero balance.
+
+Add the following exact `retry` object only to the fixed second profile:
+
+| Field | Bound value |
+| --- | --- |
+| `parentProfileDigest` | `5fcc2d07582e4e12a7311d0103790f6912697218980293a8c0cd63b6fc7d855b` |
+| `parentOwnerId` | `3b9b7a3a-55e4-4948-84c1-f5bd8512e391` |
+| `parentSessionId` | `f98f504f-2978-4df1-9146-0ea10a7cdfa3` |
+| `parentAttemptId` | `451e9062-e93f-462a-a2db-793d42fb8d9c` (A) |
+| `parentHeld` |207500microUSD |
+| `parentEvidenceDigest` | `c7252e9a6139d2126cc0d4dfb534f6be19ca32126da134dc77217d4fc8ac2b3a` |
+| `aggregateCap` |627500microUSD |
+| `spendingApprovalRef` |Actual later explicit spending-authority evidence reference; absent during preparation |
+
+All second-profile fields enter canonical profile digest and immutable registry binding. Current “ok proceed” cannot supply spendingApprovalRef. Require a separate root-created nonsecret approval receipt only after actual user approval: `{schemaVersion:1,trialId,profileDigest,planDigest,candidateManifestDigest,spendingApprovalRef,approvedBy,approvedAt,additionalCap:420000,aggregateCap:627500,parentEvidenceDigest}`. Validate exact identities/digests/caps and nonempty real approval reference; this is a local trusted-operator record, not cryptographic proof the user approved. Root must retain the actual approval message/source. Do not create an approved receipt/profile merely to demonstrate the helper.
+
+### Parent evidence guard
+
+Derive fixed original paths from the application root: `.stage21-live/authority.sqlite` and `.stage21-live/worlds.sqlite`. Never accept replacement parent paths from profile/browser. Open with SQLite `readOnly:true`; do not call the existing mutating authority opener/binder, set journal PRAGMAs or import records. Before second startup and again before its registry/World Start consumption require: original registry consumed by parent Session and matching profile/owner; Session failed,epoch2,synthetic0; A unknown/maximum207500/expense null; B `51e24ae0-4c09-4ba5-98de-a44f75cb7dc1` released/maximum210000/expense null; parent contributions0 and A usage reports0. Same sponsor/provider route must remain attributable to the existing original binding, with no silent funding switch.
+
+EvidenceDigest is SHA256 of canonicalProfile applied to `{authority:{trialId,profileDigest,storeOwnerId,consumedSessionId},session:{id,status,epoch,ownerId,synthetic},attempts:[{id,role,state,maximum,expense}AthenB],contributions:<count for parent Session>,usageReports:<count for parent A>}`. The exact sanitized read-only projection and digest were independently recomputed2026-10-02. Additional prepared Session `ba0d4df7-4e73-4dae-8bdc-550698b0a7ec` has zero attempts and is not paid execution; do not reject it as another consumed trial or include unrelated user edits in the digest. Missing/mismatched/changed parent facts refuse activation, preserving evidence for deliberate review. If later reconciliation changes the parent state, update the concrete evidence/approval deliberately; never auto-shrink or zero the207500 conservative exposure.
+
+## Approach and dependencies
+
+Second runtime root is fixed `.stage21-retry/` with its own authority.sqlite, worlds.sqlite, configuration sidecar, workers/journal.sqlite, diagnostic directory and launch.lock. Parent stores/registry/journal, source pins and old helper are never rewritten or unconsumed. New registry pins second profile/path/owner and independently consumed Session before World Start commit; interrupted admission remains consumed. New World restoration/deletion, process restart or switching Worlds cannot create another second trial. Duplicate launches refuse; registry ownership and original parent guard cover accidental resets, not malicious cross-machine tampering.
+
+Prepare one explicit second-trial activation flag and helper; old flag/profile cannot select the second trial and new flag/profile cannot select original or arbitrary directories. Helper's default/`-DryRun` validates reviewed source/plan pins and reports **pending separate spending approval**, without credential reads, server/worker processes, provider calls or canonical store creation. Approved launch requires the actual matching approval receipt/profile and independent final review. Runtime-only credential loader runs only after those gates; sanitized World child/private IPC/separate per-role runtime remain as reviewed. A starts only after owner Start, B only after actual owner Continue and fresh epoch/deadline/funding permission. Corrected optional counters and first-failure diagnostics remain enabled; do not backfill the old failed attempt.
+
+Builder supplies an exact usable PowerShell helper invocation and absolute path after its CLI exists; root shows that command with the pending-approval state. Any launch example must use the actual helper's supported parameters and clearly require the later approval receipt, not imply running it is currently authorized. Canonical live files are created only by a later authorized launch, never by preparation tests. Tests inject a temporary application root with synthetic parent/second fixtures. Public model/rate evidence already checked earlier today remains applicable absent changed documentation; refresh before a later dated launch. No authenticated preflight is needed to prepare this package.
+
+## Verification and readiness
+
+Independent review must bind the actual second-trial manifest/helper/document and show: missing approval refuses before key read/send/process/store creation; wrong first/second/third ID/path/authority/profile/plan/source pin refuses; parent read-only guard matches exact evidence, tolerates unrelated prepared Session, and fails missing/tampered/consumed-owner/changed exposure; parent file hashes unchanged in closed temporary tests; second registry persists one-trial consumption across crash/restart/restored World; original validation/consumed trial unchanged; duplicate latch/command/receipt cannot dispatch another role; aggregate exposure retains207500+fresh420000; same-model endpoint limits/provenance/diagnostics and current fake-only regression/build/typecheck/boundary checks pass.
+
+No preparation evidence claims the real retry succeeded or fixes the lost original cause. Final approval request names additionalUS$0.42, combined Stage2.1US$0.6275 maximum exposure, actual existing sponsor/account and retained legacy estimate, fixed inputs/one task, real checkpoint/240s/no retries, candidate/review/command and runtime secret placement. Until explicit approval, leave actual profile/receipt absent and helper disabled. After approval root may bind/launch under that exact authority; actual output/usage/unknown holds/diagnostic/checkpoint/acceptance outcome is recorded, never inferred from code tests.

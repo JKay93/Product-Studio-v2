@@ -1,5 +1,7 @@
-<!-- studio {"id":"byoa-world:handoff:stage-2-native-agents","scope":"byoa-world","type":"handoff","status":"approved","links":[{"relation":"requires","target":"byoa-world:roadmap:main"},{"relation":"requires","target":"byoa-world:contract:main"},{"relation":"requires","target":"byoa-world:decision:native-agents-company-funding"}]} -->
+<!-- studio {"id":"byoa-world:handoff:stage-2-native-agents","scope":"byoa-world","type":"handoff","status":"superseded","links":[{"relation":"requires","target":"byoa-world:roadmap:main"},{"relation":"requires","target":"byoa-world:contract:main"},{"relation":"requires","target":"byoa-world:decision:native-agents-company-funding"}]} -->
 # Stage 2 handoff — design native agents and company-funded work
+
+**Historical handoff; superseded for next steps on 2026-10-03.** Continue with the [Step 1 Agent Creation handoff](STEP-1-AGENT-CREATION-HANDOFF.md), [Decision 008](../decisions/008-account-agents-world-experience.md), the current [roadmap](../ROADMAP.md) and [contract](../CONTRACT.md). The old two-agent package/trial sequence below is reference, not an instruction to resume it.
 
 Owner: orchestrator. Updated: 2026-10-01. Authority: user requested the necessary
 updates and next-chat Stage 2 handoff after reviewing native-first roadmap changes.

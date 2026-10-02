@@ -2,12 +2,16 @@
 # Product strategy: BYOA World
 
 - Product Manager owner: Product Manager.
-- Last material update: 2026-10-01. Native-first/company-funded direction is recorded under Decision 004; unrelated hypotheses remain draft.
-- Approved direction and source: [Decision 004](decisions/004-native-agents-company-funding.md), 2026-10-01: SMEs, built-in agents first, company-funded work, basic early cost controls and optional BYOA after native verification. Stage 2 is design work; no new implementation/spend authority. Original S1/S2 sources remain historical context.
+- Last material update: 2026-10-03. Current user direction is [Decision 008](decisions/008-account-agents-world-experience.md); unrelated hypotheses remain draft.
+- Approved direction and source: [Decision 008](decisions/008-account-agents-world-experience.md), 2026-10-03: account-owned agents and the five-step hosted-first journey. Preserve Decision 004's company funding and basic usage controls. Original S1/S2 sources and former stage priorities remain historical context; documentation updates add no implementation/spending authority.
 
 - Selected template: [Product strategy template](../../operating-system/templates/strategy.md).
 - Status: draft for user review; not an approved specification, technical design,
   provider compatibility claim, or additional implementation authority beyond the contract.
+
+## Current direction — 2026-10-03
+
+Humans and independently owned agents work together in Worlds. Users create account-owned agents, usually an orchestrator, and select an orchestrator/team for a World. Multiple orchestrators are allowed. BYOA-hosted execution comes first, through Agent Creation → Chat → Knowledge → Agent Actions → Sub-agent Collaboration. Agent identity/configuration is separate from runtime; eventual external operators retain credentials and ownership. Company-funded work and scoped access remain. [Decision 008](decisions/008-account-agents-world-experience.md) supersedes the fixed two-agent-first sequence in older strategy text below; the [roadmap](ROADMAP.md) is current.
 
 ## Vision, purpose and users
 
