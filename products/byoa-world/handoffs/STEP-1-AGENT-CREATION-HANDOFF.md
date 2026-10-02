@@ -27,6 +27,8 @@ Keep Chat, Work, Knowledge, Incubator and Activity in each World, with World swi
 
 ## What exists
 
+Existing source and project records are now on GitHub: [publication receipt](../runs/github-publication-20261003.md). App snapshot `2dbb8ed` and studio snapshot `8702ceb` were verified on remote main; this handoff's publication follow-up changes no application behavior.
+
 - Accepted human World creation/switching and saved notes; preserve their data and behavior.
 - Saved agent definitions/versioning and Incubator configuration. The historical implementation is World-bound, allows one orchestrator per World and keeps definitions separate from runtime. The first two restrictions conflict with the new direction.
 - Persistent offline Chat/document flow with synthetic delegation. It does not prove live orchestrator Chat or general hosted delegation.

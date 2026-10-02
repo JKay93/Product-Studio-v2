@@ -1,5 +1,7 @@
 # Current state
 
+2026-10-03 GitHub source publication confirmed: application `2dbb8ed` and studio project snapshot `8702ceb` are on their remote main branches. [Publication receipt](runs/github-publication-20261003.md) records scope and exclusions. This publishes existing work only; Decision 008 implementation remains future work. The receipt/handoff links are a documentation follow-up verified in the publishing chat.
+
 Current continuation: [Step 1 — Agent Creation handoff](handoffs/STEP-1-AGENT-CREATION-HANDOFF.md), prepared 2026-10-03 at the user's request. Next chat stays on account-owned agents and World team selection; planning only until implementation is authorized. No new code, tests, runtime activity or spending in this handoff task.
 
 Updated 2026-10-03: user realigns the product around account-owned agents and the five-step hosted-first journey. Read [Decision 008](decisions/008-account-agents-world-experience.md), the concise [roadmap](ROADMAP.md) and [current backlog](PRODUCT_BACKLOG.md#current-priorities-and-deferred-work--2026-10-03) first. Current task changes documentation only; no application, runtime, provider or spending action started.
