@@ -23,12 +23,16 @@ Discuss the user's signup-to-chat idea with Designer and PM, research relevant o
 | O12 | Orchestrator | Inspect revised composer on desktop/mobile; verify example fill, sending and existing Agent/draft transitions; retain accepted visual choices and present updated preview. | Passed; accepted for presentation |
 | O13 | Designer | User accepts compact composer and reports it jumps upward after sending. Keep composer at bottom of chat area with transcript above; preserve creation, examples and responsive behavior. | Complete; layout corrected |
 | O14 | Orchestrator | Compare composer position before/after short sends at desktop/mobile, inspect longer messages and affected transitions, present corrected preview. | Passed; accepted for presentation |
+| O15 | Designer | User authorizes fixing uncapped multiline composer in mockup: grow upward to bounded desktop/mobile height, then scroll inside input; shrink after send and preserve layout/drafts. | Complete; candidate frozen |
+| O16 | Orchestrator | Check repeated new lines and long pasted notes, input scrolling/caret, bottom position, post-send shrink and responsive behavior; present updated mockup. | Passed; accepted for presentation |
 
 ## Questions [world:run:onboarding:questions]
 
 No material question blocks the current preview refinement. User accepts keeping explicit direct Agent creation; later appearance refinement remains deferred. The World application repository remains unanswered from phase 1, but does not block this discussion.
 
 ## Decisions [world:run:onboarding:decisions]
+
+User reports that repeated new lines expand the input across the chat surface. User approved fixing the mockup before implementation: one-line input grows upward to roughly 5–6 visible lines on desktop, fewer on mobile; further content scrolls inside the input; conversation scrolls separately above it; composer remains below conversation and shrinks after sending. Exact dimensions are delegated prototype choices, not claims about Codex's measurements. Internal textarea/conversation scrolling is explicitly authorized; retain the existing bounded mock stage rather than rewriting it around viewport-height/fixed positioning. Production viewport and virtual-keyboard integration remain future work.
 
 User accepts the compact composer and example placement, but requires the composer to remain below the conversation after sending; hiding the empty-chat greeting must not pull it upward. Correct layout within the conversation preview, without production changes.
 
@@ -96,9 +100,19 @@ Designer syntax check and root independent rendered/interaction checks pass. At 
 
 User accepts the compact composer but reports sending pulls it upward. Hiding the greeting collapsed normal-flow space. Designer changed the chat to fill remaining canvas with a flexible conversation area above the composer and actual footer content beneath it. Root visual review rejected reserving full suggestion height after hiding examples because that left dead space below the input; the final layout uses natural footer sizing. Long content grows the inline preview without fixed positioning, viewport-height sizing, clipping or internal conversation scrolling. Other creation/sidebar behavior and draft logic remain unchanged. Routing/Designer role refreshed before followups; same recorded route/hash, actual activation/cost unknown.
 
-Current candidate SHA256 `20E866A84E8A508C30588724C2BF5FAA9F069B54A97979081BCBA87EB04405D1`. Designer JavaScript syntax check passed; final correction is CSS-only. Root independently inspected rendered after-send desktop/mobile screenshots and tested actual frame widths 1024/375/320px. First short send moves composer downward as examples disappear (Y 549→620, 547→618, 511→597 respectively); second short send holds that position. Transcript stays above input with no overlap. Long multiline content grows naturally, no horizontal overflow/runtime errors, and New chat restores initial greeting/examples and geometry. Space beneath input contains only real preview status and normal padding, with no large reserved blank footer.
+Position-correction candidate SHA256 `20E866A84E8A508C30588724C2BF5FAA9F069B54A97979081BCBA87EB04405D1`. Designer JavaScript syntax check passed; final correction is CSS-only. Root independently inspected rendered after-send desktop/mobile screenshots and tested actual frame widths 1024/375/320px. First short send moves composer downward as examples disappear (Y 549→620, 547→618, 511→597 respectively); second short send holds that position. Transcript stays above input with no overlap. Long multiline content grows naturally, no horizontal overflow/runtime errors, and New chat restores initial greeting/examples and geometry. Space beneath input contains only real preview status and normal padding, with no large reserved blank footer. The later bounded-input fix below supersedes natural transcript expansion with explicitly authorized independent conversation scrolling.
 
 Evidence beside fragment: `world-composer-position-results.json`, `world-composer-position-before-1024.png`, `world-composer-position-after-1024.png`, corresponding 375/320 images, and `world-composer-position-check.cjs`. Root accepts corrected preview for presentation; accepted user behavior retained in DESIGN.md. Temporary browser inspection server stopped. No production/backend changes or usability claim.
+
+## Bounded composer and conversation scrolling [world:run:onboarding:composer-scroll]
+
+User supplied `C:/Users/jingk/AppData/Local/Temp/codex-clipboard-dc7d0bd0-b7b4-4cdf-a1d5-6c1927be5466.png`, first requested discussion only, then explicitly authorized fixing the mockup before implementation. Designer uses the same verified route/hash recorded above after routing/role refresh. Current fragment SHA256 `93DF6D0408158CC7654D7005C4EB30FE796D0F6BD0A0BB923228CCE6F447A7A0`; JavaScript syntax passed. No production files changed.
+
+Input starts at 44px, caps at 164px desktop (six content lines plus padding) or 116px mobile (four lines plus padding), then scrolls internally. Fit recomputes on input/render and width changes, preserves middle-edit scroll position, keeps focused end caret visible and resets scroll after clear/send. Active chat canvas uses the mock's existing 650px desktop/620px mobile dimensions; conversation scrolls separately above composer. Sending reveals newest content; typing does not move a conversation the user scrolled upward. Creation remains naturally sized; accepted visuals, sidebar controls and Agent-specific drafts are preserved. These dimensions are prototype choices, not Codex measurements or production viewport/keyboard integration.
+
+Root independently tested actual 1024/375/320px frames: 22 Enter presses, focused end typing, keyboard editing at start/end, 85-line pasted notes, native input wheel scrolling, fixed stage/composer-bottom geometry while typing, 44px/scrollTop-zero reset after send, independently scrolling long transcript, newest-message visibility, typing while reading older content, no horizontal overflow or runtime errors. Desktop/mobile resize preserves long draft and changes cap; additional-Agent creation and restoration preserve draft/height; clearing shrinks; examples neither submit nor overwrite. Root visually inspected capped desktop input and mobile conversation scroll. Candidate accepted for presentation only.
+
+Evidence beside fragment: `world-composer-scroll-results.json`, `world-composer-capped-1024.png`, corresponding 375/320 images, `world-conversation-scroll-1024.png` and corresponding mobile images. Focused restoration check output is in host history. Temporary inspection server stopped. Earlier unaffected creation/sidebar semantics remain applicable. No real model response, backend security or target-user usability evidence.
 
 ## Deferred [world:run:onboarding:deferred]
 
@@ -106,6 +120,8 @@ User feedback: first preview rejected as unsatisfactory; Designer received the u
 
 Implementation follows user acceptance of the concrete proposal. Provider selection, backend authority, integrations and production publication remain later work. No new spending.
 
+An accidentally triggered Sites publication request was explicitly canceled by the user. Only the provided attachment/plugin instructions and existing-Sites inventory were read; no Site was created, files changed, upload or deployment performed. Do not resume that canceled request without a new user instruction.
+
 ## Handoff [world:run:onboarding:handoff]
 
-Status: direct creation and compact composer accepted by user; after-send position corrected and checked for presentation. Next action is user preview feedback before further refinement or production implementation. Accepted behavior is in DESIGN.md; shell details and current candidate remain a preview. Root retains these continuity/design records in the verified studio repository and checks remote delivery in host history. Phase 1 evidence remains in `2026-10-03-phase-1-foundation.md`.
+Status: direct creation and compact composer accepted; bounded input/conversation scroll correction checked for presentation. Next action is user mockup feedback before production implementation. Accepted behavior is in DESIGN.md; current candidate remains a preview. Sites publication request is canceled. Root retains these continuity/design records in the verified studio repository and checks remote delivery in host history. Phase 1 evidence remains in `2026-10-03-phase-1-foundation.md`.
