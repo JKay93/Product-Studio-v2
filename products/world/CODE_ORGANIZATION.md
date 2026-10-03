@@ -49,6 +49,6 @@ Keep pages responsible for composition and request boundaries. Keep business rul
 
 Use proportionate dependency and cycle checks, duplication checks, and review of files that combine unrelated responsibilities. No arbitrary line-count threshold has been agreed.
 
-The orchestrator maintains World's local `AGENTS.md` as a concise bridge to the shared studio and relevant product decisions. Worker briefings include those sources. UI UX Pro Max remains project-local. Application GitHub destination is unconfirmed; studio product records are delivered to the studio's verified repository separately.
+The orchestrator maintains World's local `AGENTS.md` as a concise bridge to the shared studio and relevant product decisions. Worker briefings include those sources. UI UX Pro Max remains project-local. The user-provided application GitHub destination is JKay93/MyWorld, verified on 2026-10-04; studio product records are delivered to the studio's verified repository separately.
 
 Tests and checks follow [Tech stack](TECH_STACK.md) and the [Roadmap](ROADMAP.md). Shared studio policies continue to govern delegation, independent review and acceptance.
