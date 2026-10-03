@@ -19,12 +19,16 @@ Discuss the user's signup-to-chat idea with Designer and PM, research relevant o
 | O8 | Designer | Build a revised conversation-only clickable preview: user-reference shell, independent navigation/context toggles, direct Agent creation followed by chat, zero/one/many examples and mobile drawer. Preserve Calm Fluent. | Complete; corrected candidate frozen |
 | O9 | PM | Independently inspect the actual revised preview against ownership/context, simple creation, distinct sidebar purposes and mobile journey. | Complete; no remaining material semantic gaps |
 | O10 | Orchestrator | Inspect desktop/mobile and sidebar/creation/Agent-switch interactions, correct material defects, retain evidence and present preview. No production changes. | Passed; accepted for presentation only |
+| O11 | Designer | Preserve user-accepted direct Agent creation; simplify composer using supplied screenshots: inline placeholder, compact sending, examples below. Preserve accessible labeling and draft safety. | Complete; candidate syntax checked |
+| O12 | Orchestrator | Inspect revised composer on desktop/mobile; verify example fill, sending and existing Agent/draft transitions; retain accepted visual choices and present updated preview. | Passed; accepted for presentation |
 
 ## Questions [world:run:onboarding:questions]
 
-No user answer is required to research and propose. Automatic primary-Agent creation versus explicit lightweight confirmation is an open product choice, not approved behavior. The World application repository remains unanswered from phase 1, but does not block this discussion.
+No material question blocks the current preview refinement. User accepts keeping explicit direct Agent creation; later appearance refinement remains deferred. The World application repository remains unanswered from phase 1, but does not block this discussion.
 
 ## Decisions [world:run:onboarding:decisions]
+
+User likes the Grok-inspired direct Agent creation and explicitly requests keeping it for later refinement. User rejects the composer as too much: use inline placeholder without visible Message your Agent label, and place example prompts below the composer following supplied ChatGPT reference. Preserve Calm Fluent and existing creation/sidebar behavior; this is a conversation-preview refinement, not production authorization.
 
 User authorized the revised clickable preview after the team recommendation. Include independent sidebar controls: navigation icons/labels toggle; context panel show/hide with a persistent reopen control. Default desktop labels visible and context open, remember local preference; retain World and Agent context when collapsed. Mobile uses one drawer. Drag resizing is deferred to later feedback; two toggles suffice for this prototype. Preview authorization is not production implementation or final acceptance of the proposed UX.
 
@@ -34,7 +38,7 @@ Dispatch routing SHA256 `1C46027A5AABE051940D9F912FC39A77D1068F68E6B04FE4BC3DCDF
 
 ## Outcomes [world:run:onboarding:outcomes]
 
-Designer and PM initially converged on inline creation with a draft-before-creation composer. User rejected the resulting preview and supplied a Bot creation screenshot, then a header/rail/context-panel/canvas sketch. Both agents inspected the supplied images and exchanged feedback. The current recommendation is signup -> workspace shell -> direct canvas Agent creation -> chat composer. The earlier creation card and pre-creation composer are superseded proposals. No application changes or new approved product decisions resulted.
+Designer and PM initially converged on inline creation with a draft-before-creation composer. User rejected the resulting preview and supplied a Bot creation screenshot, then a header/rail/context-panel/canvas sketch. Both agents inspected the supplied images and exchanged feedback. The current journey is signup -> workspace shell -> direct canvas Agent creation -> chat composer. The earlier creation card and pre-creation composer are superseded proposals. User subsequently accepts keeping direct creation and requests the compact composer; accepted visual direction is retained in DESIGN.md under [world:req:onboarding-composer]. No application changes resulted.
 
 ## Proposed journey [world:run:onboarding:proposal]
 
@@ -68,13 +72,21 @@ Root inspected rendered desktop/mobile screenshots and verified the actual inter
 
 ## Revised clickable preview [world:run:onboarding:revised-preview]
 
-User authorized proceeding with the revised preview. Designer produced `C:/Users/jingk/.codex/visualizations/2026/10/03/01a100ee-8856-7b50-89d1-27b3c2816217/world-onboarding-shell.html`; final SHA256 `038D57328D556EC20F824C37F7BD23E5FB9CE086818B7E1572B007CF6BF31F33`. Same Designer/PM routes and routing hash recorded above, refreshed before followups. Root owns records. No production files changed.
+User authorized proceeding with the revised preview. Designer produced `C:/Users/jingk/.codex/visualizations/2026/10/03/01a100ee-8856-7b50-89d1-27b3c2816217/world-onboarding-shell.html`; first presented version SHA256 `038D57328D556EC20F824C37F7BD23E5FB9CE086818B7E1572B007CF6BF31F33`. Same Designer/PM routes and routing hash recorded above, refreshed before followups. Root owns records. No production files changed. The later composer refinement below identifies the current candidate.
 
 Includes direct avatar/name creation; independent icons/labels and context-panel controls; persistent reopen control; visible personal World/selected Agent; contextual conversations or Agent identity; natural additional-Agent creation and multi-Agent selector; one mobile drawer. Only sidebar preferences persist in bounded host state. Agents, Sessions, drafts and captured messages are page-memory samples. No AI response or external action is generated; consequential approval remains required. Drag resizing and full organization journeys are deferred.
 
 PM inspected the actual candidate and requested unused default names for additional Agents; third-Agent creation now works without renaming. Root requested approved 14px minimum ownership/permission text. Sandbox runtime then exposed blocked native form submission; Designer changed creation/save/send to explicit button actions, preserving validation, and name Enter invokes creation while textarea Enter remains multiline. PM reviewed the final hash and found no remaining material semantic gaps; source review does not establish runtime or security behavior.
 
 Root rendered the final candidate with the bundled wrapper and inspected desktop/mobile screenshots. Actual iframe widths 1024/375/320px fit with no horizontal overflow, runtime errors or sub-44px visible buttons. Installed Edge/Playwright checks passed independent sidebar collapse/reopen, avatar changes, empty-name validation/retry preserving appearance, creation-to-chat focus, one-Agent display, three Agents without forced renaming, per-Agent draft/transcript separation, example notes preserving existing drafts, safe plain-text local capture, identity edit/long names, both panels collapsed, mobile drawer Escape/focus return and mobile creation with Enter. Screenshot/check files are beside the fragment (`world-onboarding-1024.png`, `world-onboarding-375.png`, `world-onboarding-320.png`, `world-onboarding-chat-collapsed.png`, `world-onboarding-mobile-drawer.png`, `world-onboarding-mobile-chat.png`, `world-onboarding-check-results.json`). Root accepts for presentation; user visual feedback remains pending. This is no backend, real Agent persistence or target-user usability evidence.
+
+## Composer refinement [world:run:onboarding:composer-refinement]
+
+User accepts keeping Agent creation and supplies two composer/example screenshots: `C:/Users/jingk/AppData/Local/Temp/codex-clipboard-01aa878f-f4d6-4792-8ea1-4c020dfab31e.png` and `codex-clipboard-a239328c-bb24-4c65-bd2c-c734e9358ce3.png` in the same directory. Designer inspected both and refined only the composer and example placement in the same fragment. Recorded route verified against refreshed routing/DESIGNER.md before followup; hash unchanged. No app changes or duplicate reports.
+
+Current candidate SHA256 `3450E58892AAD2C452299E2D2C12D18A6112D0F0FB917B5BBF651008E879D3FD`. Composer has inline placeholder with accessible input name, single-row growing textarea and labeled 44px send icon. Removes the visible input heading, large footer copy and inline example button. Two quiet rows beneath fill action-item or follow-up example notes, preserve existing drafts and hide after sending. Approval details remain in Agent identity; preview label and honest local-capture feedback remain. For this feedback round it opens in a sample My Agent chat; Add Agent exposes unchanged creation. This presentation state does not change real zero-Agent onboarding.
+
+Designer syntax check and root independent rendered/interaction checks pass. At actual 1024/375/320px frame widths the empty composer is 58px high; multiline example drafts grow. No horizontal overflow or runtime errors. Accessible input/send names, empty-send disabling, both examples filling without submission, preservation of existing drafts, suggestion hiding after sending, shrinking after send, honest local capture, additional-Agent creation and per-Agent drafts/transcripts passed. Root visually inspected desktop/320 screenshots; acceptance is for presentation only. Evidence beside fragment: `world-composer-1024.png`, `world-composer-375.png`, `world-composer-320.png`, `world-composer-check-results.json`. Previous unrelated sidebar/creation checks remain applicable; preview is not backend or user-usability evidence. Temporary inspection server stopped after checking.
 
 ## Deferred [world:run:onboarding:deferred]
 
@@ -84,4 +96,4 @@ Implementation follows user acceptance of the concrete proposal. Provider select
 
 ## Handoff [world:run:onboarding:handoff]
 
-Status: first preview rejected; revised clickable preview reviewed and runtime-checked, accepted for presentation only. Next action is user visual feedback before recording final accepted onboarding choices in PRODUCT_DECISIONS/DESIGN and implementing the relevant phase 2 slice. Root retains these administrative continuity records in the verified studio repository and checks remote delivery in host history. Phase 1 evidence remains in `2026-10-03-phase-1-foundation.md`.
+Status: direct creation accepted by user; compact composer refinement checked and accepted for presentation. Next action is user composer feedback before further refinement or production implementation. Accepted visual direction is in DESIGN.md; shell details and current candidate remain a preview. Root retains these continuity/design records in the verified studio repository and checks remote delivery in host history. Phase 1 evidence remains in `2026-10-03-phase-1-foundation.md`.
