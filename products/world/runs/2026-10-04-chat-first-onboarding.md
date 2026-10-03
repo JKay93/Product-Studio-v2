@@ -21,12 +21,16 @@ Discuss the user's signup-to-chat idea with Designer and PM, research relevant o
 | O10 | Orchestrator | Inspect desktop/mobile and sidebar/creation/Agent-switch interactions, correct material defects, retain evidence and present preview. No production changes. | Passed; accepted for presentation only |
 | O11 | Designer | Preserve user-accepted direct Agent creation; simplify composer using supplied screenshots: inline placeholder, compact sending, examples below. Preserve accessible labeling and draft safety. | Complete; candidate syntax checked |
 | O12 | Orchestrator | Inspect revised composer on desktop/mobile; verify example fill, sending and existing Agent/draft transitions; retain accepted visual choices and present updated preview. | Passed; accepted for presentation |
+| O13 | Designer | User accepts compact composer and reports it jumps upward after sending. Keep composer at bottom of chat area with transcript above; preserve creation, examples and responsive behavior. | Complete; layout corrected |
+| O14 | Orchestrator | Compare composer position before/after short sends at desktop/mobile, inspect longer messages and affected transitions, present corrected preview. | Passed; accepted for presentation |
 
 ## Questions [world:run:onboarding:questions]
 
 No material question blocks the current preview refinement. User accepts keeping explicit direct Agent creation; later appearance refinement remains deferred. The World application repository remains unanswered from phase 1, but does not block this discussion.
 
 ## Decisions [world:run:onboarding:decisions]
+
+User accepts the compact composer and example placement, but requires the composer to remain below the conversation after sending; hiding the empty-chat greeting must not pull it upward. Correct layout within the conversation preview, without production changes.
 
 User likes the Grok-inspired direct Agent creation and explicitly requests keeping it for later refinement. User rejects the composer as too much: use inline placeholder without visible Message your Agent label, and place example prompts below the composer following supplied ChatGPT reference. Preserve Calm Fluent and existing creation/sidebar behavior; this is a conversation-preview refinement, not production authorization.
 
@@ -84,9 +88,17 @@ Root rendered the final candidate with the bundled wrapper and inspected desktop
 
 User accepts keeping Agent creation and supplies two composer/example screenshots: `C:/Users/jingk/AppData/Local/Temp/codex-clipboard-01aa878f-f4d6-4792-8ea1-4c020dfab31e.png` and `codex-clipboard-a239328c-bb24-4c65-bd2c-c734e9358ce3.png` in the same directory. Designer inspected both and refined only the composer and example placement in the same fragment. Recorded route verified against refreshed routing/DESIGNER.md before followup; hash unchanged. No app changes or duplicate reports.
 
-Current candidate SHA256 `3450E58892AAD2C452299E2D2C12D18A6112D0F0FB917B5BBF651008E879D3FD`. Composer has inline placeholder with accessible input name, single-row growing textarea and labeled 44px send icon. Removes the visible input heading, large footer copy and inline example button. Two quiet rows beneath fill action-item or follow-up example notes, preserve existing drafts and hide after sending. Approval details remain in Agent identity; preview label and honest local-capture feedback remain. For this feedback round it opens in a sample My Agent chat; Add Agent exposes unchanged creation. This presentation state does not change real zero-Agent onboarding.
+First compact composer candidate SHA256 `3450E58892AAD2C452299E2D2C12D18A6112D0F0FB917B5BBF651008E879D3FD`. Composer has inline placeholder with accessible input name, single-row growing textarea and labeled 44px send icon. Removes the visible input heading, large footer copy and inline example button. Two quiet rows beneath fill action-item or follow-up example notes, preserve existing drafts and hide after sending. Approval details remain in Agent identity; preview label and honest local-capture feedback remain. For this feedback round it opens in a sample My Agent chat; Add Agent exposes unchanged creation. This presentation state does not change real zero-Agent onboarding. Later position correction below identifies the current candidate.
 
 Designer syntax check and root independent rendered/interaction checks pass. At actual 1024/375/320px frame widths the empty composer is 58px high; multiline example drafts grow. No horizontal overflow or runtime errors. Accessible input/send names, empty-send disabling, both examples filling without submission, preservation of existing drafts, suggestion hiding after sending, shrinking after send, honest local capture, additional-Agent creation and per-Agent drafts/transcripts passed. Root visually inspected desktop/320 screenshots; acceptance is for presentation only. Evidence beside fragment: `world-composer-1024.png`, `world-composer-375.png`, `world-composer-320.png`, `world-composer-check-results.json`. Previous unrelated sidebar/creation checks remain applicable; preview is not backend or user-usability evidence. Temporary inspection server stopped after checking.
+
+## Composer position correction [world:run:onboarding:composer-position]
+
+User accepts the compact composer but reports sending pulls it upward. Hiding the greeting collapsed normal-flow space. Designer changed the chat to fill remaining canvas with a flexible conversation area above the composer and actual footer content beneath it. Root visual review rejected reserving full suggestion height after hiding examples because that left dead space below the input; the final layout uses natural footer sizing. Long content grows the inline preview without fixed positioning, viewport-height sizing, clipping or internal conversation scrolling. Other creation/sidebar behavior and draft logic remain unchanged. Routing/Designer role refreshed before followups; same recorded route/hash, actual activation/cost unknown.
+
+Current candidate SHA256 `20E866A84E8A508C30588724C2BF5FAA9F069B54A97979081BCBA87EB04405D1`. Designer JavaScript syntax check passed; final correction is CSS-only. Root independently inspected rendered after-send desktop/mobile screenshots and tested actual frame widths 1024/375/320px. First short send moves composer downward as examples disappear (Y 549→620, 547→618, 511→597 respectively); second short send holds that position. Transcript stays above input with no overlap. Long multiline content grows naturally, no horizontal overflow/runtime errors, and New chat restores initial greeting/examples and geometry. Space beneath input contains only real preview status and normal padding, with no large reserved blank footer.
+
+Evidence beside fragment: `world-composer-position-results.json`, `world-composer-position-before-1024.png`, `world-composer-position-after-1024.png`, corresponding 375/320 images, and `world-composer-position-check.cjs`. Root accepts corrected preview for presentation; accepted user behavior retained in DESIGN.md. Temporary browser inspection server stopped. No production/backend changes or usability claim.
 
 ## Deferred [world:run:onboarding:deferred]
 
@@ -96,4 +108,4 @@ Implementation follows user acceptance of the concrete proposal. Provider select
 
 ## Handoff [world:run:onboarding:handoff]
 
-Status: direct creation accepted by user; compact composer refinement checked and accepted for presentation. Next action is user composer feedback before further refinement or production implementation. Accepted visual direction is in DESIGN.md; shell details and current candidate remain a preview. Root retains these continuity/design records in the verified studio repository and checks remote delivery in host history. Phase 1 evidence remains in `2026-10-03-phase-1-foundation.md`.
+Status: direct creation and compact composer accepted by user; after-send position corrected and checked for presentation. Next action is user preview feedback before further refinement or production implementation. Accepted behavior is in DESIGN.md; shell details and current candidate remain a preview. Root retains these continuity/design records in the verified studio repository and checks remote delivery in host history. Phase 1 evidence remains in `2026-10-03-phase-1-foundation.md`.
