@@ -477,7 +477,7 @@ function validateStopBudget(stopBudget, errors) {
   return values;
 }
 
-export function validateTaskContract(root, filePath) {
+export function validateTaskContract(root, filePath, { requireCurrentRouting = false } = {}) {
   const errors = [];
   const warnings = [];
   const loaded = readJson(root, filePath, errors, "task contract");
@@ -569,6 +569,21 @@ export function validateTaskContract(root, filePath) {
     }
   }
   validateRoutingBundle(contract.routing, errors);
+  if (requireCurrentRouting) {
+    const policy = validateRoleRouting(root);
+    errors.push(...policy.errors.map((error) => `current routing policy: ${error}`));
+    if (policy.ok) {
+      const configured = readJson(root, policy.file, errors, "role routing file");
+      const expected = routingRoles(configured?.value);
+      const requested = routingRoles(contract.routing?.requested ?? contract.routing?.requestedRouting);
+      if (isObject(expected) && isObject(requested)) {
+        for (const role of [...ROUTED_ROLES, ...OPTIONAL_ROUTED_ROLES.filter((role) => Object.hasOwn(requested, role))]) {
+          validateRoutingEntry(roleEntry(requested, role, errors, "contract routing.requested"), role, errors,
+            roleEntry(expected, role, errors, "current routing policy.roles"));
+        }
+      }
+    }
+  }
   if (Object.hasOwn(contract, "paused") && typeof contract.paused !== "boolean") addError(errors, "paused must be boolean");
   if (Object.hasOwn(contract, "retryCounts") && !isObject(contract.retryCounts)) addError(errors, "retryCounts must be an object");
 
@@ -1109,7 +1124,7 @@ export function validateCheckpoint(root, checkpointFile, contractFile, options =
 }
 
 export function validateHandoff(root, contractFile, checkpointFile, options = {}) {
-  const contract = validateTaskContract(root, contractFile);
+  const contract = validateTaskContract(root, contractFile, { requireCurrentRouting: !checkpointFile });
   if (!checkpointFile) return { ok: contract.ok, contract, errors: contract.errors, warnings: contract.warnings };
   const checkpoint = validateCheckpoint(root, checkpointFile, contractFile, options);
   return {

@@ -1,125 +1,82 @@
 # Product-Studio-v2
 
-A local operating system for an agent-led product studio. The user owns product
-direction; the orchestrator owns delivery; builders implement; focused independent
-reviews support the orchestrator's final decision.
+A local harness for coordinated product delivery. User owns direction; Orchestrator
+coordinates and accepts; Builder implements; independent QA/reviewer verifies.
+PM, Designer and Technical Specialist join only for concrete uncertainty.
 
-This is a separate successor to Product-Studio. It does not change the existing
-OpenClaw setup. No background automation, paid service, remote repository or
-production deployment is enabled by creating this folder.
+## Rules
 
-## How the studio works
+Read [AGENTS.md](AGENTS.md), [standing orders](operating-system/STANDING_ORDERS.md)
+and [workflow](operating-system/WORKFLOW.md).
+Agents use bounded task messages and concise replies. They do not create or
+maintain project documents. Existing knowledge remains readable; missing PRDs,
+roadmaps or specifications do not block an otherwise clear authorized task.
+Implementation is delegated, normally with one independent review. Preserve
+approved decisions, project isolation, bounded retries and financial authority.
+Orchestrator continues across task completions until the whole user goal is done.
+Only consequential missing authority, genuine blockers or explicit pause interrupt
+the run. Accepted work is automatically committed/pushed to the verified project
+GitHub repository under standing user authorization; no reminder is needed.
 
-The usual path is a bounded assignment, implementation, one relevant independent
-review, and orchestrator acceptance. Planning roles join only when needed; agents
-retain freedom over implementation choices within the agreed boundaries.
+## Roles and routing
 
-```mermaid
-flowchart TD
-    G["You give a goal"] --> O["Orchestrator: scope and task breakdown"]
-    O --> N{"Need new or changed requirements, design or architecture?"}
-    N -->|No: reuse existing foundations| A["Bounded assignment"]
-    N -->|Yes| P["Relevant planning: PM, Designer and/or Technical Specialist"]
-    P --> A
-    A --> B["Builder: implement and run checks"]
-    B --> R["Independent reviewer: assess candidate and evidence"]
-    R --> J{"Orchestrator decision"}
-    J -->|Corrections needed| C["Route cause to Builder, PM, Designer or Technical Specialist"]
-    C --> L["Focused correction or replan within retry policy"]
-    L --> A
-    J -->|Accepted| D["Record acceptance and complete authorized delivery"]
-    D --> M{"Goal complete?"}
-    M -->|More work| O
-    M -->|Yes| Z["Report outcome and evidence"]
-    O -. Missing authority only .-> U["User decision"]
-    C -. Missing authority only .-> U
-    U -. Resolved .-> O
-```
+[harness/role-routing.json](harness/role-routing.json) is the only current route
+source. Read it before every dispatch, verify host support, explicitly request
+model/effort and fork_turns: "none", and retain route/hash/agent-ID receipts.
+Configuration cannot change the parent session or prove backend model activation.
 
-The planning box selects the roles needed for the uncertainty; it does not require
-all three. For a new product, establish enough shared design and architecture to
-support the first feature, then evolve them. Record consequential decisions where
-they arise; routine coding choices do not need extra documents. Failed checks can
-return directly to correction before formal review.
+| Role | Instruction file | Responsibility |
+| --- | --- | --- |
+| Orchestrator | [ORCHESTRATOR.md](operating-system/roles/ORCHESTRATOR.md) | Scope, sequencing, delegation, authority, corrections, acceptance |
+| Builder | [BUILDER.md](operating-system/roles/BUILDER.md) | Bounded implementation and affected tests |
+| Product Manager | [PRODUCT_MANAGER.md](operating-system/roles/PRODUCT_MANAGER.md) | Scope, behavior, priority, acceptance criteria |
+| Designer / productDesign | [DESIGNER.md](operating-system/roles/DESIGNER.md) | Journeys, interactions, visual choices, accessibility |
+| Technical Specialist | [TECHNICAL_SPECIALIST.md](operating-system/roles/TECHNICAL_SPECIALIST.md) | Architecture, interfaces/data/security, difficult debugging |
+| QA / qaRelease | [REVIEWER.md](operating-system/roles/REVIEWER.md) | Independent checks and actionable findings |
 
-The orchestrator resolves failures at their source, with bounded retries and no
-elapsed-time approval gates. Push, merge and deployment happen only within existing
-authority and are reported separately from acceptance. This diagram describes the
-agent workflow; the CLI does not dispatch agents automatically.
+No role has an automatic document-writing responsibility. All replies contain
+only the result, necessary evidence and actionable blockers.
 
-| Source of truth | Contents |
-| --- | --- |
-| This studio, under `products/<project>/` | PRDs, design/technical specifications, decisions and acceptance records |
-| Separate application repository | Code, tests, dependencies and deployment configuration |
+## Knowledge and execution
 
-Reviews reference both the code candidate and the relevant specification revisions.
-See the [delivery workflow](operating-system/WORKFLOW.md) for the short operating rules.
+Use exact known sources directly. Scoped retrieval combines one existing project
+folder's Markdown with shared studio rules. It excludes other projects and
+inactive records; it includes approved rules/decisions separately from keyword hits.
+The index is local SQLite, rebuilt incrementally from source hashes and links.
+It is not semantic/vector search, chat memory, or a complete-context guarantee.
+Task messages and JSON state are not indexed. An empty products folder is valid.
 
-## Start here
+Workers receive focused context, relevant paths, preserved decisions, write scope
+and checks. Fresh workers inherit no conversation history; they can read necessary
+dependencies. Optional machine state for continuity belongs to Orchestrator.
+The host launches agents; the CLI validates state/evidence. It cannot enforce host
+permissions, buy compute, change sessions or schedule work.
 
-1. Read [AGENTS.md](AGENTS.md) and [standing orders](operating-system/STANDING_ORDERS.md).
-2. Copy `products/_template/` to `products/<project>/`. Replace `PROJECT` in
-   metadata and document IDs. Fill the project contract and authority before work.
-   Drafts become approved only when backed by an actual user decision.
-3. Keep that project's PRDs, design records, decisions and evidence in its folder.
-   The application may live in its own repository; identify it in the contract.
-4. Select only useful records from the [document template catalog](operating-system/templates/README.md),
-   then give the builder a compact [assignment](operating-system/templates/assignment.md).
-   Preserve relevant decisions and select only necessary reviews.
-5. Verify the candidate, obtain the selected review, and record acceptance and
-   the next action. Push/merge/deploy are separate delivery states.
+## Local commands and layout
 
-## Local commands
-
-Requires Node.js 24 or newer. No package installation or API key is required.
+Node.js 24+; no package installation or API key required.
 
 ```sh
 npm test
 npm run check
 npm run index
-npm run retrieve -- --project my-project --query "onboarding"
+npm run retrieve -- --project existing-project --query "onboarding"
 ```
 
-Create `my-project` from the template first. Retrieval requires an explicit project;
-it combines that project's context with shared studio rules. It excludes other
-projects and template material. Read an exact source directly when already known.
-
-## Layout
+Retrieval requires an existing project slug; it never creates a project or documents.
 
 | Folder | Purpose |
 | --- | --- |
-| `operating-system/` | Studio authority, delegation, workflow, roles and templates |
-| `products/<project>/` | Project-owned contract, PRDs, design, decisions and evidence |
-| `harness/` | Local validation, state, retrieval and metrics tools |
-| `graph/` | Metadata/relationship conventions; graph is generated from documents |
-| `docs/` | Migration notes and setup verification |
-| `.runtime/` | Ignored, rebuildable local search index |
+| operating-system/ | Governance and role instructions |
+| products/<project>/ | Optional existing project knowledge and orchestrator-owned machine state |
+| harness/ | Validation, routing, retrieval and metrics |
+| harness/templates/ | Optional machine JSON schema examples, not agent prose deliverables |
+| graph/ | Source metadata and retrieval conventions |
+| docs/ | Workspace entry point and historical setup notes |
+| .runtime/ | Ignored, rebuildable local index |
 
-## What changed
-
-- No elapsed-time approval gates; time remains diagnostic.
-- Explicit delegation and operational authority, with one relevant review by default.
-- PM available for product ambiguity and documentation, without becoming a gate.
-- Optional [Technical Specialist](operating-system/roles/TECHNICAL_SPECIALIST.md) owns
-  architecture/API/data/security planning, technical documents and difficult debugging.
-  Builder implements the agreed design and owns implementation notes and tests.
-- Approved project decisions travel with assignments.
-- Project-scoped, incremental section retrieval and source-derived graph links.
-- No imported product history or project-specific validation in the studio check.
-
-See [the harness guide](harness/README.md), [migration notes](docs/MIGRATION.md)
-and [verification record](docs/VERIFICATION.md) for implementation limits.
-The CLI records and validates work; the host agent runtime dispatches agents.
-
-Shared templates are optional and excluded from project retrieval. Completed records
-belong under `products/<project>/`; the PM chooses the smallest useful set and the
-relevant specialist owns its accuracy. A project's `ROADMAP.md` is its single source for
-milestone status, exit criteria and evidence.
-
-## Repository handoff
-
-The authorized repository is https://github.com/JKay93/Product-Studio-v2.git.
-Do not connect or push this work to the original Product-Studio repository.
-
-
-For a parent workspace such as Codex-Work, copy [the workspace entry point](docs/WORKSPACE_AGENTS.md) to that parent folder as AGENTS.md. It directs new tasks to this studio. The active parent copy lives outside this Git repository.
+See [harness guide](harness/README.md). Acceptance, push, merge and release require
+separate evidence and authority. No background automation is active by default.
+Destination: https://github.com/JKay93/Product-Studio-v2.git; never original Product-Studio.
+Copy [docs/WORKSPACE_AGENTS.md](docs/WORKSPACE_AGENTS.md) into the parent workspace
+as AGENTS.md to direct future work here.

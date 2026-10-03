@@ -1,124 +1,76 @@
 <!-- studio {"id":"studio:guide:workflow","scope":"studio","type":"guide","status":"approved"} -->
 # Delivery workflow
 
-Use the smallest process that resolves the task. Agents decide ordinary implementation
-details within approved scope; templates and specialist roles are aids, not mandatory
-stages. No new approval is needed for an already authorized action. One compact
-assignment and one relevant independent review normally suffice for implementation.
+Use task messages and concise replies; project documents are not deliverables.
 
-1. Select the project and read its contract, current state and applicable decisions.
-2. Define a compact assignment: goal, owner, edit scope, preserved decisions, open
-   implementation choices, acceptance criteria and required evidence/reviewer.
-3. Resolve concrete technical uncertainty with an optional Technical Specialist
-   compact assignment before implementation; use its agreed design for the builder.
-   Delegate the implementation. Send relevant excerpts and source paths, not the
-   whole studio history. Workers may read additional dependencies when needed.
-4. Builder implements, runs affected checks and returns a concise evidence-backed report.
-5. A separate reviewer checks the candidate against the assignment. Consolidate fixes
-   into one correction packet. Do not rerun unrelated evaluation suites by habit.
-6. Orchestrator accepts or requests focused corrections. Save the result and next action
-   in the project. Separate local acceptance from repository and release delivery.
+1. Identify project, user goal, existing authority and relevant knowledge. Read
+   exact known sources directly; use scoped retrieval for discovery.
+2. Resolve concrete uncertainty: PM for scope/behavior, Designer for experience,
+   Technical Specialist for architecture/interfaces/security or difficult debugging.
+   Reuse settled decisions. Specialists answer in chat without creating documents.
+3. Read current routing and role instructions. Send Builder a bounded task message
+   with goal, facts, source paths, preserved decisions, read/write scope, open
+   choices, acceptance checks, authority limits and expected concise reply.
+4. Builder implements within scope, runs affected checks and replies with result,
+   changed paths/candidate, checks and blockers. No implementation document.
+5. Dispatch a separate QA/reviewer with candidate, criteria, relevant sources and
+   evidence. Review is read-only. Return PASS/PARTIAL/FAILED and required fixes in
+   chat, without a review document.
+6. Orchestrator accepts or routes one focused correction to its cause's owner.
+   Recheck affected evidence. Commit and push accepted work to the verified project
+   GitHub repository under standing user authorization. Verify the remote result.
+7. If the user's goal has remaining work, dispatch the next task without a user
+   checkpoint. End the run only when the whole goal is complete, the user pauses,
+   a genuine blocker prevents progress, or missing consequential authority needs
+   a human decision. Give one concise final outcome for the entire goal.
 
-Choose project records from the [document template catalog](templates/README.md). The PM
-may omit or merge sections and should use only the documents that resolve the work.
-Templates guide authorship; they do not add mandatory stages, approvals or runtime
-routing. Draft plans do not authorize implementation. Completed records live under the
-selected project and link to authoritative sources rather than copying them.
+Read harness/role-routing.json before every dispatch. Explicitly request model,
+effort and isolated context. Never inherit or silently substitute routes.
+Keep dispatch receipts in host history or optional existing machine task state.
+Verify existing workers against current routing before follow-ups.
 
-## Establish foundations, then reuse them
+## Role boundaries
 
-For a new product, the orchestrator selects only the roles needed for its initial
-foundations: PM for requirements, scope and journeys; Designer for shared experience
-conventions; Technical Specialist for architecture. Where design and architecture
-interact, develop them alongside each other before dependent substantial implementation.
-Resolve relevant trade-offs without specifying the entire future product. Reuse clear
-existing foundations and refine the task breakdown from new findings.
-
-For later features, update only affected records. Bring the designer back for new
-journeys, interaction patterns or shared components; bring the Technical Specialist
-back for changed module boundaries, API/data contracts, security or unresolved technical
-uncertainty. Settled fixes use existing requirements and conventions directly. A new
-PRD, design document or architecture review is not required for every task.
-
-## Record consequential decisions
-
-The relevant specialist authors a short project-local decision record when a choice
-materially affects product behavior, shared design, architecture, security or future
-work. PM owns product decisions, Designer design decisions, and Technical Specialist
-technical decisions; the orchestrator records operational decisions when useful.
-
-Record the choice, rationale, significant alternatives, conditions and authority
-source. The orchestrator can approve choices within delegated authority; only decisions
-outside it need the user. Mark proposals as draft. Do not manufacture user approval.
-Routine coding details need no decision document. Preserve reversed decisions as
-superseded, create a replacement linked with `supersedes`, and update affected sources
-and assignments. Documents remain the source of truth; generated indexes follow them.
-
-Use the project `ROADMAP.md` as the single milestone-status source. Requirements,
-current-state notes and reports reference roadmap item IDs instead of maintaining
-parallel dates or statuses. Each milestone needs an observable outcome, measurable exit
-criteria and evidence before it can be accepted or released.
-
-## Correct the cause of failure
-
-The orchestrator consolidates findings into a focused correction, addressed to the
-role that can resolve the cause:
-
-| Cause | Owner |
+| Need or cause | Owner |
 | --- | --- |
-| Code or test defect | Builder |
-| Flawed technical approach | Technical Specialist, then Builder |
-| Ambiguous or conflicting requirements | PM |
-| Unresolved experience or visual design | Designer |
-| Missing product/business authority | User, with a concrete decision request |
+| Product ambiguity, priority, behavior, acceptance criteria | Product Manager |
+| Journeys, interaction, visual consistency, accessibility | Designer |
+| Architecture, API/data/security choices, difficult debugging | Technical Specialist |
+| Implementation and affected tests | Builder |
+| Independent candidate checks and required findings | QA/reviewer |
+| Sequencing, coordination, authority, final acceptance | Orchestrator |
+| Missing product/business authority | User |
 
-Defaults are two implementation retries, two test/debug retries in structured contracts,
-and one review correction cycle, each after its initial attempt/review. These are
-separate counters, not a requirement to exhaust every allowance. Compact assignments
-follow the written policy; structured state validates recorded counters. Never repeat
-an unchanged failure or denial. At the limit, replan the approach or request appropriate
-expertise/model capability within existing authority. Do not reset counters by renaming
-the same task or replacing the worker. Record genuinely revised scope/approach and
-preserve previous attempts; user approval is needed only for an authority boundary.
-Recheck affected evidence and retain unaffected current checks.
+New products need enough agreed scope, experience and architecture for the first
+slice, resolved through focused messages. No new PRDs or plans are required.
+Settled fixes go directly to Builder and independent review.
 
-## Coordinate studio and application repositories
+## Context and knowledge
 
-Keep project requirements, specifications, decisions and acceptance records in the
-studio. Application code, tests, dependencies and deployment configuration belong in
-the application repository. Record its location and repository authority in the project
-contract. Give workers explicit repository/path edit scopes and source references.
+Fresh workers use fork_turns: "none". Send only task-relevant context, shared
+constraints and the selected role's responsibilities, not whole project history.
+Source paths let workers read necessary dependencies. Investigate missing context
+narrowly or report the specific gap rather than guessing. Never trim applicable
+exceptions, approved decisions or security constraints to save context.
+Corrections include task-local findings and current candidate information.
 
-For cross-repository work, the acceptance record identifies the code candidate and
-the relevant requirements/specification revisions (commit IDs or source hashes).
-Changing either requires reassessing affected evidence. Reference authoritative records
-rather than maintaining competing copies. Repositories do not commit atomically:
-record any partially delivered change and the remaining action honestly.
+Existing knowledge under products/<project>/ is optional read-only source material.
+Application code/tests/dependencies belong in its application repository; identify
+the exact path and authority in each assignment. Empty products folders do not
+block delivery when the user goal, authority and checks are clear.
+The orchestrator may keep minimal machine state for task identities, decisions,
+dispatch receipts, retries and evidence when continuity needs it. Retrieval indexes
+Markdown only; task messages and JSON state are not automatically searchable.
 
-Acceptance is not a claim of push, merge or deployment. Continue through remaining
-goal work and authorized delivery; stop for completion, user pause or a genuine blocker.
+## Corrections and acceptance
 
-| Change | Normal roles and verification |
-| --- | --- |
-| Administrative correction | Orchestrator and direct check |
-| Settled bug or bounded implementation | Builder and one independent reviewer |
-| Product ambiguity/new feature | PM clarification, then builder/relevant reviewer |
-| Architecture, API/data/security planning or difficult debugging | Technical Specialist input, then builder and independent review |
-| New screen/journey | Design input before build, UI/functional review |
-| Auth, payment, permissions, migration | Specialist risk review and stronger checks |
-
-Read `harness/role-routing.json` before every dispatch and explicitly request its
-model, effort and isolated context. The user-approved trial uses gpt-6.1-sol at low
-effort for Builder and medium for PM, Designer, Technical Specialist and QA.
-Verify host availability and surface any unavailable requested route. Substitution
-or effort escalation requires user authorization under the mandatory routing policy.
-Route assignments by task complexity, uncertainty and consequence. Record
-requested and observed routing separately. Configuration alone does not prove activation.
-Use deterministic tooling for formatting, indexing and mechanical validation.
-
-Use isolated task context when the runtime supports it. Retain only task-local context
-for corrections; a new assignment receives a fresh packet. Do not let context economy
-remove exceptions, governing decisions, security constraints or evidence of blockers.
-
-The CLI is not an agent scheduler or permission interceptor. Host permissions and
-human authorization remain the enforcement boundary for external actions.
+Use bounded retries from standing orders; change approach after failure. Do not
+reset counters by renaming tasks or replacing workers. Replan within existing
+authority; ask only when a real authority boundary needs the user.
+Reviews bind to the actual candidate and relevant user/source revisions.
+Cross-repository changes are not atomic; report partial delivery honestly.
+Acceptance, push, merge and release are separate evidence-backed claims.
+Approved/accepted work is automatically committed and pushed; no renewed push
+permission or continuation reminder is needed. Exclude unrelated changes and
+preserve remote work. Merge and production release keep their own authority.
+All agents reply with the result, necessary evidence and actionable blockers only.

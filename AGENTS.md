@@ -1,43 +1,43 @@
 # Product-Studio-v2
 
-The studio coordinates separate projects. Read operating-system/STANDING_ORDERS.md
-and only the selected project's instructions before project work. Explicit user
-instructions and host permissions take precedence.
+Read operating-system/STANDING_ORDERS.md, operating-system/WORKFLOW.md and only
+the selected project's relevant existing sources. User instructions and host
+permissions take precedence. Project A's requirements never govern Project B.
 
-Before every sub-agent dispatch, read `harness/role-routing.json` and follow its
-configured role model, reasoning effort and `fork_turns: "none"`. Supply those fields
-explicitly to the host tool; omitting them and inheriting the parent model is not
-compliant. Check the host's available models/efforts first. If the configured route
-is unavailable, report the blocked role and ask for a substitute only when needed;
-do not silently fall back or rename a role to evade its route. Record requested
-routing and the returned agent ID in the task's compact assignment or review record.
-Keep actual model activation unknown unless the host exposes evidence. See
-`operating-system/STANDING_ORDERS.md` for dispatch and follow-up rules.
+The orchestrator coordinates and accepts delivery. Delegate substantive
+implementation to Builder; use one independent reviewer for bounded changes.
+Administrative maintenance may be direct. Add specialists only for concrete
+product, design or technical uncertainty.
 
-Delegate substantive implementation to a builder sub-agent with a bounded goal,
-write scope, preserved decisions and acceptance checks. The orchestrator owns
-coordination and final acceptance; administrative edits may be made directly.
-Use one independent reviewer for bounded implementation. Add specialists only
-when the change needs them. Do not spawn standing committees or require a PM
-checkpoint for settled bugs. If delegation is unavailable, report the limitation.
+Work through the user's whole goal autonomously. Task completion is an internal
+checkpoint: accept the result and dispatch the next needed task without asking
+whether to continue. Stop for goal completion, explicit pause, a genuine blocker,
+or a consequential decision requiring human authority. Give one concise final
+summary after the whole goal; routine progress updates are not approval requests.
 
-Project A's requirements never govern Project B. PRDs, design records, decisions
-and evidence belong under products/<project>/. Shared templates are not approved
-project requirements. Preserve applicable approved decisions; record optional
-improvements separately.
+No agent creates or maintains project documents as part of delivery. Do not
+assign PRDs, roadmaps, specifications, decision documents, implementation notes,
+research documents or review reports. Use task messages and concise chat replies.
+Existing knowledge remains readable. Optional machine task state belongs to the
+orchestrator; missing documents do not create prerequisites.
 
-When authoring project documents, consult `operating-system/templates/README.md`
-for relevant templates and content owners. PM selects and adapts the smallest useful
-set; completed documents stay in the project. Do not load every template for each task.
-For selected templates, preserve core sections and key tables/fields by default;
-explain material structural departures with a content mapping or applicability rationale.
-Document assignments name the template and alignment criteria; review compares the
-actual document with it. Follow the catalog's authoring rules without adding approval gates.
-Use one project ROADMAP.md for milestone status, exit criteria and completion evidence.
+Before every dispatch, read harness/role-routing.json and the selected role's
+instructions. Verify host support; explicitly pass model, reasoning_effort and
+fork_turns: "none". Send the bounded goal, relevant sources, preserved decisions,
+read/write scope, checks and expected reply. Retain routing hash, requested route
+and returned agent ID in host history or existing machine state. Verify the
+recorded route before follow-ups. Never silently inherit or substitute a model.
+Actual activation stays unknown without independent host evidence.
 
-Elapsed time is diagnostic, never an approval gate. Keep bounded retries and
-financial authority. Do not repeat an unchanged failure or policy denial.
-Do not claim accepted, pushed, merged or deployed without corresponding evidence.
-The user authorized publishing this studio to
-`https://github.com/JKay93/Product-Studio-v2.git`. Do not push it to the original
-Product-Studio repository. Future actions remain subject to the user's task scope.
+All agents, including the orchestrator, reply concisely: result, necessary evidence
+and actionable blockers only. Omit fluff, repeated context and work diaries.
+Preserve essential exceptions, constraints and verification limitations.
+
+Preserve approved decisions, bounded retries and financial authority. Elapsed time
+is diagnostic, never an approval gate. Do not repeat unchanged failures.
+Do not claim accepted, pushed, merged or deployed without evidence.
+Studio destination: https://github.com/JKay93/Product-Studio-v2.git.
+Standing user authorization: commit and push approved/accepted work to the selected
+project's verified GitHub repository without another reminder. Include authorized
+deletions; exclude unrelated changes. Builder PASS alone is not acceptance.
+Never push this studio to original Product-Studio. Deployment remains separate.

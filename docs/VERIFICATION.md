@@ -1,5 +1,9 @@
 # Setup verification
 
+Historical setup evidence only. Current AGENTS.md, standing orders, workflow and
+role-routing.json supersede earlier document-authoring duties and model settings.
+Agents no longer create or maintain project documents as delivery outputs.
+
 Prepared on 2026-09-28 in the separate Product-Studio-v2 folder.
 
 ## Scope delivered

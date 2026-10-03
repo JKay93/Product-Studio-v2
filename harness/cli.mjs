@@ -290,7 +290,7 @@ function stateTaskInit(root, options) {
   const file = stateFileOption(options);
   const contractFile = requireOption(options, ["contract", "task"], "contract file");
   return withStateFileLock(root, file, (target) => {
-    const contractResult = validateTaskContract(root, contractFile);
+    const contractResult = validateTaskContract(root, contractFile, { requireCurrentRouting: true });
     if (!contractResult.ok) throw new Error(`task contract validation failed: ${contractResult.errors.join("; ")}`);
     const taskId = requireOption(options, ["task-id", "taskId", "id"], "taskId");
     if (taskId !== contractResult.taskId) throw new Error("taskId does not match task contract");
@@ -424,7 +424,7 @@ try {
   } else if (command === "handoff" && subcommand === "routing" && (positional[2] === "validate" || positional[2] === undefined)) {
     output = validateRoleRouting(root, options.file ?? "harness/role-routing.json");
   } else if ((command === "handoff" || command === "task") && subcommand === "contract" && (positional[2] === "validate" || positional[2] === undefined)) {
-    output = validateTaskContract(root, options.file);
+    output = validateTaskContract(root, options.file, { requireCurrentRouting: true });
   } else if ((command === "handoff" || command === "task") && subcommand === "checkpoint" && (positional[2] === "validate" || positional[2] === undefined)) {
     output = validateCheckpoint(root, options.file, options.contract ?? options.task, { now: options.now });
   } else if ((command === "handoff" || command === "task") && subcommand === "validate") {

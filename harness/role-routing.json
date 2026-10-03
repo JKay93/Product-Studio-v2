@@ -8,8 +8,8 @@
   },
   "roles": {
     "orchestrator": {
-      "model": "gpt-6-astra",
-      "reasoning_effort": "low",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
       "fork_turns": "none"
     },
     "builder": {

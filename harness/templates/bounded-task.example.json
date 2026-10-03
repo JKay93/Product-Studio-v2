@@ -49,10 +49,10 @@
   ],
   "routing": {
     "requested": {
-      "orchestrator": {"model": "gpt-6-astra", "reasoning_effort": "low", "fork_turns": "none"},
-      "builder": {"model": "gpt-5.6-luna", "reasoning_effort": "max", "fork_turns": "none"},
-      "productDesign": {"model": "gpt-5.6-sol", "reasoning_effort": "medium", "fork_turns": "none"},
-      "qaRelease": {"model": "gpt-5.6-sol", "reasoning_effort": "medium", "fork_turns": "none"}
+      "orchestrator": {"model": "gpt-6.1-sol", "reasoning_effort": "high", "fork_turns": "none"},
+      "builder": {"model": "gpt-6.1-sol", "reasoning_effort": "low", "fork_turns": "none"},
+      "productDesign": {"model": "gpt-6.1-sol", "reasoning_effort": "medium", "fork_turns": "none"},
+      "qaRelease": {"model": "gpt-6.1-sol", "reasoning_effort": "medium", "fork_turns": "none"}
     },
     "observed": {
       "status": "unknown",

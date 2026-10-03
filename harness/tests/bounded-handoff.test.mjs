@@ -4,6 +4,7 @@ import { cpSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:f
 import { tmpdir } from "node:os";
 import path from "node:path";
 import test from "node:test";
+import { validateTaskContract } from "../bounded-handoff.mjs";
 
 const sourceRoot = path.resolve(import.meta.dirname, "..", "..");
 
@@ -382,4 +383,89 @@ test("optional specialist and PM routing validates requested, observed and check
   } finally {
     rmSync(root, { recursive: true, force: true });
   }
+});
+
+test("active examples agree with configured routes", () => {
+  const root = copyStudio();
+  try {
+    const policy = JSON.parse(readFileSync(path.join(root, "harness", "role-routing.json"), "utf8"));
+    for (const name of ["bounded-task.example.json", "bounded-checkpoint.example.json", "completion.example.json"]) {
+      for (const [role, route] of Object.entries(readFixture(root, name).routing.requested)) {
+        assert.deepEqual(route, policy.roles[role], `${name}: ${role}`);
+      }
+    }
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test("current routing gates new contracts while historical checkpoints retain their route", () => {
+  const root = copyStudio();
+  try {
+    const files = checkpoint(root);
+    const contractFile = path.relative(root, files.contractFile);
+    const initial = validateTaskContract(root, contractFile, { requireCurrentRouting: true });
+    assert.equal(initial.ok, true, JSON.stringify(initial));
+    const policyFile = path.join(root, "harness", "role-routing.json");
+    const policy = JSON.parse(readFileSync(policyFile, "utf8"));
+    policy.roles.builder.model = "updated-configured-model";
+    policy.roles.builder.reasoning_effort = "high";
+    writeFileSync(policyFile, JSON.stringify(policy));
+    const current = validateTaskContract(root, contractFile, { requireCurrentRouting: true });
+    assert.equal(current.ok, false);
+    assert(current.errors.some((error) => error.includes("model must be updated-configured-model")));
+    assert(current.errors.some((error) => error.includes("reasoning_effort must be high")));
+    const prepared = run(root, ["handoff", "contract", "validate", "--file", contractFile]);
+    assert.equal(prepared.ok, false);
+    assert(prepared.errors.some((error) => error.includes("model must be updated-configured-model")));
+    assert.equal(run(root, ["handoff", "validate", "--contract", contractFile]).ok, false);
+    assert.equal(validateTaskContract(root, contractFile).ok, true);
+    const historical = run(root, ["handoff", "checkpoint", "validate", "--file", path.relative(root, files.checkpointFile), "--contract", path.relative(root, files.contractFile)]);
+    assert.equal(historical.ok, true, JSON.stringify(historical));
+    assert.equal(run(root, ["handoff", "validate", "--contract", contractFile, "--checkpoint", path.relative(root, files.checkpointFile)]).ok, true);
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test("routing aliases must agree in policy, contracts, and checkpoints", () => {
+  const root = copyStudio();
+  try {
+    for (const [role, alias] of [["productDesign", "designer"], ["qaRelease", "qa"]]) {
+      const policyFile = path.join(root, "harness", "role-routing.json");
+      const policy = JSON.parse(readFileSync(policyFile, "utf8"));
+      policy.roles[alias] = { ...policy.roles[role], model: "conflicting-alias" };
+      writeFileSync(policyFile, JSON.stringify(policy));
+      assert.equal(run(root, ["handoff", "routing", "validate"]).ok, false);
+      policy.roles[alias] = { ...policy.roles[role] };
+      writeFileSync(policyFile, JSON.stringify(policy));
+      assert.equal(run(root, ["handoff", "routing", "validate"]).ok, true);
+      for (const target of ["contract", "checkpoint"]) {
+        const files = checkpoint(root, (value, contract) => {
+          const requested = (target === "contract" ? contract : value).routing.requested;
+          requested[alias] = { ...requested[role], reasoning_effort: "ultra" };
+        });
+        const result = run(root, ["handoff", "checkpoint", "validate", "--file", path.relative(root, files.checkpointFile), "--contract", path.relative(root, files.contractFile)]);
+        assert.equal(result.ok, false);
+        assert(result.errors.some((error) => error.includes("aliases must agree")));
+      }
+    }
+  } finally { rmSync(root, { recursive: true, force: true }); }
+});
+
+test("new task initiation rejects stale routing before mutating state", () => {
+  const root = copyStudio();
+  try {
+    assert.equal(run(root, ["state", "init", "--file", "harness/routing-state.test.json", "--run-id", "routing-test", "--now", "2026-10-03T00:00:00Z"]).ok, true);
+    const stateFile = path.join(root, "harness/routing-state.test.json");
+    const before = readFileSync(stateFile, "utf8");
+    const contract = readFixture(root, "bounded-task.example.json");
+    for (const variation of ["stale-model", "inherited-context", "missing-route"]) {
+      const value = structuredClone(contract);
+      if (variation === "stale-model") value.routing.requested.builder.model = "stale-model";
+      if (variation === "inherited-context") delete value.routing.requested.builder.fork_turns;
+      if (variation === "missing-route") delete value.routing.requested.builder;
+      const file = writeFixture(root, "init-routing.test.json", value);
+      const result = run(root, ["state", "task", "init", "--file", "harness/routing-state.test.json", "--task-id", value.taskId, "--contract", path.relative(root, file), "--now", "2026-10-03T00:00:00Z"]);
+      assert.equal(result.ok, false, variation);
+      assert.match(result.error, /routing/i);
+      assert.equal(readFileSync(stateFile, "utf8"), before, variation);
+    }
+  } finally { rmSync(root, { recursive: true, force: true }); }
 });
