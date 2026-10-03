@@ -5,4 +5,4 @@ Current work: align autonomous work and required run records with the user's dir
 
 Run record: [2026-10-03 harness autonomy](runs/2026-10-03-harness-autonomy.md).
 
-Status: accepted; delivery pending. Next action: publish the reviewed autonomy/run-record rules and retrieval-ID correction to the verified studio repository, verify the remote revision, then close the run. This is observational state; evidence is in the referenced record.
+Status: complete. The autonomy/run-record rules and retrieval-ID correction were reviewed, accepted, published and verified. No harness task remains. Next work uses the new run-record policy; World phase 1 remains ready and unstarted as a separate task. Evidence and deferred items are in the referenced record.

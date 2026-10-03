@@ -14,7 +14,7 @@ Selected project: Product-Studio-v2 self-maintenance. Change active rules and gu
 | T1 | Orchestrator | Replace contradictory blanket documentation bans and optional continuity with required orchestrator-owned records. All user-requested fields are present; worker roles do not need duplicate reports. | Complete; reviewed and accepted |
 | T2 | Orchestrator | Align workflow, role instructions, active workspace entry point and guides. Resume instructions read current pointer and record; routine choices remain autonomous; material questions and consequential authority stay distinct. | Complete; reviewed and accepted |
 | T3 | Independent reviewer and Orchestrator | Read actual candidate; check rule consistency, relative links, scoped retrieval and record completeness. Existing runtime and routing behavior remain unchanged. Address required findings before acceptance. | Complete; checks and independent review passed |
-| T4 | Orchestrator | Commit only accepted changes to verified JKay93/Product-Studio-v2, push without force and verify remote delivery. Update this handoff with actual outcomes. | Pending |
+| T4 | Orchestrator | Commit only accepted changes to verified JKay93/Product-Studio-v2, push without force and verify remote delivery. Update this handoff with actual outcomes. | Complete; accepted candidate published and verified |
 | T5 | Orchestrator | Incorporate the user's retrieval-ID correction: stable document and section IDs, real metadata relationships, unique/scope-valid graph, addressable requirement retrieval and passing existing retrieval tests. | Complete; reviewed and accepted |
 
 T3 depends on T1, T2 and T5; T4 depends on T3. Administrative rules and source metadata are edited by Orchestrator. No substantive application implementation is assigned.
@@ -36,11 +36,13 @@ Canonical shared policy: [Run records and handoff](../../../operating-system/RUN
 
 Initial inspection found autonomy and scoped retrieval already present, but blanket no-document rules and optional machine state contradicted the user's recordkeeping expectation. Active rules, guides, all role instructions and the workspace entry point now align with required Orchestrator-owned records and autonomy within scope. Workspace AGENTS.md matches its tracked source. Routing and retrieval code are unchanged.
 
-The user's ID correction was applied to shared policies, roles, World decisions and this run. Harness metadata/check passed with zero graph errors, 33 addressable requirement nodes and 52 edges. A World-scoped query returns `world:req:enforced-authority` and only World/studio context. Archived runs remain excluded from normal retrieval. All seven existing retrieval tests passed. Independent review and remote delivery remain pending.
+The user's ID correction was applied to shared policies, roles, World decisions and this run. Harness metadata/check passed with zero graph errors, 33 addressable requirement nodes and 52 edges. A World-scoped query returns `world:req:enforced-authority` and only World/studio context. Archived runs remain excluded from normal retrieval. All seven existing retrieval tests passed. Review and delivery evidence follows.
 
 Independent-review dispatch: `/root/harness_autonomy_records_review`, role QA; requested `gpt-6.1-sol`, medium, fork none; routing SHA256 `1C46027A5AABE051940D9F912FC39A77D1068F68E6B04FE4BC3DCDF7DA997E3F`. Actual activation, token use and cost are unknown. Requested route is supported by the host tool catalog; submission alone does not prove activation.
 
-Independent review returned PASS with no blocking findings, confirming rule consistency, required fields, autonomous scope, correct source links/IDs, preserved World content and unchanged routing/runtime. Orchestrator accepts the rules and metadata candidate. Only repository delivery and its final receipt remain. The CLI still does not automatically write run records; no measured cost savings are claimed.
+Independent review returned PASS with no blocking findings, confirming rule consistency, required fields, autonomous scope, correct source links/IDs, preserved World content and unchanged routing/runtime. Orchestrator accepted the rules and metadata candidate. The CLI still does not automatically write run records; no measured cost savings are claimed.
+
+Delivered candidate: commit `428ab5c5cb7a66cdac45646ce19c05b784409dcf` on `main` at `https://github.com/JKay93/Product-Studio-v2.git`. Push succeeded without force; remote branch revision was read back and matched. The active parent workspace entry point was updated locally and matches its tracked source `docs/WORKSPACE_AGENTS.md`. This closing receipt records that verified candidate, avoiding a self-referential current-record commit hash.
 
 ## Deferred work [product-studio-v2:run:harness-autonomy:deferred]
 
@@ -50,4 +52,4 @@ Independent review returned PASS with no blocking findings, confirming rule cons
 
 ## Handoff [product-studio-v2:run:harness-autonomy:handoff]
 
-Status: accepted; delivery pending. Commit/push the accepted candidate to JKay93/Product-Studio-v2 and verify the remote revision, then record delivery and close this run. No new spending or production publication is authorized.
+Status: complete. All assigned criteria passed; no blocking questions or remaining harness tasks. Future agents should apply RUN_RECORDS.md to their next selected work run. World phase 1 remains ready and unstarted, as a separate product task. Deferred items above stay explicit. No new spending or production publication was performed.
