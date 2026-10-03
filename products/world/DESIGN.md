@@ -1,9 +1,9 @@
-<!-- studio {"id":"world:decision:design","scope":"world","type":"decision","status":"approved"} -->
+<!-- studio {"id":"world:decision:design","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World design decisions
 
 The user selected Calm Fluent-inspired for World after comparing three directions. This approved design direction was recorded on 2026-10-03. UI UX Pro Max supports design work for World only; its availability does not make World's design a studio-wide requirement.
 
-## Visual direction
+## Visual direction [world:req:visual-direction]
 
 Use cool neutral surfaces, restrained blue accents, modest rounding, subtle depth and clear typography. The interface should make everyday work, responsibility and permissions easy to understand for nontechnical SME users.
 
@@ -11,7 +11,7 @@ Use semantic tokens for surfaces, text, borders, primary actions, approval, dang
 
 Implement the chosen look through Tailwind tokens and canonical Radix-based components. The theme does not require adopting Microsoft's component framework. Claymorphism and the earlier Warm Swiss proposal are not the selected direction.
 
-## Main experience
+## Main experience [world:req:main-experience]
 
 Make working on and reviewing useful tasks the primary experience. Offer an Agent relationship canvas that shows the orchestrator and editable sub-agent relationships, with expandable branches. Agent cards emphasize identity, ownership, role, permissions and current activity.
 
@@ -19,7 +19,7 @@ The user's reference image informs the linked cards and relationship layout. Its
 
 When a PM uses a colleague designer's Agent, display its real identity and ownership, the delegation relationship and access scope. Reflect the relationship and activity for the owner as well. Borrowing does not imply cloning or ownership transfer.
 
-## Interaction and quality
+## Interaction and quality [world:req:interaction-quality]
 
 Make the active World and Session clear. Personal and organizational content remain distinguishable. Standing access and approval settings show their scope. Disabling consequential approval needs an explicit danger warning, visible ongoing status, and an obvious restoration control.
 

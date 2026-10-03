@@ -14,8 +14,8 @@ folder beside this studio. The orchestrator maintains that project's AGENTS.md
 with a reference to this harness and only approved project-specific rules, repository
 destination and relevant checks. Preserve existing instructions. Read it before
 project work and include it in worker briefings; application code stays in that
-folder, not inside the studio. Project instructions are the narrow administrative
-exception to the no-document duties below; PM and workers do not author them.
+folder, not inside the studio. Orchestrator owns these instructions and the
+product's continuity records; PM and workers need not duplicate them.
 
 Work through the user's whole goal autonomously. Task completion is an internal
 checkpoint: accept the result and dispatch the next needed task without asking
@@ -23,11 +23,18 @@ whether to continue. Stop for goal completion, explicit pause, a genuine blocker
 or a consequential decision requiring human authority. Give one concise final
 summary after the whole goal; routine progress updates are not approval requests.
 
-No agent creates or maintains project documents as part of delivery. Do not
-assign PRDs, roadmaps, specifications, decision documents, implementation notes,
-research documents or review reports. Use task messages and concise chat replies.
-Existing knowledge remains readable. Optional machine task state belongs to the
-orchestrator; missing documents do not create prerequisites.
+Read operating-system/RUN_RECORDS.md. Orchestrator documents every work run under
+products/<project>/runs/ and maintains CURRENT_RUN.md: tasks, acceptance criteria,
+outcomes/evidence, questions, critical decisions, deferred work and next actions.
+Keep durable approved product decisions in that product's folder. Workers give
+concise results for consolidation; no duplicate role reports or paperwork gates.
+On resumption read current project instructions, CURRENT_RUN.md and its run record.
+Missing older records do not block clear authorized work; create the current record.
+
+Orchestrator and sub-agents choose routine methods and implementation details
+within scope. Ask focused questions for material ambiguity or missing authority;
+continue independent work. Use only needed agents and proportionate checks, read
+known paths first, retrieve scoped context for discovery, and reuse current reads.
 
 Before every dispatch, read harness/role-routing.json and the selected role's
 instructions. Verify host support; explicitly pass model, reasoning_effort and

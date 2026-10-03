@@ -7,8 +7,10 @@ change sessions, purchase compute or generate project documents.
 ## Task delivery
 
 Use a bounded task message, Builder checks, one independent review and Orchestrator
-acceptance. All replies are concise. No prose document or template-authoring step
-is required. PM/Designer/Technical Specialist answer only their assigned questions.
+acceptance. All replies are concise. Orchestrator records tasks, acceptance criteria,
+outcomes/evidence, questions, decisions, deferred work and handoff for every work run;
+see [run-record rules](../operating-system/RUN_RECORDS.md). Extra specifications and
+worker reports are not prerequisites. Specialists answer their assigned questions.
 Read current routing and role instructions before every dispatch. Explicitly pass
 model, reasoning_effort and fork_turns: "none"; retain request/hash/agent-ID receipts
 in host history or optional machine state. Requested and actual routing are distinct.
@@ -34,12 +36,16 @@ Only selected-project/studio records are returned. Approved rules and decisions 
 included separately from keyword hits; superseded/archived/rejected records stay out.
 Results include paths, line numbers and source/chunk hashes for provenance.
 This is SQLite keyword/graph search, not semantic search or chat memory. Messages
-and machine JSON state are not indexed. Existing knowledge is consumed, not authored
-by workers. Read known paths directly and investigate missing facts narrowly.
+and machine JSON state are not indexed. Orchestrator maintains approved product
+decisions; workers consume relevant sources. Read CURRENT_RUN.md and its archived
+run directly for resumption, since ordinary retrieval excludes runs/. Read known
+paths first, reuse current context and investigate missing facts narrowly.
 
 ## Optional machine state
 
-Orchestrator may use structured state for resumable or concurrent tasks. JSON
+The concise Markdown run record and CURRENT_RUN.md pointer are required by the
+working rules; optional structured state can supplement them. The CLI does not
+automatically capture chats or write Markdown run records. JSON
 examples show schemas, not real approval, PASS evidence or confirmed model activation.
 Use current configuration when preparing tasks; example routes are not substitutes
 for rereading live routing. Workers do not create prose reports.

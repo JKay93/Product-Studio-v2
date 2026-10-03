@@ -8,13 +8,16 @@ PM, Designer and Technical Specialist join only for concrete uncertainty.
 
 Read [AGENTS.md](AGENTS.md), [standing orders](operating-system/STANDING_ORDERS.md)
 and [workflow](operating-system/WORKFLOW.md).
-Agents use bounded task messages and concise replies. They do not create or
-maintain project documents. Existing knowledge remains readable; missing PRDs,
-roadmaps or specifications do not block an otherwise clear authorized task.
+Agents use bounded task messages and concise replies. Orchestrator records every
+work run and maintains durable approved decisions under products/<project>/.
+Workers return results for consolidation instead of duplicate reports. Follow
+[run records and handoff](operating-system/RUN_RECORDS.md). Missing historical
+documents or extra specifications do not block a clear authorized task.
 Orchestrator first creates/reuses Codex-Work/<project>/ beside this studio and
 maintains its root AGENTS.md with the harness reference and approved project rules.
-This small instruction file is the explicit administrative exception. Existing
-instructions are preserved; workers read them directly before project work.
+Orchestrator owns this instruction file. Existing instructions are preserved;
+workers read them directly before project work. Agents choose ordinary methods
+within scope and raise material questions when needed, without routine approval gates.
 Implementation is delegated, normally with one independent review. Preserve
 approved decisions, project isolation, bounded retries and financial authority.
 Orchestrator continues across task completions until the whole user goal is done.
@@ -38,8 +41,9 @@ Configuration cannot change the parent session or prove backend model activation
 | Technical Specialist | [TECHNICAL_SPECIALIST.md](operating-system/roles/TECHNICAL_SPECIALIST.md) | Architecture, interfaces/data/security, difficult debugging |
 | QA / qaRelease | [REVIEWER.md](operating-system/roles/REVIEWER.md) | Independent checks and actionable findings |
 
-No role has an automatic document-writing responsibility. All replies contain
-only the result, necessary evidence and actionable blockers.
+Orchestrator owns run records and accepted project decisions; workers need not write
+separate reports. Replies preserve results, criterion/check outcomes, material
+questions, critical choices and deferred work needed for the concise handoff.
 
 ## Knowledge and execution
 
@@ -48,11 +52,15 @@ folder's Markdown with shared studio rules. It excludes other projects and
 inactive records; it includes approved rules/decisions separately from keyword hits.
 The index is local SQLite, rebuilt incrementally from source hashes and links.
 It is not semantic/vector search, chat memory, or a complete-context guarantee.
-Task messages and JSON state are not indexed. An empty products folder is valid.
+Task messages and JSON state are not indexed. Run archives are also excluded;
+read CURRENT_RUN.md and its referenced record directly on resumption. A newly
+selected product starts its current run without inventing missing history.
 
 Workers receive focused context, relevant paths, preserved decisions, write scope
 and checks. Fresh workers inherit no conversation history; they can read necessary
-dependencies. Optional machine state for continuity belongs to Orchestrator.
+dependencies. Reuse current sources, retrieve only needed project context and use
+only necessary roles/checks. Required concise continuity belongs to Orchestrator;
+validated machine state may supplement it.
 The host launches agents; the CLI validates state/evidence. It cannot enforce host
 permissions, buy compute, change sessions or schedule work.
 
@@ -72,7 +80,7 @@ Retrieval requires an existing project slug; it never creates a project or docum
 | Folder | Purpose |
 | --- | --- |
 | operating-system/ | Governance and role instructions |
-| products/<project>/ | Optional existing project knowledge and orchestrator-owned machine state |
+| products/<project>/ | Approved product context, current-run pointer, archived run records and optional machine state |
 | harness/ | Validation, routing, retrieval and metrics |
 | harness/templates/ | Optional machine JSON schema examples, not agent prose deliverables |
 | graph/ | Source metadata and retrieval conventions |

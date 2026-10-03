@@ -1,9 +1,9 @@
-<!-- studio {"id":"world:decision:code-organization","scope":"world","type":"decision","status":"approved"} -->
+<!-- studio {"id":"world:decision:code-organization","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:architecture"}]} -->
 # World code organization decisions
 
 Keep product decisions in `Product-Studio-v2/products/world/` and application code in the separate `Codex-Work/World/` folder. Shared studio role and working rules remain in Product-Studio-v2. These approved boundaries were recorded on 2026-10-03; the application source structure has not been created yet.
 
-## Application structure
+## Application structure [world:req:application-structure]
 
 ```text
 World/
@@ -37,7 +37,7 @@ World/
 
 Create directories as their responsibilities are implemented. The outline is not a requirement to populate empty folders with placeholder code.
 
-## Reuse and dependency rules
+## Reuse and dependency rules [world:req:reuse-dependencies]
 
 Each domain module exposes a small public interface. Other modules use that interface rather than importing internal files. Separate server-only and client-safe entry points. Domain logic stays independent of framework and provider SDK imports; adapters handle those dependencies.
 
@@ -45,7 +45,7 @@ Before adding a component or contract, search for an existing equivalent. Reuse 
 
 Keep pages responsible for composition and request boundaries. Keep business rules in their domain modules. Mock and real adapters share typed contracts, avoiding duplicate business rules when the UI connects to the backend.
 
-## Review and ownership
+## Review and ownership [world:req:code-review-ownership]
 
 Use proportionate dependency and cycle checks, duplication checks, and review of files that combine unrelated responsibilities. No arbitrary line-count threshold has been agreed.
 

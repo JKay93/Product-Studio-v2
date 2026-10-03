@@ -12,12 +12,18 @@ Before implementation, Orchestrator creates/reuses Codex-Work/<project>/ beside
 Product-Studio-v2 and maintains its root AGENTS.md with the shared-harness reference,
 approved project-specific rules, verified repository destination and relevant checks.
 Preserve existing instructions. Read project AGENTS.md directly and include its path
-in worker briefings. This is a narrow administrative exception to the no-document
-duties; PM and workers do not author project-rule files.
+in worker briefings. Orchestrator owns project instructions and continuity records;
+workers need not duplicate them.
 
-Agents do not create or maintain project documents as delivery outputs. Use compact
-task messages and concise replies containing only results, necessary evidence and
-actionable blockers. Optional machine task state belongs to Orchestrator.
+Orchestrator records every product/harness work run under products/<project>/runs/
+and maintains CURRENT_RUN.md, following operating-system/RUN_RECORDS.md: tasks,
+acceptance criteria, outcomes/evidence, questions, critical decisions, deferred work
+and next actions. Maintain approved product decisions within their product scope.
+On resumption read the current pointer and run record. Workers return concise results
+for consolidation; no duplicate role reports or paperwork prerequisites.
+Agents choose routine methods freely within scope. Ask focused questions for material
+ambiguity or missing authority; continue independent work. Use scoped retrieval and
+reuse current sources for efficiency. Optional machine state supplements run records.
 Continue the user's whole goal across task completions without routine approval
 checkpoints. Stop only for completion, explicit pause, genuine blockers or missing
 consequential human authority. Give one concise whole-goal final summary.

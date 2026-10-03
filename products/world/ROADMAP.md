@@ -1,7 +1,9 @@
-<!-- studio {"id":"world:decision:roadmap","scope":"world","type":"decision","status":"approved"} -->
+<!-- studio {"id":"world:decision:roadmap","scope":"world","type":"decision","status":"approved","links":[{"relation":"requires","target":"world:decision:product"},{"relation":"requires","target":"world:decision:architecture"},{"relation":"requires","target":"world:decision:tech-stack"},{"relation":"requires","target":"world:decision:code-organization"},{"relation":"requires","target":"world:decision:design"}]} -->
 # World - Approved roadmap
 
 Approved by the user on 2026-10-03. Build reusable UI first, then connect real behavior in manageable steps. This roadmap records the reviewed sequence; it does not claim implementation or security verification.
+
+## First release sequence [world:req:first-release-sequence]
 
 | Phase | What we build | Ready when |
 | --- | --- | --- |
@@ -15,11 +17,11 @@ Approved by the user on 2026-10-03. Build reusable UI first, then connect real b
 
 The first usable release includes phases 1-7. Earlier milestones provide working demonstrations; the pilot follows the full checks. Basic revocation and memory separation start in phase 3; jobs in phase 4 already recheck current authority and reject late results.
 
-## Related decisions
+## Related decisions [world:req:roadmap-constraints]
 
 The approved [Architecture](ARCHITECTURE.md), [Tech stack](TECH_STACK.md), [Code organization](CODE_ORGANIZATION.md), [Design](DESIGN.md), and [Product decisions](PRODUCT_DECISIONS.md) provide the constraints for these phases. Each record separates accepted choices from remaining implementation details.
 
-## Later
+## Later [world:req:later-priorities]
 
 Multiple providers -> memory import -> external Agent runtimes. Broader integrations and production infrastructure follow demonstrated need. No calendar estimates or production deployment are authorized by this roadmap.
 

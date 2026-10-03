@@ -1,7 +1,9 @@
-<!-- studio {"id":"world:decision:tech-stack","scope":"world","type":"decision","status":"approved"} -->
+<!-- studio {"id":"world:decision:tech-stack","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:architecture"}]} -->
 # World tech stack decisions
 
 The following stack was accepted for the lean first release and recorded on 2026-10-03. Select exact compatible versions during phase 1 and lock dependencies in the application repository. No dependency versions or deployment provider have been approved yet.
+
+## Selected tools [world:req:selected-stack]
 
 | Responsibility | Selected approach |
 | --- | --- |
@@ -20,6 +22,8 @@ The following stack was accepted for the lean first release and recorded on 2026
 | Backend verification | Integration tests for authority, persistence and lifecycle boundaries |
 | User journeys | Playwright |
 | Design assistance | UI UX Pro Max installed inside World only |
+
+## Design and infrastructure boundaries [world:req:stack-boundaries]
 
 The custom Calm Fluent-inspired direction uses these tools; it does not require switching to Microsoft's Fluent component framework. The selected design is documented in [Design](DESIGN.md).
 

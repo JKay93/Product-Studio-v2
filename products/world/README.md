@@ -1,4 +1,4 @@
-<!-- studio {"id":"world:guide:decisions","scope":"world","type":"guide","status":"approved"} -->
+<!-- studio {"id":"world:guide:decisions","scope":"world","type":"guide","status":"approved","links":[{"relation":"depends_on","target":"world:decision:roadmap"}]} -->
 # World approved decisions
 
 This folder holds the decisions approved for World. Shared studio roles and operating rules apply across projects; these product choices apply only to World. Application code and the World-only design skill live separately in `Codex-Work/World/`.
