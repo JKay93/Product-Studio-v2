@@ -1,7 +1,7 @@
 <!-- studio {"id":"world:decision:architecture","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World architecture decisions
 
-World will start as a modular monolith with a web application, API, database and one shared background worker. This keeps infrastructure small while separating Agent identity, authority, knowledge and model access. These approved choices were recorded on 2026-10-03; no application architecture has been implemented yet.
+World will start as a modular monolith with a web application, API, database and one shared background worker. This keeps infrastructure small while separating Agent identity, authority, knowledge and model access. These approved choices were recorded on 2026-10-03. Phase 2 implements the web UI, framework-free domain interfaces and a mock adapter; the real database, authority enforcement, provider and worker remain later work.
 
 ## Runtime and domain boundaries [world:req:runtime-boundaries]
 
