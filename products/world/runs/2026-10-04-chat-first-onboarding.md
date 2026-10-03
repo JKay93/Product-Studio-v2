@@ -12,6 +12,8 @@ Discuss the user's signup-to-chat idea with Designer and PM, research relevant o
 | O1 | Designer | Compare relevant documented consumer chat/bot patterns; propose initial chat, inline creation, mobile/keyboard and error states using existing Calm Fluent guidance. Separate observed evidence from design inference. | Complete |
 | O2 | PM | Assess creation options, first useful outcome, ownership/context/approval boundaries and organization invitation flow. Research official OpenClaw/Hermes patterns and define measurable acceptance criteria. | Complete |
 | O3 | Orchestrator | Verify official ChatGPT references, exchange PM/Designer findings, synthesize a concrete recommendation and trade-offs, record unresolved proposals and delivery. | Complete; proposal prepared |
+| O4 | Designer | User requested a visual of the Agent empty state. Create an interactive, conversation-only Calm Fluent mockup; inline creation preserves drafts and stays separate from Send. No production application changes. | Complete |
+| O5 | Orchestrator | Inspect desktop/mobile rendering and actual creation/rename/draft interactions, then present the preview and record evidence. Proposal remains draft. | Verified; ready to present |
 
 ## Questions [world:run:onboarding:questions]
 
@@ -49,10 +51,16 @@ Acceptance for a future prototype: a user can reach first useful work without re
 
 Official documentation was inspected; signed-in competitor onboarding screens and target-user usability were not tested. Sources support patterns, not proof of World's proposed flow.
 
+## Empty-state preview [world:run:onboarding:preview]
+
+User requested a visual on 2026-10-04. Designer followed up on its verified gpt-6.1-sol medium fork-none route under the same routing hash above. It created `C:/Users/jingk/.codex/visualizations/2026/10/03/01a100ee-8856-7b50-89d1-27b3c2816217/world-agent-empty-state.html` as a conversation-only interactive fragment. One Calm Fluent chat shell shows Personal space, an inline creation card, default/optional name, draft composer and explicit creation. No production application code changed.
+
+Root inspected rendered desktop/mobile screenshots and verified the actual interactions with Playwright/installed Edge: draft before creation, disabled Send with a reason, optional rename, example input without submission/overwriting an existing draft, creation preserving the draft and focusing the composer, and honest local-preview sending. Final frame widths 1024/320px had no horizontal overflow or runtime errors. Screenshots `world-agent-empty-desktop-final.png` and `world-agent-empty-mobile-final.png` share the fragment's directory. Small icons use host-provided Lucide; major identity tiles use visible initials. Header says Approvals on and footer specifies consequential actions, preserving the approved rule. Root accepted the mockup for presentation only; UX/product changes remain proposed and unvalidated with target users.
+
 ## Deferred [world:run:onboarding:deferred]
 
 Implementation follows user acceptance of the concrete proposal. Provider selection, backend authority, integrations and production publication remain later work. No new spending.
 
 ## Handoff [world:run:onboarding:handoff]
 
-Status: research/discussion complete; concrete proposal delivered for user consideration. Proposed UX remains draft. Next action: incorporate user feedback and record any accepted onboarding changes in PRODUCT_DECISIONS/DESIGN before implementing the relevant phase 2 slice. This administrative run record and pointer are delivered to the verified studio repository; remote verification is retained in host history. Phase 1 evidence remains in `2026-10-03-phase-1-foundation.md`.
+Status: proposal and interactive empty-state preview prepared and verified for user feedback. Proposed UX remains draft; record accepted onboarding changes in PRODUCT_DECISIONS/DESIGN before implementing the relevant phase 2 slice. This administrative run record and pointer are delivered to the verified studio repository; remote verification is retained in host history. Phase 1 evidence remains in `2026-10-03-phase-1-foundation.md`.
