@@ -15,22 +15,9 @@ Approved by the user on 2026-10-03. Build reusable UI first, then connect real b
 
 The first usable release includes phases 1-7. Earlier milestones provide working demonstrations; the pilot follows the full checks. Basic revocation and memory separation start in phase 3; jobs in phase 4 already recheck current authority and reject late results.
 
-## Technical foundation
+## Related decisions
 
-TypeScript, Next.js/React, Supabase PostgreSQL/Auth/private storage, one shared Node background worker with pg-boss, and one provider adapter. Calm Fluent-inspired styling uses reusable theme tokens and Radix-based components. Use a custom React Flow relationship canvas and a modest Storybook gallery.
-
-```text
-src/
-  app/          Thin pages and API entry points
-  ui/           Shared primitives, patterns and shell
-  modules/      Product behavior grouped by domain
-  adapters/     Database, storage, models and jobs
-  entrypoints/  Worker startup
-supabase/       Migrations and access policies
-tests/          Integration checks and user journeys
-```
-
-Each module exposes a small public interface. Agents check existing components before creating new ones. Reviews check duplication, oversized responsibilities, and imports that bypass module boundaries. Mock and real integrations share contracts.
+The approved [Architecture](ARCHITECTURE.md), [Tech stack](TECH_STACK.md), [Code organization](CODE_ORGANIZATION.md), [Design](DESIGN.md), and [Product decisions](PRODUCT_DECISIONS.md) provide the constraints for these phases. Each record separates accepted choices from remaining implementation details.
 
 ## Later
 

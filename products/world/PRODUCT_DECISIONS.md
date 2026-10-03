@@ -1,0 +1,36 @@
+<!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
+# World product decisions
+
+These are the approved product choices from the user discussion, recorded on 2026-10-03. They apply to World. They describe intended behavior, not completed implementation.
+
+## Audience and first workflow
+
+Serve nontechnical SME owners and people who want useful AI agents and automation without technical setup. The first workflow is pasted meeting notes, editable action items, assigned internal tasks, and follow-up drafts. Recording and external sending are outside the initial workflow.
+
+## Identity and ownership
+
+Agent means the persistent digital extension of its owner. Universe means the platform mechanisms that enforce boundaries. A World is a persistent environment and trust boundary. A Session defines a particular instance of work.
+
+On signup or login, a user without an Agent is asked to create a primary personal Agent. Additional Agents are allowed. Organizations may own their own Agents too. Joining or leaving an organization does not transfer ownership of a personal Agent. The Agent keeps its identity when the underlying model changes.
+
+A user and personal Agent may participate in multiple Worlds, such as an employer and a separate startup. Their work remains isolated by World and Session. A Passport identifies an Agent; access still requires grants.
+
+## Collaboration and approval
+
+Users can create an orchestrator and inspect or change its linked sub-agents. A colleague's Agent can participate through delegated access while retaining its identity and ownership. The borrowing relationship and activity must also be visible to its owner.
+
+Standing access is explicit, scoped, revocable permission for repeated delegation without asking for access on every request. Consequential actions require approval by default. An authorized user may disable approval for a specific Agent, World and action scope, with a clear danger warning, visible indicator, audit trail, and easy restoration. This cannot override Universe rules, World restrictions, another owner's limits, or Session grants.
+
+## Personal and organizational knowledge
+
+Personal knowledge, memory and private chats remain confidential. Organizations can inspect effective configuration and work within their World; membership does not expose unrelated private knowledge or harness settings.
+
+World knowledge includes organizational documents, conversations and derived learning. It stays within that World by default. The organization must permit selected learning to leave, and the user must accept it. General rules such as “when X happens, do Y” may still reveal confidential processes and cannot be treated as automatically portable.
+
+Initial personal continuity includes preferences, communication style and working habits, with the ability to inspect and correct memory. On departure, permitted personal continuity remains. Organizational grants, pending approvals and queued work are revoked; late results are rejected. Organizational chats and activity remain available to authorized organizational reviewers. Private personal chats remain private.
+
+## Release priorities
+
+The first usable release must demonstrate personal continuity, standing colleague access, authorized portable learning and safe departure, using one provider. The full first-release sequence is in [Roadmap](ROADMAP.md).
+
+Multiple providers follow next, then memory import. External Agents means agents running outside World, such as another vendor's runtime; interoperability is a later, low-priority expansion. Broad SaaS integrations, billing details and production-scale infrastructure are not initial requirements. Import formats, exact retention periods and provider selection remain undecided.

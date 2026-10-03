@@ -1,0 +1,54 @@
+<!-- studio {"id":"world:decision:code-organization","scope":"world","type":"decision","status":"approved"} -->
+# World code organization decisions
+
+Keep product decisions in `Product-Studio-v2/products/world/` and application code in the separate `Codex-Work/World/` folder. Shared studio role and working rules remain in Product-Studio-v2. These approved boundaries were recorded on 2026-10-03; the application source structure has not been created yet.
+
+## Application structure
+
+```text
+World/
+  AGENTS.md
+  .agents/skills/ui-ux-pro-max/
+  src/
+    app/                   Thin pages and API entry points
+    ui/
+      primitives/          Canonical controls
+      patterns/            Reusable interactions
+      shell/               Navigation and application layout
+    modules/
+      agents/
+      worlds/
+      sessions/
+      authority/
+      knowledge/
+      actions/
+      meeting-work/
+    adapters/
+      database/
+      storage/
+      models/
+      jobs/
+    entrypoints/           Worker startup
+  supabase/                Migrations and access policies
+  tests/
+    integration/
+    journeys/
+```
+
+Create directories as their responsibilities are implemented. The outline is not a requirement to populate empty folders with placeholder code.
+
+## Reuse and dependency rules
+
+Each domain module exposes a small public interface. Other modules use that interface rather than importing internal files. Separate server-only and client-safe entry points. Domain logic stays independent of framework and provider SDK imports; adapters handle those dependencies.
+
+Before adding a component or contract, search for an existing equivalent. Reuse real common behavior through primitives and interaction patterns. Avoid copied components, giant page files and one oversized configurable component intended to cover unrelated cases.
+
+Keep pages responsible for composition and request boundaries. Keep business rules in their domain modules. Mock and real adapters share typed contracts, avoiding duplicate business rules when the UI connects to the backend.
+
+## Review and ownership
+
+Use proportionate dependency and cycle checks, duplication checks, and review of files that combine unrelated responsibilities. No arbitrary line-count threshold has been agreed.
+
+The orchestrator maintains World's local `AGENTS.md` as a concise bridge to the shared studio and relevant product decisions. Worker briefings include those sources. UI UX Pro Max remains project-local. Application GitHub destination is unconfirmed; studio product records are delivered to the studio's verified repository separately.
+
+Tests and checks follow [Tech stack](TECH_STACK.md) and the [Roadmap](ROADMAP.md). Shared studio policies continue to govern delegation, independent review and acceptance.
