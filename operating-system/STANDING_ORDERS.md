@@ -27,6 +27,16 @@ whole goal's result once, concisely, after completion.
 
 ## Outputs and communication
 
+Before implementation, the orchestrator creates or reuses a dedicated project
+folder under Codex-Work, alongside Product-Studio-v2. Reuse the selected application's
+checkout or clone its identified repository there as appropriate; never mix project
+code into the studio. The orchestrator creates/maintains the project-root AGENTS.md
+as a narrow administrative exception: reference the shared harness, preserve existing
+instructions, and include approved project-specific constraints, repository destination
+and relevant checks. Do not invent product decisions or copy the whole studio rules.
+Read project-local instructions directly before work; include them in each worker's
+briefing. PM and other workers have no project-rule document-writing duties.
+
 No agent creates or maintains project documents as part of delivery. Do not
 delegate PRDs, roadmaps, specifications, decision documents, implementation notes,
 research documents or review reports. Specialists give task-local answers in chat;

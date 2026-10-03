@@ -8,6 +8,13 @@ For product/software work use Product-Studio-v2 as the governing studio.
 3. Read current routing and role instructions before dispatch. Delegate bounded
    implementation and use proportional independent review.
 
+Before implementation, Orchestrator creates/reuses Codex-Work/<project>/ beside
+Product-Studio-v2 and maintains its root AGENTS.md with the shared-harness reference,
+approved project-specific rules, verified repository destination and relevant checks.
+Preserve existing instructions. Read project AGENTS.md directly and include its path
+in worker briefings. This is a narrow administrative exception to the no-document
+duties; PM and workers do not author project-rule files.
+
 Agents do not create or maintain project documents as delivery outputs. Use compact
 task messages and concise replies containing only results, necessary evidence and
 actionable blockers. Optional machine task state belongs to Orchestrator.

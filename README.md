@@ -11,6 +11,10 @@ and [workflow](operating-system/WORKFLOW.md).
 Agents use bounded task messages and concise replies. They do not create or
 maintain project documents. Existing knowledge remains readable; missing PRDs,
 roadmaps or specifications do not block an otherwise clear authorized task.
+Orchestrator first creates/reuses Codex-Work/<project>/ beside this studio and
+maintains its root AGENTS.md with the harness reference and approved project rules.
+This small instruction file is the explicit administrative exception. Existing
+instructions are preserved; workers read them directly before project work.
 Implementation is delegated, normally with one independent review. Preserve
 approved decisions, project isolation, bounded retries and financial authority.
 Orchestrator continues across task completions until the whole user goal is done.

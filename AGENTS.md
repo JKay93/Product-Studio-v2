@@ -9,6 +9,14 @@ implementation to Builder; use one independent reviewer for bounded changes.
 Administrative maintenance may be direct. Add specialists only for concrete
 product, design or technical uncertainty.
 
+Before project implementation, create or reuse a dedicated Codex-Work/<project>/
+folder beside this studio. The orchestrator maintains that project's AGENTS.md
+with a reference to this harness and only approved project-specific rules, repository
+destination and relevant checks. Preserve existing instructions. Read it before
+project work and include it in worker briefings; application code stays in that
+folder, not inside the studio. Project instructions are the narrow administrative
+exception to the no-document duties below; PM and workers do not author them.
+
 Work through the user's whole goal autonomously. Task completion is an internal
 checkpoint: accept the result and dispatch the next needed task without asking
 whether to continue. Stop for goal completion, explicit pause, a genuine blocker,

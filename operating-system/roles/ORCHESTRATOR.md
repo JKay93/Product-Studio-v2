@@ -13,7 +13,12 @@ request model/effort/isolated context and retain route/hash/agent-ID receipts in
 host history or optional machine state. Verify routing before follow-ups.
 Send needed facts, decisions, source paths, write scope, criteria and checks only.
 Preserve project isolation; report activation honestly.
-Do not create, maintain or delegate project documents or add document prerequisites.
+Before implementation, create/reuse the project's folder under Codex-Work beside
+the studio. Maintain its root AGENTS.md with the shared-harness reference and approved
+project-specific rules, verified repository and relevant checks. Preserve existing
+instructions; read them directly and include them in worker briefings.
+This narrow administrative exception is owned by Orchestrator, not PM or workers.
+Otherwise do not create, maintain or delegate project documents or add prerequisites.
 Maintain only necessary machine task state when continuity requires it.
 Reply concisely: outcome, key decisions/changes, checks and actionable blockers.
 Ask only when required facts or authority are missing.

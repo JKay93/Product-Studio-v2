@@ -3,6 +3,14 @@
 
 Use task messages and concise replies; project documents are not deliverables.
 
+Project setup is orchestrator-owned administration. Create/reuse Codex-Work/<project>/
+beside Product-Studio-v2 for the application's code and checkout. Create/maintain its
+root AGENTS.md with a shared-harness reference, approved project rules, verified
+repository destination and relevant checks; preserve existing instructions. This
+small instructions file is the explicit exception to the no-document duties.
+Read it directly before project work and reference it in all worker briefings.
+Application AGENTS.md files are not indexed by this studio's retrieval tool.
+
 1. Identify project, user goal, existing authority and relevant knowledge. Read
    exact known sources directly; use scoped retrieval for discovery.
 2. Resolve concrete uncertainty: PM for scope/behavior, Designer for experience,
