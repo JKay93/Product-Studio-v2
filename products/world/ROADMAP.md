@@ -27,4 +27,4 @@ Multiple providers -> memory import -> external Agent runtimes. Broader integrat
 
 ## Current status
 
-Approved and saved under `Product-Studio-v2/products/world/` as World product context. Application code, local instructions and the World-only skill live in the separate `Codex-Work/World/` folder. Project-local skill installation and readiness review passed. Ready to start local phase 1; application/design-system implementation has not started. The World application GitHub repository destination is unconfirmed; local work can proceed.
+Phase 1 is implemented, independently reviewed and accepted locally. Shared theme/controls, Agent cards, responsive shell, seven Storybook examples and focused behavior tests are in `Codex-Work/World/`, alongside local instructions and the World-only skill. Typecheck, lint, production/gallery builds and 3/3 behavior tests passed; browser review covered desktop and mobile. Read [the current run](CURRENT_RUN.md) for delivery evidence. The application GitHub repository is unconfirmed; accepted code is committed locally. Phase 2 is the next planned milestone. No backend or production deployment is claimed.

@@ -1,7 +1,7 @@
 <!-- studio {"id":"world:decision:code-organization","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:architecture"}]} -->
 # World code organization decisions
 
-Keep product decisions in `Product-Studio-v2/products/world/` and application code in the separate `Codex-Work/World/` folder. Shared studio role and working rules remain in Product-Studio-v2. These approved boundaries were recorded on 2026-10-03; the application source structure has not been created yet.
+Keep product decisions in `Product-Studio-v2/products/world/` and application code in the separate `Codex-Work/World/` folder. Shared studio role and working rules remain in Product-Studio-v2. These approved boundaries were recorded on 2026-10-03. Phase 1 implements thin app entries, canonical UI primitives, reusable patterns and shell components; stories sit beside their components and focused behavior checks live under `tests/`.
 
 ## Application structure [world:req:application-structure]
 
