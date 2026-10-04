@@ -1,6 +1,10 @@
-<!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"draft"} -->
+<!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
 # World current run
 
-Run: [Phase 4 connection and acceptance check](runs/2026-10-05-phase4-connection-status.md).
+Run: [Complete Phase 4](runs/2026-10-05-phase4-completion.md).
 
-Status: phases 1–3 accepted; Phase 4 remains PARTIAL on accepted source `6b0f6976e91a1ad6dffcf54541926c689f944f5d`. User supplied local Supabase configuration and requests connection/status verification. API check passed (HTTP 200); user-provided CA resolved PostgreSQL trust and authenticated read-only SELECT 1 passed with CA/hostname verification. World baseline tables/functions are not installed; local ignored URI now uses verify-full and the copied certificate. Connection setup blocker resolved. Independent QA confirms Phase 4 PARTIAL. Prior source preparation evidence remains in [the Phase 4 start record](runs/2026-10-04-phase4-start.md). Real signup/persistent UI and organization/grant/memory/revocation work remain pending; connection success alone cannot complete Phase 4. No migrations, production publication, provider calls or new spending in this status run.
+Phase 4 implemented, independently reviewed and accepted on 2026-10-05 for controlled development. Thirteen migrations; real three-user/two-World API/database and deterministic race checks; 52 tests; typecheck/lint; production/gallery builds; browser persistence/account isolation all passed. Application c326f6362b397208d3458603fd5a424eb203d94a delivered and remote-verified to JKay93/MyWorld main. Studio records await their separate commit/push verification.
+
+Actual signup was manually test-confirmed under explicit approval. Mail delivery occurred; email-link → session PKCE roundtrip is unverified and must be tested with retained verifier before normal email onboarding/pilot acceptance. Physical mobile keyboard remains unverified. Secrets/fixtures stay ignored; preserve the local backend preview and unrelated development data.
+
+Next: deliver the accepted app/studio commits, verify both remotes, then brief Phase 5. Phase 5/provider/worker execution and production deployment have not started.

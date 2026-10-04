@@ -1,7 +1,7 @@
 <!-- studio {"id":"world:decision:architecture","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World architecture decisions
 
-World will start as a modular monolith with a web application, API, database and one shared background worker. This keeps infrastructure small while separating Agent identity, authority, knowledge and model access. These approved choices were recorded on 2026-10-03. Phase 2 implements the web UI, framework-free domain interfaces and a mock adapter; the real database, authority enforcement, provider and worker remain later work.
+World uses a modular monolith with a web application, API and database. One shared background worker is planned for Phase 5. This keeps infrastructure small while separating Agent identity, authority, knowledge and model access. These approved choices were recorded on 2026-10-03. Phases 1–3 established the shared UI; Phase 4 implements real identity, persistence and authority. Provider and worker execution remain later work.
 
 ## Runtime and domain boundaries [world:req:runtime-boundaries]
 
@@ -10,6 +10,16 @@ Next.js serves the React interface and API. Supabase provides PostgreSQL, authen
 Domain modules cover Agents, Worlds, Sessions, authority, knowledge, actions and meeting work. Integrations live behind adapters. Agent identity, configuration and memory persist in platform records independently of provider conversation state. A thin model adapter supports one provider initially and leaves room for provider replacement later.
 
 Build the real UI first with typed mock adapters. Replace adapters incrementally as backend slices become available. Mock and real implementations share contracts; the mock journey is not security evidence.
+
+### Implemented Phase 4 foundation [world:req:phase4-foundation]
+
+Demo and backend modes reuse WorkspaceContent and explicit asynchronous workspace commands. Domain contracts use opaque IDs, request IDs and expected revisions; framework and provider SDKs remain in adapters. Backend mode never substitutes demo identities after an authentication or authorization failure.
+
+Request-local Supabase SSR clients verify caller claims. Next.js proxy refresh preserves cookies and SDK headers; private responses use no-store and mutation routes check origin. Ordinary application data requests carry the caller's verified JWT to PostgREST/RLS. Privileged PostgreSQL credentials exist only in ignored development migration and fixture tooling, never application requests or browser bundles.
+
+Thirteen ordered, additive migrations define ownership constraints, default-deny RLS, scoped snapshots and narrow actor-bound mutation functions. Function search paths and execution grants are explicit. Bootstrap and Agent creation are idempotent; drafts/configuration use compare-and-swap and message retries cannot erase newer drafts. Organization mutations require a current authority version. Protected operations share-lock the World; membership/grant revocation takes an exclusive lock and advances authority, so old tokens and stale versions cannot authorize subsequent work.
+
+Personal configuration, memory and drafts remain private. Organization Session review requires explicit review authority; borrowed-Agent usage exposes scoped metadata to its owner. Memory correction retains immutable historical source versions and validates owner/World provenance. Phase 4 stores configuration and deliberate text records; it does not execute models, delegation, automatic learning or exports. Actual proof and review are recorded through CURRENT_RUN.md.
 
 ## Enforced authority [world:req:enforced-authority]
 
