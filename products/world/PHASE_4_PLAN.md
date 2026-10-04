@@ -92,6 +92,13 @@ A Phase 4 PASS requires authenticated API and direct-database evidence plus inde
 
 ## Setup decisions and readiness [world:phase-3:setup]
 
+Current user direction: Supabase details will be provided later. Proceed with credential-independent contracts, protected migrations, adapter and verification preparation; do not create another project or install a local stack. Keep these blockers explicit:
+
+- Applying/rebuilding migrations and executing authenticated SQL/RLS, isolation and concurrency tests requires an authorized nonproduction database environment.
+- Live sign-up/login and cookie/session refresh need that project's URL/publishable key plus agreed email confirmation and redirect configuration.
+- Reload/new-account persistence, private-data isolation and stale-token revocation cannot be accepted from mocks or source inspection; they require real authenticated identities and browser/database checks.
+- Full 4.2–4.8 implementation and acceptance follow the first protected vertical slice. Missing credentials are a verification/setup dependency, not proof that every later feature has already been implemented.
+
 Choose during implementation setup: a dedicated development/test Supabase project versus a local Supabase stack; access method and approved cost boundary; authentication method and confirmation/redirect/mail configuration. Recommendation: email/password for the first slice in a dedicated nonproduction environment, confirmation/redirect behavior explicitly configured there, no social-provider sprawl. Test fixtures use controlled identities; this plan assumes no existing account, SMTP service or local runtime. If local prerequisites are unavailable, identify that before treating local setup as ready. Never reuse production data for destructive verification.
 
 Use existing authorized resources where available. Creating a project, installing runtime tooling, obtaining secrets, sending mail or spending money is not accomplished/authorized by this planning document. Credentials stay in approved secret/environment configuration, never product docs. Public configuration examples may list variable names only. Model/provider/hosting choice is not a Phase 4 blocker because no inference or publication occurs.

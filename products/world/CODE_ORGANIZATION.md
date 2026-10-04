@@ -39,6 +39,8 @@ Create directories as their responsibilities are implemented. The outline is not
 
 Agent-page refinement reuses the workforce composition and inspector, with focused settings, memory, Session relationship and React Flow graph components under `src/ui/patterns`. Public Agent configuration/memory types stay under `src/modules/agents`; sample storage stays in the existing mock adapter/controller. Configuration is Agent keyed, shared sample memory World keyed, and primary personal continuity reuses the existing knowledge contract. Private configuration authority and Session relationship editing are distinct responsibilities.
 
+Phase4 preparation adds client-safe persistence IDs/ownership/commands in `src/modules/workspace`, a server-only caller-scoped RPC adapter under `src/adapters/database`, and personal migrations/rollback assertions under `supabase`. The integration runner lives in `tests/integration`. Existing demo presentation is preserved; authenticated controller/read/configuration wiring and actual database verification remain pending. Request-time app composition explicitly distinguishes demo from blocked backend mode; new contracts are not yet a connected live workspace.
+
 ## Reuse and dependency rules [world:req:reuse-dependencies]
 
 Each domain module exposes a small public interface. Other modules use that interface rather than importing internal files. Separate server-only and client-safe entry points. Domain logic stays independent of framework and provider SDK imports; adapters handle those dependencies.
