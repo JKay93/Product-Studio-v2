@@ -27,6 +27,8 @@ Multiple providers -> memory import -> external Agent runtimes. Broader integrat
 
 ## Current status
 
+Latest priority: the user postponed Phase 3 to focus on the Agent page and requested a separate pan/zoom/expand canvas mockup first. Retain the Phase 3 plan for later; do not start backend work or apply the new canvas to the app during mockup review.
+
 User approval checkpoint on 2026-10-04: Phase 2 looks good, with some UI changes deferred for later. Phase 3 is requested for plan review only; no backend implementation authorization is inferred. The current preview includes Agent Workforce. Previous independent review/technical acceptance should not be read as earlier human phase approval.
 
 Phases 1 and 2 are implemented, independently reviewed and accepted in `Codex-Work/World/`, alongside local instructions and the World-only skill. Foundation plus complete mock UI journey and the clarified sidebar shell are pushed to JKay93/MyWorld. Phase 2 includes approved onboarding/chat, World/Agent/Session switching, meeting workflow, editable linked-Agent hierarchy, knowledge, permissions and departure/archive views. Latest typecheck, zero-warning lint, production/gallery builds and 18/18 focused tests passed; independent browser review covered desktop/mobile/landscape and short viewports down to 320x250. Mock behavior proves interactions only; working data resets on refresh and physical mobile keyboard is unverified. Phase 3 identity and authority is next; its [implementation plan](PHASE_3_PLAN.md) is a proposal for review, not backend completion. Read [the current run](CURRENT_RUN.md) for evidence/status. No backend or production deployment is claimed.

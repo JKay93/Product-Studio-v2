@@ -100,4 +100,6 @@ Implementation can begin with contracts/schema/tests before remote secrets; the 
 
 ## Status and next action [world:phase-3:status]
 
+Postponed at the user's request while the Agents canvas is explored in a separate interactive mockup. Retain this proposal; no backend work is authorized by the mockup task. The next immediate action is canvas mockup review, not tasks 3.1–3.3.
+
 Technical Specialist review PASS after six focused contract/security/concurrency refinements, with current official Supabase/PostgreSQL sources checked. Ready for the user's review; no app/backend implementation begun. The next build run, when requested, starts with 3.1 and the 3.2–3.3 personal persistence slice; preserve the approved roadmap and widen scope only when a concrete requirement needs it.

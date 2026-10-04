@@ -1,8 +1,6 @@
 <!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"draft"} -->
 # World current run
 
-Run: [Phase 2 approval and Phase 3 plan review](runs/2026-10-04-phase2-approval-phase3-review.md).
+Run: [Agent canvas mockup](runs/2026-10-04-agent-canvas-mockup.md).
 
-Status: user explicitly approved Phase 2 on 2026-10-04, with remaining UI polish deferred until later feedback. Current mock application MyWorld `3807e4365a3d4739b555bf3db3dd7ed9cb6c14e7`; [technical evidence](runs/2026-10-04-agent-workforce-page.md) unchanged. Agent-page implementation had preceded approval after a mistaken reading of a planning request; do not infer implementation permission from future planning questions.
-
-[Phase 3 plan](PHASE_3_PLAN.md) is presented for review, still draft and technically reviewed. No backend implementation or setup started. First proposed slice: contracts/protected schema, signup, personal Agent and saved private Session. Development Auth/database environment remains a setup dependency; real delegation remains Phase 5. UI polish deferred. No application changes, provisioning, spending or publication in this run. Next action: user's Phase 3 plan review; build only when explicitly requested.
+Status: interactive Agents mockup completed for feedback. Independent review plus corrected runtime checks cover hierarchy/inspector, expansions, keyboard movement, creation, responsive layout and view persistence. Direct drag/wheel behavior remains source-reviewed and needs manual testing because browser automation did not establish it. Read run evidence and limitation before further work. Phase 2 remains approved, UI polish deferred. MyWorld remains clean at 3807e4365a3d4739b555bf3db3dd7ed9cb6c14e7. [Phase 3 plan](PHASE_3_PLAN.md) retained as draft, postponed by user. No provisioning/spending/publication. Next: user feedback on the separate mockup; fix prototype issues, then implement only when requested.
