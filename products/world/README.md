@@ -10,6 +10,6 @@ This folder holds the decisions approved for World. Shared studio roles and oper
 - [Design](DESIGN.md): Calm Fluent-inspired direction and interaction principles.
 - [Roadmap](ROADMAP.md): the approved build sequence and milestone checks.
 
-Planning proposal: [Phase 3 identity and authority](PHASE_3_PLAN.md) contains the implementation sequence, acceptance checks and setup dependencies for review. It preserves the approved roadmap; its existence does not approve setup/spending or claim implementation.
+Implementation plan: [Phase 4 identity, persistence and authority](PHASE_4_PLAN.md) contains the authorized implementation sequence, acceptance checks and setup dependencies. The user approved starting Phase 4 after the accepted Agent-page UI became Phase 3. Implementation authority does not imply new spending, deployment or completed verification.
 
 These records capture accepted decisions from the conversation. They are not evidence of implementation. Keep approved choices separate from proposals and obtain user authority before reversing them. Read the sources relevant to each task; the studio can retrieve this folder with project scope `world`.
