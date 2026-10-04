@@ -5,6 +5,10 @@ This is the technically reviewed implementation proposal requested on 2026-10-04
 
 ## Outcome [world:phase-3:outcome]
 
+The user's subsequent Agent workforce page request adds a Phase 2 UI refinement before backend work. Preserve that hierarchy/inspector and its reusable relationship contracts when implementing persistence. Phase 3 saves configuration; it does not advance real delegation into Phase 3. Current refinement evidence is linked through CURRENT_RUN.md.
+
+For the Agent page, tasks 3.1–3.5 include storing identity/configuration and World/Session-scoped parent-child relationships, delegated responsibility and branch presentation. Validate cycles, authorized edits and referenced-Agent participation at the server boundary; borrowing preserves the original identity/ownership and requires applicable scoped access. Inspector selection is presentation state, independent of active chat Agent. Reload restores authorized configuration; foreign-scope reads/writes, revoked edits and unauthorized personal identity changes fail. The page must show honest unconfigured model/tool states until those later capabilities exist. Saved configuration is not evidence of dispatch/execution, which remains Phase 5.
+
 A real user signs up, creates their persistent personal Agent, returns later and finds it intact. They can work in a personal World and authorized organization Worlds, with separately stored Sessions and drafts. They can inspect relevant access grants and memory ownership. Removing membership or a grant blocks further protected access while preserving personal continuity and authorized organization records.
 
 Phase 3 establishes the trustworthy foundation for doing work. Model responses, meeting extraction, task execution and the worker arrive in Phase 4; real sub-Agent execution and consequential approval opt-out arrive in Phase 5. The full portable-learning and departure experience remains Phase 6. Basic separation/revocation is required now, not deferred until those phases.

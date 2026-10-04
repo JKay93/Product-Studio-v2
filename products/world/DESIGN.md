@@ -36,6 +36,12 @@ When a PM uses a colleague designer's Agent, display its real identity and owner
 
 ## Interaction and quality [world:req:interaction-quality]
 
+### Agent workforce reference [world:req:agent-workforce]
+
+On 2026-10-04 the user requested the Agent page shown in a new reference: a connected orchestrator/sub-agent hierarchy with expandable branches, selected-Agent details on the right and a clear creation action. Place it under Agents in the existing grouped navigation, using Calm Fluent tokens and the approved shell without restoring branding/global headers. Reuse existing identity/relationship state and creation, scope and permission controls. Provide working hierarchy, cards and list presentations; selecting a node changes the inspector without changing ownership or silently changing the active chat Agent. Expose ownership, role, delegated responsibility, access scope and consequential approval context. Colleague-Agent borrowing retains identity and its existing scoped grant/owner-activity behavior.
+
+This addition is a UI preview refinement before backend implementation. Use actual mock data rather than inventing online status, model, hosting, knowledge or operational capabilities. Unsupported reference actions such as Share, Playground and external Agent connection remain deferred. Narrow layouts provide a usable list/card view and stacked inspector; keyboard controls are alternatives to spatial navigation. Persistence belongs to Phase 3, real execution to Phase 4 and real delegation to Phase 5.
+
 Make the active World and Session clear. Personal and organizational content remain distinguishable. Standing access and approval settings show their scope. Disabling consequential approval needs an explicit danger warning, visible ongoing status, and an obvious restoration control.
 
 Design empty, loading, error, permission-denied, stale-approval and revoked-access states alongside successful journeys. Use clear labels, visible keyboard focus, readable contrast, responsive layouts and motion that respects reduced-motion preferences. Check representative components on desktop and mobile.
