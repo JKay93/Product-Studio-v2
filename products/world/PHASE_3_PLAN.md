@@ -1,7 +1,7 @@
 <!-- studio {"id":"world:plan:phase-3","scope":"world","type":"plan","status":"draft","links":[{"relation":"requires","target":"world:decision:roadmap"},{"relation":"requires","target":"world:decision:product"},{"relation":"requires","target":"world:decision:architecture"},{"relation":"requires","target":"world:decision:tech-stack"},{"relation":"requires","target":"world:decision:code-organization"},{"relation":"requires","target":"world:decision:design"}]} -->
 # Phase 3 — Real identity, persistence and authority
 
-This is the technically reviewed implementation proposal requested on 2026-10-04, ready for the user's review. It preserves approved product decisions; backend work has not started. The accepted Phase 2 shell remains the interface. Current app baseline is MyWorld aa8771c3e663a0dfef95847f90c23420d0e88804.
+This is the technically reviewed implementation proposal requested on 2026-10-04, presented for the user's review. The user has now approved Phase 2, with UI polish deferred. Backend work has not started, and presenting this plan does not authorize implementation. Preserve the current Phase 2 interface, including Agent Workforce. Current app baseline is MyWorld 3807e4365a3d4739b555bf3db3dd7ed9cb6c14e7.
 
 ## Outcome [world:phase-3:outcome]
 
