@@ -37,6 +37,8 @@ World/
 
 Create directories as their responsibilities are implemented. The outline is not a requirement to populate empty folders with placeholder code.
 
+Agent-page refinement reuses the workforce composition and inspector, with focused settings, memory, Session relationship and React Flow graph components under `src/ui/patterns`. Public Agent configuration/memory types stay under `src/modules/agents`; sample storage stays in the existing mock adapter/controller. Configuration is Agent keyed, shared sample memory World keyed, and primary personal continuity reuses the existing knowledge contract. Private configuration authority and Session relationship editing are distinct responsibilities.
+
 ## Reuse and dependency rules [world:req:reuse-dependencies]
 
 Each domain module exposes a small public interface. Other modules use that interface rather than importing internal files. Separate server-only and client-safe entry points. Domain logic stays independent of framework and provider SDK imports; adapters handle those dependencies.

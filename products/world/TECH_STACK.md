@@ -31,4 +31,6 @@ Avoid adding another queue backend, Redis, a separate vector database, Kubernete
 
 Phase 1 pins Next.js 16.3.8, React 19.3.0, TypeScript 5.9.3, Tailwind 4.3.3, Radix Dialog 1.1.23, Storybook 10.6.1 and Vitest 5.0.3. All dependencies have exact manifest versions plus `package-lock.json`; consult those files for the complete resolved set. Node 24.15 or later is required by the selected tooling, with bundled Node 24.19 used for checks. Backend, worker, provider and graph libraries are deferred until their phase needs them. Prettier supports readable source formatting.
 
+The approved Agent-page spatial UI refinement adds locked `@xyflow/react@12.12.0` for the custom relationship canvas. Backend, worker and provider libraries remain deferred; this addition does not implement Phase 3 persistence or authorization. Implementation checks and acceptance are tracked in CURRENT_RUN.md.
+
 Hosting, model/provider choice, paid plans, budgets, CI provider and deployment configuration remain open. This record authorizes no new spending or production release. The source snapshot of UI UX Pro Max is recorded alongside its local installation; its upstream commit is currently unknown.
