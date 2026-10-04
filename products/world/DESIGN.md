@@ -38,7 +38,7 @@ When a PM uses a colleague designer's Agent, display its real identity and owner
 
 ### Agent workforce reference [world:req:agent-workforce]
 
-Knowledge placement accepted in the 2026-10-04 discussion: selected-Agent Knowledge rail summarizes memories, accessible sources, learned procedures and suggested learning. Entries distinguish Personal/World scope and show provenance; permitted edit/forget/accept controls remain compact. Manage knowledge & memory opens a full workspace with a return to Agents. Instructions defines deliberately configured roles/rules separately from learned knowledge. Borrowed Agents reveal only current-World shared material, never their owner's private memory. Demonstrate this in a separate interactive mockup first; mock actions do not establish actual learning, persistence or authorization.
+The earlier memory-focused rail mockup is retained as an exploration. Current user direction separates full Agent configuration into a dedicated settings page, described below; the workforce rail remains a quick inspector with Manage Agent. Mock interactions do not establish actual learning, persistence or authorization.
 
 Canvas interaction clarification: the user requests Figma-like drag panning, scroll-wheel zoom and global expand-all, with a separate interactive mockup before application changes. Keep page/navigation/inspector controls outside the canvas transform. Zoom centers on the pointer; fit-to-view and zoom buttons complement wheel input. Support branch collapse/expansion and sample node dragging with attached connectors. Keyboard and single-pointer alternatives keep interactions usable. This specifies the requested prototype behavior; the new visual and application implementation remain subject to review.
 
@@ -53,6 +53,10 @@ Design empty, loading, error, permission-denied, stale-approval and revoked-acce
 Use a small Storybook gallery to demonstrate shared components and meaningful states. Apply UI UX Pro Max recommendations only when they fit the approved product and stack. Keep implemented theme values in code; do not automatically generate additional design documents through the skill's persistence option.
 
 The approved decision is the visual direction and experience boundaries. Phase 1 will produce the reusable design system; phase 2 will complete the mock journey. Neither preview interaction nor a UI-only demonstration establishes backend security.
+
+### Dedicated Agent configuration [world:req:agent-configuration]
+
+After the OpenClaw reference discussion on 2026-10-04, the user accepted Manage Agent opening a dedicated settings page with distinct Identity, Instructions, About you, Memory, Knowledge, Skills and Tools sections. Keep the workforce rail compact. Settings identifies the selected Agent, owner and applicable scope. Back to workforce returns to the same selection and canvas position. Instructions holds deliberately configured rules, About you holds personal preferences/profile, Memory holds learned facts/decisions, Knowledge holds accessible sources and Skills holds reusable procedures. Base personal configuration and current-World additions stay distinguishable; personal edits cannot loosen World-enforced permissions. Borrowed Agent settings expose only owner-shared/current-World configuration, with editing only where permitted; private owner knowledge/profile/base configuration remains hidden. Demonstrate this in a new standalone mockup first. Channels, Automations and an advanced source editor are later proposals, not current preview scope.
 
 ### Onboarding and composer [world:req:onboarding-composer]
 
