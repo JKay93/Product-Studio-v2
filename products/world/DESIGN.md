@@ -107,3 +107,7 @@ Future updates show document changes automatically: authorized B viewing a docum
 ### File import entry [world:req:knowledge-file-import-ui]
 
 User approved slice5.3 on 2026-10-05: extend the existing Knowledge search/+ menu with Upload files beside New note/New folder. Open a compact dialog with file selection/drop zone, visible supported formats/limits and current personal/World destination plus folder picker. Reuse tree and reader; imported sources show meaningful processing/failed/retry status, and extracted content is inspected before explicit publication. Keep original-file access and immutable source/version information in the existing reader/details flow. No separate upload page or duplicated shell. Dropping onto a folder is a useful optional extension, not a prerequisite for the first upload flow.
+
+### Functional delivery priority [world:req:functional-delivery-priority]
+
+User feedback on 2026-10-05: current design is subpar and the user is absolutely disappointed with the direction; UI UX Pro Max has not produced the expected quality. Feedback delivered to Designer, who acknowledged it. Prioritize complete working paths and actual agent testing, then revisit major UI changes. Phase5 closes before provider/workflow setup. Preserve the accepted shell/theme/components for now; truthful working/failed/retry states, clear Agent/World context and saved context/drafts matter. Fix only usability blockers during functional integration; skill recommendations do not establish user acceptance or justify new visual redesign.

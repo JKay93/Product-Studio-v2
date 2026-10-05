@@ -49,6 +49,8 @@ Slice 5.3 extends that public contract with import identity, format/limits, stag
 
 Each domain module exposes a small public interface. Other modules use that interface rather than importing internal files. Separate server-only and client-safe entry points. Domain logic stays independent of framework and provider SDK imports; adapters handle those dependencies.
 
+Phase5 search extends the public Knowledge entry with its own search repository, bounded query/result types and canonical authored passage ranges. Database ranking stays in the caller-scoped database adapter/migration; the client request adapter and thin search route retain existing authentication/cache/origin boundaries. Focused search state/results compose the existing context tree and reader, without a second workspace or separate document viewer. Demo search uses the same public contract. Actual candidate/checks are recorded in CURRENT_RUN.md.
+
 Before adding a component or contract, search for an existing equivalent. Reuse real common behavior through primitives and interaction patterns. Avoid copied components, giant page files and one oversized configurable component intended to cover unrelated cases.
 
 Keep pages responsible for composition and request boundaries. Keep business rules in their domain modules. Mock and real adapters share typed contracts, avoiding duplicate business rules when the UI connects to the backend.
