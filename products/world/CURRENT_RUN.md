@@ -1,10 +1,10 @@
-<!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
+<!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"draft"} -->
 # World current run
 
-Run: [Complete Phase 4](runs/2026-10-05-phase4-completion.md).
+Run: [Plan Knowledge before Agent connection](runs/2026-10-05-knowledge-plan.md).
 
-Phase 4 implemented, independently reviewed and accepted on 2026-10-05 for controlled development. Thirteen migrations; real three-user/two-World API/database and deterministic race checks; 52 tests; typecheck/lint; production/gallery builds; browser persistence/account isolation all passed. Delivery verified: app c326f6362b397208d3458603fd5a424eb203d94a on JKay93/MyWorld main; studio bbecd57991617c5b03ccc2c2e265ee030b43ce47 on JKay93/Product-Studio-v2 main. Both push receipts and ls-remote matched. This closure record is a subsequent studio-only documentation commit.
+Planning complete. [Proposed Phase 5 Knowledge library](PHASE_5_KNOWLEDGE_PLAN.md) is ready for discussion: reuse the shell/current authority, add an inspectable searchable source library, and keep Knowledge distinct from Agent Memory. Proposed phases5–9 are not approved; ROADMAP.md and application remain unchanged. No implementation has started.
 
-Actual signup was manually test-confirmed under explicit approval. Mail delivery occurred; email-link → session PKCE roundtrip is unverified and must be tested with retained verifier before normal email onboarding/pilot acceptance. Physical mobile keyboard remains unverified. Secrets/fixtures stay ignored; preserve the local backend preview and unrelated development data.
+Phase 4 remains accepted for controlled development and delivered at MyWorld c326f6362b397208d3458603fd5a424eb203d94a; studio closure8717db44e28e3e96995aa91a4f2208f4c351c0ec. [Phase 4 evidence](runs/2026-10-05-phase4-completion.md) includes unverified email-link session and physical mobile keyboard checks.
 
-Run complete. Next: brief/plan Phase 5 when requested. Phase 5/provider/worker execution and production deployment have not started.
+Next: discuss scope, initial formats and World publication permissions. After acceptance, update the roadmap/project instructions and make the Knowledge interaction mockup first. Preserve the live preview/ignored credentials; no provider/worker/storage effects or new spending are authorized by this proposal.
