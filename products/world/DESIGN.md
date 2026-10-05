@@ -111,3 +111,7 @@ User approved slice5.3 on 2026-10-05: extend the existing Knowledge search/+ men
 ### Functional delivery priority [world:req:functional-delivery-priority]
 
 User feedback on 2026-10-05: current design is subpar and the user is absolutely disappointed with the direction; UI UX Pro Max has not produced the expected quality. Feedback delivered to Designer, who acknowledged it. Prioritize complete working paths and actual agent testing, then revisit major UI changes. Phase5 closes before provider/workflow setup. Preserve the accepted shell/theme/components for now; truthful working/failed/retry states, clear Agent/World context and saved context/drafts matter. Fix only usability blockers during functional integration; skill recommendations do not establish user acceptance or justify new visual redesign.
+
+## Chat selection and keyboard behavior [world:req:chat-selection-keyboard]
+
+User feedback on 2026-10-06: only the current Session receives persistent selected-row treatment; inactive rows and contextual action buttons remain neutral, with distinct hover and visible keyboard focus. Selected Agent state remains independent. Enter sends through the existing chat submit path; Shift+Enter inserts a newline. IME composition, disabled sending and empty drafts must not accidentally submit. Preserve bounded growth, bottom placement and draft isolation. This is a basic usability correction; major UI polish remains deferred.
