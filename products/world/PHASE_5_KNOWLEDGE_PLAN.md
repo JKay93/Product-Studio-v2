@@ -65,6 +65,12 @@ Use bounded request processing for small TXT/Markdown. PDF ingestion needs a mea
 
 Phases 1–4 remain unchanged. This preserves the first workflow and later requirements while inserting Knowledge first. The user approved this sequence on 2026-10-05; ROADMAP.md now records it. Stable record IDs are retained when display numbering changes.
 
+## Implemented imports [world:knowledge-plan:implemented-imports]
+
+Slices 5.1–5.3 are accepted for controlled development. Imports now use the existing +/dialog/tree/reader, explicit preview/publication, immutable originals and parser/source versions, guarded request processing and safe resume. Actual hosted Storage replay required authenticated server-only encryption: cached URLs may still deliver ciphertext; new plaintext application requests recheck current authority before decryption/final delivery and deny after revocation. No raw-URL403 or already-delivered-content recall is claimed. See ARCHITECTURE.md world:req:knowledge-original-encryption and CURRENT_RUN.md for the reviewed exact boundary, applied migrations and proof.
+
+TXT/MD512KiB; selectable PDF5MiB/50pages/100kcodepoints/1000passages. PDF's Windows-only Job Object guard enforces CPU/memory/wall/output/concurrency and sanitized child access; unsupported platforms fail closed. No shared queue/provider was started. Existing plaintext test fixtures remain explicit legacy; retained encryption keys stay ignored/server-only. Production host/key recovery/rotation/retention remain later decisions. The next build is slice5.4 ranked passage search;5.5 integrates final search/library/import proof, reusing valid evidence. No full Phase5 or pilot readiness is claimed.
+
 ## Choices before implementation [world:knowledge-plan:choices]
 
 Recommended starting formats are authored text, TXT, Markdown and selectable-text PDF; other formats remain later work. Exact byte/page/text/concurrency quotas follow a bounded parser spike, must be visible in upload UI and must not require paid capacity. Document roles/publication defaults above are approved. Retain versions and archived items during development; permanent purge/retention policy remains a separate decision before pilot. Existing Phase 4 email-link session proof remains an onboarding check, independent of Knowledge planning.
