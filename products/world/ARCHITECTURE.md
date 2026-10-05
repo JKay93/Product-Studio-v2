@@ -1,7 +1,7 @@
 <!-- studio {"id":"world:decision:architecture","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World architecture decisions
 
-World uses a modular monolith with a web application, API and database. One shared background worker supports bounded Knowledge processing in Phase 5 when required and the provider workflow in Phase 6. This keeps infrastructure small while separating Agent identity, authority, knowledge and model access. These approved choices were recorded on 2026-10-03. Phases 1–3 established the shared UI; Phase 4 implements real identity, persistence and authority. Provider and worker execution remain later work.
+World uses a modular monolith with a web application, API and database. One shared background worker supports the provider workflow in Phase 6; bounded Knowledge PDF processing uses its guarded parser process. This keeps infrastructure small while separating Agent identity, authority, knowledge and model access. These approved choices were recorded on 2026-10-03. Phases 1–3 established the shared UI; Phase 4 implements real identity, persistence and authority. Phase6 construction and its acceptance evidence are tracked in CURRENT_RUN.md.
 
 ## Runtime and domain boundaries [world:req:runtime-boundaries]
 
@@ -39,7 +39,7 @@ Departure revokes grants, pending approvals and queued work, invalidates affecte
 
 ## Deferred complexity and open choices [world:req:lean-architecture]
 
-Do not introduce Redis, a separate vector database, Kubernetes, services per Agent, or universal external-runtime interoperability for the initial release. Provider identity, deployment host, exact database schema, job configuration and future memory-import formats remain implementation or later product choices.
+Do not introduce Redis, a separate vector database, Kubernetes, services per Agent, or universal external-runtime interoperability for the initial release. Phase6 selects direct Anthropic behind a replaceable adapter and one pg-boss worker. Deployment host and future memory-import formats remain later choices.
 
 See [Tech stack](TECH_STACK.md) for selected tools, [Code organization](CODE_ORGANIZATION.md) for module boundaries, and [Product decisions](PRODUCT_DECISIONS.md) for intended behavior. Verification follows the [Roadmap](ROADMAP.md); this record does not claim backend correctness.
 
@@ -76,3 +76,13 @@ TXT/Markdown use strict UTF-8 and bounded request processing. Selectable-text PD
 Phase5 uses PostgreSQL simple full-text tokenization, weighted title/body vectors and ranked bounded passages inside the existing database. Each matching document contributes its strongest passage; a more specific query can locate another passage. A dedicated caller-JWT search repository/API keeps snippets out of workspace snapshots. Derived passage records are as private as their source; current authority, item publication, archive state and exact current version filter ordinary retrieval. World search includes published active documents only; a personal owner searches their private active current documents without needing World-audience publication. Opening a result rechecks current source authority and identifies the exact immutable version.
 
 Queries are bounded to200 Unicode codepoints/12 terms; result pages default10/max20 and snippets max320 codepoints. Pagination binds query, World and authority version and exposes no global total. Authored and imported locations share Unicode codepoint offsets; reader navigation uses the same passage ranges. Client results are invalidated on query/scope changes and known archive/version mutations. No model answer, embedding service, automatic learning or provider call is introduced. Implementation acceptance and actual runtime proof remain in the Phase5 completion run.
+
+## Working Agent execution [world:req:working-agent-execution]
+
+Phase6 reuses the protected workspace, Chat, Work and Knowledge reader. An authenticated command binds immutable input, request identity, current World/Agent/Session authority and finite delegation to a saved job and transactional outbox. Queue payloads contain only the job ID. Recent permitted user/assistant turns, effective scoped instructions and bounded relevant source passages become context; organizational work excludes private personal configuration/memory and borrowed owners' private data. Reference content is untrusted context. Exact source/version/location provenance survives derived responses and is checked again before display or effects.
+
+One shared Node process uses pinned pg-boss with an initialized queue schema. Its dedicated development login has reviewed queue access and narrow job functions, no application-table access, elevated flags, role memberships or runtime privileged-connection fallback. The child receives only its restricted connection and explicitly enabled provider credential, with certificate/hostname verification. Capability, attempt and lease fences protect claims, checkpoints and finalization; no stored user refresh token or long database transaction spans provider networking. Cancellation, retry and recovery recheck authority and retain uncertain provider charges.
+
+The server-only Anthropic adapter counts bounded input before dispatch and streams visible text while keeping thinking private. Atomic conservative input/output reservations enforce a cumulative US$4 development-test ceiling, including concurrent retries and uncertain charges. Reliable provider usage settles the reservation even when output fails quality or proposal validation; unknown usage remains reserved. Current limits are recorded in the implementation and Tech stack. The root controls paid synthetic tests; account balance is not inferred from estimated token cost.
+
+Meeting output is a proposal. Editing uses expected revisions; approval binds the exact proposal revision and digest. Idempotent approval creates assigned internal tasks, and editable follow-up drafts persist without external sending. Client scope-generation guards prevent late reads from replacing newer mutations or another scope. Actual source/revocation/race and worker recovery proof precede acceptance; see the current run. Real delegation, approval opt-out, automatic learning and portable exports remain later phases.

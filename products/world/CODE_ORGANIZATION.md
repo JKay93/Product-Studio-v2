@@ -23,11 +23,13 @@ World/
       knowledge/
       actions/
       meeting-work/
+      working-agent/       Live job/proposal public contract
     adapters/
       database/
       storage/
       models/
       jobs/
+      worker/              Shared restricted queue runtime
     entrypoints/           Worker startup
   supabase/                Migrations and access policies
   tests/
@@ -50,6 +52,8 @@ Slice 5.3 extends that public contract with import identity, format/limits, stag
 Each domain module exposes a small public interface. Other modules use that interface rather than importing internal files. Separate server-only and client-safe entry points. Domain logic stays independent of framework and provider SDK imports; adapters handle those dependencies.
 
 Phase5 search extends the public Knowledge entry with its own search repository, bounded query/result types and canonical authored passage ranges. Database ranking stays in the caller-scoped database adapter/migration; the client request adapter and thin search route retain existing authentication/cache/origin boundaries. Focused search state/results compose the existing context tree and reader, without a second workspace or separate document viewer. Demo search uses the same public contract. Actual candidate/checks are recorded in CURRENT_RUN.md.
+
+Phase6 exposes client-safe job/proposal/budget validation through `src/modules/working-agent`. Server-only provider contracts, Anthropic streaming and execution live in `src/adapters/models`; restricted connection/job persistence in `src/adapters/database`; queue coordination in `src/adapters/worker`. `src/entrypoints/agent-worker.ts` starts the shared worker. The caller-scoped request adapter and thin `src/app/api/agent-work` boundary compose existing authentication and workspace controls. Focused job reply/controller/meeting-work patterns reuse Chat, Work, source navigation and shared controls rather than duplicating the shell. Setup, fake-provider queue/recovery, authenticated API, source/revocation and paid-fixture launchers remain under `tests/integration`, with credentials ignored. Root controls paid execution; integration tooling never becomes a privileged application fallback. Installed migrations are immutable; corrections are additive. Whole candidate acceptance remains in CURRENT_RUN.md.
 
 Before adding a component or contract, search for an existing equivalent. Reuse real common behavior through primitives and interaction patterns. Avoid copied components, giant page files and one oversized configurable component intended to cover unrelated cases.
 
