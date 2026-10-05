@@ -43,6 +43,8 @@ Phase 4 uses client-safe persistence IDs/ownership/explicit commands in `src/mod
 
 ## Reuse and dependency rules [world:req:reuse-dependencies]
 
+Slice 5.2 exposes Knowledge library contracts and bounded validation through `src/modules/knowledge`; sample learning has an explicit demo-only entry. Caller-scoped database/request adapters live in `src/adapters/database` and `src/adapters/knowledge`, with the thin `src/app/api/knowledge` boundary. Knowledge UI separates controller, context tree, library composition, reader and editor under `src/ui/patterns`, reusing shell/search/+ /divider/dialog primitives. Demo and saved repositories share the same contract. Existing World text records and Agent Memory keep their original editor. Stories sit beside library patterns; focused tests and real integration/concurrency runners live under `tests`. No new dependency was needed.
+
 Each domain module exposes a small public interface. Other modules use that interface rather than importing internal files. Separate server-only and client-safe entry points. Domain logic stays independent of framework and provider SDK imports; adapters handle those dependencies.
 
 Before adding a component or contract, search for an existing equivalent. Reuse real common behavior through primitives and interaction patterns. Avoid copied components, giant page files and one oversized configurable component intended to cover unrelated cases.
