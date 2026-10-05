@@ -1,7 +1,7 @@
 <!-- studio {"id":"world:decision:architecture","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World architecture decisions
 
-World uses a modular monolith with a web application, API and database. One shared background worker is planned for Phase 5. This keeps infrastructure small while separating Agent identity, authority, knowledge and model access. These approved choices were recorded on 2026-10-03. Phases 1–3 established the shared UI; Phase 4 implements real identity, persistence and authority. Provider and worker execution remain later work.
+World uses a modular monolith with a web application, API and database. One shared background worker supports bounded Knowledge processing in Phase 5 when required and the provider workflow in Phase 6. This keeps infrastructure small while separating Agent identity, authority, knowledge and model access. These approved choices were recorded on 2026-10-03. Phases 1–3 established the shared UI; Phase 4 implements real identity, persistence and authority. Provider and worker execution remain later work.
 
 ## Runtime and domain boundaries [world:req:runtime-boundaries]
 
@@ -42,3 +42,11 @@ Departure revokes grants, pending approvals and queued work, invalidates affecte
 Do not introduce Redis, a separate vector database, Kubernetes, services per Agent, or universal external-runtime interoperability for the initial release. Provider identity, deployment host, exact database schema, job configuration and future memory-import formats remain implementation or later product choices.
 
 See [Tech stack](TECH_STACK.md) for selected tools, [Code organization](CODE_ORGANIZATION.md) for module boundaries, and [Product decisions](PRODUCT_DECISIONS.md) for intended behavior. Verification follows the [Roadmap](ROADMAP.md); this record does not claim backend correctness.
+
+## Knowledge library boundary [world:req:knowledge-library-boundary]
+
+The user approved Knowledge-first Phase 5 on 2026-10-05. Reference documents are distinct from behavioral Memory; personal documents belong to the user, organization documents to their World. The library uses immutable item/content-version/passage records, bounded paginated read/search endpoints and private Storage; it must not place every document body into the workspace snapshot. Existing memory source-version references are not a retrievable document version archive.
+
+Personal owners manage their library. Organization owners/admins manage World documents; members read only documents explicitly published to their World library, and unpublished drafts remain owner/admin-visible. Folders do not grant permissions; current note rules are not silently copied to file documents. Publication, storage completion, parsing and retrieval all recheck exact current authority. Authenticated original-file delivery supports denying new requests after revocation; already delivered content cannot be recalled. Avoid bearer signed URLs when immediate new-request revocation is required.
+
+Initial retrieval is PostgreSQL keyword search with exact version/page/paragraph references; embeddings, providers, automatic learning and cross-World export remain later capabilities. Start with interactive UI assessment, then saved text, bounded TXT/Markdown/text-PDF import, search and real boundary proof. The approved plan resolves slices; actual implementation/evidence remains in CURRENT_RUN.md.

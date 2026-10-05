@@ -1,0 +1,29 @@
+<!-- studio {"id":"world:run:2026-10-05-knowledge-mockup","scope":"world","type":"run","status":"approved"} -->
+# Knowledge interaction mockup
+
+## Goal and scope
+User accepted the Knowledge-first proposal and said Proceed on 2026-10-05. Update approved sequence and product rules, deliver slice 5.1 interactive mockup first for visual assessment before saved library/import/search backend. No current app/runtime, database, file upload, provider, worker, paid capacity or deployment changes. Knowledge text/mock state is demonstration data only.
+
+## Tasks and acceptance
+- world:task:knowledge-approval-records — Orchestrator: approve plan, update roadmap 5–9, document roles/source-memory distinction, preserve stable retrieval IDs and Phase 4 limits. Done: canonical product records and World/AGENTS.md updated.
+- world:task:knowledge-mockup-build — Builder: full-page Calm Fluent mockup using approved shell/context rail; folders/search/filter, reader/detail/version, sample create/import processing/error/archive, private and published World distinction. Independent rail collapse/resize, keyboard controls and narrow layout; no network/persistence authority claims or invented AI responses. Done: candidate below passed focused and browser checks.
+- world:task:knowledge-mockup-review — independent read-only peer under explicit current-run exception: inspect actual fragment, meaningful interactions, privacy presentation, markup/runtime/mobile/keyboard behavior and scope. Done: PASS on final candidate after one review correction; no remaining material findings.
+- world:task:knowledge-mockup-delivery — Orchestrator: consolidate evidence, show inline for UI feedback, push accepted source and records separately to verified repos. Accepted for mockup delivery; Git receipts below. Whole Phase 5 completion is not claimed by 5.1.
+
+## Outcomes
+Started from clean MyWorld c326f6362b397208d3458603fd5a424eb203d94a and studio 4b6bc57ace38e9d21cb1b2a990e57a2ebacd05af. Final candidate World/design/mockups/knowledge-library.html and identical inline mirror world-knowledge-library.html: SHA256 0ED3B51457B3A91A2A8E56447B54C5BDC57107F07DA31802ED537814242ED47A. Independent /root/world_phase4_foundation PASS; Orchestrator accepted interaction mockup only. No user layout acceptance or full Phase 5 completion claimed.
+
+Builder checks passed JavaScript syntax, no-network fragment boundaries, escaped user text, scope/role filtering, note creation, exact history, archive/restore, revocation and recovery. Root actual skill sandbox/CSP browser checks passed reader/history (earlier two working days versus current one), matching passage search, member published-only and private personal scope, note save, archive/restore, failed-import retry and revocation. Independent rail collapse/hide, keyboard width, mobile Collections/Escape focus return passed. Narrow frames around 306–320px fit without horizontal overflow; desktop tested around 1024px. Screenshots: World/tests/evidence/knowledge-mockup/desktop.png and mobile.png.
+
+Two implementation corrections fixed state-echo recursion/reset and forbidden native form submission (local button/keyboard save). One review correction added interrupted upload and stale-edit conflict recovery. Final browser delta passed retained text/destination at 40% interruption, Resume → Processing → Draft, and conflict blocking save while preserving draft; explicit Keep/reapply plus subsequent save produced version 3. Independent reviewer inspected both recovery choices and immutable prior bodies. No new errors after fixes; browser logs retain the old pre-fix entry. No live source/package/SQL changes, so app builds were not repeated. Whitespace and Studio retrieval/graph checks passed with stable scoped IDs.
+
+Repository delivery: MyWorld main da8231ea428566a02e554d7aaa9b71030f49115a pushed and matched remote refs/heads/main. Studio delivery is the commit containing this record; its successful push and matching remote-head receipt are retained in final host output. No deployment. An initial elevated Git ownership mismatch was resolved with a command-scoped safe.directory for the verified checkout, without changing global trust configuration.
+
+## Questions and decisions
+Resolved: user explicitly approved existing independent reviewer at its current setting for this mockup run. Normal routing unchanged; previous Phase 4 exception not reused. Knowledge library phase 5 accepted; previous workflow/collaboration/continuity/pilot become 6/7/8/9. Personal documents user-owned/private; World owner/admin manage documents, members read explicitly published documents, unpublished World drafts owner/admin only. Archive/version retention development-only; purge before pilot requires later decision. TXT/MD then selectable-text PDF, no OCR/connectors/learning/inference. No unresolved implementation questions in 5.1; user visual assessment is next.
+
+## Routing and ownership
+Routing hash 1C46027A5AABE051940D9F912FC39A77D1068F68E6B04FE4BC3DCDF7DA997E3F. Builder existing /root/world_phase4_personal_ui at recorded/current gpt-6.1-sol/low/none; independent existing /root/world_phase4_foundation at current recorded low under new user exception because host agent limit prevented configured QA medium dispatch. Fresh role/routing reads preceded follow-ups. Requested routes/receipts retained in host; actual activation/usage/cost unknown. Root owns records, no duplicate worker reports.
+
+## Deferred work and handoff
+Slice 5.1 is ready for UI assessment. Saved library 5.2, imports 5.3, search 5.4 and real storage/authority proof 5.5 follow it; no model connection or execution. Compose canonical React/domain primitives during implementation rather than copying this mock runtime into the app. Preserve live Phase 4 preview, secrets and unrelated data. Existing email-link roundtrip and physical mobile keyboard limitations remain distinct.

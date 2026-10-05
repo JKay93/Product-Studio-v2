@@ -1,7 +1,7 @@
-<!-- studio {"id":"world:plan:phase5-knowledge","scope":"world","type":"plan","status":"draft","links":[{"relation":"requires","target":"world:decision:product"},{"relation":"requires","target":"world:decision:architecture"},{"relation":"requires","target":"world:decision:roadmap"},{"relation":"requires","target":"world:decision:code-organization"},{"relation":"requires","target":"world:decision:design"}]} -->
-# Proposed Phase 5 Knowledge library
+<!-- studio {"id":"world:plan:phase5-knowledge","scope":"world","type":"plan","status":"approved","links":[{"relation":"requires","target":"world:decision:product"},{"relation":"requires","target":"world:decision:architecture"},{"relation":"requires","target":"world:decision:roadmap"},{"relation":"requires","target":"world:decision:code-organization"},{"relation":"requires","target":"world:decision:design"}]} -->
+# Phase 5 Knowledge library
 
-Bring Knowledge forward before model connection and the meeting workflow. A nontechnical user should be able to store reference material, find the relevant passage, inspect its source and understand who can read it. This produces a useful library now and a reliable source layer for later Agent answers. This is a proposal requested on 2026-10-05, not implementation authority or an approved roadmap replacement.
+Bring Knowledge forward before model connection and the meeting workflow. A nontechnical user should be able to store reference material, find the relevant passage, inspect its source and understand who can read it. This produces a useful library now and a reliable source layer for later Agent answers. The user approved this plan and Knowledge-first sequence on 2026-10-05. Begin with the interactive mockup for visual assessment before the library backend expands. No new spending or deployment authority is implied.
 
 ## What exists and what changes [world:knowledge-plan:baseline]
 
@@ -17,15 +17,15 @@ A user selects Personal space or their organization World, adds a note or import
 
 Example acceptance journey: an authorized Acme administrator adds an escalation SOP to the Customers folder, reviews the extracted text and publishes it. An authorized member searches for escalation, sees the matching passage and opens the cited version. Switching Worlds removes those results. After membership revocation, an already-open reader cannot request further content.
 
-## Proposed scope and access [world:knowledge-plan:scope]
+## Scope and access [world:knowledge-plan:scope]
 
 Personal libraries belong to the user, rather than to one Agent. Personal items stay private and are excluded from organization work by default. Organization documents belong to their World, remain there after an employee leaves, and never automatically become portable learning. Folders organize items; they do not create or transfer permission.
 
-Recommended initial document policy, requiring product acceptance: personal owner manages their own library; organization owner/admin manages World documents; members read only documents explicitly published to that World's library. Organization drafts are visible only to authorized owner/admin, and publishing clearly states the intended member audience. Do not derive access to unpublished documents merely from membership, Session participation or a borrowing grant. Existing World text-note permissions remain unchanged; a new document policy must be explicit.
+Approved initial document policy: personal owner manages their own library; organization owner/admin manages World documents; members read only documents explicitly published to that World's library. Organization drafts are visible only to authorized owner/admin, and publishing clearly states the intended member audience. Do not derive access to unpublished documents merely from membership, Session participation or a borrowing grant. Existing World text-note permissions remain unchanged; a new document policy must be explicit.
 
 In scope: authored text, folders, titles, paginated browsing, immutable document versions, current-authority access, archive/restore, TXT/Markdown import, bounded selectable-text PDF import, extraction preview, ranked keyword search and source locations. No public links or cross-World sharing. Ready means searchable within its allowed scope, not that an Agent has learned it.
 
-Out of scope: scanned PDF/OCR, spreadsheets/slides/Word parsing, URL crawling, Drive/Notion/email sync, automatic summaries/learning, embeddings/semantic search, provider calls, Agent execution, portable export and permanent deletion. Existing authorized infrastructure is reused; this proposal grants no paid capacity or new deployment.
+Out of scope: scanned PDF/OCR, spreadsheets/slides/Word parsing, URL crawling, Drive/Notion/email sync, automatic summaries/learning, embeddings/semantic search, provider calls, Agent execution, portable export and permanent deletion. Existing authorized infrastructure is reused; this plan grants no paid capacity or new deployment.
 
 ## Build sequence and acceptance [world:knowledge-plan:sequence]
 
@@ -53,9 +53,9 @@ Storage and database publication are not one transaction. Reserve an item/versio
 
 Use bounded request processing for small TXT/Markdown. PDF ingestion needs a measured parser spike with CPU/time/page/text limits; if durable processing is necessary, use the already approved single Node/pg-boss worker locally, with persisted stage/retry state and exact resource authority checks before processing/publication. No extra queue/service per Agent. Parser choice and worker credential boundaries must be reviewed before implementation; unrestricted service-role access is not an acceptable shortcut.
 
-## Proposed roadmap change [world:knowledge-plan:roadmap]
+## Approved roadmap change [world:knowledge-plan:roadmap]
 
-| Proposed phase | Outcome |
+| Phase | Outcome |
 | --- | --- |
 | 5 | Knowledge library and source retrieval preparation |
 | 6 | One-provider meeting workflow and grounded answers using authorized source versions |
@@ -63,8 +63,8 @@ Use bounded request processing for small TXT/Markdown. PDF ingestion needs a mea
 | 8 | Learning, portable continuity and full safe leaving |
 | 9 | SME pilot |
 
-Phases 1–4 remain unchanged. This preserves the first workflow and later requirements while inserting Knowledge first. Approved ROADMAP.md still contains the original sequence until the user accepts this proposal. Stable record IDs are retained when display numbering changes.
+Phases 1–4 remain unchanged. This preserves the first workflow and later requirements while inserting Knowledge first. The user approved this sequence on 2026-10-05; ROADMAP.md now records it. Stable record IDs are retained when display numbering changes.
 
 ## Choices before implementation [world:knowledge-plan:choices]
 
-Recommended starting formats are authored text, TXT, Markdown and selectable-text PDF; other formats remain later work. Exact byte/page/text/concurrency quotas follow a bounded parser spike, must be visible in upload UI and must not require paid capacity. Proposed document roles/publication defaults above need acceptance. Retain versions and archived items during development; permanent purge/retention policy remains a separate decision before pilot. Existing Phase 4 email-link session proof remains an onboarding check, independent of Knowledge planning.
+Recommended starting formats are authored text, TXT, Markdown and selectable-text PDF; other formats remain later work. Exact byte/page/text/concurrency quotas follow a bounded parser spike, must be visible in upload UI and must not require paid capacity. Document roles/publication defaults above are approved. Retain versions and archived items during development; permanent purge/retention policy remains a separate decision before pilot. Existing Phase 4 email-link session proof remains an onboarding check, independent of Knowledge planning.
