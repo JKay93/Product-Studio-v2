@@ -115,3 +115,9 @@ User feedback on 2026-10-05: current design is subpar and the user is absolutely
 ## Chat selection and keyboard behavior [world:req:chat-selection-keyboard]
 
 User feedback on 2026-10-06: only the current Session receives persistent selected-row treatment; inactive rows and contextual action buttons remain neutral, with distinct hover and visible keyboard focus. Selected Agent state remains independent. Enter sends through the existing chat submit path; Shift+Enter inserts a newline. IME composition, disabled sending and empty drafts must not accidentally submit. Preserve bounded growth, bottom placement and draft isolation. This is a basic usability correction; major UI polish remains deferred.
+
+## Real collaboration [world:req:collaboration-ui]
+
+Phase 7 reuses saved canvas identities and responsibilities, Chat and Meeting work. Linked-Agent work is an explicit action beside the ordinary proposal action; actual team steps show assigned Agent, responsibility, attempt, status and expandable findings. Root aggregation enters the existing editable assigned proposal and exact approval flow. Saved results remain available after reload and execution expiry under current access. Progress must stay attached to the same job through edits and approval, without carrying state into another scope.
+
+Internal-task review defaults to required. Its compact status and explicit change control are keyed to the current actor/World/Session/Agent; opting out requires an unchecked danger acknowledgment, stays visibly indicated, records an audit and can be restored. Borrowing alone cannot waive review. Owner activity exposes usage metadata only; names come from already permitted workspace records, otherwise opaque identifiers. Live inspector wording directs team activity to Meeting work rather than claiming an empty activity feed. Major visual redesign remains deferred.

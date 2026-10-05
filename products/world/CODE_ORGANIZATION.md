@@ -61,6 +61,8 @@ Keep pages responsible for composition and request boundaries. Keep business rul
 
 ## Review and ownership [world:req:code-review-ownership]
 
+Phase 7 exposes small client-safe collaboration run/step/policy/audit/owner-usage contracts through `src/modules/collaboration`. Its caller-scoped database and request adapters reuse the existing authenticated Agent-work boundary and shared RPC handling. Delegation extends the same restricted worker and model input construction; no new queue, provider, dependency or workspace shell is introduced. Focused team-progress, scoped approval and metadata-only owner-activity patterns compose existing Chat/Work/inspector/canvas. Additive SQL owns deterministic graph expansion, dependency scheduling, current lineage/provenance checks and locked budget/effects. Tests cover bounded prompt placement, scope-keyed UI and real rollback/API/queue/race/recovery proof; root-only paid fixture helpers remain ignored-data-controlled development tooling.
+
 Use proportionate dependency and cycle checks, duplication checks, and review of files that combine unrelated responsibilities. No arbitrary line-count threshold has been agreed.
 
 The orchestrator maintains World's local `AGENTS.md` as a concise bridge to the shared studio and relevant product decisions. Worker briefings include those sources. UI UX Pro Max remains project-local. The user-provided application GitHub destination is JKay93/MyWorld, verified on 2026-10-04; studio product records are delivered to the studio's verified repository separately.
