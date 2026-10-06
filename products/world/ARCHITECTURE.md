@@ -29,6 +29,10 @@ Recheck current authority when retrieving context, dispatching work, resuming it
 
 Approval belongs to a specific action and payload version. Editing the proposed action invalidates its old approval. Waiting approval is persisted so the worker can release capacity and resume later. Retries and duplicate job delivery must produce one logical effect. Scoped approval opt-out is validated on the server and cannot bypass other authority layers.
 
+### World policy authoring compatibility [world:req:world-policy-authoring]
+
+The approved product direction is defaults/settings toggles first, enterprise-authored World harnesses later; see PRODUCT_DECISIONS.md [world:req:world-harness-configuration]. Design toggles as an authoring interface over shared policy definitions and evaluation, rather than a separate toggle-only enforcement path. Future enterprise authoring must reuse those authority boundaries and the same action checks; it cannot grant new permissions merely by writing instructions. Keep behavioral guidance distinct from enforceable permissions/constraints. Extend the existing modular monolith; enterprise syntax/editor, arbitrary-code support and a generalized resolver are not selected or implemented by this decision. Later authoring may need additive schemas and UI, but should not require replacing the policy foundation.
+
 ## Knowledge and departure [world:req:memory-departure]
 
 Separate personal memory from each World's knowledge and derived memory. Preserve ownership and source provenance on context, summaries, outputs, jobs and caches, so access checks also cover derived material. Implement selected organizational learning export only with organizational authorization and user acceptance.

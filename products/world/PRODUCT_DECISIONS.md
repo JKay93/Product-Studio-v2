@@ -27,6 +27,12 @@ Phase 7 approved implementation scope: internal-task creation policy is exact to
 
 User accepted on 2026-10-06: completed actions retain the policy revision effective when authorized/executed. Starting a Session or task does not freeze its rules for later actions. Subsequent protected actions must satisfy current applicable authority and approval requirements; policy notifications improve responsiveness but do not replace server enforcement. Already dispatched external operations may finish under their original authorization, with cancellation dependent on the service; transmitted context and completed effects cannot be recalled. Preserve audit history rather than retroactively judging completed effects under a later rule. This is approved intended behavior, not proof of a generalized live-policy implementation.
 
+## World harness configuration [world:req:world-harness-configuration]
+
+Approved on 2026-10-06: World harnesses have two authoring paths. Initially provide shared safe defaults across Worlds, configurable by authorized World owners/admins through settings toggles and scoped options (for example, allowing external Agents). Later allow enterprises to author their own World harnesses within the platform. Enterprise authoring is deferred, but the foundation must accommodate it without replacing the core policy/enforcement model. A configurable external-Agent policy does not itself implement external-runtime interoperability.
+
+Both paths remain subject to Universe hard boundaries, Agent-owner constraints and valid Session grants. Settings changes do not grant an administrator authority over another Agent's private Self or another World. Enterprise language, schema, editor and import formats remain undecided. This records intended behavior and extension requirements, not implemented settings or enterprise capabilities.
+
 ## Personal and organizational knowledge [world:req:knowledge-continuity]
 
 Personal knowledge, memory and private chats remain confidential. Organizations can inspect effective configuration and work within their World; membership does not expose unrelated private knowledge or harness settings.
