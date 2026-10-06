@@ -33,6 +33,10 @@ Approved on 2026-10-06: World harnesses have two authoring paths. Initially prov
 
 Both paths remain subject to Universe hard boundaries, Agent-owner constraints and valid Session grants. Settings changes do not grant an administrator authority over another Agent's private Self or another World. Enterprise language, schema, editor and import formats remain undecided. This records intended behavior and extension requirements, not implemented settings or enterprise capabilities.
 
+### Combined harness metrics [world:req:harness-success-metrics]
+
+User-approved on 2026-10-06: assess the combined Universe/World/Agent/Session harness by Output Accuracy %, end-to-end latency, and token/cost efficiency. Freeze task-specific evaluation rubrics and declare the dataset/denominator; test-pass rates or deterministic security fixtures do not establish semantic model accuracy. Latency covers accepted request to usable root result, including queue/model/children/retries, with approval waiting shown separately. Efficiency includes all attempts/children and distinguishes reliable usage estimates from uncertain held charges and provider invoices. Numerical targets remain undecided. See UNIVERSE_FOUNDATION_REPORT.md for current measurements and limits.
+
 ## Personal and organizational knowledge [world:req:knowledge-continuity]
 
 Personal knowledge, memory and private chats remain confidential. Organizations can inspect effective configuration and work within their World; membership does not expose unrelated private knowledge or harness settings.
