@@ -55,6 +55,16 @@ Pausing stops automation but permits currently authorized retained review/manual
 
 ## Knowledge and departure [world:req:memory-departure]
 
+### Phase 8 learning design [world:req:phase8-memory-runtime]
+
+The accepted Phase 8 design adds a client-safe `memory-v1` contract and caller-scoped commands to the existing Agent-work boundary. Private database records hold stable entries, immutable versions, exact decision receipts, selected-text projections, portable releases, notices and job admission bindings. Knowledge remains reference material, distinct from behavioral memory; legacy source-linked Knowledge records do not silently become Agent instructions. Current implementation and acceptance evidence belong to [the learning report](LEARNING_CONTINUITY_REPORT.md) and current run.
+
+Suggest/Off controls inferred proposals. Optional bounded drafts accompany the normal model generation; no unconditional second extraction request is required. Authorized human decisions alone adopt a suggestion, publish exact World text, share an exact preference to a named World or accept an organization-authorized portable release. These decisions preserve inherited ownership and source restrictions. Agent borrowing excludes the owner's private store and private configuration.
+
+The context compiler admits at most five current lessons of at most1000 characters each, with safe origin labels. Sessions can narrow memory IDs and learning participation. Private job dependencies bind exact versions/revisions, projection controls and first-context Knowledge source revisions, including an empty first context. Existing authority helpers apply these checks to roots, contributors, retries, aggregation and effects; a change cannot revive an old execution merely by switching access back on. Completed lawful organizational history and personal accepted continuity use separate retained-view rules. No memory grants tools, permissions, approval waivers or budget authority.
+
+Departure extends the existing membership/revocation path rather than introducing a second authorization engine. A guarded idempotent command supports self-leaving and authorized administrative removal, protects the last owner, stops affected pending work and unaccepted transfers, and preserves existing lawful archives. Already transmitted prompts and completed effects cannot be recalled. Production retention/purge and external cancellation remain deferred.
+
 Separate personal memory from each World's knowledge and derived memory. Preserve ownership and source provenance on context, summaries, outputs, jobs and caches, so access checks also cover derived material. Implement selected organizational learning export only with organizational authorization and user acceptance.
 
 Supabase row-level security and private-storage policies provide additional protection. Service-role operations bypass row-level security, so privileged worker paths require explicit authorization and scoped queries.

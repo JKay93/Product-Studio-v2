@@ -71,6 +71,8 @@ User confirmed on 2026-10-07: learning operates continuously during work through
 
 ## Release priorities [world:req:release-priorities]
 
+Subsequent implementation approval2026-10-07: user said “Proceed” after the reviewed Phase 8 plan refinement. The whole plan and recommended defaults are accepted: Suggest/Off, deliberate inferred adoption, selected exact named-World preference sharing, distinct authorized World publication and organization release/recipient acceptance, correction with immutable revisions and immediate stop-use with retained history. Implementation and whole-phase proof are in progress under existing authority and cumulative US$4, with no production, automatic inferred adoption or purge. The preceding clarification-only authorization limit is historical, not a restriction on this approved run.
+
 The first usable release must demonstrate personal continuity, standing colleague access, authorized portable learning and safe departure, using one provider. The full first-release sequence is in [Roadmap](ROADMAP.md).
 
 Multiple providers follow next, then memory import. External Agents means agents running outside World, such as another vendor's runtime; interoperability is a later, low-priority expansion. Broad SaaS integrations, billing details and production-scale infrastructure are not initial requirements. Import formats, exact retention periods and provider selection remain undecided.
