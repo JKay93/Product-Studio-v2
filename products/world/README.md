@@ -20,6 +20,8 @@ Research proposal: [Harness runtime comparison and governance](HARNESS_RUNTIME_R
 
 Source assessment: [Harness boundary audit](HARNESS_BOUNDARY_AUDIT.md) maps current Phase7 controls, concrete context-construction weaknesses and missing generalized governance. Its next slice is proposed; source review does not replace live security verification.
 
+Implemented follow-up: [Context hardening](runs/2026-10-06-harness-context-hardening.md) fixes source mappings and complete bounded context assembly, with independent review and protected SQL/fake-provider proof. Broader governance and Phase8 remain deferred.
+
 Current implementation plan: [Phase6 working Agent](PHASE_6_WORKING_AGENT_PLAN.md), accepted after whole Phase5 closure. Direct Claude chat, scoped Knowledge sources, approval-bound meeting workflow and durable shared execution form one complete milestone. Initial synthetic live-test budget is capped below the user's available credit; exact authority/progress/evidence remain in CURRENT_RUN.md and its linked run.
 
 Active implementation plan: [Phase 7 collaboration and scoped autonomy](PHASE_7_COLLABORATION_PLAN.md), approved 2026-10-06. Connect saved Agent relationships to bounded real execution, standing colleague access, scoped owner activity, approval settings and combined recovery/authority proof. Continue routine work while the user sleeps; leave missing consequential/destructive approvals pending and record blockers while completing unaffected work. Existing cumulative US$4 authority continues without reset.
