@@ -65,6 +65,10 @@ World knowledge includes organizational documents, conversations and derived lea
 
 Initial personal continuity includes preferences, communication style and working habits, with the ability to inspect and correct memory. On departure, permitted personal continuity remains. Organizational grants, pending approvals and queued work are revoked; late results are rejected. Organizational chats and activity remain available to authorized organizational reviewers. Private personal chats remain private.
 
+### Continuous learning and adoption review [world:req:continuous-learning-adoption]
+
+User confirmed on 2026-10-07: learning operates continuously during work through feedback, proposed lessons, deliberate adoption, future application and correction. A popup or notification asks the appropriate authorized person whether to adopt a proposed lesson. Ignoring a suggestion does not adopt it or interrupt ordinary work. Personal learning is reviewed by its owner; organizational learning retains World publication authority, and portable organizational learning still requires organization release plus recipient acceptance. Authorized portability can occur during employment; departure governs access/continuity rather than triggering learning. The Phase 8 draft specifies the nonblocking notice, review and exact-version/current-authority checks; these controls are not implemented yet, and the clarification does not authorize the whole runtime build.
+
 ## Release priorities [world:req:release-priorities]
 
 The first usable release must demonstrate personal continuity, standing colleague access, authorized portable learning and safe departure, using one provider. The full first-release sequence is in [Roadmap](ROADMAP.md).
