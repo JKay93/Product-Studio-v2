@@ -18,6 +18,8 @@ These records capture accepted decisions from the conversation. They are not evi
 
 Research proposal: [Harness runtime comparison and governance](HARNESS_RUNTIME_RESEARCH.md) evaluates ten runtime/framework families and recommends ownership, conflict and malicious-instruction handling. It is a draft for user discussion, not adopted policy or implementation authority.
 
+Source assessment: [Harness boundary audit](HARNESS_BOUNDARY_AUDIT.md) maps current Phase7 controls, concrete context-construction weaknesses and missing generalized governance. Its next slice is proposed; source review does not replace live security verification.
+
 Current implementation plan: [Phase6 working Agent](PHASE_6_WORKING_AGENT_PLAN.md), accepted after whole Phase5 closure. Direct Claude chat, scoped Knowledge sources, approval-bound meeting workflow and durable shared execution form one complete milestone. Initial synthetic live-test budget is capped below the user's available credit; exact authority/progress/evidence remain in CURRENT_RUN.md and its linked run.
 
 Active implementation plan: [Phase 7 collaboration and scoped autonomy](PHASE_7_COLLABORATION_PLAN.md), approved 2026-10-06. Connect saved Agent relationships to bounded real execution, standing colleague access, scoped owner activity, approval settings and combined recovery/authority proof. Continue routine work while the user sleeps; leave missing consequential/destructive approvals pending and record blockers while completing unaffected work. Existing cumulative US$4 authority continues without reset.
