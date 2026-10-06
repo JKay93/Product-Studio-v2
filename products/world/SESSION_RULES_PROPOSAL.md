@@ -3,7 +3,7 @@
 
 A Session is the work agreement for a particular piece of work: its purpose, participants, usable resources, permitted actions and limits. It sits within one World. An Agent's Passport identifies it; current membership, consent and grants authorize its participation. A Session may narrow that authority, never enlarge it by merely listing an Agent, resource or tool.
 
-This is a proposal for discussion. It adds no runtime behavior. Complete Passport issuance/admission receipts and a general Session settings editor are not implemented by this document.
+This is the historical proposal before the user approved Session foundation and timed guest access. It adds no runtime behavior itself. Consult [current Session rules](SESSION_RULES.md) and [implementation evidence](runs/2026-10-06-session-foundation.md) for the implemented contract; the gaps below describe the earlier baseline. Complete external Passport interoperability remains deferred.
 
 ## Session and execution [world:req:session-purpose-boundary]
 
