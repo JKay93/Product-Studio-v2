@@ -13,6 +13,7 @@ This folder holds the decisions approved for World. Shared studio roles and oper
 - [World policy rules](WORLD_POLICY_RULES.md): implemented defaults/settings controls, conflict resolution, enforcement, file inventory and verification limits.
 - [Agent owner rules](AGENT_OWNER_RULES.md): enforced owner restrictions, sharing/approval boundaries, World conflicts, implementation and verification.
 - [Session rules and timed guest access](SESSION_RULES.md): Session controls, defaults, separate-owner guest consent, enforcement, inventory and measurement limits; acceptance evidence in the current run.
+- [Combined harness evaluation](HARNESS_EVALUATION.md): frozen realistic/adversarial cases, independently judged output accuracy, measured timing/token/cost evidence and limits before Phase 8.
 - [Session rules proposal](SESSION_RULES_PROPOSAL.md): historical discussion and meeting example; current rules are maintained above.
 
 Implementation plan: [Phase 4 identity, persistence and authority](PHASE_4_PLAN.md) contains the authorized implementation sequence, acceptance checks and setup dependencies. The user approved starting Phase 4 after the accepted Agent-page UI became Phase 3. Implementation authority does not imply new spending, deployment or completed verification.

@@ -29,6 +29,8 @@ Multiple providers -> memory import -> external Agent runtimes. Broader integrat
 
 ## Current status
 
+The user-authorized combined-harness evaluation before Phase 8 is complete for controlled development: [measured report](HARNESS_EVALUATION.md) and current run contain independent 3/3 workflow and 16/16 content scores, fresh policy/expiry/revocation tests, timing limitations and actual token/cost evidence. No new runtime restriction or migration was required. This small synthetic sample is not pilot acceptance; Phase 8 remains unstarted.
+
 Phases 1–4 are implemented, independently reviewed and accepted for controlled development. Phase 2 is the complete mock journey/navigation shell; Phase 3 is the Agent canvas/dedicated settings. Phase 4 adds real identity, protected persistence, organization memberships/Agents, scoped standing access, memory provenance and revocation. The shared UI remains reusable across explicit demo and backend modes.
 
 Phase 4 acceptance on 2026-10-05: thirteen additive migrations, three real users/two organizations/anonymous API and authenticated database matrix, deterministic grant/membership revocation and CAS races, 52 tests, typecheck/lint and production/gallery builds passed. Real browser creation, saved messages/drafts/configuration, reload/account isolation and organization memory separation passed. Independent review has no remaining material findings. See [the completion run](CURRENT_RUN.md) for candidate bindings, evidence and verified repository delivery.
