@@ -28,6 +28,25 @@ Implement the chosen look through Tailwind tokens and canonical Radix-based comp
 
 ## Main experience [world:req:main-experience]
 
+Shared Session experience approved 2026-10-08: selecting an Agent opens its direct
+chat, while the Chat + action creates a named shared Session. Reuse the current
+compact second rail, creation dialog and composer. The dialog chooses one permitted
+Agent, optional existing World members and the supported payer/budget; disclose
+room-scoped sharing and unavailable company billing without a compulsory setup tour.
+Keep previous conversations reachable under their original permissions.
+
+Own human messages appear on the right; other members have clearly labeled neutral
+messages, and Agent responses sit on the left with their identity. Attach each Agent
+reply to the message that requested it. Ordinary room messages remain human chat;
+the mention picker inserts an editable @Agent request without sending. Enter sends,
+Shift+Enter adds a line and drafts stay separate across direct chats and rooms.
+Preserve deliberate own-message meeting work and sender-owned question/approval/
+retry controls. Keep the floating Work/Outputs/Sources menu and expand details only
+after item selection. The approved reference is the
+[Session/chat prototype](prototypes/world-sessions-chat.html); actual implementation
+and simultaneous-user evidence belong to the
+[Session implementation run](runs/2026-10-08-shared-sessions-implementation.md).
+
 Chat-first work authorised2026-10-08 supersedes earlier primary Work navigation: continuous Agent Chat is the place to start, monitor and review work. Remove the primary Work tab. A compact floating Work menu exposes current work, pending requests, outputs and Sources; omit Collaborators from this menu. Opening the menu reserves no permanent column. Selecting a work/output/source opens its detail pane; closing restores Chat width. Agent Overview work links enter the corresponding Agent's Chat work surface.
 
 Questions and consequential approval requests appear above the composer in one navigable queue. Multiple or mixed requests keep separate drafts and exact decisions. Minimise, dismiss, Later and switching never grant approval; unrelated permitted work can continue. Existing meeting proposal editing, exact approval, task receipts and retry/cancel remain usable. The accepted reference is [the floating request prototype](prototypes/world-chat-requests.html); synthetic email/share examples do not authorize adding those external action tools.

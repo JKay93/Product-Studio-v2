@@ -1,6 +1,52 @@
 <!-- studio {"id":"world:reference:session-rules","scope":"world","type":"document","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"},{"relation":"depends_on","target":"world:reference:agent-owner-rules"}]} -->
 # Session rules and timed guest access
 
+## Direct chats and shared rooms [world:req:shared-session-conversations]
+
+Experience approved on 2026-10-08: selecting an Agent opens its ongoing direct
+chat. The Chat + action creates a named shared Session with one permitted Agent,
+optional existing World members, a visible payer and an explicit budget. Ordinary
+room messages are human conversation; mentioning the invited Agent asks it to
+work. Users may also deliberately use their own message as meeting notes, or
+start the existing reviewed team workflow. Answering an existing question or
+approving its exact output does not require another mention. There is no
+automatic collaborator fanout.
+
+Shared room creation grants only the selected people exact room-scoped Agent
+use, only where the creator already has issuer authority and current borrowing,
+source and access policies permit it. Membership elsewhere grants nothing. New
+rooms never copy private direct-chat history. Existing conversations retain their
+previous access rules and appear separately; organization conversations remain
+available to authorized World review.
+
+The current funding option is the creator through the existing development
+provider pool. Company/member billing accounts and external invitation delivery
+remain deferred. The initial room cap is an additional immutable ceiling over
+all room roots, children, retries and uncertain holds; Session policy may narrow
+it. It never resets or replaces the existing run and cumulative testing ceilings.
+
+Multiple mentions remain separate requests. Database acceptance order determines
+their sequence; a later request waits while earlier authorized root work is
+queued or running. Children of the active root can still progress. Each reply
+belongs to its initiating member, and only that member may answer its questions,
+approve its exact proposal, cancel or retry it. A repeated request identity does
+not create another message or job. A failed request can release later work;
+retrying it waits for any later root already running. Cancellation invalidates
+the old result and permits the next request, although an already-transmitted
+provider call may still be aborting. Late results/effects are rejected and
+uncertain costs retained.
+
+Each request's context excludes human messages accepted after that request.
+Earlier completed replies are checked again against current authority before
+reuse. Shared recovery reserves eight recent human turns and four permitted
+prior replies, plus up to 24 relevant older turns, within the existing compiler
+limits. Full stored history remains available; finite model context is not
+lossless recall. Private Agent memory is not exposed as a shared room artifact.
+
+Implementation and observed concurrency results belong to the
+[current Session implementation run](runs/2026-10-08-shared-sessions-implementation.md).
+Source approval alone does not establish live acceptance.
+
 A Session is the persistent agreement for a piece of work in one World. Its conversations and authorized outputs survive individual execution runs. Session settings narrow current permissions; they cannot grant resources, cancel owner restrictions or override Universe and World rules. This foundation uses authenticated settings and database enforcement, alongside bounded purpose and output guidance for the model.
 
 Implemented, independently reviewed and accepted for controlled development on2026-10-06. Implementation and acceptance evidence belong to [the Session run](runs/2026-10-06-session-foundation.md). The earlier [proposal](SESSION_RULES_PROPOSAL.md) is historical discussion.
