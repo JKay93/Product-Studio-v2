@@ -28,6 +28,10 @@ Implement the chosen look through Tailwind tokens and canonical Radix-based comp
 
 ## Main experience [world:req:main-experience]
 
+Chat-first work authorised2026-10-08 supersedes earlier primary Work navigation: continuous Agent Chat is the place to start, monitor and review work. Remove the primary Work tab. A compact floating Work menu exposes current work, pending requests, outputs and Sources; omit Collaborators from this menu. Opening the menu reserves no permanent column. Selecting a work/output/source opens its detail pane; closing restores Chat width. Agent Overview work links enter the corresponding Agent's Chat work surface.
+
+Questions and consequential approval requests appear above the composer in one navigable queue. Multiple or mixed requests keep separate drafts and exact decisions. Minimise, dismiss, Later and switching never grant approval; unrelated permitted work can continue. Existing meeting proposal editing, exact approval, task receipts and retry/cancel remain usable. The accepted reference is [the floating request prototype](prototypes/world-chat-requests.html); synthetic email/share examples do not authorize adding those external action tools.
+
 Make working on and reviewing useful tasks the primary experience. Offer an Agent relationship canvas that shows the orchestrator and editable sub-agent relationships, with expandable branches. Agent cards emphasize identity, ownership, role, permissions and current activity.
 
 The user's reference image informs the linked cards and relationship layout. Its token balances, breeding, trading and other cryptocurrency content are not World requirements.
