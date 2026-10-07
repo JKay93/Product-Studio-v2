@@ -17,6 +17,8 @@ A user and personal Agent may participate in multiple Worlds, such as an employe
 
 ## Collaboration and approval [world:req:collaboration-approval]
 
+Graph/profile implementation approved2026-10-07: saved collaboration links may be reciprocal and share the same Agent across multiple relationships; they are available pathways, never permanent recursive ownership or permission grants. A run compiles its reachable saved network into a bounded acyclic assignment structure with one participant per Agent identity. Repeated/ancestor targets become explicit nonblocking existing-participant references, not recursive new jobs. Model-driven request/reply capabilities must be distinguished from references and cannot be implied by a static graph. Groups organize the directory only. Existing three-total-layer/6children/2concurrent/deadline/retry/budget and current-authority limits remain. User requested actual loop tests; acceptance evidence lives in [the graph/profile run](runs/2026-10-07-agent-graph-implementation.md).
+
 Users can create an orchestrator and inspect or change its linked sub-agents. A colleague's Agent can participate through delegated access while retaining its identity and ownership. The borrowing relationship and activity must also be visible to its owner.
 
 Standing access is explicit, scoped, revocable permission for repeated delegation without asking for access on every request. Consequential actions require approval by default. An authorized user may disable approval for a specific Agent, World and action scope, with a clear danger warning, visible indicator, audit trail, and easy restoration. This cannot override Universe rules, World restrictions, another owner's limits, or Session grants.
