@@ -51,6 +51,15 @@ Chat-first work authorised2026-10-08 supersedes earlier primary Work navigation:
 
 Questions and consequential approval requests appear above the composer in one navigable queue. Multiple or mixed requests keep separate drafts and exact decisions. Minimise, dismiss, Later and switching never grant approval; unrelated permitted work can continue. Existing meeting proposal editing, exact approval, task receipts and retry/cancel remain usable. The accepted reference is [the floating request prototype](prototypes/world-chat-requests.html); synthetic email/share examples do not authorize adding those external action tools.
 
+Clarification behavior refined 2026-10-08 after user testing: ordinary vague requests
+and missing background use concise normal chat. Structured question cards support
+material choices for an understood task. Related cards from one reply form one
+round: save exact answers, then continue once with the original task and all answers.
+Retries must reuse that continuation. The continuation cannot emit another structured
+round automatically; remaining clarification stays conversational. Answering questions
+never grants action approval. Runtime must stay stopped until the user authorizes
+restoration after the spending-protection stop.
+
 Make working on and reviewing useful tasks the primary experience. Offer an Agent relationship canvas that shows the orchestrator and editable sub-agent relationships, with expandable branches. Agent cards emphasize identity, ownership, role, permissions and current activity.
 
 The user's reference image informs the linked cards and relationship layout. Its token balances, breeding, trading and other cryptocurrency content are not World requirements.

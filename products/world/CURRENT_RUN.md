@@ -1,6 +1,16 @@
 <!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
 # World current run
 
+Accepted and delivered for controlled development: [Repeated question investigation and fix](runs/2026-10-08-question-loop-fix.md). Verified per-answer branching; protected whole-round continuation resumes once with original task/all answers, exact revisions/current authority and stable retries. Continuations cannot spawn another structured round; vague clarification uses normal chat guidance. Installed046, independent review, full286/54 offline tests plus5 cleanup tests, protected rebuild/direct/shared/race/revocation proofs and final build pass. Synthetic scopes cleaned;545816microUSD/101 ledger rows unchanged, zero paid calls. Verified MyWorld main92b956c81ee97bcce8dfcb5eb90855b90445a3bb. Localhost and Claude worker remain stopped; restoration/live Claude retest await fresh authorization. Next: user feedback.
+
+Runtime STOPPED by explicit user request on 2026-10-08: localhost3000/session17663
+and restricted Agent worker/session55015 were stopped to prevent further Claude
+spending. Verified zero port3000 listeners and zero matching Agent worker processes.
+Do not restart localhost or the provider worker without fresh user authorization.
+Queued work, provider charges and reservations were not deleted or reset; an
+already-transmitted provider request cannot be recalled. Earlier ready/running
+statements below are historical and superseded by this stop.
+
 Completed for controlled development: [Shared Sessions implementation and simultaneous mentions](runs/2026-10-08-shared-sessions-implementation.md). Direct chats and optional named rooms with one permitted Agent, existing members and creator budget are implemented. Actual two authenticated callers/two restricted workers create exactly two simultaneous jobs in database order; later root waits, exact replay does not duplicate, earlier completed reply enters the next request, and later human messages stay outside its boundary. Failed-head recovery, retry/cancel/late-result rejection, child progression, exact actor decisions, current revocation and shared spending pass. Independent 281 tests / 54 files, type/lint, production/gallery, all45 reconstruction and protected rollback/API proof pass; installed 001–043 unchanged. Zero provider calls; 431,770 microUSD ledger unchanged and exact synthetic fixtures cleaned. Localhost3000/session17663 and restricted worker/session55015 ready under the existing US$4 cap. Repository receipts follow in the run. Next: user testing; no automatic Phase9/production. Earlier deliveries remain intact.
 
 Delivered for feedback: [Sessions and chat creation mockup](runs/2026-10-08-sessions-chat-mockup.md). Direct Agent chats and optional shared Sessions; + creates with one Agent/people/payer/sample budget. Human messages right, Agent identity/grouped replies left; mentions trigger simulated replies, existing-work answers continue without mentions. Floating Work/Outputs/Sources retained. Candidate6B4757C156CFA39D949744142050A967F4F9F10C30D47FE2CF32E4C534C27E15 independently reviewed; root actual sandbox creation/send/question/decline/source and320/736/1024 responsive checks pass. Preview only; live app/runtime/billing unchanged. Next: feedback before implementation. Earlier deliveries below remain intact.

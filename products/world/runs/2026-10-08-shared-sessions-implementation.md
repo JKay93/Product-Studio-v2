@@ -1,6 +1,16 @@
 <!-- studio {"id":"world:run:shared-sessions-implementation-2026-10-08","scope":"world","type":"run","status":"approved","links":[{"relation":"requires","target":"studio:rule:standing-orders"},{"relation":"depends_on","target":"world:run:sessions-chat-mockup-2026-10-08"}]} -->
 # Shared Sessions implementation and simultaneous mentions
 
+## Latest runtime checkpoint: user stop
+
+On 2026-10-08 the user explicitly requested stopping localhost to prevent Claude
+budget consumption. Root stopped restricted worker55015 first, then localhost17663.
+Protected process/listener verification returned AgentWorkerProcesses0 and
+Localhost3000Listeners0. Both stop criteria pass. No jobs/data/charges/reservations
+were deleted or reset; current queue/spend was not measured during this emergency
+stop. Do not restart either service until the user authorizes it. Earlier ready/
+running evidence below records the prior implementation handoff, not current state.
+
 ## Goal, authority and acceptance
 
 User approved implementing the reviewed Session/chat mockup and explicitly asked for simultaneous-user mention testing and a behavior report. World goes to the verified JKay93/MyWorld repository; product records go only to JKay93/Product-Studio-v2. Preserve human data/settings, private direct history, existing governance, immutable migrations and the cumulative US$4 testing cap. Root alone owns live database/worker/browser tests. No production, new provider, external sending, new purchases or automatic collaborator fanout.
