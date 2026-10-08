@@ -1,6 +1,18 @@
 <!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
 # World current run
 
+Accepted for controlled development: [Rich replies and conversational defaults](runs/2026-10-08-rich-chat-behaviour.md).
+Shared safe Markdown/code/table/Copy chat+output renderer and explicit roster Show/Hide;
+proportional conversation and user-specific generated learning attribution.328tests/58files,
+type/lint/production/gallery and actual wide/narrow/roster checks pass. Independent six-case Claude
+sample25/25criteria,6/6cases,US$0.060494; ledger602386→662880 with holds preserved.0saved
+questions/tasks/proposals; exact synthetic Sessions closed and candidate dismissed,
+paid audit retained. Small sample and physical clipboard limits remain. Worker52279
+ready/provider enabled, dev48690 retained, localhost tab16 ready. MyWorld main
+f2d84627b369af2b62530f44cda456e530893f70 verified remotely. Next:user testing; final
+Studio records delivery receipt is in host history. No immutable migration,
+permission/provider or production change.
+
 Research completed: [Agent behaviour and reply presentation](runs/2026-10-08-agent-behaviour-research.md).
 Primary sources cover Hermes/OpenClaw/Claude chat+Code/Codex/ChatGPT and rich
 presentation. Verified current output is plain text, existing execution policy and

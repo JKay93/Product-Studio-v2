@@ -1,6 +1,13 @@
 <!-- studio {"id":"world:decision:tech-stack","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:architecture"}]} -->
 # World tech stack decisions
 
+Rich replies (approved2026-10-08) pin react-markdown10.1.0, remark-gfm4.0.1 and
+rehype-highlight7.0.2. One shared React renderer covers chat/output previews, skips
+raw HTML, disables application URL/action navigation and remote image loads; typed
+source/approval controls remain separate. Existing dev-tool audit findings are
+unchanged; no new renderer chain finding was reported. Current acceptance is in
+the rich-chat-behaviour run; runtime/authority/source storage architecture is retained.
+
 The following stack was accepted for the lean first release and recorded on 2026-10-03. Phase 1 selected compatible local dependencies within that authority and locked them in World's application repository. Deployment remains open.
 
 ## Selected tools [world:req:selected-stack]

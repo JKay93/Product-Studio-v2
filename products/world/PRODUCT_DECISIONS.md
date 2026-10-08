@@ -1,6 +1,16 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Conversational defaults versus learned preferences [world:req:conversation-learning-boundary]
+
+Approved2026-10-08: baseline greeting, clarification, useful drafting and question-only
+restraint belongs in default Agent working guidance. Newly inferred learning must be
+specific to the user or supported work, rather than asking users to adopt generic
+platform behaviour. This preserves existing deliberate adoption/current-authority
+controls and historical user data. Model attribution alone cannot prove a proposed
+lesson is genuinely user-specific; deterministic validation and semantic evaluation
+have distinct limits. Rich output display is a renderer capability and never authority.
+
 ## Agent team Sessions and useful execution [world:req:agent-session-progress]
 
 Approved2026-10-08: user confirmed both pre-video fixes and subsequent Session

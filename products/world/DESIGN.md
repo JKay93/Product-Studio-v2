@@ -1,6 +1,24 @@
 <!-- studio {"id":"world:decision:design","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World design decisions
 
+## Rich replies and proportional conversation [world:req:rich-agent-replies]
+
+Approved2026-10-08 after runtime research: Agent replies and saved output previews
+share safe Markdown display with headings, lists, quotes, links, tables, inline code,
+highlighted fenced code and Copy. Source/attachment controls stay explicit; text
+cannot execute HTML or grant approval. Questions and approvals remain typed controls.
+Wide tables/code scroll within the reply on narrow layouts.
+
+Greetings get brief conversational replies. Bare Work without an identifiable task
+gets one ordinary essential clarification; an admitted settled assignment continues.
+Clear deliverables with optional gaps receive useful labelled placeholder drafts.
+Questions and requests for opinions receive answers, not unrequested implementation.
+Structured cards are reserved for material choices that block understood work.
+These are configurable working defaults within authority intersections, not immutable
+Universe rules. Generic manners/execution guidance is not a personal learning lesson;
+specific user preferences/corrections and supported work lessons remain reviewable.
+Historical memories/suggestions are retained rather than silently purged.
+
 ## Agent rooms and conversation controls [world:req:agent-room-experience]
 
 Approved2026-10-08: shared Sessions may contain several selected existing Agents;
