@@ -1,6 +1,12 @@
 <!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
 # World current run
 
+Research completed: [Agent behaviour and reply presentation](runs/2026-10-08-agent-behaviour-research.md).
+Primary sources cover Hermes/OpenClaw/Claude chat+Code/Codex/ChatGPT and rich
+presentation. Verified current output is plain text, existing execution policy and
+missing default-rule exclusion from learning suggestions. Recommendations only;
+no application/runtime changes or paid model tests. Next: user discussion of findings.
+
 Accepted for controlled development: [Agent Session experience](runs/2026-10-08-agent-session-experience.md).
 Multi-Agent rooms/default responder/optional identity mentions/bounded discussion,
 question expiry/withdrawal and execution-first defaults installed047/048. Independent
