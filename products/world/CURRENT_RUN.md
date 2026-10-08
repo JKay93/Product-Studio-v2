@@ -1,6 +1,14 @@
 <!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
 # World current run
 
+User authorized local testing restoration on 2026-10-08: "Open up the localhost let
+me play around." Reopen accepted app and restricted Claude worker under the unchanged
+cumulative US$4 cap. This supersedes the historical stop below for this testing
+session. Ready: dev session96016 returns HTTP200; restricted worker session52149
+reports provider dispatch enabled. Localhost browser tab9 is visible and retained.
+Baseline spending545816microUSD; zero queued/running jobs before startup. No test
+message or synthetic provider call was sent. See the question-loop fix run.
+
 Accepted and delivered for controlled development: [Repeated question investigation and fix](runs/2026-10-08-question-loop-fix.md). Verified per-answer branching; protected whole-round continuation resumes once with original task/all answers, exact revisions/current authority and stable retries. Continuations cannot spawn another structured round; vague clarification uses normal chat guidance. Installed046, independent review, full286/54 offline tests plus5 cleanup tests, protected rebuild/direct/shared/race/revocation proofs and final build pass. Synthetic scopes cleaned;545816microUSD/101 ledger rows unchanged, zero paid calls. Verified MyWorld main92b956c81ee97bcce8dfcb5eb90855b90445a3bb. Localhost and Claude worker remain stopped; restoration/live Claude retest await fresh authorization. Next: user feedback.
 
 Runtime STOPPED by explicit user request on 2026-10-08: localhost3000/session17663

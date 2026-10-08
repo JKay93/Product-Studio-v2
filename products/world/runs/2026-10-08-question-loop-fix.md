@@ -53,3 +53,18 @@ Questions: none pending. Deferred: live Claude/browser retest and runtime restor
 ## Delivery [world:run:question-loop-fix:delivery]
 
 Q4 complete for application: accepted MyWorld commit `92b956c81ee97bcce8dfcb5eb90855b90445a3bb` pushed to verified JKay93/MyWorld main; independent remote read matches and local World checkout is clean. Staged046 bytes match installed exact digest; existing migration byte-preservation pattern extended to046. Studio decision/run records and the preceding emergency-stop note are included in this authorized Studio delivery, whose receipt is retained in host history. No deployment or runtime restoration.
+
+## User testing restoration [world:run:question-loop-fix:restoration]
+
+Fresh user authorization: "Open up the localhost let me play around." Restore the
+accepted local app and restricted Claude worker under the unchanged cumulativeUS$4
+cap, open browser and verify readiness. This supersedes the preceding stop for this
+testing session. No synthetic paid request, data reset or settings change. Root owns
+operations and continuity; no implementation dispatch is needed.
+
+Readiness verified: development server session96016 returns HTTP200 at
+http://localhost:3000/; restricted worker session52149 reports provider dispatch
+enabled. In-app browser tab9 shows the existing signed-in Session, is visible and
+marked deliverable. User selection/draft/settings were preserved; no message sent.
+Startup baseline:545816microUSD, zero queued/running jobs. Services remain running
+for user testing; the cumulativeUS$4 cap remains unchanged.
