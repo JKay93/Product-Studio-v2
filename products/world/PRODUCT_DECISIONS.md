@@ -1,6 +1,21 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Agent team Sessions and useful execution [world:req:agent-session-progress]
+
+Approved2026-10-08: user confirmed both pre-video fixes and subsequent Session
+changes for implementation. Sessions bring selected Agent teammates together;
+default responder removes compulsorymentions, identity mentions optionally override,
+explicit team discussion is finite and a lead is optional. Persistent Agent graphs
+remain reusable collaboration configuration, never implicit Session admission.
+Human invitations are deferred for new room creation; existing human records and
+access stay intact. Questions expire/withdraw with their work, wait without model
+calls, and resume explicitly with current authority. Execution-first defaults allow
+useful preparation/placeholders while preserving factual accuracy and exact action
+approval. Namespace ownership and permission intersections remain authoritative.
+Implementation evidence belongs to runs/2026-10-08-agent-session-experience.md;
+approved behavior is not a claim of completed acceptance.
+
 These are the approved product choices from the user discussion, recorded on 2026-10-03. They apply to World. They describe intended behavior, not completed implementation.
 
 ## Audience and first workflow [world:req:audience-workflow]

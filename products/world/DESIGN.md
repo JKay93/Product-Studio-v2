@@ -1,6 +1,34 @@
 <!-- studio {"id":"world:decision:design","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World design decisions
 
+## Agent rooms and conversation controls [world:req:agent-room-experience]
+
+Approved2026-10-08: shared Sessions may contain several selected existing Agents;
+human invitations are deferred in new creation while existing shared people/access
+are preserved. Every ordinary human message goes to the visible default responder,
+which may be any admitted Agent. Quiet Talking to selector changes that responder.
+Mentions are optional identity-bound highlighted spans, with an at-caret searchable
+avatar/type picker, keyboard selection, Escape dismissal, IME-safe Enter handling
+and Shift+Enter newline. Direct chats remain direct; replies display actual Agent
+identity. Explicit team discussion schedules finite contributions/responses and an
+optional temporary lead summary. Agent output never automatically invokes peers.
+Roster is the active team; graph connections suggest outsiders without admission
+or conversation access. Group/run cancellation preserves history and closes its
+requests; expiry is visibly inactive, never consent. This supersedes one-Agent-only
+Session and mandatory mention behavior in historical accepted designs.
+
+## Questions and execution-first defaults [world:req:question-lifecycle]
+
+Questions belong to work, have30-minute interactive expiry, leave the composer on
+stop/expiry and remain in retained history. Explicit checked resume creates fresh
+work; late replies never execute stale choices or approve anything. Waiting uses
+saved state and releases execution; no model polling/reminder loop. READY executes;
+PARTIALLY READY produces useful work with labeled defaults/placeholders; BLOCKED
+asks minimal ordinary clarification. Missing optional details never force a card.
+No facts/dates/approvals/decisions are invented and completion has no manufactured
+followup. This is Agent working guidance within World/owner/Session constraints,
+not immutable Universe reasoning policy or a blanket four-layer prompt priority.
+
 The user selected Calm Fluent-inspired for World after comparing three directions. This approved design direction was recorded on 2026-10-03. UI UX Pro Max supports design work for World only; its availability does not make World's design a studio-wide requirement.
 
 ## Visual direction [world:req:visual-direction]

@@ -1,6 +1,16 @@
 <!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
 # World current run
 
+Accepted for controlled development: [Agent Session experience](runs/2026-10-08-agent-session-experience.md).
+Multi-Agent rooms/default responder/optional identity mentions/bounded discussion,
+question expiry/withdrawal and execution-first defaults installed047/048. Independent
+review,314tests/57files, type/lint/build, protected rollback/rebuild, held-lock and
+actual two-user API concurrency pass. Zero paid calls; ledger578828microUSD unchanged.
+Controlled update explicitly approved; dev48690 and restricted Claude worker19738
+restored under cumulativeUS$4 cap. New roster editing/human invitations deferred.
+MyWorld main88ed96f4a96448fff7dbe05b2aa46008d3199522 verified remotely.
+Localhost tab14 reopened/retained. Next: user testing; historical states below retained.
+
 User authorized local testing restoration on 2026-10-08: "Open up the localhost let
 me play around." Reopen accepted app and restricted Claude worker under the unchanged
 cumulative US$4 cap. This supersedes the historical stop below for this testing
