@@ -1,6 +1,23 @@
 <!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
 # World current run
 
+Latest: [Agent quality enhancement](runs/2026-10-08-agent-quality-enhancement.md).
+Implementation and independent review accepted for controlled development; quality
+target remains FAILED. Original248scenarios:207rubricPASS (before176),201on-par/better
+(before174);40unseenholdouts37PASS/36positiveparity. All completed paid first attempts
+retained;164unrun cases resumed after the user's credit top-up. Report includes every
+case, paired responses, criteria, latency/tokens/cost and explicit evidence-loss limits.
+358application tests, type/lint/build, protected preferences/51migration rebuild and
+reviewed evaluation helpers pass; final actual report independent publication review PASS.
+Estimated enhancement spendUS$5.505910;US$2.822792 since top-up. Final ledger8158062,
+ordinary ceiling9505910, remaining1347848microUSD; evaluation spending window closed.
+Exact synthetic cleanup PASS, zero pending at close; audit/charges preserved. Restricted
+Claude worker session35255 restored/provider enabled; localhost HTTP200. No new provider,
+action permissions or production release. MyWorldmain14529d4f9d1ff31e83f96e57f6f4f9fcd36f0a1d
+verified remotely; unrelated tsconfig.json preserved unstaged. Studio delivery follows.
+Next: user testing and discussion of remaining strict instruction/factual restraint/
+learning attribution failures; no claim of universal parity or automatic extra paid run.
+
 Latest: [Comprehensive Agent evaluation](runs/2026-10-08-comprehensive-agent-evaluation.md).
 Execution/scoring complete:248scenarios/264turns perconfiguration. Strict parity174/248
 (159on-par,15better),66below,6uncertain,2unavailable; acceptance gate FAILED. Complete

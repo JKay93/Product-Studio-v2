@@ -1,6 +1,25 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Conversational quality and localisation [world:req:quality-localisation]
+
+Approved2026-10-08: improve the full Agent behaviour against the frozen Codex
+comparison, not safety alone. Prioritise scenario passes before efficiency tuning;
+still measure latency, token use and cost. Preserve before evidence and fixed
+rubrics, report regressions and independently test unseen scenarios. The user
+authorises higher bounded root evaluation usage for the enhancement; this does not
+expand external action, data-access or production authority.
+
+Store country/region independently from reply language as explicit user preferences.
+Use country/region for relevant local information/services/rules; conversational
+style/Singlish, IP/VPN and timezone do not establish it. Travel statements are topical
+context, not settings mutations or language-switch commands. An explicitly requested
+country may guide that answer without changing saved preferences. Reply language
+remains the chosen language unless the user explicitly asks otherwise. Critical
+local contacts need verified source-backed details; unknown location must not default
+to US services. Preferences remain account-private and contextual retrieval respects
+the initiating actor and existing authority boundaries.
+
 ## Bot quality acceptance [world:req:bot-quality-parity]
 
 Approved2026-10-08: the user requires on-par-or-better bot results against ChatGPT or
