@@ -1,6 +1,13 @@
 <!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
 # World current run
 
+Latest research: [Rakazo source assessment](runs/2026-10-09-rakazo-source-assessment.md).
+Actual commitd108058 inspected read-only for persistent chat/run separation, Pi model
+adapters, bounded history/retrieval, helpers/peer handoffs, questions/approvals and
+Markdown. Useful pilot/provider/context patterns; no independent quality comparison,
+runtime replacement, installation or paid testing. Next: user discussion. Completed
+enhancement and current local testing state below remain unchanged.
+
 Latest: [Agent quality enhancement](runs/2026-10-08-agent-quality-enhancement.md).
 Implementation and independent review accepted for controlled development; quality
 target remains FAILED. Original248scenarios:207rubricPASS (before176),201on-par/better
