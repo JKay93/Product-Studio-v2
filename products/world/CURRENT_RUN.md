@@ -1,3 +1,15 @@
+Accepted for controlled development: [Persistent Agent creation through chat](runs/2026-10-09-agent-creation-tool.md).
+Native proposal→exact human review→actual saved Agent, permission/ownership/privacy
+checks and replay/concurrency safety implemented. Full397tests, independent44tests,
+type/lint/build/gallery and 21 protected candidate/installed checks plus actual
+two-connection race PASS. Installed052; previous51 hashes unchanged. Zero paid calls;
+worker30665 restored under existing testing budget. Browser proofs use synthetic
+production-component previews; real Claude native creation and connected browser/DB
+journey remain untested. MyWorld main096799e607a4768257570e846c74e677e9e39d28 verified
+remotely; localhostHTTP200/tab19 retained, exactly one compiled worker33392. Pending0,
+ledger8188370 unchanged, no new spend. Studio receipt follows in host history. Next:
+user testing, then Knowledge writing; no automatic execution, enrollment or grants.
+
 <!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
 # World current run
 

@@ -136,6 +136,15 @@ Multiple providers follow next, then memory import. External Agents means agents
 
 ## Knowledge library [world:req:knowledge-library]
 
+Agent creation through chat authorized2026-10-09 following Rakazo source review:
+implement persistent saved Agents using World governance and existing ownership.
+User explicitly selected Agent creation first, Knowledge writing next. Initial
+native tool prepares a bounded Agent draft for exact authenticated Create review;
+new identity does not auto-run, acquire resource grants, enter a graph/Session or
+inherit private memory. Personal-origin creation stays personal; organization-origin
+creation stays in the same World under owner/admin authority. No wholesale runtime
+replacement or new provider. See runs/2026-10-09-agent-creation-tool.md for checks.
+
 Approved on 2026-10-05: build the Knowledge source library before model connection. Personal documents remain user-owned/private; organization documents remain World-owned on departure. Organization owners/admins manage those documents, members read only explicitly published World documents, and unpublished drafts are visible only to authorized owner/admin. Folders organize content without granting access. Existing authored text-note permissions remain unchanged.
 
 Knowledge contains user-supplied reference sources, with inspectable exact content versions and source locations. Memory contains preferences and lessons affecting Agent behavior; importing a file does not enable automatic learning, export or model execution. Start with text/TXT/Markdown, then bounded selectable-text PDFs. Scanned-file OCR and external connectors are later work. Retain versions/archive during development; permanent purge/retention policy is a separate pre-pilot decision. The initial phase begins with an interactive mockup for visual assessment.
