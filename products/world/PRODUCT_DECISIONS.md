@@ -1,6 +1,17 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Bot quality acceptance [world:req:bot-quality-parity]
+
+Approved2026-10-08: the user requires on-par-or-better bot results against ChatGPT or
+Codex, with no negotiated lowering of the acceptance bar. Use versioned inputs and
+criteria fixed before execution; retain first failures, and keep unavailable or
+uncertain outcomes out of passes. Report complete-scenario quality separately from
+individual criteria, runtime controls, latency and token/cost measurements. A finite
+sample does not establish universal parity; model/runtime configuration and actual
+comparison access must be disclosed. Evaluation does not itself authorize production
+behaviour changes. Evidence: comprehensive-agent-evaluation run2026-10-08.
+
 ## Conversational defaults versus learned preferences [world:req:conversation-learning-boundary]
 
 Approved2026-10-08: baseline greeting, clarification, useful drafting and question-only

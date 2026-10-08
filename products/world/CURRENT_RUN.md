@@ -1,6 +1,21 @@
 <!-- studio {"id":"world:document:current-run","scope":"world","type":"document","status":"approved"} -->
 # World current run
 
+Latest: [Comprehensive Agent evaluation](runs/2026-10-08-comprehensive-agent-evaluation.md).
+Execution/scoring complete:248scenarios/264turns perconfiguration. Strict parity174/248
+(159on-par,15better),66below,6uncertain,2unavailable; acceptance gate FAILED. Complete
+public case/rubric/paired-output report in MyWorld docs/evaluation/2026-10-08.43offline
+helper checks and328application tests PASS; original8DBproofs3PASS5stale-fixtureFAIL,
+adapted5PASS with unchanged assertions. Actual1000-turn continuity and finite Session
+controls checked separately.248synthetic Sessions closed,12suggestions dismissed,
+0queued/running at read-only closeout; retained audit/spend. Ledger771788→2652152,
+increment1880364estimatedmicroUSD; cumulativeUS$4 ceiling unchanged. Normalworker46020
+restored/provider enabled,dev48690retained/localhost200. Independent finalartifact review
+PASS; rootaccepts evaluator/report, qualitygate remainsFAILED. Scoped repository
+MyWorldmain53a40c90c491b9ebe3e261f6835abc7888c6d856 verified onGitHub; Studio scoped
+delivery receipt retained in hosthistory/run. Next: discuss quality remediation;
+no production behaviour/SQL/provider/permission changes or unapproved spending.
+
 Accepted for controlled development: [Rich replies and conversational defaults](runs/2026-10-08-rich-chat-behaviour.md).
 Shared safe Markdown/code/table/Copy chat+output renderer and explicit roster Show/Hide;
 proportional conversation and user-specific generated learning attribution.328tests/58files,
