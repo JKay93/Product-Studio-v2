@@ -1,3 +1,9 @@
+Latest: [Chat → Knowledge implementation and real tests](runs/2026-10-10-chat-knowledge-journey.md).
+Scoped UI/preflight/diagnostics reviewed/verified; full journey PARTIAL. Six scenarios,
+eight turns/11calls:3PASS,3FAIL;US$0.392456. Strategy readiness and combined sources
+block Agent continuation. Human login restored; preview/worker running,0jobs,60migrations.
+Next: source-bound preparation/reference accounting; preserve failures/financial caps.
+
 Completed for controlled development: [Request ceiling and conversational clarification](runs/2026-10-10-request-ceiling-clarification.md).
 32000assembled input/4096output, coordinated reservation/usage guards and natural
 exploration guidance implemented; cumulative/Session/run financial caps retained.

@@ -244,3 +244,13 @@ User feedback on 2026-10-06: only the current Session receives persistent select
 Phase 7 reuses saved canvas identities and responsibilities, Chat and Meeting work. Linked-Agent work is an explicit action beside the ordinary proposal action; actual team steps show assigned Agent, responsibility, attempt, status and expandable findings. Root aggregation enters the existing editable assigned proposal and exact approval flow. Saved results remain available after reload and execution expiry under current access. Progress must stay attached to the same job through edits and approval, without carrying state into another scope.
 
 Internal-task review defaults to required. Its compact status and explicit change control are keyed to the current actor/World/Session/Agent; opting out requires an unchecked danger acknowledgment, stays visibly indicated, records an audit and can be restored. Borrowing alone cannot waive review. Owner activity exposes usage metadata only; names come from already permitted workspace records, otherwise opaque identifiers. Live inspector wording directs team activity to Meeting work rather than claiming an empty activity feed. Major visual redesign remains deferred.
+
+## Reply-to-Knowledge preview (2026-10-10)
+
+Manual Save to Knowledge opens an editable inline preview within the reply. Destination,
+title/folder, rich text and explicit Save/Cancel remain in the existing shared editor;
+no autosave before the explicit manual save. A bounded scrolling field area keeps the
+save footer reachable at desktop/narrow widths. Cancel restores trigger focus. Native
+Agent save cards show actual title/private Saved or Updated receipt and open the current
+item in Knowledge. This scoped refinement is verified; full Agent document continuation
+remains partial for runtime readiness/source-accounting reasons in CURRENT_RUN.md.
