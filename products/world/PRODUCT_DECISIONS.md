@@ -1,6 +1,18 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Natural clarification [world:req:natural-clarification]
+
+Approved2026-10-09: use normal conversational judgment rather than mechanical
+READY/PARTIALLY READY/BLOCKED categories or a mandatory generic-template response.
+Answer/draft when sensible; clarify when a missing detail materially changes the
+result, grouping essentials and avoiding needless preference interviews. Explicit
+template requests may use labelled placeholders. Preserve supplied answers and the
+same task on resume; do not repeat settled questions or dispatch duplicate continuation
+jobs. Ordinary clarification remains conversational; question cards serve useful
+choices. Authorization remains separate. Existing question expiry/stop and current
+authority/source/history/privacy/financial controls remain. No guaranteed model parity.
+
 ## Native capabilities and Knowledge creation [world:req:native-capability-bundle]
 
 Approved2026-10-09: expand the existing runtime with current-capability tools,
