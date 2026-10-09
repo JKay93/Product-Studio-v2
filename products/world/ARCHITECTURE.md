@@ -1,6 +1,24 @@
 <!-- studio {"id":"world:decision:architecture","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World architecture decisions
 
+## Knowledge rich documents and collaboration [world:req:rich-document-runtime]
+
+Implemented2026-10-09: Tiptap/Yjs uses the existing authenticated HTTP application
+and database, without another worker or hosted collaboration service. A bounded
+private CRDT draft serves current authorized owner/admin editors and live viewers;
+published members, archived documents and cited/historical passages retain immutable
+saved snapshots. Caller JWT, current World authority, manager checks and RLS apply
+on every read/effect. Server schema/projection validation and a purpose-bound HMAC
+attestation fence direct RPC forgery; revisions handle simultaneous writers.
+
+Autosave persists working edits, with deduplicated private snapshots and deliberate
+saved-head publication. Restore starts a fresh generation and retains earlier
+published content. Expiring identity-bound relative cursors and in-memory retry
+requests support active clients. Unsaved disconnected edits survive reconnection
+in the same open tab; tab/device recovery of unacknowledged edits is deferred.
+Existing encrypted originals, exact saved Markdown and Unicode passage anchors
+remain authoritative. See the rich-collaboration run for actual proofs and limits.
+
 Accepted2026-10-09 capability bundle: closed native history/Knowledge search/read and
 Agent/Knowledge proposal tools are offered from current SQL authority. At most three
 model calls and two retrievals execute per attempt, with one native call per response.

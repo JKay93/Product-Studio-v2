@@ -1,6 +1,21 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Knowledge visual editing and collaboration [world:req:knowledge-rich-collaboration]
+
+Approved2026-10-09: Knowledge should feel like a Confluence/Notion document editor
+for SMEs. Read formatted saved Agent Markdown, edit visually in place with a toolbar,
+slash insertion and optional Markdown shortcuts. Authorized editors collaborate with
+named presence/cursors, autosave and reconnection; history remains recoverable. Existing
+personal-private and World owner/admin editing rights remain; folders grant nothing.
+Working edits stay a private draft for editors, with deliberate publication updating
+what members can read. Restore must not silently publish. Optional Save to Knowledge
+from Chat remains deliberate and unpublished by default; no automatic chat saving.
+Controlled-development implementation and verification are recorded in the
+rich-collaboration run. Current authorized manager viewers also see the private
+working draft live; member and historical/source views retain saved versions.
+Production readiness is separate.
+
 ## Natural clarification [world:req:natural-clarification]
 
 Approved2026-10-09: use normal conversational judgment rather than mechanical

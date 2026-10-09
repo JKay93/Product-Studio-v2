@@ -1,3 +1,13 @@
+Complete for controlled development: [Knowledge visual documents and live collaboration](runs/2026-10-09-knowledge-rich-collaboration.md).
+Rich visual editing, safe formatted Agent Markdown, manager live viewing, relative cursors,
+private autosave/history and deliberate publication implemented. User-approved independent
+Builder cross-review PASS; root60focusedtests, final18affectedchecks, type/lint/production/gallery,
+actual SQL/HTTP two-user merge/authorization/history and two-tab browser proofs PASS.
+Migration055 installed; old54 digests retained. No model calls. Preview HTTP200 and worker10848
+running. MyWorld5315920adf64ecd6eb4e7f2aea8d462120cb76a4 remote verified. Pending edits survive
+reconnect in the open tab; physical mobile and tab/device-close recovery remain deferred.
+Next: user Knowledge editing tests; production remains separate.
+
 Complete for controlled development: [Natural clarification and coherent continuation](runs/2026-10-09-natural-clarification.md).
 Normal conversational judgment replaces rigid categories/mandatory generic templates;
 group material clarification, use saved answers, preserve legitimate follow-up. Builder76

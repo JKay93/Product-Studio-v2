@@ -1,6 +1,17 @@
 <!-- studio {"id":"world:decision:tech-stack","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:architecture"}]} -->
 # World tech stack decisions
 
+Knowledge rich collaboration implementation choice2026-10-09: pinned OSS Tiptap3.31.4
+(core/react/pm/starter-kit/markdown/collaboration/table/task-list/task-item),
+Yjs13.6.33, @tiptap/y-tiptap3.0.9, y-prosemirror1.3.7 and y-protocols1.0.7. Use existing authenticated
+HTTP exchange with about1s active polling, avoiding a paid hosted editor or separate
+websocket service. Server canonical projection and strict schema bound mutable CRDT
+drafts; publication/search retain existing Markdown snapshots. Markdown bridge is
+upstream beta, so round-trip preservation and unsupported-content behavior require
+explicit checks. Package install completed; audit lists7 existing development-chain
+findings and no new editor/Yjs chain findings. Tests use bundled Node24.19.0; current
+implementation acceptance remains in the rich-collaboration run.
+
 Rich replies (approved2026-10-08) pin react-markdown10.1.0, remark-gfm4.0.1 and
 rehype-highlight7.0.2. One shared React renderer covers chat/output previews, skips
 raw HTML, disables application URL/action navigation and remote image loads; typed
