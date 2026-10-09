@@ -1,3 +1,11 @@
+Complete investigation: [Question cards, templates and failed reply](runs/2026-10-09-question-template-diagnosis.md).
+Current screenshot failure occurred beforepaidgeneration; exactcause unretained.
+User-approved always-rollback context replay/localvalidationPASS, no APIcalls or
+job/permissionchanges. Preceding document followed Strategytemplate consistent with
+saved choice, not an explicit PRDrequest. Material-decision cards and template
+selection/structural checks proposed; no application fix started. Save modal/UI deferred.
+Next: discuss/authorize combined reliability and template-aware drafting implementation.
+
 Complete for controlled development: [Knowledge document flow and owner-private Agent access](runs/2026-10-09-knowledge-document-flow.md).
 Nested contextual creation/rename, direct rich autosave, compact secondary controls,
 explicit Publish and owner-private owned-Agent retrieval implemented. Independent
