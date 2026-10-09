@@ -1,3 +1,10 @@
+Complete: [Knowledge reader scrolling](runs/2026-10-09-knowledge-scroll.md).
+Two-file fix; type/lint, 44 focused tests, independent review and 13 tests PASS.
+Actual signed-in 46-paragraph note bottom reachable with mouse/keyboard, including
+760x500 viewport. Normal preview restored in tab4. World main b5e6528623525592ecfda859b7580cc48bfeeb14
+remote delivery verified. No model calls/migrations. Next user testing; quiet save
+actions/suggestions remain a proposal, no automatic saving changes implemented.
+
 Accepted for controlled development: [Agent capability bundle and Knowledge creation](runs/2026-10-09-agent-capability-bundle.md).
 Native current-capability history/Knowledge lookup, finite three-call/two-retrieval
 execution, readable progress/recovery and exact Knowledge review→unpublished save
