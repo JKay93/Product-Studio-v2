@@ -164,3 +164,27 @@ application/source/tests/migrations29; complete inventory is the commit diff.
 Unrelated next-env.d.ts, tsconfig.json and test caches remain unstaged/preserved.
 Studio canonical decisions/architecture/design/current pointer and this report
 are delivered separately to JKay93/Product-Studio-v2; no production deployment.
+
+## Post-delivery user testing: remaining behaviour and context-limit failures
+
+2026-10-10 read-only diagnosis, no source change or paid replay. My Agent5 job
+ca7bf0b5-b13c-4f2f-bcee-926e91f03db6 input was an exploratory push-up idea; the model
+produced two saved intake questions (deliverable type and audience/goal). Current
+guidance still says concrete necessary choices can justify structured questions;
+the earlier duplicate-display guard does not determine conversational eligibility.
+This live behaviour has not met the user's expectation, despite offline checks.
+
+My Agent6 job3c718a51-bb59-49f1-8630-3cf3b7c32da8 has a short Android/personal/
+progressive-plan follow-up, failed at count with input_limit,0recordedmodelcalls and
+0spendingrows. Source execution.validateCount uniquely emits this reason when the
+provider's count exceeds World's8000-token input ceiling. It is our assembled-input
+budget, not an Anthropic HTTP rejection. The exact token count/component breakdown
+was not retained; do not invent it. Instructions/tools/history/references all count
+towards the request; blaming the short user message is inappropriate recovery copy.
+
+Both issues remain unfixed at this diagnosis checkpoint. Needed correction:
+conversational clarification by default, structured cards for concrete work decisions;
+budget the full serialized prompt/tool/context payload before dispatch and provide
+truthful recovery, retaining critical facts/authority without relaxing financial or
+privacy limits. Existing deterministic evidence stands for its tested boundaries;
+it did not establish live behavioural acceptance for these newly reported cases.

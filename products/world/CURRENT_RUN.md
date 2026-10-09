@@ -10,6 +10,15 @@ blocker. Next: user testing; Save modal and cohesive visual redesign remain defe
 Semantic model parity/accuracy and provider latency were not measured in this run.
 MyWorld main3de0dce4637cb49b7355d377704a408900ad63b7 verified remotely.
 
+Post-delivery user testing: two unresolved regressions confirmed on2026-10-10.
+Exploratory push-up idea produced generic intake cards; current guidance permits
+cards when choices help, insufficiently distinguishing conversation from work
+decisions. My Agent6 short follow-up failed at count/input_limit: World's8000-token
+assembled-request ceiling, not a provider rejection. Zero model generation/spend
+rows for that failed job. Diagnosis only; no repair/replay/new provider call yet.
+Next: correct card eligibility and assembled-context budgeting/recovery, then
+verify short multi-turn conversations with the complete offered tool/prompt payload.
+
 Complete investigation: [Question cards, templates and failed reply](runs/2026-10-09-question-template-diagnosis.md).
 Current screenshot failure occurred beforepaidgeneration; exactcause unretained.
 User-approved always-rollback context replay/localvalidationPASS, no APIcalls or
