@@ -1,3 +1,12 @@
+Complete for controlled development: [Reply saving and failed reply diagnosis](runs/2026-10-09-reply-knowledge-save.md).
+Optional exact editable unpublished Knowledge save on completed replies/saved outputs;
+safe reason/status diagnostics, conservative redundant-guidance compaction. Builder122
+and independent46focusedtests, type/lint and actual signed-in SOP draft/cancel PASS.
+Synthetic input7355→7184; historical count failure cause remains unknown, no paid
+Claude-to-savednote E2E or Grok parity proof. Explicit native review/save retained.
+Worker1566 ready, preview99352 preserved. MyWorld main80b6877d42733170d3feb3845bf606f3f4969786
+remote verified. Next user retry/testing; durable specific failure messages deferred.
+
 Complete: [Knowledge reader scrolling](runs/2026-10-09-knowledge-scroll.md).
 Two-file fix; type/lint, 44 focused tests, independent review and 13 tests PASS.
 Actual signed-in 46-paragraph note bottom reachable with mouse/keyboard, including

@@ -13,6 +13,13 @@ temporary anonymous helpers and peer handoffs are deferred unless separately cho
 No extra provider, credentials, arbitrary host tools or automatic permission grants.
 This is controlled development functionality, not new model-quality parity evidence.
 
+Approved2026-10-09: completed nonempty Agent replies and saved outputs expose an
+optional Save to Knowledge action. It opens an editable title/body/folder draft in
+the current World, preserves exact Markdown, and uses existing permissions and
+unpublished defaults. Opening/cancelling never saves or calls a model. Explicit
+Knowledge creation requests retain the native reviewed proposal flow; ordinary
+conversation never automatically creates documents.
+
 
 ## Conversational quality and localisation [world:req:quality-localisation]
 
