@@ -1,6 +1,16 @@
 <!-- studio {"id":"world:decision:design","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World design decisions
 
+## High-priority UI redesign [world:req:ui-redesign-priority]
+
+User direction2026-10-09: the present live UI is unacceptable visually. Treat a
+cohesive UI redesign as high priority alongside hands-on product testing. Existing
+functional acceptance does not establish user acceptance of the visual experience.
+Preserve working behavior, authority and data while improving the shared shell,
+hierarchy, spacing, typography, controls and everyday Chat/Knowledge/Agent flows.
+Specific replacement screens/theme remain to be reviewed; no new mockup or live
+redesign has begun during this roadmap discussion.
+
 ## Rich replies and proportional conversation [world:req:rich-agent-replies]
 
 Approved2026-10-08 after runtime research: Agent replies and saved output previews

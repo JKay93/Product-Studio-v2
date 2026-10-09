@@ -29,6 +29,35 @@ Multiple providers -> memory import -> external Agent runtimes. Broader integrat
 
 ## Current status
 
+Priority update2026-10-09: user testing continues; cohesive UI redesign is now
+**high priority**, replacing the earlier general deferral of major UI work. See
+[Design](DESIGN.md#high-priority-ui-redesign-worldrequi-redesign-priority). This
+reprioritization does not start a new implementation phase during the discussion.
+
+Phases1–8 have controlled-development implementations. Subsequent builds added
+Agent directories/profiles/graphs, continuous-chat work panels, multi-Agent Sessions,
+question lifecycles, safe rich replies, saved region/language preferences, bounded
+native tools/Agent creation/Knowledge creation and rich Knowledge live editing.
+Current delivered evidence is in [Current run](CURRENT_RUN.md). The broader Agent
+quality target remains unmet in the frozen evaluation; latest runtime changes have
+not established universal ChatGPT/Codex parity. Development completion and visual
+acceptance, pilot acceptance and production readiness remain separate evidence.
+
+Remaining first-release work: user-observed reliability/usability fixes and live
+end-to-end checks of the added capability flows; normal email-link/PKCE onboarding;
+mobile/physical keyboard checks; deployment-compatible document processing,
+retained encryption-key/backup recovery and retention/purge decisions. Phase9 small
+SME pilot remains unstarted. Prioritize whole user journeys through Agents, Sessions,
+Knowledge, review, learning, borrowing and safe departure rather than isolated
+component test totals. No new paid benchmark or production deployment is authorized
+by this update.
+
+Later scope remains multiple providers, memory import and external runtimes/Passport
+interoperability. Discussed extensions include SaaS connectors, IFTTT-style workflow
+authoring, enterprise-authored harnesses and fuller human team collaboration; these
+need their own scoped implementation decisions. Billing/production operations also
+require concrete decisions before a public service.
+
 The user-authorized combined-harness evaluation before Phase 8 is complete for controlled development: [measured report](HARNESS_EVALUATION.md) and current run contain independent 3/3 workflow and 16/16 content scores, fresh policy/expiry/revocation tests, timing limitations and actual token/cost evidence. No new runtime restriction or migration was required. This small synthetic sample is not pilot acceptance. Phase 8 was authorized on2026-10-07 under the [accepted learning plan](PHASE_8_LEARNING_PLAN.md) and is accepted for controlled development; the [learning report](LEARNING_CONTINUITY_REPORT.md) records the completed runtime and measurements. Pilot Phase 9 remains unstarted.
 
 Phases 1–4 are implemented, independently reviewed and accepted for controlled development. Phase 2 is the complete mock journey/navigation shell; Phase 3 is the Agent canvas/dedicated settings. Phase 4 adds real identity, protected persistence, organization memberships/Agents, scoped standing access, memory provenance and revocation. The shared UI remains reusable across explicit demo and backend modes.

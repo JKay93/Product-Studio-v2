@@ -1,3 +1,10 @@
+Latest priority discussion: [UI priority and remaining roadmap](runs/2026-10-09-ui-priority-roadmap.md).
+User elevated cohesive UI redesign to high priority alongside testing. Priority
+recorded in Design/Roadmap; current discussion starts no new application build.
+Phases1–8 built for controlled development; Phase9 SME pilot remains unstarted.
+Next: discuss/choose the next whole user journey and UI design work; preserve live
+testing and current functionality. Production and extra paid testing remain separate.
+
 Complete for controlled development: [Knowledge visual documents and live collaboration](runs/2026-10-09-knowledge-rich-collaboration.md).
 Rich visual editing, safe formatted Agent Markdown, manager live viewing, relative cursors,
 private autosave/history and deliberate publication implemented. User-approved independent
