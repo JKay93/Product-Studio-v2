@@ -1,6 +1,42 @@
 <!-- studio {"id":"world:decision:architecture","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World architecture decisions
 
+## Template-aware private document execution [world:req:autonomous-document-runtime]
+
+Implemented2026-10-10 within the existing job, restricted worker, PostgreSQL and
+Knowledge stack. A seventh native tool saves one owner-private document draft or
+updates an exact owned version/generation/revision. It terminates with a trusted
+receipt; native retry is idempotent and another job cannot silently duplicate the
+same title/folder. Existing immutable history and CRDT snapshots survive updates;
+stale writers fail before overwrite. Publication remains a separate human command.
+
+Document intent is semantic Agent judgment, not an immutable keyword rule.
+Ordinary conversation/brainstorming does not request a save. Lazy document-type
+search combines permitted existing documents and bounded template metadata;
+explicit selection, applicable mandatory/default/convention and reliable unique
+matches guide choice. Material ambiguity gets one focused decision. A complete
+selected version must be read before saving; required headings and inferred
+headings/table headers/field labels are structure checks, not semantic accuracy.
+Current bounds remain three model calls/two retrievals, complete reads at most
+64passages/12000characters, discovery at most50candidates/16000characters.
+Larger sources fail truthfully rather than silently using the first excerpt.
+
+Private templates, saved receipt metadata and exposed version identifiers retain
+exact provenance through replies, history and learning evidence. Source-free saved
+draft outputs also remain owner-private. Receiving audience and current authority
+are rechecked; metadata is untrusted context and cannot grant authority. Quiet
+template declaration binds a saved version; organizational default/mandatory/
+project convention requires owner/admin authority and a published source version.
+
+Question cards carry only material choices; repeated matching question prose is
+removed without stripping code, quoted material or document Open Questions.
+Existing grouped-round/lifecycle controls resume once with all answers and the
+original task. A neutral nonblank reply supports card-only decisions. Failures
+persist only closed stage/code/provider reasons; manual recovery retains accounting
+and permissions, and never blindly redispatches uncertain paid work. Historical
+failures with no retained diagnostic are not retroactively explained. Additive
+057/058 and exact proof receipts are recorded in the autonomous-document run.
+
 ## Knowledge rich documents and collaboration [world:req:rich-document-runtime]
 
 Implemented2026-10-09: Tiptap/Yjs uses the existing authenticated HTTP application

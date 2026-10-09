@@ -1,6 +1,22 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Autonomous document workflow [world:req:autonomous-document-workflow]
+
+Approved2026-10-10: context-first material clarification, one question in one place,
+coherent same-task continuation, template discovery/resolution/structural compliance
+and exact provenance. Clear document/execution intent can create or update permitted
+owner-private working drafts without a second Save confirmation; brainstorming alone
+must not autosave. This supersedes prior deliberate-save-only behaviour for these
+operations. Existing documents are considered before creating duplicates; current
+document scope bounds updates. Publication/approval remains separately authorized.
+Declared requirements, selections and conventions outrank inferred names/versions;
+material ambiguity warrants a concrete chooser, not a generic interview. Unknown
+facts/decisions remain labelled assumptions/TBDs. Preserve owner-private owned-Agent
+direct-audience access, source taint, immutable history, stale-write protection and
+sanitized truthful failure recovery. Save modal/visual redesign remains deferred.
+Implementation/verification state: runs/2026-10-10-autonomous-document-workflow.md.
+
 ## Knowledge visual editing and collaboration [world:req:knowledge-rich-collaboration]
 
 Approved2026-10-09: Knowledge should feel like a Confluence/Notion document editor

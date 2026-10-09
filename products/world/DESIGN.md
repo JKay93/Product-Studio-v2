@@ -1,6 +1,25 @@
 <!-- studio {"id":"world:decision:design","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World design decisions
 
+## Document execution and decisions [world:req:autonomous-document-design]
+
+Approved2026-10-10: inspect Session context, existing documents and relevant
+templates before material clarification. Use normal conversation or a concrete
+decision card, with the question in one place. Group related essentials, retain
+answers and continue useful work without turning document creation into an
+interview. Nonmaterial unknowns remain honest TBDs; template choices are asked
+only when the alternatives materially affect the document.
+
+Clear document/execution requests can save an owner-private draft automatically;
+ordinary conversation/brainstorming retains optional Save to Knowledge. Actual
+native saved replies replace that duplicate action with Open saved draft, opening
+the current editable document. The floating Work panel links the same saved item.
+Template settings sit under Document options and apply to the exact saved version.
+Failed replies show a plain-language stage/recovery explanation, with optional
+closed diagnostic details and deliberate retry. Broad visual redesign and the
+Save modal redesign remain deferred, with the existing high-priority UI direction
+preserved. Functional acceptance does not establish visual approval or model parity.
+
 ## High-priority UI redesign [world:req:ui-redesign-priority]
 
 Knowledge reference recording approved2026-10-09: implement functionality first
