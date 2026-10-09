@@ -1,6 +1,19 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Native capabilities and Knowledge creation [world:req:native-capability-bundle]
+
+Approved2026-10-09: expand the existing runtime with current-capability tools,
+on-demand original conversation history and Knowledge recovery, bounded multi-step
+execution and readable progress. Agents may propose Knowledge documents; exact
+authenticated human review saves an unpublished first version in the current World.
+Publishing remains a separate existing action. Agent creation retains its previous
+review semantics. Existing saved graph delegation and Session discussion remain;
+temporary anonymous helpers and peer handoffs are deferred unless separately chosen.
+No extra provider, credentials, arbitrary host tools or automatic permission grants.
+This is controlled development functionality, not new model-quality parity evidence.
+
+
 ## Conversational quality and localisation [world:req:quality-localisation]
 
 Approved2026-10-08: improve the full Agent behaviour against the frozen Codex

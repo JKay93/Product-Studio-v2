@@ -1,3 +1,17 @@
+Accepted for controlled development: [Agent capability bundle and Knowledge creation](runs/2026-10-09-agent-capability-bundle.md).
+Native current-capability history/Knowledge lookup, finite three-call/two-retrieval
+execution, readable progress/recovery and exact Knowledge review→unpublished save
+implemented. Existing saved graph/Session collaboration retained. Final451tests,
+independent98tests, type/lint/production/gallery,22candidate+installed protected proof
+groups and real two-connection save/dismiss races PASS; isolated54 rebuild/cleanup
+PASS. Installed053/054; previous52 byte digests preserved. No paid test calls, ledger
+8242076 unchanged, pending0. Preview99352/worker31165 restored, compiledworker28884,
+localhostHTTP200. Browser proofs are synthetic components; live Claude continuation
+and connected Claude→UI→DB journey remain untested. Next user testing; scoped remote
+delivery verified MyWorld main8bbbb9d7e1f0eddd4da0899b12143ae28be832a4. Signed-in
+workspace opened in localhost tab3; no paid message sent. Studio receipt in host
+history after this record's delivery.
+
 Accepted for controlled development: [Persistent Agent creation through chat](runs/2026-10-09-agent-creation-tool.md).
 Native proposal→exact human review→actual saved Agent, permission/ownership/privacy
 checks and replay/concurrency safety implemented. Full397tests, independent44tests,

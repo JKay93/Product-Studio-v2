@@ -1,6 +1,21 @@
 <!-- studio {"id":"world:decision:architecture","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World architecture decisions
 
+Accepted2026-10-09 capability bundle: closed native history/Knowledge search/read and
+Agent/Knowledge proposal tools are offered from current SQL authority. At most three
+model calls and two retrievals execute per attempt, with one native call per response.
+Tool results are bounded untrusted reference data; exact native continuation stays
+in process, including opaque thinking blocks, never persisted or displayed. Immutable
+original passages retain canonical citation slots and current source checks. Durable
+per-call dispatch/usage records extend one existing job/attempt spending envelope
+incrementally under existing locks; uncertain calls stay held and cannot automatically
+redispatch. Expired uncertainty becomes a recoverable failure with explicit fresh
+retry, retaining the old charge. Server-owned bounded-stop outcomes avoid accepting
+arbitrary model prose after an unfinished lookup. Knowledge proposals bind exact
+payload/actor/job/current authority and save through the existing unpublished version
+writer. Additive053/054 and proof limits are in the capability bundle run.
+
+
 World uses a modular monolith with a web application, API and database. One shared background worker supports the provider workflow in Phase 6; bounded Knowledge PDF processing uses its guarded parser process. This keeps infrastructure small while separating Agent identity, authority, knowledge and model access. These approved choices were recorded on 2026-10-03. Phases 1–3 established the shared UI; Phase 4 implements real identity, persistence and authority. Phase6 construction and its acceptance evidence are tracked in CURRENT_RUN.md.
 
 ## Runtime and domain boundaries [world:req:runtime-boundaries]
