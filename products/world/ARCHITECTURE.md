@@ -1,6 +1,19 @@
 <!-- studio {"id":"world:decision:architecture","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World architecture decisions
 
+## Assembled request capacity [world:req:request-capacity-runtime]
+
+Implemented2026-10-10: operational input ceiling32000tokens, output4096unchanged.
+The full admitted guidance, native tool schemas, history and sources are counted
+before reservation/dispatch; this change does not trim context or expand source
+access. Additive059 coordinates component/single-call reservation bounds131200
+microUSD and measured input usage32000, retaining exact replay, authority and
+cumulative/Session/run/discussion budgets. Existing per-token estimates and25%
+reservation margin remain; smaller requests reserve their counted size, not32000.
+This is World policy, distinct from the active model's physical context window.
+Model-aware compaction remains future work. Verification and research:
+[request ceiling run](runs/2026-10-10-request-ceiling-clarification.md).
+
 ## Template-aware private document execution [world:req:autonomous-document-runtime]
 
 Implemented2026-10-10 within the existing job, restricted worker, PostgreSQL and

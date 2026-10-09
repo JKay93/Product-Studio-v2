@@ -1,4 +1,15 @@
-Complete for controlled development: [Autonomous document workflow](runs/2026-10-10-autonomous-document-workflow.md).
+Completed for controlled development: [Request ceiling and conversational clarification](runs/2026-10-10-request-ceiling-clarification.md).
+32000assembled input/4096output, coordinated reservation/usage guards and natural
+exploration guidance implemented; cumulative/Session/run financial caps retained.
+Independent QA PASS,525tests/80files, final type/lint/build,59migration reconstruction
+and candidate/installed worker-role accounting proofs PASS.059installed; original58
+digests unchanged. Zero provider calls/spenddelta;884rows8383048microUSD, cap9505910.
+Localhost HTTP200 and restricted worker39588/session54115 ready; no automatic replay.
+Next: user retry/testing. Actual provider tokenizer/live card adherence unmeasured;
+model-aware compaction, full-testing limits, major UI and production deferred.
+MyWorld maina71997596615b0fd334b4a56f7031b4d8de7dee1 remotely verified.
+
+Previous delivery: [Autonomous document workflow](runs/2026-10-10-autonomous-document-workflow.md).
 Context-first material clarification, template discovery/full bounded reads and
 structure/provenance, private draft create/update, linked Chat/Work activity and
 sanitized failure recovery implemented. User-approved independent cross-review,

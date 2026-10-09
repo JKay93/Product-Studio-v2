@@ -1,6 +1,17 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Request capacity and conversational decisions [world:req:request-capacity]
+
+Approved2026-10-10: raise World's assembled-input operational ceiling to32000tokens
+under the same cumulative/Session/run financial caps;4096output and bounded calls/
+retrievals remain. This budget is separate from provider physical context capacity.
+Ordinary exploration uses conversational clarification, not a generalized intake
+card form; material concrete work choices can use cards before or during execution.
+Preserve grouped settled answers and distinct authorization. No silent context
+stripping, automatic replay or provider change. Further model-aware compaction and
+broader testing capacity remain future work. Run:2026-10-10-request-ceiling-clarification.
+
 ## Autonomous document workflow [world:req:autonomous-document-workflow]
 
 Approved2026-10-10: context-first material clarification, one question in one place,
