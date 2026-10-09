@@ -5,9 +5,13 @@
 
 Implemented2026-10-09: Tiptap/Yjs uses the existing authenticated HTTP application
 and database, without another worker or hosted collaboration service. A bounded
-private CRDT draft serves current authorized owner/admin editors and live viewers;
+private CRDT draft serves the authenticated document owner and their active clients;
 published members, archived documents and cited/historical passages retain immutable
-saved snapshots. Caller JWT, current World authority, manager checks and RLS apply
+saved snapshots. The approved reference flow narrows unpublished access to the
+first creation actor. Current durably autosaved versions may be admitted to that
+actor’s personally owned Agents only in a private direct audience. Shared Sessions,
+other Agents and managers cannot retrieve that private draft or its derived output.
+Caller JWT, current World authority, creation permissions and RLS apply
 on every read/effect. Server schema/projection validation and a purpose-bound HMAC
 attestation fence direct RPC forgery; revisions handle simultaneous writers.
 
@@ -17,7 +21,15 @@ published content. Expiring identity-bound relative cursors and in-memory retry
 requests support active clients. Unsaved disconnected edits survive reconnection
 in the same open tab; tab/device recovery of unacknowledged edits is deferred.
 Existing encrypted originals, exact saved Markdown and Unicode passage anchors
-remain authoritative. See the rich-collaboration run for actual proofs and limits.
+remain authoritative. Additive056 stamps immutable authenticated creator ownership,
+indexes exact durable draft generation/revision/digest as immutable private sources,
+and revalidates the receiving execution plus actual retained viewer. Private
+dependencies include descendant citations and inherited memory provenance; human
+projection/release/notice reads gate before privileged identity switching. Explicit
+Publish/history/Restore actions serialize behind in-flight sync without queueing
+periodic polls; exact retry intents and stop/access/generation checks remain intact.
+See [reference-flow run](runs/2026-10-09-knowledge-document-flow.md) for current proof
+and the rich-collaboration run for earlier mechanics.
 
 Accepted2026-10-09 capability bundle: closed native history/Knowledge search/read and
 Agent/Knowledge proposal tools are offered from current SQL authority. At most three
@@ -114,7 +126,7 @@ See [Tech stack](TECH_STACK.md) for selected tools, [Code organization](CODE_ORG
 
 The user approved Knowledge-first Phase 5 on 2026-10-05. Reference documents are distinct from behavioral Memory; personal documents belong to the user, organization documents to their World. The library uses immutable item/content-version/passage records, bounded paginated read/search endpoints and private Storage; it must not place every document body into the workspace snapshot. Existing memory source-version references are not a retrievable document version archive.
 
-Personal owners manage their library. Organization owners/admins manage World documents; members read only documents explicitly published to their World library, and unpublished drafts remain owner/admin-visible. Folders do not grant permissions; current note rules are not silently copied to file documents. Publication, storage completion, parsing and retrieval all recheck exact current authority. Authenticated original-file delivery supports denying new requests after revocation; already delivered content cannot be recalled. Avoid bearer signed URLs when immediate new-request revocation is required.
+Personal owners manage their library. Organization owners/admins manage World documents; members read only documents explicitly published to their World library, and unpublished drafts are document-owner-private under the superseding 2026-10-09 reference-flow decision. Folders do not grant permissions; current note rules are not silently copied to file documents. Publication, storage completion, parsing and retrieval all recheck exact current authority. Authenticated original-file delivery supports denying new requests after revocation; already delivered content cannot be recalled. Avoid bearer signed URLs when immediate new-request revocation is required.
 
 Initial retrieval is PostgreSQL keyword search with exact version/page/paragraph references; embeddings, providers, automatic learning and cross-World export remain later capabilities. Start with interactive UI assessment, then saved text, bounded TXT/Markdown/text-PDF import, search and real boundary proof. The approved plan resolves slices; actual implementation/evidence remains in CURRENT_RUN.md.
 
@@ -122,7 +134,7 @@ Initial retrieval is PostgreSQL keyword search with exact version/page/paragraph
 
 Slice 5.2 adds a dedicated Knowledge repository/API using the verified caller JWT. Paginated metadata lists, title filters and explicit detail/history requests keep document bodies out of workspace snapshots. Immutable authored versions and paragraph references retain exact history; compare-and-swap, actor-bound request IDs and current World authority protect updates and retries. Selection is saved per actor/library. Archive/restore is reversible and rechecks current authority.
 
-Members see only currently published active documents and their ancestor folders; unpublished histories and draft-only/empty folder names stay concealed. Archiving, unpublishing or revoking authority denies subsequent member reads, including earlier versions. Owner/admin management and private personal ownership remain separate. World locks coordinate reads/mutations with revocation. Legacy deliberate text/memory records retain their original source/editor and permissions, without duplicate editable copies. Two additive migrations extend the Phase 4 foundation. Slice 5.3 now implements imports and private original delivery; ranked passage search remains slice 5.4.
+Members see only currently published active documents and their ancestor folders; unpublished histories and draft-only/empty folder names stay concealed. Archiving, unpublishing or revoking authority denies subsequent member reads, including earlier versions. World management and personal ownership remain separate; the 2026-10-09 reference flow narrows unpublished document access to its authenticated creation actor. World locks coordinate reads/mutations with revocation. Legacy deliberate text/memory records retain their original source/editor and permissions, without duplicate editable copies. Two additive migrations extend the Phase 4 foundation. Slice 5.3 now implements imports and private original delivery; ranked passage search remains slice 5.4.
 
 ### Private original encryption [world:req:knowledge-original-encryption]
 

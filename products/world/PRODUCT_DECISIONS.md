@@ -7,13 +7,21 @@ Approved2026-10-09: Knowledge should feel like a Confluence/Notion document edit
 for SMEs. Read formatted saved Agent Markdown, edit visually in place with a toolbar,
 slash insertion and optional Markdown shortcuts. Authorized editors collaborate with
 named presence/cursors, autosave and reconnection; history remains recoverable. Existing
-personal-private and World owner/admin editing rights remain; folders grant nothing.
-Working edits stay a private draft for editors, with deliberate publication updating
-what members can read. Restore must not silently publish. Optional Save to Knowledge
+creation permissions remain; folders grant nothing. Reference recording approved
+2026-10-09 supersedes manager-wide draft visibility: document owner is the authentic
+first creation actor. Unpublished documents and working edits are owner-private,
+usable by that owner's personally owned Agents only in an owner-private audience.
+Other managers/Agents and shared Sessions cannot receive private contents through
+history, outputs, citations or tools. Published documents are readable by permitted
+World participants; explicit publication updates that head. Two states only; the
+proposed intermediate category was discarded. Restore must not silently publish. Optional Save to Knowledge
 from Chat remains deliberate and unpublished by default; no automatic chat saving.
 Controlled-development implementation and verification are recorded in the
-rich-collaboration run. Current authorized manager viewers also see the private
-working draft live; member and historical/source views retain saved versions.
+rich-collaboration run. Owner clients see their private working draft live; member
+and historical/source views retain permitted saved versions. Latest durable draft
+is available to the owner's Agents without a manual Save or publication step.
+Organization assets remain World-owned on departure; document-private access does
+not authorize exporting organization material to portable personal memory.
 Production readiness is separate.
 
 ## Natural clarification [world:req:natural-clarification]
@@ -192,7 +200,7 @@ inherit private memory. Personal-origin creation stays personal; organization-or
 creation stays in the same World under owner/admin authority. No wholesale runtime
 replacement or new provider. See runs/2026-10-09-agent-creation-tool.md for checks.
 
-Approved on 2026-10-05: build the Knowledge source library before model connection. Personal documents remain user-owned/private; organization documents remain World-owned on departure. Organization owners/admins manage those documents, members read only explicitly published World documents, and unpublished drafts are visible only to authorized owner/admin. Folders organize content without granting access. Existing authored text-note permissions remain unchanged.
+Approved on 2026-10-05: build the Knowledge source library before model connection. Personal documents remain user-owned/private; organization documents remain World-owned on departure. Organization owners/admins manage those documents, members read only explicitly published World documents, and unpublished drafts now follow the superseding 2026-10-09 document-owner-private decision above. Folders organize content without granting access. Existing authored text-note permissions remain unchanged.
 
 Knowledge contains user-supplied reference sources, with inspectable exact content versions and source locations. Memory contains preferences and lessons affecting Agent behavior; importing a file does not enable automatic learning, export or model execution. Start with text/TXT/Markdown, then bounded selectable-text PDFs. Scanned-file OCR and external connectors are later work. Retain versions/archive during development; permanent purge/retention policy is a separate pre-pilot decision. The initial phase begins with an interactive mockup for visual assessment.
 

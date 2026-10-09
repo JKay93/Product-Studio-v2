@@ -1,3 +1,15 @@
+Complete for controlled development: [Knowledge document flow and owner-private Agent access](runs/2026-10-09-knowledge-document-flow.md).
+Nested contextual creation/rename, direct rich autosave, compact secondary controls,
+explicit Publish and owner-private owned-Agent retrieval implemented. Independent
+Builder cross-review approved by user; final506tests/76files, build/type/lint,
+10candidate+10installed protected proof groups,56migration rebuild and actual
+nested/autosave/two-client/live/Find/publish/private-restore browser checks PASS.
+056installed, prior55digests preserved; no Claude calls, spend unchanged, pending0.
+MyWorld main9a976a2ed78c506155b302eb01e6df9810af5918 remote verified. Preview remains
+open on retained isolated sample. Broad UI refinement high priority; production,
+physical mobile and tab/device-close unacknowledged recovery remain deferred.
+Next: user Knowledge tests, then cohesive visual refinement.
+
 Latest priority discussion: [UI priority and remaining roadmap](runs/2026-10-09-ui-priority-roadmap.md).
 User elevated cohesive UI redesign to high priority alongside testing. Priority
 recorded in Design/Roadmap; current discussion starts no new application build.

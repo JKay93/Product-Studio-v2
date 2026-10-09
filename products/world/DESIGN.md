@@ -3,6 +3,16 @@
 
 ## High-priority UI redesign [world:req:ui-redesign-priority]
 
+Knowledge reference recording approved2026-10-09: implement functionality first
+using existing Tiptap/Yjs. Nested tree contextual + creates document/subfolder/upload
+under the chosen parent; inline rename; folder clicks only expand and document clicks
+open direct editing. Readable central document with editable title, headings1–6,
+tables, allowlisted coloured inline labels/highlights and slash insertion. Autosave
+is distinct from deliberate Publish. Secondary Find/history/archive controls live
+in compact menus rather than occupying the document. Private owner drafts and
+published World audience remain clearly distinguished. Broad visual refinement is
+still high priority; functionality acceptance alone does not imply visual approval.
+
 User direction2026-10-09: the present live UI is unacceptable visually. Treat a
 cohesive UI redesign as high priority alongside hands-on product testing. Existing
 functional acceptance does not establish user acceptance of the visual experience.
