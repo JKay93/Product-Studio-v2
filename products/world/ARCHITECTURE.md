@@ -207,6 +207,23 @@ Queries are bounded to200 Unicode codepoints/12 terms; result pages default10/ma
 
 ## Working Agent execution [world:req:working-agent-execution]
 
+Document preparation refinement2026-10-10: a bounded complete document read is a
+job/attempt/version-bound proof distinct from the stable citation pool. Retain at
+most64 citation aliases without reassigning existing slots; additional passages
+from a genuine complete read remain preparation context and cannot be cited without
+an admitted alias. Read proofs carry current audience, immutable source, editor
+generation/revision and private/learning dependencies, including delegated outcomes.
+An understood document type with exactly one declared applicable template and
+nontruncated discovery can attach its genuine full read to the actual search result.
+Ambiguous/undeclared/truncated discovery does not select a template. Oversized reads
+return explicit preparation coverage instead of destroying useful discovery.
+Saving still requires a fresh current-attempt read and exact update locks; no
+speculative direct-save preparation or increase to32k input/4096 output,
+three model calls/two retrievals,64-passages/12000-character full-read bounds.
+Migration061 preserves installed001–060 and adds no direct worker table access.
+Actual ordinary workflow results and reviewed evaluation boundaries are recorded in
+[the reliability run](runs/2026-10-10-document-flow-reliability.md).
+
 Long-conversation continuity implemented on 2026-10-08: original records remain saved. The latest 10,000 eligible turns supply 12 recent and up to 24 lexical-relevant older turns, ordered chronologically and excerpted within about 12,000 characters. Current World/Session/Agent/requester and retained-source checks apply before admission; the existing 8,000 input-token guard remains. Reference history never grants permissions or policy authority. Lexical recovery can miss facts and synonyms; finite context is not lossless recall. No separate paid summary call is added. The current run records the real 1,000-turn correction/decision/isolation proof and exact limitations.
 
 Chat request decisions use caller-JWT scoped APIs and private question records. Up to three optional questions per completed Chat job remain inactive until an exact requester decision. Answer/change/reject use compare-and-swap revisions, current Session/Agent/source authority and metadata-only audit. Saved answers continue as ordinary idempotent Chat requests, with recovery after reload or failure. Internal meeting proposal approval/edit/reject retains the existing exact revision/digest and effects gateway; questions cannot authorise arbitrary external actions. All 43 migrations rebuild cleanly; installed migration bytes remain immutable.

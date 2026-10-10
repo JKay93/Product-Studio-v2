@@ -1,3 +1,17 @@
+Latest: [Chat → Knowledge reliability](runs/2026-10-10-document-flow-reliability.md).
+Reviewed061/runtime installed; first four live scenarios PASS, including first-attempt
+Strategy and PRD using real templates. Same-item edit interrupted by test-host/database
+stall after successful54-passage read; reopen unrun. Full journey PARTIAL, no6/6claim.
+Five turns/seven completed calls,98021input/5053output,US$0.246572 consumed/retained.
+First four mean machine30.236s, deliberate exact-review waits separate; no fair full
+before/after latency claim. Historical failures/locked launchers/001–060/privacy/caps
+preserved. Source/database/offline independent review PASS; worker restored after0jobs.
+MyWorld maine1deb41919cbea13f6c0e252630e1769012afc0f pushed and verified remotely.
+Final independent evidence review confirms PARTIAL; localhostHTTP200 and normal worker
+ready,0active jobs and cumulative ledger/cap unchanged. Studio record delivery follows.
+Next: separately reviewed remaining live edit/reopen checks when the test host is stable;
+never automatically replay the cancelled run.
+
 Latest completed: [Evaluation safeguards](runs/2026-10-10-evaluation-safeguards.md).
 18 historical paid launchers locked; reviewed-content/provider gate and policy/refusal
 stop verified with harmless local simulations. Independent review PASS; final91offline
