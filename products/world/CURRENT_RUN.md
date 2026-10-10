@@ -1,4 +1,14 @@
-Latest: [Chat → Knowledge implementation and real tests](runs/2026-10-10-chat-knowledge-journey.md).
+Latest completed: [Evaluation safeguards](runs/2026-10-10-evaluation-safeguards.md).
+18 historical paid launchers locked; reviewed-content/provider gate and policy/refusal
+stop verified with harmless local simulations. Independent review PASS; final91offline
+checks, typecheck and affected lint PASS (1existing warning). Historical evidence intact.
+Approved live manifest empty; callback seam has no live adapter/IPC wiring, so benchmarks
+remain disabled pending separate review. No paid calls, DB or service changes.
+MyWorld main1dce95783ceafb4cc4929c6793e4475ca5cda13c verified on GitHub;
+Studio scoped records delivery follows in host history.
+Previous Chat-to-Knowledge source/template blockers remain open below.
+
+Previous: [Chat → Knowledge implementation and real tests](runs/2026-10-10-chat-knowledge-journey.md).
 Scoped UI/preflight/diagnostics reviewed/verified; full journey PARTIAL. Six scenarios,
 eight turns/11calls:3PASS,3FAIL;US$0.392456. Strategy readiness and combined sources
 block Agent continuation. Human login restored; preview/worker running,0jobs,60migrations.

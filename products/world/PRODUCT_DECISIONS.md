@@ -1,6 +1,18 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Evaluation dispatch safety [world:req:evaluation-dispatch-safety]
+
+Approved2026-10-10: after reported Codex Cyber Abuse warning/rejected appeal, exclude
+blocked harmful-generation probes from live evaluation, require content-bound reviewed
+eligibility, stop future dispatch on policy blocks, and use harmless local simulated
+provider/tool outcomes for enforcement checks. No rephrasing/replay/provider fallback
+to bypass a safeguard. Historical evidence remains unchanged. Simulations establish
+mechanism behavior only; excluded high-risk model refusal/parity coverage stays untested
+pending applicable provider confirmation. This does not guarantee freedom from account
+restrictions. No new provider, spending, runtime permissions or production authority.
+Run:2026-10-10-evaluation-safeguards.
+
 ## Request capacity and conversational decisions [world:req:request-capacity]
 
 Approved2026-10-10: raise World's assembled-input operational ceiling to32000tokens
