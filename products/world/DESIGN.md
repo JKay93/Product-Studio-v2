@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:design","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World design decisions
 
+## Complete integration [world:req:design-system-integration]
+
+Approved 2026-10-13: user rejected the initial Stage 3 consistency and explicitly required the design system across every UI surface. Integration now covers all 77 production TSX and five stylesheets with 170 authoritative semantic tokens, shared controls and an offline CI conformance guard. Require both source conformance and actual rendered review for subsequent UI changes; passing tests or replacing literals with arbitrary token names is insufficient. Agent creation heading/avatar/options/form share one centre axis; desktop/mobile control geometry is 40/44px with controlled select-arrow insets. Named dynamic geometry/content exceptions are narrow and documented in World/design/README.md. Independent source review, 639 tests, final application/46-example catalogue builds and 37 actual browser surface/viewport checks support development acceptance. Evidence and limitations are in World/design/INTEGRATION_REPORT.md and the integration run. Previous Stage 3 acceptance below is historical and superseded on visual consistency. Root's user-selected model does not change Studio worker routing.
+
 ## Stage 3 full overhaul authority [world:req:stage3-overhaul]
 
 Approved 2026-10-13: user authorises complete UI/UX and proper design-system replacement. Existing visual theme, layouts, navigation and presentation may be replaced when the new experience is coherent and usable. Historical visual decisions below are references, not constraints on Stage 3. Preserve user data, actual product capabilities, security/permission boundaries and exact work/approval lifecycles. Designer uses GPT-6 Astra/XHigh for this run only. Root may accept routine design choices and continue implementation/review without another mandatory mockup approval checkpoint. Actual implementation and visual evidence belong to the Stage 3 run.
