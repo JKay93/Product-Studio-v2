@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Agent personality and preview [world:req:agent-personality]
+
+Approved2026-10-14: Direct is the default personality, with other starting personalities selectable. Consolidate personality controls with instant illustrative replies for Everyday chat/Feedback/Work request, and optional actual-model test chat using unsaved settings. Examples use no API; generated preview replies use ordinary API credits. Preview cannot execute tools or update Knowledge, work or memory. Saving deliberately applies the selected personality; Discard leaves the working Agent unchanged. Keep private owner context/memory separate from owner-authorised portable character; World/Session guidance contextualizes delivery without rewriting Agent Self or permissions. Reuse the existing design system; broader UI redesign stays paused. [Implementation run](runs/2026-10-14-agent-personality-implementation.md).
+
 ## Task diagnostics and recovery [world:req:run-diagnostics]
 
 Approved2026-10-14: add inspectable Agent task records and interruption/concurrency reliability checks while broader UI redesign is paused. Access records through the existing Chat Work item details, with a scoped technical export. Preserve permissions and document privacy; diagnostics contain bounded execution metadata, not raw prompts, private reasoning or credentials. Show unknown measurements and unsettled spending honestly, including retries. Use isolated synthetic faults to verify recovery without paid provider calls; these checks establish mechanics, not model output parity. Implementation/evidence: [run](runs/2026-10-14-run-diagnostics-reliability.md).
