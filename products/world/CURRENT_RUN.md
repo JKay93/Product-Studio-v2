@@ -4,6 +4,8 @@ Tickets 1 + 2 implemented, independently reviewed and pushed to MyWorld main 55e
 
 No provider calls/spend, emails, real backup/database updates or live service interruption. Running localhost remains its previous build while user tests; source activation awaits a controlled refresh. Normal-testing cap remains lifted without automated-spend authority. Unrelated tsconfig/temp files and historical SQL/receipts are preserved. Development-only braces advisory remains disclosed.
 
+Stage 3 only: human authorised the Designer route gpt-6-astra / xhigh / fork_turns none on 2026-10-13 for the design system and cohesive UI overhaul. Host tool metadata supports this requested combination; actual activation remains unknown until dispatch evidence. Other roles retain current Studio routing. This scoped override expires with Stage 3 and does not alter shared routing or authorise implementation by itself.
+
 Next: user testing feedback and Stage 3 UI direction. Need top frustrations, preferred visual references/theme and priority screen/device; existing Grok Chat/floating Work/Sources, grouped Agent cards and Confluence Knowledge references are recorded. No new credentials needed for UI. Before pilot onboarding, complete real inbox/callback checks and choose hosting/delegation plus protected backup destination, retention and key custody. Detailed results, limits and delivery evidence are in the completed run.
 Previous: [Whole-codebase audit and verified repairs](runs/2026-10-13-codebase-audit.md).
 
