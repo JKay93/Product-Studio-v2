@@ -1,4 +1,8 @@
-Latest completed: [Temporary user-testing allowance](runs/2026-10-11-user-testing-budget.md).
+Latest active: [Whole-codebase audit and verified repairs](runs/2026-10-13-codebase-audit.md).
+
+Audit verified and activated: twelve finding groups reported; access/body boundaries, eight functional bugs and orphan cleanup fixed, Vite/esbuild patched, unpatched development braces chain remains.574/574offline tests,45Node guards, type/lint/build/worker bundle and installed23protected scenarios PASS. Human approved controlled refresh;068/069 installed with historical001–067 unchanged, website/worker ready and exact ledger retained. Zero audit API spend; cumulative normal-testing cap remains lifted, future paid development checks need an agreed cap. Preserve unrelated tsconfig/temp artifacts. Detailed findings, coverage limits, larger-module debt and scoped delivery are in the linked report. Next: user testing feedback, upstream development dependency follow-up and deliberate owner recovery for any pre-existing stale drafts; no automatic data repair.
+
+Previous: [Temporary user-testing allowance](runs/2026-10-11-user-testing-budget.md).
 
 Normal user-testing cumulative cap is lifted: reviewed067 installed, development_ceiling_enabled=false, original9805910ceiling and903rows/9534086spent at activation retained. Default remains true for installations, app/worker cannot toggle. Root candidate and installed rollback checks PASS for initial/continuation/re-enable/legacy/per-call/permissions/accounting; two offline checks and independent review PASS; zero provider calls. Reminder automation restore-world-testing-budget ACTIVE; project instruction reminds when user next asks Codex to work, restores a freshly agreed cap before paid tests, and never treats this exception as automated spending authority. Root scoped delivery/services verification follows. Questions none. Normal per-request/run/Session/security controls still apply.
 
