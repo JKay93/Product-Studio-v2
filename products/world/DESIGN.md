@@ -3,6 +3,8 @@
 
 ## Sidebar composition [world:req:sidebar-composition]
 
+Chat visibility refinement (2026-10-13): Designer places Hide chats in the Chat panel heading beside New. When that panel is hidden or the primary rail is minimised, Show chats belongs immediately before the conversation title and restores the panel with expanded navigation. Mobile uses the existing workspace dialog and its close control. Availability must match what is actually rendered; keyboard focus transfers between hide and restore. This supersedes the distant upper-right context toggle. Reuse shared controls and spacing tokens, and verify the actual responsive states.
+
 Approved 2026-10-13 after user screenshot review: primary navigation and footer actions share one icon column and label start; preserve grouping through separators and vertical spacing. Collapsed rail controls share a centreline and consistent hit areas. World selection and collapse compose one aligned header. More is a complete menu-trigger row including its label. Chat has one labelled New menu offering New Agent and New Session above a full-width search field; remove competing plus buttons. Reuse shared design-system components and tokens; acceptance requires actual expanded/collapsed browser inspection, long labels and keyboard/menu checks. Prior source conformance did not catch these composition defects. Current implementation/evidence belongs to the sidebar-integration run.
 
 ## Complete integration [world:req:design-system-integration]
