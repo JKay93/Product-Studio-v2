@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:design","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World design decisions
 
+## Stage 3 full overhaul authority [world:req:stage3-overhaul]
+
+Approved 2026-10-13: user authorises complete UI/UX and proper design-system replacement. Existing visual theme, layouts, navigation and presentation may be replaced when the new experience is coherent and usable. Historical visual decisions below are references, not constraints on Stage 3. Preserve user data, actual product capabilities, security/permission boundaries and exact work/approval lifecycles. Designer uses GPT-6 Astra/XHigh for this run only. Root may accept routine design choices and continue implementation/review without another mandatory mockup approval checkpoint. Actual implementation and visual evidence belong to the Stage 3 run.
+Stage 3 accepted implementation: Workbench uses one contextual sidebar, quiet neutral surfaces, dark primary actions and indigo selection/focus, coherent 40px desktop/44px mobile controls, readable Chat/document measures and modal mobile navigation. The authoritative runtime tokens and shared components are in World/src/app/globals.css and src/ui/primitives; the reviewed contract and aliases are design/stage3-tokens.json. Chat, Knowledge, Agents and supporting screens use this system. 36 Storybook examples and actual responsive/source review establish controlled-development acceptance; subjective user feedback remains welcome. Prototype/sample figures are fictional. Current evidence and delivered revisions are in the Stage 3 completed run; the one-run Astra Designer override has expired.
 ## Document execution and decisions [world:req:autonomous-document-design]
 
 Approved2026-10-10: inspect Session context, existing documents and relevant

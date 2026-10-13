@@ -1,3 +1,11 @@
+Latest completed: [Stage 3 complete UI overhaul](runs/2026-10-13-stage3-ui-overhaul.md).
+
+Workbench design system and all principal UI surfaces delivered, independently reviewed and pushed to MyWorld main b72d5852ba49e61602b0f75e66634118e177a4d5 (52 scoped files). Final main CI38390723135 all three jobs PASS:636/636tests97files, type/lint/app/Storybook, audit/recovery/schema69/Linux guards. Independent89-case QA + actual1280/360/760 visual review PASS. Desktop/mobile interactions, long-note bottom scrolling, draft retention, mentions and request/approval semantics verified with synthetic fixtures. See run for evidence and limits.
+
+New UI demo127.0.0.1:3101 and static36-example catalogue3102 retained in owned World-UI-20261013; existing real3000 website and normal worker are unchanged. Backend-ready build prepared; real-site loading awaits a controlled testing break. No providers/emails/migrations/budget changes. Normal-user cap remains lifted without automated-spend authority; unrelated tsconfig/older temp trees preserved. Temporary Designer Astra/xhigh override is finished; future work uses shared Studio routes unless human changes them.
+
+Next: UI feedback and controlled activation, then remaining pilot inbox/hosting/backup decisions. No UI credentials needed.
+
 Latest completed: [Pilot readiness and maintainability](runs/2026-10-13-pilot-readiness-maintainability.md).
 
 Tickets 1 + 2 implemented, independently reviewed and pushed to MyWorld main 55e8bf3ab0036401f41cd1957cf4a14b9986cc82 (62 scoped files). Final main CI 38375543205 passes all three jobs: 630/630 tests across 97 files, type/lint/build, dependency gate, synthetic encrypted recovery, actual Linux resource and cleanup checks, and all 69 migrations reconstructed with foundation isolation/private ACL rollback. Separate Windows build and six resource groups passed. The Linux empty-cgroup cleanup race was fixed with bounded empty-only retries; resource limits and kill authority are unchanged.
