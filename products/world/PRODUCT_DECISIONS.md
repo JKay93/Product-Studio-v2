@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Task diagnostics and recovery [world:req:run-diagnostics]
+
+Approved2026-10-14: add inspectable Agent task records and interruption/concurrency reliability checks while broader UI redesign is paused. Access records through the existing Chat Work item details, with a scoped technical export. Preserve permissions and document privacy; diagnostics contain bounded execution metadata, not raw prompts, private reasoning or credentials. Show unknown measurements and unsettled spending honestly, including retries. Use isolated synthetic faults to verify recovery without paid provider calls; these checks establish mechanics, not model output parity. Implementation/evidence: [run](runs/2026-10-14-run-diagnostics-reliability.md).
+
 ## Evaluation dispatch safety [world:req:evaluation-dispatch-safety]
 
 Approved2026-10-10: after reported Codex Cyber Abuse warning/rejected appeal, exclude
