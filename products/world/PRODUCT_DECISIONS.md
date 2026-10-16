@@ -1,6 +1,11 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Pi runtime integration [world:req:pi-runtime]
+
+Approved2026-10-16: implement A–D as one core delivery, retaining Claude: diagnose failures, integrate Pi1.3.0 behind existing provider/World authority boundaries, replace rigid loop limits with durable finite budgets and unify typed work/questions/approvals. Preserve permissions/accounting/private context and immutable installed migrations; independently validate actual candidate before controlled activation. Editor/context overhaul, new tools/collaboration and UI/personality expansion remain separate. No automated paid calls inferred from normal-user cap exception. [Current run](runs/2026-10-16-pi-runtime-integration.md).
+
+Delivery accepted2026-10-16: runtime35bdd8b reviewed, pushed and locally activated with additive073/074 and green735-case CI. Human-approved independent Builder cross-review applied only to disjoint changes for this run. The single authorised US$0.70 Claude smoke is consumed:3/3PASS at US$0.06314 accounted, original cap flag/ceiling restored, all charges retained. Unused allowance grants no additional automated tests. This check establishes narrow draft/revision/recall behavior, not overall parity.
 ## Agent personality and preview [world:req:agent-personality]
 
 Approved2026-10-14: Direct is the default personality, with other starting personalities selectable. Consolidate personality controls with instant illustrative replies for Everyday chat/Feedback/Work request, and optional actual-model test chat using unsaved settings. Examples use no API; generated preview replies use ordinary API credits. Preview cannot execute tools or update Knowledge, work or memory. Saving deliberately applies the selected personality; Discard leaves the working Agent unchanged. Keep private owner context/memory separate from owner-authorised portable character; World/Session guidance contextualizes delivery without rewriting Agent Self or permissions. Reuse the existing design system; broader UI redesign stays paused. [Implementation run](runs/2026-10-14-agent-personality-implementation.md).

@@ -1,6 +1,13 @@
 <!-- studio {"id":"world:decision:architecture","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World architecture decisions
 
+## Pi execution runtime [world:req:pi-execution]
+
+Approved2026-10-16 implementation A–D retains the existing Claude transport and model settings behind pinned Pi1.3.0 Agent scheduling. World remains the authority for identity, source/template admission, exact request counts/digests, reservations, dispatch/completion receipts, effects, cancellation, revocation and recovery. Native signed thinking/tool continuation stays in an in-memory provider sidecar; Pi events and private transcripts are not persisted or exposed. Single native tool per response and sequential execution remain enforced.
+
+The explicit pi-v1 protocol allows at most12 model requests and10 retrievals per job across attempts, with existing32k input/4096 output per request,900-second durable deadline and all Session/run/financial fences. Legacy workers negotiate no new tools and retain3calls/2retrievals; unsafe protocol transitions fail closed. Old single-call spend attempts consume durable slots. Known never-dispatched reservations can be abandoned as exactly zero; dispatched uncertainty remains held and never automatically replayed. Native grouped questions reuse existing question-round revisions, expiry, stop and continuation records; approval remains distinct. A single transient token-counter transport retry is allowed before generation; generation has no automatic replay.
+
+Additive073/074 preserve installed001–072. Source35bdd8b is independently reviewed, accepted, pushed and activated locally with Claude. Actual CI passes735tests and all application/schema/Linux PDF jobs; disposable PostgreSQL reconstruction/concurrency and a three-turn real Claude draft/revision/recall smoke pass. This narrow live check is not an overall output-accuracy/parity benchmark. Historical3/2 paragraphs below describe the legacy protocol. [Delivery run and evidence](runs/2026-10-16-pi-runtime-integration.md).
 ## Assembled request capacity [world:req:request-capacity-runtime]
 
 Implemented2026-10-10: operational input ceiling32000tokens, output4096unchanged.
