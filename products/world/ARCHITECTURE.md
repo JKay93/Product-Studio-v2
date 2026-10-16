@@ -1,6 +1,12 @@
 <!-- studio {"id":"world:decision:architecture","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World architecture decisions
 
+## Chat document continuity and governed tool expansion [world:req:documents-tools-runtime]
+
+E–F source accepted 2026-10-16. Existing chats select locally without a global save/load cycle; independent serialized draft and selection writes retain scoped recovery and authorization fences. Chat document outputs open the same Knowledge editor, history and Yjs draft used by the library. Pending focus admission completes before a message can snapshot its document. Focus is actor/World/Session scoped and frozen to the item (including no-focus) at job enqueue; later attempts refresh that item's authorized head rather than retargeting to another open document. Stale unadmitted optional focus returns a closed unavailable flag; previously admitted private dependencies still fail closed.
+
+`inspect_document` returns bounded extracted structure, provenance and freshness for permitted Knowledge/TXT/Markdown/PDF versions; it is not full body/template proof or live web research. `delegate_tasks` records one exact settled native batch of unique eligible direct saved-graph children, suspends the parent and resumes that same job once for actual result consolidation. Existing six-child, depth-two, concurrency-two, run-cost/deadline and per-job finite limits remain. Task data and private ancestor provenance cannot grant authority; the initial native path requires a proven common owner audience. Borrowed native delegation remains unavailable; existing manual teams are unchanged. Child effects/questions are not offered on this path. Additive075/076 preserve001–074. [Delivery and activation status](runs/2026-10-16-documents-tools-ef.md).
+
 ## Pi execution runtime [world:req:pi-execution]
 
 Approved2026-10-16 implementation A–D retains the existing Claude transport and model settings behind pinned Pi1.3.0 Agent scheduling. World remains the authority for identity, source/template admission, exact request counts/digests, reservations, dispatch/completion receipts, effects, cancellation, revocation and recovery. Native signed thinking/tool continuation stays in an in-memory provider sidecar; Pi events and private transcripts are not persisted or exposed. Single native tool per response and sequential execution remain enforced.

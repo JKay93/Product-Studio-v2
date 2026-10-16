@@ -1,6 +1,8 @@
 <!-- studio {"id":"world:decision:tech-stack","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:architecture"}]} -->
 # World tech stack decisions
 
+E–F accepted source 2026-10-16 reuses existing Tiptap/Yjs Knowledge editor, PostgreSQL job/run/graph records and Pi/Claude adapter. No new application dependencies or provider integration. New document-focus API and additive075/076 provide scoped immutable job focus, bounded imported-document inspection and durable native delegation batches through existing narrow worker RPCs. Local activation/verification status and capability limits are tracked in the [delivery run](runs/2026-10-16-documents-tools-ef.md).
+
 Knowledge rich collaboration implementation choice2026-10-09: pinned OSS Tiptap3.31.4
 (core/react/pm/starter-kit/markdown/collaboration/table/task-list/task-item),
 Yjs13.6.33, @tiptap/y-tiptap3.0.9, y-prosemirror1.3.7 and y-protocols1.0.7. Use existing authenticated

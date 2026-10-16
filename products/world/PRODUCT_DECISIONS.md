@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Document and tool delivery E–F [world:req:documents-tools-ef]
+
+Approved 2026-10-16: deliver document/context continuity and the existing Knowledge editor alongside Chat together with bounded research/file tools and governed collaboration. Include the existing-chat navigation fix: immediate selection, separate drafts and quiet refresh instead of a global saving/loading lock. Reuse existing Knowledge, graph/Session permissions and financial boundaries. G (major UI changes, personality refinement and routines/IFTTT) remains separate. Claude is retained; this approval grants no new automated provider spending. Implementation and actual capability limits belong in the [delivery run](runs/2026-10-16-documents-tools-ef.md).
+
 ## Pi runtime integration [world:req:pi-runtime]
 
 Approved2026-10-16: implement A–D as one core delivery, retaining Claude: diagnose failures, integrate Pi1.3.0 behind existing provider/World authority boundaries, replace rigid loop limits with durable finite budgets and unify typed work/questions/approvals. Preserve permissions/accounting/private context and immutable installed migrations; independently validate actual candidate before controlled activation. Editor/context overhaul, new tools/collaboration and UI/personality expansion remain separate. No automated paid calls inferred from normal-user cap exception. [Current run](runs/2026-10-16-pi-runtime-integration.md).
