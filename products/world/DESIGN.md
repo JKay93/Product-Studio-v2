@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:design","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:product"}]} -->
 # World design decisions
 
+## G character and routine experience [world:req:g-experience]
+
+Accepted functional direction2026-10-16: preserve current design system and global Chat/Knowledge/Agents navigation. Routines belongs in More and the selected Agent's settings, with genuine Agent/private-conversation switching. Staged task/trigger→sources/conditions/output→scope/payer/finite-limits review creates a disabled draft before explicit enable. Direct means concise and answer-first with necessary detail; use generic Direct/Natural/Warm/Curious preset names in examples. Exact-effect approval renders actual destination/title/body and optional revision details. History links the real Chat job and saved Knowledge; refresh exposes current routine state without reintroducing a global Work tab. Explain worker availability, supported owner-private scope and UTC run-start allowance separately from schedule timezone. Actual expanded/minimised/mobile, keyboard/focus restoration and no-overflow checks supplement token conformance. Major visual rebrand remains deferred to user references.
+
 ## Sidebar composition [world:req:sidebar-composition]
 
 Latest Chat navigation direction (2026-10-13): user rejects the independent Chat hide/show controls entirely. Only the global navigation collapse controls Chat visibility; expanded navigation always shows its chat list regardless of obsolete hidden-Chat preferences. Move the current conversation/Agent-Session chooser into a full-width quiet row below Chat/New and above search, showing the existing session name with ellipsis and a trailing chevron. Remove the redundant desktop Chat top strip; mobile keeps its workspace-menu button with the same chooser inside the dialog. Preserve current Agent/Session semantics, scope callbacks, drafts, search and nested-dialog focus. Reuse shared tokens and controls. This supersedes both prior Chat toggle placements.

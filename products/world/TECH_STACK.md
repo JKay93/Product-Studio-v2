@@ -1,6 +1,8 @@
 <!-- studio {"id":"world:decision:tech-stack","scope":"world","type":"decision","status":"approved","links":[{"relation":"depends_on","target":"world:decision:architecture"}]} -->
 # World tech stack decisions
 
+G source2026-10-16 adds no dependencies: existing PostgreSQL/pg-boss narrow worker, Pi/Claude bridge, React/shared design primitives and Knowledge editor power durable routines, conversational disabled-draft proposals and integrated management. Native PostgreSQL timezone rules handle calendar scheduling; local worker availability is required, not an always-on hosting service. Additive077/closedAPI/fixtures and delivery status are in the [G run](runs/2026-10-16-g-implementation.md). Package and lock contents remain unchanged.
+
 E–F accepted source 2026-10-16 reuses existing Tiptap/Yjs Knowledge editor, PostgreSQL job/run/graph records and Pi/Claude adapter. No new application dependencies or provider integration. New document-focus API and additive075/076 provide scoped immutable job focus, bounded imported-document inspection and durable native delegation batches through existing narrow worker RPCs. Local activation/verification status and capability limits are tracked in the [delivery run](runs/2026-10-16-documents-tools-ef.md).
 
 Knowledge rich collaboration implementation choice2026-10-09: pinned OSS Tiptap3.31.4

@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Combined G release [world:req:g-combined]
+
+Approved2026-10-16: implement personality refinement, routines, a bounded linear workflow builder and integrated functional UI as one testable release, per runs/2026-10-16-g-implementation.md. Reuse current Claude/World runtime/accounting/graph/Knowledge and design system. Four generic presets remain Direct/Natural/Warm/Curious; Direct means concise, answer-first and sufficient necessary detail, never automatic bluntness/criticism. Do not reuse the user's personal Agent names in examples/tests. Manual/one-off/daily-weekly/selected committed Knowledge-version triggers, explicit scoped enable and limits, current authority, finite causal chains/duplicate protection and inspectable activity are in scope. No automatic provider-test spend, unattended enable or live-service interruption inferred from implementation approval. Full connectors/DAG marketplace/publicweb/newmodels/always-onhosting/rebrand remain deferred. This supersedes prior G deferrals within this accepted scope only.
+
 ## Document and tool delivery E–F [world:req:documents-tools-ef]
 
 Approved 2026-10-16: deliver document/context continuity and the existing Knowledge editor alongside Chat together with bounded research/file tools and governed collaboration. Include the existing-chat navigation fix: immediate selection, separate drafts and quiet refresh instead of a global saving/loading lock. Reuse existing Knowledge, graph/Session permissions and financial boundaries. G (major UI changes, personality refinement and routines/IFTTT) remains separate. Claude is retained; this approval grants no new automated provider spending. Implementation and actual capability limits belong in the [delivery run](runs/2026-10-16-documents-tools-ef.md).
