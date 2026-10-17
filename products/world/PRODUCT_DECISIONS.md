@@ -273,3 +273,7 @@ Knowledge contains user-supplied reference sources, with inspectable exact conte
 ### Notifications and live document updates [world:req:notifications-live-documents]
 
 User direction on 2026-10-05: invitations live in Notifications; the World switcher switches/creates Worlds. Reload is temporary. Future authorized viewers see another user's changes as that user edits, not only upon saving or manual refresh. Live edit visibility is separate from edit permission and immutable saved history. Current access must govern every delivery; revoked access stops further updates. This direction does not itself implement notification delivery, live editing, concurrent-edit merging or new infrastructure; these remain bounded future work.
+
+## Flow reference boundary [world:req:flow-reference-boundary]
+
+User direction on 2026-10-18: use n8n as an ideas/reference source for World’s IFTTT-style business flows. Do not extract/copy its code. This authorises reference research, not embedding n8n or implementing new flows. Preserve independent World design and existing governance; proposed architecture and scope require subsequent implementation authority. See runs/2026-10-18-n8n-reference-research.md.
