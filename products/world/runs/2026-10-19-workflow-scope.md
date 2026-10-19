@@ -1,0 +1,20 @@
+<!-- studio {"id":"world:run:2026-10-19-workflow-scope","scope":"world","type":"run","status":"complete"} -->
+# First SME workflow scope
+
+User requests scoping only: identify existing capabilities, remaining tasks and required user input before implementation. Proposed direction is a usable enquiry-to-invoice workflow, with Knowledge supporting it. No implementation, service changes, provider calls, live connections or external actions authorised by this planning turn.
+
+Tasks: S1 inspect current Flows/commerce/connections/Knowledge and existing delivery evidence; S2 define a phased gap-based task list and acceptance criteria; S3 identify essential business decisions and later credentials, deliver concise scope for user approval. Root owns records. Current application source f86ca9115d120e2c0c45e102a76aa80b697fdb0b, verified JKay93/MyWorld; Studio JKay93/Product-Studio-v2.
+
+Acceptance: distinguish implemented source from verified live integrations, reuse existing flow engine/canvas/agent drafting/commerce/approvals, do not promise third-party production readiness or rebuild completed foundations, separate assumptions from business rules and include failure/duplicate/uncertainty handling. Preserve existing user data/services/spending/caps. Scope excludes broad Knowledge redesign, broad integration catalogue, autonomous Swarm redesign and paid tests.
+
+Questions to resolve: pilot business/order example, quote/acceptance/vendor/delivery/invoice rules, first real channels and authorised automation boundaries. Credentials only needed when live connection validation is ready. Findings and final handoff pending source inspection.
+
+## Outcome
+
+Scoping complete. Proposed task/acceptance/user-input detail is in ../FIRST_BUSINESS_WORKFLOW_SCOPE.md (proposal, not implementation authority). Current source already has the exact initial enquiry-to-invoice definition, canvas, durable/versioned engine, manual structured events, commerce records/immutable issue constraints, native disabled flow drafting and connection adapters. Source and prior delivery evidence inspected; no live account readiness was queried and injected tests are not presented as live connection proof.
+
+Concrete gaps: agent discovery of existing flow/operation/connection configuration; guided pilot data setup; explicit customer quote acceptance interaction; multiple active orders per sender (current mapping is one run per connection/participant); automatic vendor/delivery response mapping; workflow Knowledge/template binding; WhatsApp approved-template sends; Google access-token refresh; chosen accounts/callback hosting and actual provider validation; appropriate operator controls/permissions and actual invoice print inspection. Current owner/admin limitation remains explicit. InvoiceNow submission remains unavailable rather than confused with invoice generation.
+
+Proposed W1 business contract, W2 conversational configuration, W3 interaction routing, W4 Knowledge/documents, W5 selected live integrations and W6 operator/pilot verification. Reuse existing engine/canvas and tests; simulated slice needs no credentials. Need one realistic order example, first channels and approval/commercial rules before user authorises implementation. Later account access and a fresh bounded live-test allowance are separate. Broad Knowledge redesign, connector marketplace, new Swarm design and unrequested accounting/payment features deferred.
+
+No code, environment, services, database or provider state changed. No provider calls or new spending. Application source/live runtime stays as previous completed record. No blockers to delivering this scope; user decisions precede the next implementation run. Root owns records; no workers dispatched because this read-only scoping task resolved its uncertainty from current sources. Standing repository authority covers delivery of these requested planning records with proposed status preserved.
