@@ -1,7 +1,7 @@
-<!-- studio {"id":"world:proposal:first-business-workflow","scope":"world","type":"proposal","status":"proposed"} -->
+<!-- studio {"id":"world:proposal:first-business-workflow","scope":"world","type":"proposal","status":"draft"} -->
 # First business workflow: pilot scope
 
-Planning only, 19 October 2026. Based on current application source f86ca9115d120e2c0c45e102a76aa80b697fdb0b and the accepted Flows/canvas delivery records. Implementation is not yet authorised. No model calls, provider setup, service changes or live actions were performed while preparing this scope.
+Business pilot W1–W6 remains proposed. On 19 October 2026 the user separately authorised W0: reusable connections/operations, typed mappings and send-and-wait, reusing existing components before the business workflow. W0 is independently reviewed and pushed as 2fbc71c886be87ba14146bdae18502d6d7fef99f; final CI/local activation status is in [the current run](runs/2026-10-19-flow-foundation.md). Authenticated internal responses come first; automatic WhatsApp/email reply correlation, public response links and business acceptance semantics remain later scope. No paid provider tests or account setup are authorised by this scope.
 
 ## Outcome and boundaries
 
@@ -63,7 +63,7 @@ Existing quote/invoice/SOP templates and pricing material are helpful if availab
 
 Later, for live verification: a business WhatsApp account/number and authorised Meta signup; platform Meta app/signing/webhook setup; a verified sender/domain and email-provider access; Google OAuth/Picker app setup and account consent if Drive is used; an HTTPS endpoint reachable by provider callbacks. Platform app setup is distinct from each SME's account connection. Credentials should be supplied through the connection/configuration process when that stage is ready. No credentials are needed for the first simulated slice.
 
-No implementation or new paid tests begin on the strength of this proposal alone. Next action: user confirms the pilot example and channel/automation choices, then authorises the selected scope.
+W0 authority does not authorise the remaining pilot or new paid tests. Before W1–W6, the user confirms the pilot example and channel/automation choices and authorises that scope.
 
 ## n8n connection research addendum — 19 October 2026
 
@@ -79,6 +79,6 @@ n8n Cloud provides managed Sign in with Google for documented supported nodes in
 
 HTTP Request supports custom API operations and reuse of predefined credentials. For World, general arbitrary-URL requests remain later scope; first use reviewed provider handlers and bounded allowed endpoints. [HTTP Request](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest).
 
-Recommended scope adjustment, proposed only: add **W0, a small reusable connector/operation catalogue, credential picker with readiness checks, typed step input/output mapping and a reusable send/wait interaction contract**, before or alongside W1–W4. Begin with the existing WhatsApp, Email and Drive adapters. Keep World's existing engine, scoped credentials and authority, quote-version binding, deduplication and uncertainty controls. Reuse the same contracts in the editor and agent drafting so an agent sees actual operations, authorised connection references and unresolved setup without secrets. Implement provider-specific handlers independently. Reusable nodes should serve future business workflows; avoid designing each integration around this single enquiry-to-invoice example.
+Recommended scope adjustment (W0 subsequently authorised separately): add **W0, a small reusable connector/operation catalogue, credential picker with readiness checks, typed step input/output mapping and a reusable send/wait interaction contract**, before W1–W4. Begin with the existing WhatsApp, Email and Drive adapters. Keep World's existing engine, scoped credentials and authority, quote-version binding, deduplication and uncertainty controls. Reuse the same contracts in the editor and agent drafting so an agent sees actual operations, authorised connection references and unresolved setup without secrets. Implement provider-specific handlers independently. Reusable nodes should serve future business workflows; avoid designing each integration around this single enquiry-to-invoice example.
 
 Illustrative application: WhatsApp trigger → normalise enquiry → read approved pricing/template → create quote → send/wait for exact acceptance → create order → request/wait for vendors → delivery confirmation → create invoice → optional Drive export/send. Business rules, pricing and invoice provider choice still need configuration; n8n wiring alone does not supply those semantics.
