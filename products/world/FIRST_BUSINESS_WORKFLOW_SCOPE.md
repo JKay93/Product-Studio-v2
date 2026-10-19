@@ -1,7 +1,7 @@
 <!-- studio {"id":"world:proposal:first-business-workflow","scope":"world","type":"proposal","status":"draft"} -->
 # First business workflow: pilot scope
 
-Business pilot W1–W6 remains proposed. On 19 October 2026 the user separately authorised W0: reusable connections/operations, typed mappings and send-and-wait, reusing existing components before the business workflow. W0 is independently reviewed and pushed as 2fbc71c886be87ba14146bdae18502d6d7fef99f; final CI/local activation status is in [the current run](runs/2026-10-19-flow-foundation.md). Authenticated internal responses come first; automatic WhatsApp/email reply correlation, public response links and business acceptance semantics remain later scope. No paid provider tests or account setup are authorised by this scope.
+W0 and the authorised simulated business slice are reviewed and installed as c3f8b59/schema86. [Pilot outcome and evidence](runs/2026-10-19-business-workflow-pilot.md) covers the simulated parts of W1–W4/W6 below: a separate fictional office-supplies profile, WhatsApp customer intake and vendor email simulations, owner/admin operation, exact quote/customer/order/request correlation, pinned sample pricing/templates, and four reviews before quote send, vendor request, invoice issue and invoice send. Customer acceptance never grants staff approval. Real provider work W5 remains deferred and unauthorised; no credentials, paid model/provider tests, real sends or live enablement were used. Flexible selection of real Knowledge pricing/templates, automatic real-channel reply matching, public customer links, real commercial policy and statutory/provider onboarding remain later scope. The Agent's authoring contracts were verified offline; no live-model authoring quality claim is made from that proof.
 
 ## Outcome and boundaries
 
@@ -51,9 +51,9 @@ Reuse the current regression suite and real SQL boundary/race checks. Add repres
 
 Report scenario pass rate, active processing latency separately from customer/vendor/approval waiting time, and actual aggregate model calls/tokens/cost. Do not present human or business waiting time as runtime latency or claim production readiness from simulated provider tests. Live agent/provider tests require a fresh scoped cumulative spending allowance; earlier comparison headroom is not reassigned.
 
-## Needed from the user
+## Needed from the user before the real business pilot
 
-Before approving implementation, provide or confirm:
+No further business input or credentials were required for the installed dummy slice. Before real business configuration/provider implementation, provide or confirm:
 
 1. One realistic order example: what the business sells, a typical enquiry, required details, how the quote is priced, vendor involvement and what counts as delivery. An anonymised example is sufficient.
 2. First channels: proposed WhatsApp for customers and email for vendors; identify if vendors also require WhatsApp. Identify whether Google Drive is essential in the first pilot.
@@ -63,7 +63,7 @@ Existing quote/invoice/SOP templates and pricing material are helpful if availab
 
 Later, for live verification: a business WhatsApp account/number and authorised Meta signup; platform Meta app/signing/webhook setup; a verified sender/domain and email-provider access; Google OAuth/Picker app setup and account consent if Drive is used; an HTTPS endpoint reachable by provider callbacks. Platform app setup is distinct from each SME's account connection. Credentials should be supplied through the connection/configuration process when that stage is ready. No credentials are needed for the first simulated slice.
 
-W0 authority does not authorise the remaining pilot or new paid tests. Before W1–W6, the user confirms the pilot example and channel/automation choices and authorises that scope.
+Current authority covers the dummy simulated pilot and its offline/disposable-database/browser checks. Before live pilot work, confirm the actual business example, channel accounts, commercial rules and who may approve; obtain explicit account/send/spending authority as needed. Simulated test inputs are not real customer acceptance or production permission.
 
 ## n8n connection research addendum — 19 October 2026
 
