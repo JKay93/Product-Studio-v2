@@ -3,6 +3,7 @@
 
 This folder holds the decisions approved for World. Shared studio roles and operating rules apply across projects; these product choices apply only to World. Application code and the World-only design skill live separately in `Codex-Work/World/`.
 
+- [Current capability inventory and cleanup audit](CAPABILITY_CLEANUP_REPORT.md): working mechanisms, partially verified journeys, integration/production gaps and the 20 October 2026 maintenance results. This does not replace approved product decisions or claim model-quality parity.
 - [Product decisions](PRODUCT_DECISIONS.md): audience, ownership, collaboration, approval, organizational boundaries and continuity.
 - [Architecture](ARCHITECTURE.md): runtime boundaries, authority enforcement, memory and work lifecycle.
 - [Tech stack](TECH_STACK.md): selected tools and unresolved technology choices.
