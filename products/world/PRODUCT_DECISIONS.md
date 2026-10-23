@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## SME outcomes and planning pause — 2026-10-23 [world:req:sme-outcome-focus]
+
+The user identifies SMEs adopting AI and automating manual processes as World's audience. The largest outcome is completing a business process from A to B (for example receiving/processing an order and invoicing); producing documents from past documents/templates is another core journey. The user asks Orchestrator to lead a product walkthrough after pausing implementation/design expansion because the experience feels scattered. This authorises product clarification and evidence review, not a new build, UI redesign, provider spend or live execution. [First-release journeys](FIRST_RELEASE_JOURNEYS.md) records the current proposed focus, acceptance and gaps; a particular commercial sector, connector, pilot release boundary and detailed exclusions are still proposals/unselected. Existing functionality and its privacy/approval controls are preserved.
+
 ## Document intent and source honesty — 2026-10-17 [world:req:document-intent-sources]
 
 User approved the combined fix after the actual SOP diagnosis. Clear create/draft document requests save directly as owner-private Knowledge drafts, opening the existing editor beside Chat; no redundant save confirmation. Conversation/explanation remains Chat with an optional secondary save action, not an automatic document. In-context document revisions update the intended item with recoverable versions/current edit locks. Publishing/sharing remains separately governed.
