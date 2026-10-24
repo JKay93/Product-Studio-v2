@@ -1,3 +1,9 @@
+Completed: [Separate checkout and Pi–Mastra comparison](runs/2026-10-25-runtime-comparison.md).
+
+World-Next independent checkout branch runtime-evaluation-20261025, report47e6a25389a109785aea7ae8bc858e4b98c49981 pushed/remoteverified; runtimec3e18e5. Pi/Mastra real-library threejourney fixtures pass,161assertions/typecheck/audit0, independent QA and clean LinuxCI40121276034 SUCCESS. Identical15tools/16simulatedturns; actual provider calls0/costUS$0. Controlledrestart nativeMastra Workflow+LibSQL versus customPi checkpoint explicitly distinguished. Recommend Pi for next singleassistant slice; keep existing transactional authority, port pure Flow/commerce/document contracts and adapt editor/canvas/repositories, defer swarm/learning/routines. This is a recommendation, not an authorised whole-product rewrite.
+
+Original World and World-Runtime source/config hashes982/977, HEAD/status/path inventories unchanged; main4ae24c9 unchanged; no service/database/data/cap modifications. No live modelquality/providerlatency/token-efficiency/productioncrash/concurrency proof claimed. Full report World-Next/docs/runtime-comparison.md. All current work complete. Next user decision: clean Pi-backed assistant implementation; no automatic spending, migration or activation. Previous completed baseline follows.
+
 Completed: [Simulated full order and usability fixes](runs/2026-10-24-simulated-order-usability.md).
 
 App4ae24c9 (UI28ad6be plus minimal audited dependency patches) is reviewed, pushed/remote-verified and primary source synced. Three full managed TEST orders passed; final973e8249/SIM-QA-20261024-03/SGD274 has four exact approvals, partial/full-delivery protection, three simulated effects and zero Agent jobs. Actual desktop/minimised/mobile and reopened saved-order checks passed. Codex built-in browser only; no personal Chrome, Claude calls or live sends.
