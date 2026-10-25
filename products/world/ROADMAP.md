@@ -1,6 +1,18 @@
 <!-- studio {"id":"world:decision:roadmap","scope":"world","type":"decision","status":"approved","links":[{"relation":"requires","target":"world:decision:product"},{"relation":"requires","target":"world:decision:architecture"},{"relation":"requires","target":"world:decision:tech-stack"},{"relation":"requires","target":"world:decision:code-organization"},{"relation":"requires","target":"world:decision:design"}]} -->
 # World - Approved roadmap
 
+## Current rebuild sequence — 2026-10-25 [world:req:rebuild-sequence]
+
+The approved Flow-first rebuild decision in [Product decisions](PRODUCT_DECISIONS.md) governs the new World-Next branch. This sequence supersedes the historical implementation ordering below for new rebuild work; existing World remains preserved.
+
+1. Foundation: independent Pi-based application, selective valid ports and a complete consistent design/layout revamp. User authorised this phase; delivery and evidence are in [the run](runs/2026-10-25-foundation-redesign.md).
+2. Flows: make deterministic SME automation the primary whole journey, including authoring, data mapping, approvals, waits, recovery and connections.
+3. AI/Chat: improve the one-assistant experience and its ability to build/use Flows. User is holding off provider top-up; no paid calls are authorised by this roadmap.
+4. Knowledge: strengthen document/template/context work around the demonstrated journeys.
+5. Tools and business outputs: presentations and other deliverables, and structured records/tables produced from automation.
+
+Chat remains central throughout. Later phases are priorities, not blanket authority for live sends, migrations, production deployment or spending. Keep historical delivery evidence below distinct from capabilities actually ported into the new app.
+
 Approved by the user on 2026-10-03, Agent-page sequence updated on 2026-10-04, and Knowledge-first approved on 2026-10-05. The accepted Agent-page build is Phase 3; Knowledge library is Phase 5 and later outcomes follow as phases 6–9. Build reusable UI first, then connect real behavior in manageable steps. This roadmap records the approved sequence; implementation and security acceptance require separate evidence.
 
 ## First release sequence [world:req:first-release-sequence]

@@ -1,6 +1,12 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Flow-first separate rebuild — 2026-10-25 [world:req:flow-first-rebuild]
+
+The user approves a separate local World-Next checkout using the existing verified JKay93/MyWorld repository on a dedicated branch. Preserve the original World as backup/reference, with its running services, saved data and financial state untouched. The zero-spend Pi/Mastra comparison recommends Pi for a simpler one-assistant harness while World retains deterministic transactional authority. The approved priority order is foundation, Flows, AI/Chat enhancement, Knowledge, then output tools/presentations/structured business records. Chat remains central, but enterprise automation is the primary outcome. No provider top-up, paid evaluation, migration or production release is implied.
+
+Phase1 is authorised with a complete Designer-advised design/layout revamp: timeless, modern, professional, simple/minimal and consistently usable. Root delegates routine colours/layout choices within that brief. Build a clean isolated app and selectively port bounded valid contracts; do not carry the old multi-Agent service graph into the new foundation. Future features remain unavailable and explicitly labelled until implemented. [Delivery run](runs/2026-10-25-foundation-redesign.md) distinguishes offline library/sample proof from live AI and production capability. Historical decisions below remain evidence of the original platform rather than prerequisites to reproduce all of it in Phase1.
+
 ## SME outcomes and planning pause — 2026-10-23 [world:req:sme-outcome-focus]
 
 The user identifies SMEs adopting AI and automating manual processes as World's audience. The largest outcome is completing a business process from A to B (for example receiving/processing an order and invoicing); producing documents from past documents/templates is another core journey. The user asks Orchestrator to lead a product walkthrough after pausing implementation/design expansion because the experience feels scattered. This authorises product clarification and evidence review, not a new build, UI redesign, provider spend or live execution. [First-release journeys](FIRST_RELEASE_JOURNEYS.md) records the current proposed focus, acceptance and gaps; a particular commercial sector, connector, pilot release boundary and detailed exclusions are still proposals/unselected. Existing functionality and its privacy/approval controls are preserved.
