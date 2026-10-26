@@ -1,0 +1,14 @@
+<!-- studio {"id":"world:run:2026-10-26-settings-surface","scope":"world","type":"run","status":"complete"} -->
+# Opaque settings surface
+
+Goal: give Flow settings and any affected modal container an opaque surface so the canvas cannot show through. Preserve the accepted design and behaviour. World-Next/apps/world-next, existing codex/world-canvas-conditions-20261026 branch, verified JKay93/MyWorld repository. Original World, preview3103, sample data and financial state remain untouched; no provider calls or sends.
+
+Tasks: bounded Builder CSS fix; independent source review; root production build and actual browser opacity check; accepted branch delivery and preview3104 refresh retaining saved records. Acceptance: shared opaque surface token, readable controls/scrolling, no canvas bleed-through, no unrelated layout or behaviour changes. Existing regression evidence remains applicable; no new implementation-mirroring tests for this CSS-only fix.
+
+Questions: none. Deferred: none within scope. Status: active. Next: inspect shared panel/modal styles and apply minimal correction. Root owns this record and instructions.
+
+Implemented and delivered d454f4549744f9fa2b90f17bd18f12828c634561 on existing branch; remote revision verified, main untouched. Only application changes: .step-settings gains background var(--surface), .dialog normalizes its existing white fill to the shared token. Root AGENTS records scope. Builder /root/opaque_settings_builder sol/low/none and independent QA /root/opaque_settings_qa sol/medium/none on routing hash1C46027A5AABE051940D9F912FC39A77D1068F68E6B04FE4BC3DCDF7DA997E3F; actual activation unknown. Builder design/diff checks PASS; independent source PASS. No new CSS-mirroring tests added.
+
+Production build/type check PASS. Root actual browser verifies visible settings and Add step dialog background rgb(255,255,255), opacity1; settings screenshot inspected. Existing scroll/focus/layout unchanged. Preview3104 refreshed after exact process identity verification, ownPID46528 created2026-10-26T15:11:11.6542954Z, buildxJ72nBQJAvmzDcXYClBoP, .next-canvas/.sample-data-guided. Reconcile identity before later actions. Saved sample file SHA25643DB2AA5C86596ADDB6EDEC91A76EAE3AE7425C7E8F09AD7CDE6DBAF1F15B8CD unchanged; no providers/spend/sends/original World or3103 writes. Evidence: ignored World-Next/.settings-surface-evidence/{settings-opaque.png,final-process.json,preservation.json}. Final browser12 is marked deliverable with settings open. Clean CI40347085118 in progress. Next: confirm clean CI and close this record; no feature expansion.
+
+Closure: clean CI40347085118 / job121656776986 SUCCESS on delivered d454f45: install/audit/types/lint/65 regressions/design/build all pass. Required source, visual, preservation and delivery checks complete. No unresolved questions or deferred work in this bounded fix. Next: user continues testing on3104.
