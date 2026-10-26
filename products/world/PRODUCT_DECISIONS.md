@@ -1,6 +1,12 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Guided manual Flow authoring — 2026-10-26 [world:req:guided-flow-authoring]
+
+Delivered for controlled local use:23b92ba on codex/world-guided-flows-20261026,55tests/cleanCI40295279886, independentreview and actualtemplate/blank/fullsimulatedorder/canvas/mobile/focus checksPASS. This is bounded14operation linear authoring and fictional simulation. Productionengine/connectors/AIauthoring and arbitrarybranching remain separate. Newdefault3104/.next-guided/.sample-data-guided preserveold3103preview and data.
+
+User approves one shared canvas for templates and blank flows. Templates prefill editable steps rather than introducing a separate editor; future Agent-created drafts must use the same structure. Selecting a step opens guided business-language settings beside the canvas. Show plain summaries, supported compatible next steps, named earlier information with sample values and precise missing configuration prompts. Provide fictional testing with inspectable inputs/outputs and explicit human review/wait gates; real sends/connections remain unavailable in this slice. Accepted minimal professional visual system remains. Keyboard and narrow-screen users can edit the same definition through equivalent numbered controls. Full production automation, branching/expressions and AI authoring are separate. [Current run](runs/2026-10-26-guided-flow-canvas.md).
+
 ## Flow-first separate rebuild — 2026-10-25 [world:req:flow-first-rebuild]
 
 The user approves a separate local World-Next checkout using the existing verified JKay93/MyWorld repository on a dedicated branch. Preserve the original World as backup/reference, with its running services, saved data and financial state untouched. The zero-spend Pi/Mastra comparison recommends Pi for a simpler one-assistant harness while World retains deterministic transactional authority. The approved priority order is foundation, Flows, AI/Chat enhancement, Knowledge, then output tools/presentations/structured business records. Chat remains central, but enterprise automation is the primary outcome. No provider top-up, paid evaluation, migration or production release is implied.
