@@ -272,3 +272,7 @@ save footer reachable at desktop/narrow widths. Cancel restores trigger focus. N
 Agent save cards show actual title/private Saved or Updated receipt and open the current
 item in Knowledge. This scoped refinement is verified; full Agent document continuation
 remains partial for runtime readiness/source-accounting reasons in CURRENT_RUN.md.
+
+## World Next compact Flow canvas — approved 26 October 2026
+
+Applies only to the separate World-Next application; original World is preserved. Retain React Flow and the accepted light professional design system. Diagram-first workspace uses compact horizontal operation icons, labels below, closable contextual settings and output add controls. Templates and blank starts use the same editor. Bounded conditions split explicit Yes/No paths; unconnected outputs end, joins/merges remain deferred. Keep keyboard/List/mobile alternatives, manual positions, honest configuration versus historical test states, and exact reviews. Canonical implemented geometry/behaviour is in World-Next/docs/world-next-design.md; acceptance and evidence are in runs/2026-10-26-canvas-conditions.md. No n8n code/assets were copied, no framework migration or Pro purchase is inferred.
