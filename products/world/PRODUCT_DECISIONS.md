@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Visual Knowledge editing first — 2026-10-27 [world:req:visual-knowledge-editor]
+
+After the Flow canvas work, the user explicitly moves Knowledge ahead of AI/Agent enhancement. Confluence's visual writing experience is the reference: write directly on the page, use consistent rich formatting, pinned controls, contextual selection tools and `/` insertion. Retain World's minimal professional design rather than copying Atlassian assets. Use established open-source editor infrastructure. This build preserves explicit version-checked saves and legacy Markdown, with canonical structured content for rich edits. Live collaboration, autosave/publication, folder/templates/imports and AI document generation remain separate scope; no paid editor service or model spending is authorised. [Editor run](runs/2026-10-27-knowledge-editor.md) records implementation and actual verification. Earlier priority order is superseded by this Knowledge-first choice.
+
 ## Guided manual Flow authoring — 2026-10-26 [world:req:guided-flow-authoring]
 
 Delivered for controlled local use:23b92ba on codex/world-guided-flows-20261026,55tests/cleanCI40295279886, independentreview and actualtemplate/blank/fullsimulatedorder/canvas/mobile/focus checksPASS. This is bounded14operation linear authoring and fictional simulation. Productionengine/connectors/AIauthoring and arbitrarybranching remain separate. Newdefault3104/.next-guided/.sample-data-guided preserveold3103preview and data.
