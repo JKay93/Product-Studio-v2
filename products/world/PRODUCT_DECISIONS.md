@@ -3,6 +3,8 @@
 
 ## WhatsApp and Telegram first — 2026-10-27 [world:req:messaging-integrations-first]
 
+User subsequently accepts WhatsApp Business and Telegram bot account types and requires understandable third-party connection setup for nontechnical SME users, including explicit guidance on what to enter and where to obtain it. Current sample labels/scopes/mappings are insufficient as a connection journey. Telegram groups are supported by Bot API subject to permissions/privacy; WhatsApp group availability must be separately verified rather than assumed. Guided authentication, tested identity, destination choice and explicit message verification are the proposed next design; setup of World-managed developer apps/webhooks belongs to the platform. This is research/design direction, not a claim of implemented onboarding or authority to send test messages.
+
 User corrects the general-integrations implementation: CRM, native phone alarm, Carousell and Chrono24 were examples of reusability, not instructions to build separate connector products; human-assisted marketplace catalogue entries are not needed. Minimum focus is real WhatsApp and Telegram connections/triggers/actions usable in arbitrary Flows. Keep reusable underlying mappings/reviews/receipts, and avoid exposing example-specific sample products as the main integration experience. Research n8n as reference without copying its code. Current installed build remains simulation; the correction does not itself verify live adapters or authorise provider spending/onboarding/sends. [Research and next slice](runs/2026-10-27-n8n-messaging-research.md). This supersedes the previous broad example-driven catalogue choice.
 
 ## Reusable multi-channel sales workflow — 2026-10-27 [world:req:multichannel-sales]
