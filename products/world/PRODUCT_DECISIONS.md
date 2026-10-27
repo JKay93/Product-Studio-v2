@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Reusable multi-channel sales workflow — 2026-10-27 [world:req:multichannel-sales]
+
+User wants enquiry→stock availability→viewing/order→confirmed payment→shipping→update all related listings→team checks as a reusable SME platform workflow. Watch dealer is a validation example with Base44, mainly private WhatsApp conversations, Telegram, Chrono24 and Carousell; Carousell matters to Singapore target users and Chrono24 can be optional. User currently authorises reuse/build scoping and approved-integration/alternative research only. No implementation or external account applications/messages approved by that request. [Scope and findings](runs/2026-10-27-multichannel-sales-scope.md); proposed phases and connection choices remain proposals until selected.
+
 ## Autosave and Private/Company visibility — 2026-10-27 [world:req:knowledge-private-publication]
 
 User correction replaces the earlier publishing/version-snapshot workflow: one current document autosaves with Private or Company visibility. Company means current World members and their authorised AI, never the internet; Company autosaves update shared content directly. No separate Publish/Update/View published lifecycle. Switching Private removes future shared discovery without deleting the document or erasing earlier replies. Private is the default; migration must protect unpublished private changes. User explicitly defers live other-member AI access tests until the AI phase; offline storage/projection/ownership tests remain required now. The current World Next preview is a fictional single-user sample and does not establish production authentication or live AI access. Existing Confluence-style table interactions remain approved. [Current implementation run](runs/2026-10-27-knowledge-company-visibility.md); [superseded publishing implementation](runs/2026-10-27-knowledge-autosave-publish.md).
