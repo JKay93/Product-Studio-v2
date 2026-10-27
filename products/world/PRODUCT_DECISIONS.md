@@ -1,9 +1,9 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
-## Private autosave and explicit World publication — 2026-10-27 [world:req:knowledge-private-publication]
+## Autosave and Private/Company visibility — 2026-10-27 [world:req:knowledge-private-publication]
 
-User approves one document type: edits autosave privately; Publish to World exposes the exact saved version to members with access and their authorised AI. Later edits remain a private draft until Update published version. Unpublish removes future shared discovery/retrieval, without erasing earlier replies. Publication is within the World, not the open internet. User explicitly defers live other-member AI access tests until the AI phase; offline storage/projection/ownership tests remain required now. The current World Next preview is a fictional single-user sample and does not establish production authentication or live AI access. Confluence-style contextual tables, size selection, resizing/reordering and keyboard alternatives are authorised alongside this lifecycle. [Current implementation run](runs/2026-10-27-knowledge-autosave-publish.md).
+User correction replaces the earlier publishing/version-snapshot workflow: one current document autosaves with Private or Company visibility. Company means current World members and their authorised AI, never the internet; Company autosaves update shared content directly. No separate Publish/Update/View published lifecycle. Switching Private removes future shared discovery without deleting the document or erasing earlier replies. Private is the default; migration must protect unpublished private changes. User explicitly defers live other-member AI access tests until the AI phase; offline storage/projection/ownership tests remain required now. The current World Next preview is a fictional single-user sample and does not establish production authentication or live AI access. Existing Confluence-style table interactions remain approved. [Current implementation run](runs/2026-10-27-knowledge-company-visibility.md); [superseded publishing implementation](runs/2026-10-27-knowledge-autosave-publish.md).
 
 ## Visual Knowledge editing first — 2026-10-27 [world:req:visual-knowledge-editor]
 
