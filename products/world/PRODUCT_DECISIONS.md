@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## WhatsApp and Telegram first — 2026-10-27 [world:req:messaging-integrations-first]
+
+User corrects the general-integrations implementation: CRM, native phone alarm, Carousell and Chrono24 were examples of reusability, not instructions to build separate connector products; human-assisted marketplace catalogue entries are not needed. Minimum focus is real WhatsApp and Telegram connections/triggers/actions usable in arbitrary Flows. Keep reusable underlying mappings/reviews/receipts, and avoid exposing example-specific sample products as the main integration experience. Research n8n as reference without copying its code. Current installed build remains simulation; the correction does not itself verify live adapters or authorise provider spending/onboarding/sends. [Research and next slice](runs/2026-10-27-n8n-messaging-research.md). This supersedes the previous broad example-driven catalogue choice.
+
 ## Reusable multi-channel sales workflow — 2026-10-27 [world:req:multichannel-sales]
 
 Subsequent user approval “Great, you can continue” authorises the bounded deterministic World-Next implementation: reusable sample profiles, supported operation catalogue, allowlisted field mappings, exact reviews, persisted local results, and World-owned unique stock/reservations/orders with human-assisted marketplace tasks. Generic message→CRM demonstrates reuse outside watches. This supersedes the research-only limit below for this local slice; it does not authorise live credentials/onboarding/outreach, providers/spending, production databases or unsupported marketplace/device operations. No Base44/Shopify dependency. Keep the fixed single-user sample distinct from production multi-user security and live integrations. [Implementation run](runs/2026-10-27-general-integrations.md).
