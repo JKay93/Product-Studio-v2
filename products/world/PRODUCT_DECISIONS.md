@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Private autosave and explicit World publication — 2026-10-27 [world:req:knowledge-private-publication]
+
+User approves one document type: edits autosave privately; Publish to World exposes the exact saved version to members with access and their authorised AI. Later edits remain a private draft until Update published version. Unpublish removes future shared discovery/retrieval, without erasing earlier replies. Publication is within the World, not the open internet. User explicitly defers live other-member AI access tests until the AI phase; offline storage/projection/ownership tests remain required now. The current World Next preview is a fictional single-user sample and does not establish production authentication or live AI access. Confluence-style contextual tables, size selection, resizing/reordering and keyboard alternatives are authorised alongside this lifecycle. [Current implementation run](runs/2026-10-27-knowledge-autosave-publish.md).
+
 ## Visual Knowledge editing first — 2026-10-27 [world:req:visual-knowledge-editor]
 
 After the Flow canvas work, the user explicitly moves Knowledge ahead of AI/Agent enhancement. Confluence's visual writing experience is the reference: write directly on the page, use consistent rich formatting, pinned controls, contextual selection tools and `/` insertion. Retain World's minimal professional design rather than copying Atlassian assets. Use established open-source editor infrastructure. This build preserves explicit version-checked saves and legacy Markdown, with canonical structured content for rich edits. Live collaboration, autosave/publication, folder/templates/imports and AI document generation remain separate scope; no paid editor service or model spending is authorised. [Editor run](runs/2026-10-27-knowledge-editor.md) records implementation and actual verification. Earlier priority order is superseded by this Knowledge-first choice.
