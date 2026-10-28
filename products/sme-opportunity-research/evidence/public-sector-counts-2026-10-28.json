@@ -1,0 +1,50 @@
+{
+  "checked": "2026-10-28",
+  "servicesSource": "https://data.gov.sg/datasets/d_38d62de582eb7ee2c58d1bba4cd4132d/view",
+  "servicesCsvSha256": "39B8461148D6E720743D6EF6D4697046A849DDFE3FED2108887F9E8DDBD6D35E",
+  "servicesMethod": "Establishments section only: rows 0 through 216; remaining sections are revenue, expenditure, surplus and value-added. SSIC2025, reference2024; excludes own-account workers. Establishments are not unique companies.",
+  "serviceCounts": [
+    {
+      "series": "SSIC 46 - Total Wholesale Trade",
+      "referenceYear": 2024,
+      "establishments": 57715
+    },
+    {
+      "series": "SSIC 46301 - Fruits & Vegetables (Including Fresh And Frozen)",
+      "referenceYear": 2024,
+      "establishments": 701
+    },
+    {
+      "series": "SSIC 46302 - Livestock, Meat, Poultry, Eggs & Seafood (Including Fresh And Frozen)",
+      "referenceYear": 2024,
+      "establishments": 945
+    },
+    {
+      "series": "SSIC 46303 - A General Line (Wide Range) Of Groceries (e.g. Cereals, Sugar, Edible Oils, Sauces And Dairy Products)",
+      "referenceYear": 2024,
+      "establishments": 454
+    },
+    {
+      "series": "SSIC 56111 - Restaurants",
+      "referenceYear": 2024,
+      "establishments": 8325
+    },
+    {
+      "series": "SSIC 56112/56123 - Cafes & Food And Drinks Kiosks",
+      "referenceYear": 2024,
+      "establishments": 4707
+    },
+    {
+      "series": "SSIC 812 - Cleaning Activities",
+      "referenceYear": 2024,
+      "establishments": 2316
+    }
+  ],
+  "contractorsSource": "https://data.gov.sg/datasets/d_dcda79be4aded5f9e769b8e23ff69b47/view",
+  "contractorsCsvSha256": "9B56312C4DCC9D2A95DE72FDD56A717D9CD9A24780B5D09537A047E52E923EA9",
+  "contractorRegistrationRows": 24014,
+  "contractorRowsWithUen": 24014,
+  "contractorDistinctUen": 15864,
+  "mechanicalElectricalDistinctUen": 5952,
+  "contractorsMethod": "January2026 published snapshot; unique nonblank UEN over all workheads, separately workhead beginning ME. Does not establish currently active firm, SME status, subcontractor workflow or market eligibility. No row-level business/contact data retained."
+}
