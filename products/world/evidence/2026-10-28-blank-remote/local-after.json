@@ -1,0 +1,52 @@
+[
+  {
+    "folder": "World",
+    "path": "C:\\Users\\jingk\\Desktop\\Jing Kang\\Development\\Codex-Work\\World",
+    "head": "4ae24c9dc0d28528845356a5344bcb7da1165529",
+    "status": [
+      " M next-env.d.ts",
+      " M tsconfig.json",
+      "?? .test-runtime-temp/",
+      "?? .test-tmp/",
+      "?? test-temp-document-read/"
+    ],
+    "trackedCount": 977,
+    "trackedSha256": "96E9DD664418E83AAED04195D0FF8A5333900B5880E6997660294A938C45644C",
+    "gitFiles": [
+      {
+        "file": "HEAD",
+        "sha256": "28D25BF82AF4C0E2B72F50959B2BEB859E3E60B9630A5E8C603DAD4DDB2B6E80"
+      },
+      {
+        "file": "config",
+        "sha256": "88F6F397B811A4688FB4DE6A8BB267D39761EF266E73B3E8B72A5EB0D2FE33DA"
+      },
+      {
+        "file": "index",
+        "sha256": "5A72474DE9F4E3DDB84D0EA6DE9798E71FBA8EA1AE799F1E4F607FB0CCD53D35"
+      }
+    ]
+  },
+  {
+    "folder": "World-Next",
+    "path": "C:\\Users\\jingk\\Desktop\\Jing Kang\\Development\\Codex-Work\\World-Next",
+    "head": "83841659879e53fbb49cf54c30a06b440e41cf93",
+    "status": [],
+    "trackedCount": 1108,
+    "trackedSha256": "9AD54169BE23D4952C4808186C364D1BC4DD2CF6C83ABF530F96F9D781D0C546",
+    "gitFiles": [
+      {
+        "file": "HEAD",
+        "sha256": "99281283450B13405E4D5A3C57DA08649A26090EBFF9185229B52AA285ADEAE0"
+      },
+      {
+        "file": "config",
+        "sha256": "5DA832C6D71454EFF36FD57DC3FDC8517F23C07C7F4D2CD465FD81771C8FE91F"
+      },
+      {
+        "file": "index",
+        "sha256": "CECA41CCF2BB1A168EF04192CF4029104684692806B020FCC46DCD47E2194726"
+      }
+    ]
+  }
+]
