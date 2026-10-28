@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Fresh rebuild: Mastra foundation — 2026-10-29 [world:req:rebuild-mastra-foundation]
+
+User explicitly selects Mastra as the foundation for the separate World-Rebuild application after approving assistant-first light Chat/Knowledge navigation and reusing Confluence-style Knowledge. Reuse permitted core agents, model routing, tools, memory, workflows and useful session/observability components; World owns company authority, scoped Knowledge and business records/receipts. This supersedes earlier Pi recommendations for the fresh rebuild only. Old World/World-Next directions below are historical/reference for those preserved versions, not a feature checklist or authority for the rebuild. Current request is the integration task plan; it does not authorise installing dependencies, running providers, migrating data or releasing production. Exact module/licence checks remain required, including separate enterprise ee/ restrictions. Plan and scope: runs/2026-10-29-harness-discussion.md.
+
 ## WhatsApp and Telegram first — 2026-10-27 [world:req:messaging-integrations-first]
 
 Latest user correction: no separate guided setup/wizard. Use the existing Flow canvas as the primary entry: select a node to open its configuration modal, choose an existing connection or create one inline in a credential modal, enter only provider-required fields, save/test and return to that node. Connections remains optional management, never a prerequisite detour. Keep operation/destination/message/input mapping in node settings. This supersedes the earlier proposed staged onboarding journey below; contextual field help is allowed but a wizard was not requested. n8n editor NodeCredentials.vue independently inspected: createNewCredential invokes uiStore.openNewCredential with the current node and closeOnSave, then assigns the created credential.
