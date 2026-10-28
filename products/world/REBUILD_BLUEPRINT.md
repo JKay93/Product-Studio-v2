@@ -1,6 +1,8 @@
 <!-- studio {"id":"world:rebuild-blueprint:20261029","scope":"world","type":"plan","status":"proposed"} -->
 # World rebuild blueprint
 
+**Product direction corrected by user on29October2026.** The document-first/queue-first compositions and mandatory Work/Knowledge/Tools framing below were rejected. Assistant-centred interaction, existing SME process/template fidelity and light-default design now govern; see runs/2026-10-29-assistant-centred-correction.md and World-Rebuild/AGENTS.md. Technical boundaries below remain reference proposals where consistent. No quoted first capability or navigation is a user-selected product requirement.
+
 29 October 2026. PM, Designer and Technical Specialist independently planned and discussed the rebuild; Orchestrator consolidated the recommendations. The user has chosen the simpler product direction. Runtime, first capability, navigation and visual direction below are proposed build choices, not installed software or validated market advantages.
 
 **Build one assistant that performs useful company work through reusable tools, supported by durable workflows and company Knowledge.** Begin with a complete quotation-preparation journey. Establish a distinctive working interface through comparative compositions before filling it with features. Preserve both old local reference folders and start implementation in a new checkout.
