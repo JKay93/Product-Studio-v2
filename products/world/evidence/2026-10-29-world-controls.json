@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-29",
+  "mode": "zero-spend synthetic fixtures",
+  "regression": {
+    "standardPassed": 126,
+    "optInSkippedInStandard": 11,
+    "isolatedPgPassed": 13,
+    "overlap": 2,
+    "uniqueVerified": 137,
+    "finalBudgetSeparationCase": "PASS",
+    "typecheck": "PASS",
+    "lint": "PASS",
+    "qaBuild": "PASS",
+    "normalBuild": "PASS"
+  },
+  "browser": {
+    "documentSettings": {
+      "status": "PASS across focused runs",
+      "checks": [
+        "Safe defaults and simulated runtime",
+        "Paid allowance settings do not activate live mode",
+        "Desktop/mobile containment and defined styles",
+        "Template to private draft and exact review",
+        "Separate private revision preserves original",
+        "Changed policy invalidates stale review and permits fresh optional-review completion",
+        "Disabled drafting prevents write despite request text",
+        "Assistant Knowledge scope preserves manual human access",
+        "Stale settings require explicit reload"
+      ],
+      "limitations": "Initial combined QA helper needed corrected chronological ordering and World-selector/loading synchronization; member checks completed separately."
+    },
+    "roles": {
+      "status": "PASS",
+      "checks": [
+        "Shared World member sees read-only Settings in browser",
+        "Member direct policy mutation is denied",
+        "Nonmember cannot read another World policy"
+      ],
+      "errors": [],
+      "externalRequests": []
+    },
+    "normal": [
+      "Sign-in readiness",
+      "Sampled unauthenticated APIs401",
+      "Legacy file hash unchanged",
+      "Desktop/mobile login contained",
+      "No client errors/external requests",
+      "New policy endpoint unauthenticated401"
+    ]
+  },
+  "protectedLedgers": [
+    {
+      "database": "world_dev",
+      "ledgerUnchanged": true,
+      "budgetHash": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "active": 0
+    },
+    {
+      "database": "world_models_20261029",
+      "ledgerUnchanged": true,
+      "budgetHash": "f2bff378f1de1dff418129bc3b6bb143070d69839c0074e93c90f42ca0b4b24d",
+      "active": 0
+    }
+  ],
+  "normalRuntime": {
+    "port": 3105,
+    "pid": 12236,
+    "mode": "fixture",
+    "providerCalls": 0,
+    "newProviderSpendUsd": 0
+  },
+  "deferred": [
+    "Folder-level policy selection",
+    "Delegated reviewer grants",
+    "More paid model routes",
+    "External actions and business spending",
+    "Prior cheaper-model context/repair diagnostic"
+  ]
+}
