@@ -1,7 +1,7 @@
 <!-- studio {"id":"world:strategy:rebuild","scope":"world","type":"strategy","status":"proposed"} -->
 # World product strategy and delivery plan
 
-Version 1.0 · 29 October 2026 · Applies to World-Rebuild only
+Version 1.1 · 29 October 2026 · Applies to World-Rebuild only
 
 **World should help a small business complete repeatable knowledge work using its own information, templates and operating rules, through one accessible assistant.** The customer should spend less time preparing and checking work without losing control over company decisions. The underlying runtime is a means to that outcome, not the product we sell.
 
@@ -171,17 +171,17 @@ Reusable engineering is desirable, but generalising an unused abstraction is not
 
 ## 8 Current state and what remains
 
-As of application revision `e8e92da408922cdf8d269b0efb2eb1fd7c211f4f`, milestones 1–3 are a tested **local foundation**. The reported 56 passing tests and database/browser/restart checks establish specific local mechanics, not live assistant quality, commercial readiness or security certification. No tests were rerun for this documentation-only strategy task. [Milestone 3 evidence](runs/2026-10-29-milestone3-identity-postgres.md).
+Milestones 1–3 established a tested **local foundation** at application revision `e8e92da408922cdf8d269b0efb2eb1fd7c211f4f`. Milestone 4 adds the bounded conversational/tool runtime, opt-in maintained OpenRouter transport, scoped history/source tracking, streaming and cumulative provider-cost reservations. Its validation is zero-spend using synthetic responses through the real libraries. Engineering checks establish local mechanics, not live assistant quality, commercial readiness or security certification. [Milestone 3 evidence](runs/2026-10-29-milestone3-identity-postgres.md), [milestone 4 evidence and delivery status](runs/2026-10-29-milestone4-assistant.md).
 
 | Area | Present now | Gap before customer delivery |
 | --- | --- | --- |
 | UI and Knowledge | Light Chat/Knowledge shell; visual editing, tables, hierarchy, autosave and version checks | Real customer usability; supported file import/export and format fidelity |
 | Identity | Better Auth database sessions; Personal/shared Worlds; owner/admin/member roles | Verified invitations/recovery, abuse controls and production configuration |
 | Privacy | Server-checked membership; author-private pages; creator-only chats and runs; current-authority checks | Broader attachment/export/log/operator boundaries; explicit reviewer-sharing model |
-| Runtime | Actual Mastra Agent and typed tools; native Workflow review snapshots | Real model behaviour, safe live transport, durable longer tasks and provider accounting |
+| Runtime | Actual Mastra Agent streaming/tool loop; native Workflow review snapshots; bounded clarification, context and transactional allowance | Live model behaviour/quality; uncertain-charge reconciliation; durable longer tasks |
 | Persistence | PostgreSQL domain/auth and native snapshots | Production backup/restore, migrations, monitoring, retention and operational capacity |
 | Execution | One executor and a globally locked runtime JSONB record; saved reviews survive restart | Measured concurrency limits; later per-job storage/worker design when required |
-| AI and connections | Deterministic offline model; outbound denial; Connections placeholders | No live generation, gateway, external sends or billing enabled |
+| AI and connections | Deterministic offline model; explicitly gated single-model OpenRouter adapter; default outbound denial; Connections placeholders | Live route remains disabled and unvalidated; no external sends or subscription billing enabled |
 
 The accepted local model keeps even shared-World conversations/runs creator-only. It does **not** currently support a manager reviewing an employee's private run. A future review grant must expose only the selected artifact/action to named reviewers; it must not silently give admins all chats. Company-document stewardship when an author leaves also needs an explicit policy before a team pilot. Do not retrofit either change under a vague “admin” permission.
 
@@ -203,7 +203,7 @@ A gateway introduces another processor and failure/billing relationship. Approve
 
 Separate durable task facts, current source versions, conversation, approved company instructions and user preferences. Retrieve the minimum relevant permitted material; do not load the entire World into every call. Keep essential decisions and unresolved questions outside lossy summaries. Test long conversations after correction, compaction and restart. Never promise that all historical text is always in the model's context.
 
-Reserve cost transactionally before calls; account for every attempt and tool charge; reconcile actual usage and retain unresolved holds. Bound tokens, time, concurrency and retries across the whole job. At most one transient model/read retry is a proposed starting policy, within the original budget. No retries for permission/authentication/validation failures, no automatic quality loops, and no automatic replay of an uncertain external mutation. Routing to another model does not reset the allowance.
+Reserve cost transactionally before calls; account for every attempt and tool charge; reconcile actual usage and retain unresolved holds. Bound tokens, time, concurrency and retries across the whole job. Milestone 4 deliberately uses zero automatic model retries or provider fallback; any future retry requires explicit design and budget checks. No retries for permission/authentication/validation failures, no automatic quality loops, and no automatic replay of an uncertain external mutation. Routing to another model does not reset the allowance.
 
 ### Documents and effects
 
@@ -490,13 +490,13 @@ Update after a material customer finding, approved scope/pricing decision or rel
 | Host/domain/region, data and email policies, operating owner | Move from local testing to a safe cloud pilot | Before deployment |
 | Pilot terms, price experiment and acquisition authority | Test willingness to pay without accidental promises | Before outreach, collecting payment or publishing offers |
 
-While the founder tests locally, useful zero-spend work is to catalogue usability findings, prepare the fixture/rubric and refine M4 interfaces against this strategy. There is no need to buy more models or add connectors to make this document useful. Those development tasks still need their own implementation scope; this report does not start them.
+While the founder tests locally, useful zero-spend work is to catalogue usability findings and prepare the live evaluation rubric. Milestone 4 implementation was subsequently authorised and is tracked separately; it does not authorise paid model calls. Additional models or connectors do not replace the customer-job evidence.
 
-The next formal decision is small: agree the first customer job to validate and its artifact requirements, then scope M4/M5 around that evidence. Continue the assistant foundation; avoid another rewrite unless a concrete failure demonstrates that it is necessary.
+The next formal decision is small: agree the first customer job and artifact requirements, supply authorised examples, and choose the model route and cumulative allowance for live M4 evaluation. Scope M5 around that evidence. Continue the assistant foundation; avoid another rewrite unless a concrete failure demonstrates that it is necessary.
 
 ## Decision and evidence register
 
-| Item | Status at version 1.0 | Authority or evidence |
+| Item | Status at version 1.1 | Authority or evidence |
 | --- | --- | --- |
 | Assistant-first SME product, existing company processes/templates, standalone Worlds, light Knowledge UI, Mastra | Approved foundation | Founder decisions; current project instructions |
 | Use this document as direction reference and flag drift | Approved governance | Current founder request |
@@ -504,6 +504,7 @@ The next formal decision is small: agree the first customer job to validate and 
 | S$299 recurring / S$399 pilot / S$600 setup | Proposed experiments | Competitor comparison and illustrative economics, not willingness-to-pay evidence |
 | Quality, retention, latency, margin and recovery targets | Proposed gate criteria | Product/design/technical judgement; future measurement required |
 | Milestones 1–3 local mechanics | Implemented and previously reviewed | [Current milestone record](runs/2026-10-29-milestone3-identity-postgres.md), app revision e8e92da |
+| Milestone 4 bounded assistant | Implemented and independently reviewed offline; live evaluation remains gated | [81 tests and database/browser/restart evidence](runs/2026-10-29-milestone4-assistant.md); founder request 29 October 2026 |
 | Live quality, commercial demand, production readiness or moat | Unproven | Must pass the stated evaluation/customer/operating gates |
 
 ### Source and interpretation notes

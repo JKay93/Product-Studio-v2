@@ -1,6 +1,10 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Fresh rebuild: milestone 4 bounded assistant — 2026-10-29 [world:req:rebuild-live-assistant]
+
+User authorises implementation of milestone 4 and requests live prerequisites after delivery. Build Mastra-backed conversation/tool execution, scoped Knowledge/history, focused same-job clarification, streamed output/status, exact draft review and cumulative per-call cost reservations. OpenRouter is the initial configurable gateway direction; provider/model/World allowlists and explicit finite funding remain required before live activation. All development checks stay zero-spend with simulated provider responses; this is not authority to use inherited keys, call a model, send externally or deploy to production. Existing World and private author boundaries remain unchanged. Mastra public core is commercially reusable under Apache-2.0 with licence obligations; separately licensed ee/ modules stay excluded. [Implementation and evidence](runs/2026-10-29-milestone4-assistant.md).
+
 ## Rebuild strategy reference and change control 29 October 2026
 
 User requests a full pre-development, development and post-development strategy covering product/features, market, pricing, customer delivery and operations, and asks Orchestrator to refer back and challenge drift. [World product strategy and delivery plan](WORLD_STRATEGY.md) is the canonical reference for World-Rebuild. Its approved foundation restates prior user choices; research cohort, commercial job, prices and quantitative gates remain explicitly proposed pending founder/customer validation. They are not automatic product reversals, implementation/spending/outreach/deployment authority or evidence of demand. Future material direction changes require an explicit understood founder decision and corresponding strategy update; later user instructions remain authoritative. Previous versions' decisions below are historical for their respective checkouts, not a cumulative rebuild feature checklist. Research/review evidence: [strategy run](runs/2026-10-29-product-strategy.md).

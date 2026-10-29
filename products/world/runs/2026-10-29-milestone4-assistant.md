@@ -1,0 +1,39 @@
+<!-- studio {"id":"world:run:2026-10-29-milestone4-assistant","scope":"world","type":"run","status":"completed"} -->
+# Milestone 4: bounded model-backed assistant
+
+## Goal and authority
+User authorises milestone 4 and asks to confirm Mastra commercial use, then report live prerequisites. Read canonical strategy section 9 and M4 roadmap. Preserve assistant-first light UI, existing templates, standalone Worlds and creator-only runs. Zero provider spend/calls; simulated responses must remain visibly labelled. No production rollout, external sends, old folder changes or credential reuse.
+
+## Tasks and acceptance
+- M4.1 Builder: integrate real Mastra conversational/tool execution with configured OpenRouter-ready transport, bounded scoped context, focused same-job clarification, source provenance, draft/review handling, persisted budget holds and usage; default fixture/offline fail closed.
+- M4.2 Builder: integrate current UI with actual run events/partial output, clarification answer/stop, model/usage status and truthful setup state; preserve editor and tenant isolation.
+- M4.3 Independent QA: actual candidate security, budget concurrency/recovery, context/source and lifecycle tests; root UI walkthrough using synthetic local data only.
+- M4.4 Root: verify commercial licence/exclusions, integrate/check/build, refresh new app only when safe, document boundaries and live inputs, deliver reviewed repositories.
+
+Acceptance: real library path tested offline with tools and multiple turns; no external model network or secret leakage; current authority rechecked before retrieval/tools/continuation; private/cross-World context denied; input/step/output/cost bounds, unknown usage retained; no silent fallback/retry; stop/restart do not replay uncertain work; natural clarification and draft review are distinct; UI reflects events and limitations. Live response quality cannot be established zero-spend.
+
+## Evidence and decisions
+Initial sources: runtime-service, harness contracts/adapter/repository, package manifest, strategy and previous completed strategy run. Mastra core pinned 1.80.0 licence and upstream LICENSE.md both grant Apache-2.0 outside ee/; enterprise directories are separately licensed and excluded. Routing SHA256 1C46027A5AABE051940D9F912FC39A77D1068F68E6B04FE4BC3DCDF7DA997E3F. Requested routes/receipts retained in host history; actual activation/host usage unknown.
+
+Dispatched /root/m4_backend and /root/m4_ui as Builder gpt-6.1-sol/low/none; independent /root/m4_review as QA gpt-6.1-sol/medium/none under the recorded routing. Contracts coordinated directly. Early review caught incomplete OpenRouter serialization/streaming, unconditional live network denial, usage-cost settlement and whole-job continuation limits; corrections are required before acceptance. UI focused review currently 6/6 checks pass, not whole-goal acceptance. Normal world_dev read-only inventory found zero active/waiting runs; user data not mutated. QA uses world_m3 separately. Default restricted PostgreSQL read was EACCES; approved read-only execution succeeded.
+
+## Questions, deferred work and handoff
+Live provider credentials/model selection, explicit cumulative test budget and authorised real template/input are needed only for live validation. Production multi-worker/email/deployment and native Office fidelity remain later scope.
+
+## Final verification checkpoint
+
+Core implementation uses maintained Mastra ModelRouterLanguageModel/Agent.stream, scoped exact OpenRouter transport, actual reported inference cost, transactional cumulative reservations, retained uncertain holds, bounded history retrieval and transitive source dependencies. No package changes or provider calls. Independent real PostgreSQL checks pass for concurrent reservations, restart/route-change retention, offline use preserving earlier holds, stopped-effect writes and changed-source effect writes. Full serial suite with real QA PostgreSQL enabled passes 78 tests in 20 files; typecheck/lint pass. This is pre-final evidence: the later clarification-provenance correction requires affected rechecks.
+
+Root's real-browser walkthrough caught a delayed New chat creation race that lost typed text; Builder fixed both New chat and first-send paths with explicit creation status and input gating, with 13 UI checks passing. The draft, same-job answer, private save, source filtering and mobile controls worked before that failure. Final browser/restart walkthrough remains pending. Independent review then found sourced clarification text lost its dependency provenance on continuation; Builder is preserving prior same-job dependencies and adding a revocation regression before acceptance. Candidate 3106 is stopped, normal user app 3105 untouched; synthetic QA holds retained.
+
+## Acceptance and delivery
+
+M4.1–M4.3 complete and accepted after correction. Same-job clarification preserves and revalidates its transitive source dependencies before answer admission and before generation; revoked/changed-source and admission-race regressions pass with zero model rounds. Final full serial suite: **81/81 tests in 20 files**, real isolated PostgreSQL enabled, no skipped database coverage. Typecheck/lint pass; final isolated production candidate builds successfully. Independent reviewer PASS: final affected 31/31 checks plus real PostgreSQL allowance/effect checks; final core prefixes index82DFE1FB, conversation34B8B58A, offlineBB766DFB, UI694DDDAC. No remaining observed blocker. No live requests were made.
+
+Root isolated-browser walkthrough passes 14 scenario groups: sign-up, initial chat, clarification without locking the composer, template creation/autosave through Knowledge, same-job answer, private draft/template provenance, zero usage, desktop/320px controls, approval, follow-up, truthful Connections state and new chat. Desktop/mobile screenshots inspected. Five additional checks after an actual app process restart confirm session/pending-review persistence, exact hash/usage preservation, approval once with no additional generation, opening the saved rich draft and no browser errors. Browser external requests were blocked; QA data remains separate from user world_dev. Evidence helpers/screenshots are ignored under World-Rebuild/assistant-prototype-qa/m4-*.
+
+M4.4 complete. Normal world_dev read-only pre-refresh check: zero active/waiting jobs, no spending ledger. Normal production build passed; only this app was stopped/restarted on http://127.0.0.1:3105 (exec19462). Post-refresh isolated-browser check passes sign-in, sampled API401 responses, desktop/mobile containment, no browser errors/external calls and unchanged legacy schema1 file hash. Runtime endpoint also returns401 without a session; model mode remains fixture, active jobs0 and normal budget still absent. PostgreSQL was not restarted and required no new migration. Old World/World-Next remain untouched. Candidate3106 is stopped.
+
+Application commit **95e2afab721a7959e9b98e46b15a3336576cc2f2** pushed to verified JKay93/MyWorld main; ls-remote exactly matches and working tree is clean. Studio records delivered separately to the verified Product-Studio-v2 repository. No unattended work or new financial authority granted. All requested implementation and zero-spend validation complete; live evaluation deliberately pending the inputs below.
+
+Next live gate: secure new OpenRouter key, approved exact model/upstream and World IDs, conservative prices with a finite cumulative allowance, and an authorised company template plus representative test requests. Live conversation quality, latency/cost and real provider delivery remain unverified; deterministic fixtures do not establish those. Commercial use of installed Apache-2.0 Mastra core is permitted subject to its licence/notices; enterprise ee/ is excluded.
