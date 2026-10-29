@@ -45,3 +45,6 @@ Normal idle app refreshed with additive migration/build on3105; saved ledger has
 
 ## Closure and next action
 Implementation/review/offline/database/browser/local-refresh complete; final independent evidence audit passed27 scoped files and exact financial reconciliation. User can try template +support selection, private editor/autosave, Request changes, history and exactreview on3105 in fixture mode. Paid test remains honestly partial; stopped on finding, corrected offline, no paidretry. Native formats/export/production are deferred; post-fix live display and thirdturn quantity23 need fresh bounded authority if requested. No unresolved implementation blocker, no automated followup or spending remains active. Preserve old references, all known charges and priorhold.
+
+## Follow-up: fresh local test account
+User requested an account to try the app. Root performed administrative setup through existing signup/sign-in/World/Knowledge APIs; no implementation changes or delegation needed. Fresh account sign-in and authenticated fixture runtime verified. Created Demo Company containing only a fictional Workshop SOP template and Workshop brief; no runs/model calls/spending. Credentials delivered only in chat, not recorded in repository. Existing accounts/data untouched. Studio delivery340d15f had already verified before this follow-up; app remains0c6cfb7.
