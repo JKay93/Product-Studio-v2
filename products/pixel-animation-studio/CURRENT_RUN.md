@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [2026-10-31-connected-journey](runs/2026-10-31-connected-journey.md)
+Run: [2026-10-31-openrouter-connection](runs/2026-10-31-openrouter-connection.md)
 
-Status: complete. Connected book -> character -> brief -> review implemented; independent review PASS,18 tests/syntax pass. Visible tab10 demonstrated no-art flow, live inherited context, immediate stale labels on brief/character/book edits, review persistence and exact route refresh. Narrow390px check no horizontal overflow, reset. ServerPID6656 localhost3110; local commit80b1067, no remote. Generation disconnected, $0 spend, existing data retained. Screenshots output/connected-journey-2026-10-31/. Older prototype tabs require refresh before user tests (browser tool could not claim prior tab8; no retry). Next: user reviews journey before any generation work.
+Status: complete and accepted in zero-spend mode. OpenRouter adapter behind neutral request/result boundary; immutable live403, preview and labelled local sample review. 33 tests, independent QA and actual browser workflow pass. App local commit caa7a832f20dd39de6ff1f0537ddd8b1a4a5ddbd; no remote. Local server3110 PID48444; deliverable tab11. Next: user reviews character designs; agree a fresh bounded budget before capability/account checks, live budget reservations/activation or real artwork tests. PixelLab future fallback only. No provider requests or API charges this run.
