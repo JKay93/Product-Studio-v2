@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [2026-10-31-three-image-live-test](runs/2026-10-31-three-image-live-test.md)
+Run: [2026-10-31-response-retry](runs/2026-10-31-response-retry.md)
 
-Status: live test stopped after1/3, adapter response validation failed; billedUS$0.0681325 matches balance delta, held0, unusedUS$0.4318675. No image saved or quality verdict. Disarmed; no more paid requests without explicit resume authority. Bounded live UI/ledger implemented, independent review and56 offline checks pass; final status correction preserves failure after disabling. User's original characters untouched; isolated test character25432de5-1992-48f4-8772-b50dcdd67df4. Local server launcherPID26648 on3110, tab3 stopped view. Next: safe response diagnostics/recovery and compatibility fix before any authorized retest, retain charge/ledger. No app remote.
+Status: response fix and UI retry complete.67 offline checks+independentQA pass; two actual JPEG replies decoded/normalized/savedPNG, refreshed with no duplicates. NewchargesUS$0.136408; cumulativeUS$0.2045405 including originalfailedentry unchanged, holds0, unusedUS$0.2954595, balance reconciled. Total3attempts and armfalse. Art identity consistent, targetedwooden-hand-side correction FAILED; no full quality claim. User originals untouched. ServerlauncherPID37740 on3110; own IABtab4 shows saved correction. No app remote. Next: user reviews saved designs; controlledediting/pixel-grid/animation quality remains future work, no more paid tests without authority.
