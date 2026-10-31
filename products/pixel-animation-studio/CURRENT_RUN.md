@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [2026-10-31-response-retry](runs/2026-10-31-response-retry.md)
+Run: [2026-10-31-regional-editing](runs/2026-10-31-regional-editing.md)
 
-Status: response fix and UI retry complete.67 offline checks+independentQA pass; two actual JPEG replies decoded/normalized/savedPNG, refreshed with no duplicates. NewchargesUS$0.136408; cumulativeUS$0.2045405 including originalfailedentry unchanged, holds0, unusedUS$0.2954595, balance reconciled. Total3attempts and armfalse. Art identity consistent, targetedwooden-hand-side correction FAILED; no full quality claim. User originals untouched. ServerlauncherPID37740 on3110; own IABtab4 shows saved correction. No app remote. Next: user reviews saved designs; controlledediting/pixel-grid/animation quality remains future work, no more paid tests without authority.
+Status: complete and accepted. Prompt separation and region selection implemented; two real UI edits corrected both hand materials. Exact comparison: zero changed pixels outside either rectangle. New spendUS$0.136546; cumulativeUS$0.3410865, held0, unusedUS$0.1589135; original three entries retained, balance reconciled. Five attempts reached, explicitly disarmed. 80 tests/syntax and independent QA pass; browser refresh, drag/numeric selection and narrow viewport verified. App committed locally only (no remote); see run delivery evidence. Server3110 running; final result visible in owned tab5. No animation or further spending authorized. Next: user reviews corrected design before animation scope.
