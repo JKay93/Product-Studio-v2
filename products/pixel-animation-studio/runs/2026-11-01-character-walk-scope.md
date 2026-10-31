@@ -1,6 +1,8 @@
 <!-- studio {"id":"pixel-animation-studio:run:2026-11-01-character-walk-scope","scope":"pixel-animation-studio","type":"run","status":"complete"} -->
 # One-character walking feasibility scope
 
+Superseded as the next-execution proposal: user pointed out the unresolved logical-grid blocker. Orchestrator withdrew walking as the next experiment; subsequent model evaluation is in 2026-11-01-model-evaluation.md. This historical plan grants no spending or animation authority.
+
 ## Goal and authority
 User requests an exact one-character test scope, pass criteria, base-to-walk method and proposed budget. Planning only: no new paid generation, training, implementation or activation is authorized. Existing generation arms remain off and historical ledgers unchanged. Prior comparison and compaction facts: [completed comparison](2026-11-01-pixel-lora-comparison.md).
 

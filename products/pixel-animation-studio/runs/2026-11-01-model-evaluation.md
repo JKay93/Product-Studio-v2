@@ -1,0 +1,29 @@
+<!-- studio {"id":"pixel-animation-studio:run:2026-11-01-model-evaluation","scope":"pixel-animation-studio","type":"run","status":"complete"} -->
+# Sprite-generation model evaluation
+
+## Goal and authority
+User requests a proper model evaluation, prioritising cost and accuracy. Earlier Gemini choice was a provisional integration default, not a comparative quality winner. The subsequent single-character walking scope is withdrawn pending a usable logical-grid base; do not run it as approved work. Research/evidence analysis only: no new paid generation, training, downloads of large models, credentials, app code, server changes or activation authorized. Both arms remain off. Historical project cost US$0.9807695 preserved.
+
+## Tasks and acceptance
+- E1 Orchestrator: public catalogue and official pricing/capability review, review existing measured Gemini/FLUX evidence; define task-specific accuracy gates and comparable costs.
+- E2 Technical Specialist: independently assess plausible OpenRouter candidate families, documented controls, price units, native logical-grid limitations, and useful exclusions using primary sources.
+- E3 Technical Specialist: assess existing pixel-specialist adapter alternatives, compatibility/commercial constraints and evidence quality without assuming LoRA solves grids.
+- E4 Orchestrator: consolidate a shortlist and explicit unknowns, recommend a bounded matched experiment rather than invent quality rankings; maintain records and report. No live experiment approved in this request.
+
+Acceptance: exact model IDs and date, sources supporting current capability/pricing, separate provider claims versus our actual outputs, accuracy fails cannot be offset by cheap prices, cost per accepted asset and correction time, explicit pending live-quality comparison. No unsupported winner or fabricated scores. Scope all three input types: description, concept reference, actual authored sprite. Prefer existing OpenRouter, PixelLab fallback is not selected service; no provider purchase implied.
+
+## Evidence / decisions / questions
+E1-E4 complete. [Full evaluation](../MODEL_EVALUATION.md) screens all62 public image-catalogue entries and21 endpoint snapshots, distinguishes prior actual outputs from provider capabilities, and includes prices, exclusions, specialist routes and proposed acceptance/test funnel. Source snapshots in ignored app output/model-evaluation/. No application code changed; app Git status clean after research artifacts (ignored). No credential or account read, provider inference, server change or new spending.
+
+Gemini previous six calls cost US$0.408416 (mean US$0.0680693); FLUX six US$0.094 (mean US$0.0156667), twelve technical successes but no certified exact-grid base or animation pass. Root reopened two prior comparison sheets. User prefers Gemini; FLUX lost Bram identity. Historical route/codec/resolution differences prevent claiming a fully controlled pixel-accuracy benchmark. No fabricated percentages or model winner.
+
+Proposed first general-model comparison: openai/gpt-image-2.5-sunburst, google/gemini-nano-banana-2.1, bytedance-seed/seedream-5-0-flash. Existing Flash remains historical context only. Sunburst is precision-oriented with transparent background and quality; output token rate$30/M plus inputs. NB2.1 output rate$30/M vs old$60/M but higher input/text rates, not guaranteed half request cost. SeedFlash$.018/output with free image inputs. FLUX3Klein cheapreserve$.009/1K but no proven grid advantage. All untested challengers, no selected default or implementation.
+
+Specialist research: Limbicnation's actual pixel LoRA on distilled Klein4B can plausibly use fal$.01/MP create and$.01/input+outputMP edit (1+1example$.02); earlier$.016 base route is different and not the only available route. Krea2pixeladapter32/64/128 has stronger logical-grid documentary intent but inspected hosted LoRA schema lacks image-reference editing. Both compatibility/quality untested; no download, training, falkey/account assumed. Dataset provenance contradictions are recorded, not waved away. Named fal spritesheet adapter is vehicle/object multi-view, not character walk evidence.
+
+Dispatches: /root/sprite_model_catalog_review and /root/pixel_specialist_route_review TechnicalSpecialist; /root/model_evaluation_acceptance_review ProductManager. All explicitly requestedgpt-6.1-sol/medium/forknone under currenthash1C46027A5AABE051940D9F912FC39A77D1068F68E6B04FE4BC3DCDF7DA997E3F; returned host task names recorded, actualactivationunknown. PM final read-only review found no blocking claim/authority issue and requested fixed advancement rules, per-model cost accounting and predetermined edit tolerance; root incorporated these refinements. Diff checks performed before delivery.
+
+Unresolved: live accuracy and accepted-asset cost of challengers, exact provider-safe reservation for token-priced GPT Images, authentic authored-sprite source. None blocks completing this desk evaluation; each matters before the corresponding live test/claim. No additional user information required for this report.
+
+## Deferred / handoff
+Research delivered. Proposed next phase maximum12 calls/sharedUS$2 total new charges plusholds, only after conservative provider-specific cost bounds fit and explicit authority; existing Gemini$.22 reservation cannot be copied to GPT Images. Six description outputs(3models x2sizes), up to4 concept outputs(two survivors x2sizes), up to2 targeted edits, conditional stopping/size-specific evaluation. No new phase approved. Authentic authoredsprite case unavailable, no fake substitution. Stop if no usable grid-base, no automatic retrials/fallback or animation. HistoricalUS$.9807695 intact; botharms off. Studio records delivered onlyto verifiedJKay93/Product-Studio-v2; app has no remote and stays untouched.

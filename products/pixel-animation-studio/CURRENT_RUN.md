@@ -1,13 +1,14 @@
 # Pixel Animation Studio current run
 
-Run: [2026-11-01-character-walk-scope](runs/2026-11-01-character-walk-scope.md)
+Run: [2026-11-01-model-evaluation](runs/2026-11-01-model-evaluation.md)
 
-Status: scope complete; execution and spending NOT approved. No application code, server settings, credentials, ledgers or arms changed.
+Status: zero-spend model evaluation complete; [full report](MODEL_EVALUATION.md). No live comparison, code change, model switch or new spending approved.
 
-- Proposal: Gemini via existing OpenRouter, custom Bram-derived farmer, one right-facing six-frame walk at 8fps, 64x96 logical cells. Base gate first, reference-conditioned sheet, conservative extraction/grid validation, bounded named corrections, real import (prefer Godot). No LoRA/training/video/PixelLab or platform expansion.
-- All-pass gates: identity/anatomy/handedness, exact grid with preserved art, credible gait/loop and stable registration, <=20min mechanical cleanup without anatomical redraw, export/reopen/import and user visual acceptance. One success establishes narrow feasibility only.
-- Proposed budget: US$1 TOTAL new charges plus uncertain holds, six image calls maximum: up to2 base, up to2 sheets, up to2 targeted corrections. Expected US$0.40-0.70 from prior ~US$0.068 Gemini calls, not a guarantee. Reservations can stop before six calls. Stop base failure, technical failure, uncertain cost or exhausted allowance. No paid planner/reviewer calls.
-- Read-only Technical Specialist critique complete; requested gpt-6.1-sol/medium/fork none, backend activation unknown. Scope incorporates review; root maintains records.
-- Prior [comparison / compaction handoff](runs/2026-11-01-pixel-lora-comparison.md): 12 standard FLUX/Gemini calls cost US$0.502416. Earlier US$0.4783535 unchanged; cumulative US$0.9807695, zero holds. Both arms off. Unused prior allowance is not fresh authority. No LoRA downloaded/tested/trained.
-- App: Codex-Work/Pixel-Animation-Studio/, last accepted local commit28367e0, no verified app remote; World references untouched. Last known read-only results http://127.0.0.1:3110/comparison.html. Previous92 checks historical, not a tested walk pipeline.
-- Next: user decision on scope/budget. Do not auto-run. If approved, implement/review minimum bounded test support, preserving financial history, before live UI requests. New provider spend this planning run US$0.
+- User challenged the original Gemini default and unresolved sprite-grid problem. Earlier walking-test proposal was withdrawn; do not execute it. Prove a usable base first.
+- Research:62 OpenRouter image entries screened,21 endpoint snapshots, prior Gemini/FLUX outputs reopened; two Technical Specialists and PM review. No measured winner for exact logical sprites.
+- Proposed general-model shortlist: GPT Image2.5Sunburst(precision/alpha controls), NanoBanana2.1(newGoogle, cheaper output token rate but higher input rates), Seedream5Flash($.018/output/free image inputs). Old Gemini stays historical concept/identity baseline; no new default. All new sprite accuracy unknown.
+- Specialist candidates: actual Limbic pixelLoRA/distilledKlein viafal$.01/MP create and$.02 exampleone-refedit; Krea2pixel32/64/128 adapter lacks reference-edit support in inspected hosted schema. Neither tested or downloaded; do not confuse plainFlux withLoRA or named vehicle-view spritesheetLoRA withwalking. Provenance/license caveats in report.
+- Proposed next screen: <=12requests andUS$2 TOTAL newcharges+holds, six description outputs(3models x2sizes), up to4concept outputs and2edits. NOT APPROVED. Must verify provider-specific conservative bounds first; Gemini$.22 hold cannot be assumed forGPT Images. Accuracyhardgates, permodelcostperacceptedasset, nativegrid/padding distinction, fixedadvancement/editcriteria, no rerolls/fallback; authoredsprite input unavailable/uncovered.
+- Both old arms remainoff. HistoricalUS$0.9807695 unchanged; no credential/account reads, generation, training, server refresh or new spend. Public docs/metadata only.
+- App Pixel-Animation-Studio unchanged/clean, lastacceptedcommit28367e0, noverifiedremote; originalWorld referencesuntouched. Public snapshots in ignored output/model-evaluation/. Existing92tests historicalharnesschecks, notspriteaccuracy.
+- Next: user decision on report/shortlist and any new bounded live phase. Do not auto-run, train or advance to animation from this pointer.
