@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [2026-10-31-openrouter-connection](runs/2026-10-31-openrouter-connection.md)
+Run: [2026-10-31-three-image-live-test](runs/2026-10-31-three-image-live-test.md)
 
-Status: complete and accepted in zero-spend mode. OpenRouter adapter behind neutral request/result boundary; immutable live403, preview and labelled local sample review. 33 tests, independent QA and actual browser workflow pass. App local commit caa7a832f20dd39de6ff1f0537ddd8b1a4a5ddbd; no remote. Local server3110 PID48444; deliverable tab11. Next: user reviews character designs; agree a fresh bounded budget before capability/account checks, live budget reservations/activation or real artwork tests. PixelLab future fallback only. No provider requests or API charges this run.
+Status: live test stopped after1/3, adapter response validation failed; billedUS$0.0681325 matches balance delta, held0, unusedUS$0.4318675. No image saved or quality verdict. Disarmed; no more paid requests without explicit resume authority. Bounded live UI/ledger implemented, independent review and56 offline checks pass; final status correction preserves failure after disabling. User's original characters untouched; isolated test character25432de5-1992-48f4-8772-b50dcdd67df4. Local server launcherPID26648 on3110, tab3 stopped view. Next: safe response diagnostics/recovery and compatibility fix before any authorized retest, retain charge/ledger. No app remote.
