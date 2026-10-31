@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [2026-11-01-logical-grid-inspection](runs/2026-11-01-logical-grid-inspection.md)
+Run: [2026-11-01-grid-recovery-conversion](runs/2026-11-01-grid-recovery-conversion.md)
 
-Status: complete zero-spend offline inspection. Independent technical and root geometry/visual checks agree neither recent image fits requested logicalgrid even allowing padding/origin.32x64 request repeated14–15px cells ->~42x92 occupied;64x96 request6–7px cells ->~84x170. Estimates, not recovered latent source grids; JPEG prevents exact certification. Delivery dimensions alone were insufficient evidence, now corrected in project rules/prior run. No app/artwork/ledger/arm/provider changes; newcost0, priorcumulativeUS$0.4783535, held0, disarmed. Next choose enforceable logicalgrid method before animation; no new work/spending inferred.
+Status: complete offline experiment accepted. Inferred reconstructions50x100/128x192 preserve design reasonablyclose; exact32x64(22colours)/64x96(24colours) have validpixelgrids but facial/handdetail losses, artqualitypartial.2focusedtests+independentJPEGfixture1302/1302cellidentity+QAactualartifacts PASS. Before/recovery/target/rawNN sheets andnativePNGs output/grid-recovery/, reproducible scripts/grid-recovery.mjs. No API/network/provider/browser/UI/ledger/arm/originalchanges; newcost0, priorUS$0.4783535/held0/disarmed unchanged. Next userreviewscomparisons; targetconversionnotproduction/animationready. No furtherwork/spendinginferred. Apphelperlocalcommit/no remote, studio continuity verifiedseparately.
