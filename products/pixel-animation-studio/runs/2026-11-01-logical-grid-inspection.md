@@ -1,0 +1,20 @@
+<!-- studio {"id":"pixel-animation-studio:run:2026-11-01-logical-grid-inspection","scope":"pixel-animation-studio","type":"run","status":"complete"} -->
+# Inspect logical sprite grids
+
+## Goal / authority
+User asks to check saved recent artwork against requested logical sprite grids. User clarifies delivery canvas can be larger than sprite resolution and include padding. Prior whole-canvas divisibility check alone was insufficient; do not repeat that as proof. Zero-spend, no provider/account calls, no changes to artworks, app behavior, ledger or arm.
+
+## Tasks / acceptance
+- T1 Technical Specialist: independently inspect two saved fresh images targeting32x64 and64x96; examine sharp block/outline grid while allowing crop/padding/origin, account forJPEG artifacts. Return bounded evidence and limitations; no changes or broad new feature.
+- R1 Root: visually inspect native crops, corroborate findings, preserve corrected acceptance distinction in project instructions and records, report plain-language conclusion. If possible use robust geometric evidence beyond pixel colour count/whole-image dimensions. No statistical quality claim from two samples.
+
+## Questions / deferred / next
+None outstanding. Root and independent technical inspection agree neither image meets requested logical sprite grid, even allowing delivery padding/origin. Source Pixel-Animation-Studio/output/fresh-sprite-tests/target-32x64.png and target-64x96.png. Generation disarmed, prior cumulativeUS$0.4783535 remains unchanged; new cost0. Native sprite conversion/generation and animation deferred. No app behavior changes or new tests needed; instructions corrected and continuity accepted.
+
+## Root observations
+Root viewed both original saved PNGs and ran read-only Sharp geometry against dark foreground (RGB sum<130), allowing JPEG edge tolerance of1pixel. Target32x64 dark bounds x55..664,y102..1440 =610x1339; head steps include y102..115 atx302, y116..129 atx273, y131..144 atx259, y145..158 atx244 (14px tall plateaus). Target64x96 bounds x146..701,y89..1214 =556x1126; top head plateaus y89..95 atx385,96..101 at371,102..108 at358,109..115 at345,116..121 at338 (6–7px tall).
+
+Even ignoring all padding, full character height requires a uniform cell scale at least1339/64=20.92outputpx for first target and1126/96=11.73px for second. Multiple clearly distinct outline steps occur14px and6–7px apart, respectively, incompatible with those minimum cell scales. This is geometric evidence beyond delivery-canvas divisibility; origin/padding cannot remove interior edge separations. Threshold misses occasional anti-aliased rows, so do not claim exact original latent resolution or literal subpixel precision. Source JPEG means exact lossless flat-colour recovery also unproven. Root visual findings align with technical specialist's preliminary approximate14.5px and6.6px cells; implied silhouette extents roughly42x92 and84x170, clearly larger than requested grids. Approximate extents are diagnostic, not recovered original grids.
+
+## Independent technical result / acceptance
+T1 /root/logical_grid_inspection requested technicalSpecialist gpt-6.1-sol medium none under routinghash1C46027A5AABE051940D9F912FC39A77D1068F68E6B04FE4BC3DCDF7DA997E3F; actual activation unknown. Read-only source/Sharp/visual inspection, no writes/network/provider/browser/credentials. Confirmed first image row137 dark outline runs x259..272 and447..460 (14px), row173 x229..243 and476..490 (15px). Second image repeated y89,96,102,109,116,122,129,136,142 crown changes, continues on silhouette. Independent darker-threshold bounds differ first image xmax665 vsroot664 by1px JPEG edge tolerance, no material conclusion change. Neither requested grid supported; latent resolution exactness unknown. Root corroborated and accepted analysis. Corrected canonical AGENTS rule and annotated prior run's dimension-based evidence as insufficient on its own. No application-code changes, no claim to have corrected artwork. Local instructions commit only/no app remote; accepted studio continuity delivered to verified Product-Studio-v2.

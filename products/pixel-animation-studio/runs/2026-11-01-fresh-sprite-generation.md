@@ -27,6 +27,8 @@ Root verified old server child52656/parent56152 then restarted only this idle pr
 |32x64|1f81f1e3-29d5-4e3d-a907-6cc8717cee75|720x1456|.0686545|9662|FAIL; factors22.5x22.75|
 |64x96|11aea532-007f-42b8-8ecd-61e032173062|848x1264|.0686125|7361|FAIL; factors13.25x13.1667|
 
+Subsequent user clarification: whole-delivery-canvas divisibility in this table is not sufficient evidence against a padded logical sprite grid. See2026-11-01-logical-grid-inspection.md for actual artwork geometry allowing padding/origin; retain this table as historical measurement, not a standalone proof.
+
 Both raw provider images JPEG, codec-normalizedPNG only. Decoded RGB colours22853/28874, so delivered assets are not24flat-colour pixel art (JPEG compression contributes colours; counts do not isolate model palette failure). Root visual inspection: cleaner/fuller outlines than prior shrunk comparison, correct material sides, but irregular clusters/detail and nonuniform logical grid remain. Independent fresh generations differ in face/proportions; no cross-frame consistency claim. Better-looking illustration is not game-ready sprite evidence.
 
 Six actual candidates (old4+new2) persisted after refresh, no duplicates or browser console errors, latest displayed in tab6 marked deliverable. Root explicitly disarmed after7attempts; button disabled/ATTEMPT_LIMIT. No auto retries, model fallback, resize cleanup or animation. Local artifacts ignored: output/fresh-sprite-tests/target-32x64.png, target-64x96.png, results.json and saved-fresh-design.jpg. Originals untouched. Test code never touches credentials/actual ledger; root did only authorized operations.
