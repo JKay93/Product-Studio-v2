@@ -1,12 +1,13 @@
 # Pixel Animation Studio current run
 
-Run: [2026-11-01-pixel-lora-comparison](runs/2026-11-01-pixel-lora-comparison.md)
+Run: [2026-11-01-character-walk-scope](runs/2026-11-01-character-walk-scope.md)
 
-Status: completed standard FLUX.2 Klein 4B versus Gemini comparison. Read the run's **Compaction handoff** first, then its completed-test outcome; older LoRA test plans are superseded history.
+Status: scope complete; execution and spending NOT approved. No application code, server settings, credentials, ledgers or arms changed.
 
-- Project: `Codex-Work/Pixel-Animation-Studio/`, local commit `28367e0`, clean at handoff, no verified app remote. World folders remain references; do not modify them.
-- Results: 12 successful requests, no retries; FLUX six calls US$0.094 / mean 9.23s; Gemini six calls US$0.408416 / mean 8.30s. Total US$0.502416, zero holds, reconciled against account balance. Gemini preserved Bram's identity better. Neither exact-grid sprite generation nor strict edit locality is established.
-- Spending: both arms are off. Prior seven entries / US$0.4783535 are unchanged; cumulative project spend US$0.9807695. The comparison's US$0.497584 unused money does not authorize more calls after its 12-attempt ceiling. No new generation, training, GPU rental or subscription purchase is authorized.
-- View: `http://127.0.0.1:3110/comparison.html`; ignored raw exports, overview sheets, metrics and screenshots under `Pixel-Animation-Studio/output/openrouter-comparison/`. 92 tests and independent code/visual checks passed.
-- Latest discussion: user is interested in cheap FLUX + pixel-art LoRA and asked how LoRA works and whether we can train our own. Explained existing-adapter versus custom-training options. No LoRA has been loaded/tested/trained; no fal connection has been configured as of the last credential check.
-- Next: resume that discussion from the saved handoff. The recommendation is to evaluate a compatible existing pixel-art adapter before preparing custom training. User has not approved that next experiment or spending. Planning/review via a stronger OpenRouter model and image rendering via a specialist model are proposed architecture, not implemented functionality.
+- Proposal: Gemini via existing OpenRouter, custom Bram-derived farmer, one right-facing six-frame walk at 8fps, 64x96 logical cells. Base gate first, reference-conditioned sheet, conservative extraction/grid validation, bounded named corrections, real import (prefer Godot). No LoRA/training/video/PixelLab or platform expansion.
+- All-pass gates: identity/anatomy/handedness, exact grid with preserved art, credible gait/loop and stable registration, <=20min mechanical cleanup without anatomical redraw, export/reopen/import and user visual acceptance. One success establishes narrow feasibility only.
+- Proposed budget: US$1 TOTAL new charges plus uncertain holds, six image calls maximum: up to2 base, up to2 sheets, up to2 targeted corrections. Expected US$0.40-0.70 from prior ~US$0.068 Gemini calls, not a guarantee. Reservations can stop before six calls. Stop base failure, technical failure, uncertain cost or exhausted allowance. No paid planner/reviewer calls.
+- Read-only Technical Specialist critique complete; requested gpt-6.1-sol/medium/fork none, backend activation unknown. Scope incorporates review; root maintains records.
+- Prior [comparison / compaction handoff](runs/2026-11-01-pixel-lora-comparison.md): 12 standard FLUX/Gemini calls cost US$0.502416. Earlier US$0.4783535 unchanged; cumulative US$0.9807695, zero holds. Both arms off. Unused prior allowance is not fresh authority. No LoRA downloaded/tested/trained.
+- App: Codex-Work/Pixel-Animation-Studio/, last accepted local commit28367e0, no verified app remote; World references untouched. Last known read-only results http://127.0.0.1:3110/comparison.html. Previous92 checks historical, not a tested walk pipeline.
+- Next: user decision on scope/budget. Do not auto-run. If approved, implement/review minimum bounded test support, preserving financial history, before live UI requests. New provider spend this planning run US$0.
