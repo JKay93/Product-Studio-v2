@@ -1,12 +1,12 @@
 # Pixel Animation Studio current run
 
-Run: [2026-11-01-bram-native-walk](runs/2026-11-01-bram-native-walk.md)
+Run: [2026-11-01-competitors-and-sprite-papers](runs/2026-11-01-competitors-and-sprite-papers.md)
 
-Status: complete eight-frame front-facing native walking study. Mechanical PASS, artistic PARTIAL: proportions, face, asymmetric hands and apron attachment stay coherent; gait reads as a simple march with schematic foot contact and cloth motion.
+Status: complete research only; independently reviewed. User rejected walking animation visually and stopped further art tests. [Full research report](SPRITE_GENERATION_RESEARCH.md) covers Retro Diffusion, PixelLab, pixie.haus and nine directly relevant research works.
 
-- Root original motion source examples/native-drawing/bram-walk-study.mjs; Builder offline exporter scripts/native-animation-export.mjs and tests/native-animation-export.test.js. Existing construction/renderer/static Bram unchanged.
-- Output/bram-walk-final contains eight native32x48 frame PNGs/scene JSONs, transparent native.gif,8x zoom.gif,native256x48sprite-sheet.png,contact-sheet.png,manifest/motion-plan/consistency-audit JSON,standalone preview.html. Total1000ms/average8fps via exact alternating120/130ms GIF delays.
-- Initial loop plus one correction(pocket follows lower apron cloth); no second correction. Independent reviewer rebuilt every artifact byte-identically, verified72identity/body/handchecks, all8unique frames, connections, palette/grid/no clipping, exact GIF pixels/timing/transparency and sheet/zoom exports. Twelve focused tests pass.
-- Root inspected playback and frame controls in own temporary IAB preview; successful tab and owned local preview servers closed/stopped. User's platform/server untouched. No provider/model calls, training, credentials/financialfiles or production app/UI changes. Historical known provider spendUS$0.9807695 retained; new provider spend0; hostCodex cost unknown.
-- App no verifiedremote; accepted source local only. Studio only JKay93/Product-Studio-v2; receipts in run record/toolhistory. Previous [static construction](runs/2026-11-01-shaped-construction-study.md) preserved.
-- Next: user judges actual loop/frame sheet. No automatic further clips, directions, platform integration, paid tests or training.
+- Distinguish native grid, static art, identity and motion. Competitors use specialized models/reference-pose generation/general model conversion plus processing and repair; proprietaryinternals notassumed. RDclassicalPixelArtFixer MIT isconcretereusecandidate, notsemanticredesign. Pixieaggregatesmodels; hardinternalgridguaranteesunverified. PixelLabhybrid/pose/freeze/inpainting/redraw/unzoomdocumented; PixfluxBFLbackbonenotverified.
+- SD-piXL enforcespalette/gridbutreports1.5–2.5h4090perimage. SSDoffersreference/pose/temporalsequencecode+weightswithrights/qualitylimits. MYOSlearnedconversionhaspretrainedcomponentsbutnoncommercialrestriction. Keyframepaperssmall/non-source-disjointtests andpreprocessgridslimitgeneralizationclaims.
+- TechnicalSpecialist researched eightworks; root addedMYOS. IndependentQA correctionabout2026train/testsourceoverlapapplied; finalPASS. Palette2025paperprecisemetricsfromspecialistpublisherexcerptsnotindependentlyreverifiedbyQA(403). MYOSfullPDFfetchsizeblocked; claimslimitedtoabstract/officialimplementationdocs. No benchmarkwasexecuted.
+- No provider/model calls, spending, generation/training/weights/datasetdownloads, credentials/financialaccess or platformcodechanges. HistoricalknownexternalchargeUS$0.9807695 retained; hostusagecostunknown. AppAGENTSresearchscopeonly; userartandcurrentappunchanged.
+- App noverifiedremote, localinstructionscommitonly. Studio onlyJKay93/Product-Studio-v2; receipts inrun/toolhistory. Previous [walking study](runs/2026-11-01-bram-native-walk.md) nowrecordsuservisualrejection, mechanicalchecksremainfileevidenceonly.
+- Next:userreviewsreportanddirection. Implementation and further art tests remain paused; recommendations do not authorize a new build or paid phase.
