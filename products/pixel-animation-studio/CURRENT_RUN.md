@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [Folder cleanup and harness direction](runs/2026-11-01-folder-cleanup-harness-direction.md)
+Run: [Exact-size harness prototype](runs/2026-11-02-exact-size-harness-prototype.md)
 
-Status: complete. Removed redundant Pixel-Animation-Lab after preserving and SHA-256 verifying all 12 files privately under Pixel-Animation-Studio/.runtime/archived-lab-preparation-2026-11-01. Useful Studio platform, artwork, Blender scenes and ledgers retained; application source unchanged. User will start a fresh chat to evaluate Product Studio's harness and adapt it for pixel-art work. No game-ready sprite brief, generation or harness implementation requested now. Prior compositor evidence remains in runs/2026-11-01-textured-model-compositor.md; visual desirability not accepted. No provider spending or World changes.
+Status: complete. Isolated offline description/size prototype implemented, independently reviewed after a PNG-framing correction, and browser-verified at desktop/390px. All3focused test groups and syntax/staged checks pass. App local commit9cab171cf5632847470c8b613d4c9ced820e22d0; no app remote. Seven provisional presets top out at128x128, default64x64; exact decoded PNG dimensions enforced without resizing. Owned previews stopped. No art generation, provider calls, spending, training or platform rebuild. Studio continuity delivery receipt is in the run record/host history. Next: separately scope the actual model-facing runtime; no live generation authorized.
