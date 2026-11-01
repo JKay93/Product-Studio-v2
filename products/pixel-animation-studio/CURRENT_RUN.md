@@ -1,13 +1,12 @@
 # Pixel Animation Studio current run
 
-Run: [2026-11-01-shaped-construction-study](runs/2026-11-01-shaped-construction-study.md)
+Run: [2026-11-01-bram-native-walk](runs/2026-11-01-bram-native-walk.md)
 
-Status: complete static Tessarune-inspired construction study. Mechanical checks pass; art outcome is partial. Apron reads more clearly as a hanging garment; natural hand remains hook-like and wooden fingers fork-like. No animation readiness claimed.
+Status: complete eight-frame front-facing native walking study. Mechanical PASS, artistic PARTIAL: proportions, face, asymmetric hands and apron attachment stay coherent; gait reads as a simple march with schematic foot contact and cloth motion.
 
-- Root authored original shapes, clothing overlap and material colour fields. Builder supplied a small offline polygon/ellipse/tapered-tube helper, compiling into existing renderer rows. No Tessarune code/assets/manuals copied or installed.
-- Initial candidate plus two visual corrections; no more drawing automatically. Final native32x48, 627opaque pixels,22opaque colours,15layers/37commands. Original palette and208occupiedfacepixels unchanged;261pixels changed versus anatomy-first baseline.
-- Independent reviewer rebuilt final in temp: source/flat/audits/native/comparison images match byte-for-byte. Whole silhouette and both hand layers connected, correct hand sides, matched crops and integer previews verified. Nine focused tests pass; core renderer hash unchanged.
-- Actual artifacts: Pixel-Animation-Studio/output/shaped-construction-reviewed/{before-after.png,details-before-after.png,audit.json,before/,flat/,after/}. Initial/correction artifacts retained separately. Tracked reproduction source examples/native-drawing/bram-shaped-study.mjs, chosen scene bram-shaped-construction.json, helper scripts/native-construction.mjs and tests/native-construction.test.js.
-- Zero external model/provider calls or spend. No credentials, financial ledger/arms, app/UI/server/oldWorld changes. HistoricalUS$0.9807695 retained; hostCodex cost unknown. No animation, training, weights or further live phase authorized.
-- App has no verified GitHub remote; accepted source is local only. Studio continuity belongs only to JKay93/Product-Studio-v2. Repository receipts are in the run record.
-- Previous baseline: [anatomy-first study](runs/2026-11-01-anatomy-first-study.md). Next: user evaluates displayed result; do not automatically proceed to animation or more experiments.
+- Root original motion source examples/native-drawing/bram-walk-study.mjs; Builder offline exporter scripts/native-animation-export.mjs and tests/native-animation-export.test.js. Existing construction/renderer/static Bram unchanged.
+- Output/bram-walk-final contains eight native32x48 frame PNGs/scene JSONs, transparent native.gif,8x zoom.gif,native256x48sprite-sheet.png,contact-sheet.png,manifest/motion-plan/consistency-audit JSON,standalone preview.html. Total1000ms/average8fps via exact alternating120/130ms GIF delays.
+- Initial loop plus one correction(pocket follows lower apron cloth); no second correction. Independent reviewer rebuilt every artifact byte-identically, verified72identity/body/handchecks, all8unique frames, connections, palette/grid/no clipping, exact GIF pixels/timing/transparency and sheet/zoom exports. Twelve focused tests pass.
+- Root inspected playback and frame controls in own temporary IAB preview; successful tab and owned local preview servers closed/stopped. User's platform/server untouched. No provider/model calls, training, credentials/financialfiles or production app/UI changes. Historical known provider spendUS$0.9807695 retained; new provider spend0; hostCodex cost unknown.
+- App no verifiedremote; accepted source local only. Studio only JKay93/Product-Studio-v2; receipts in run record/toolhistory. Previous [static construction](runs/2026-11-01-shaped-construction-study.md) preserved.
+- Next: user judges actual loop/frame sheet. No automatic further clips, directions, platform integration, paid tests or training.
