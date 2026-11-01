@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [Exact-size harness prototype](runs/2026-11-02-exact-size-harness-prototype.md)
+Run: [Size-aware brief preview](runs/2026-11-02-size-aware-brief-preview.md)
 
-Status: complete. Isolated offline description/size prototype implemented, independently reviewed after a PNG-framing correction, and browser-verified at desktop/390px. All3focused test groups and syntax/staged checks pass. App local commit9cab171cf5632847470c8b613d4c9ced820e22d0; no app remote. Seven provisional presets top out at128x128, default64x64; exact decoded PNG dimensions enforced without resizing. Owned previews stopped. No art generation, provider calls, spending, training or platform rebuild. Studio continuity delivery receipt is in the run record/host history. Next: separately scope the actual model-facing runtime; no live generation authorized.
+Status: complete. Offline size-aware brief assembler/preview implemented, independent QA PASS,6focused tests PASS, browser desktop/390px verified. Complete displayed messages match downloaded JSON; optional identity/simplification/guidance edits invalidate preparation and per-size guidance drafts survive switching. Eight presets include16x32/32x64,default64x64. Local app commit36b15c6c6df7217e8ef60e8efe0a75bdee2ce391; no app remote. Owned preview stopped. Model/provider activation, artwork and spending remain off. Next: user review of brief wording, then separately scoped model connection/budget/creation method. Studio delivery receipt in run record/host history.
