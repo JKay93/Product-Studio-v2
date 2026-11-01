@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [Approved rules and first planning test](runs/2026-11-02-brief-rules-and-planning-test.md)
+Run: [One Nano image and one Sonnet visual review](runs/2026-11-02-nano-sonnet-sprite-test.md)
 
-Status: complete. Two Sonnet5.5/Anthropic planning calls succeeded at16x32/32x64; APIreportedcostUS$0.02290 ofapproved0.20,held0,2attemptceilingexhausted. Both boundedplans preserve requiredidentity/viewer-rightlantern and make some size-specificchoices; independent controls/outcome reviewPASS,all23softwarechecksPASS. Privatephasecomplete, noreset/retries/newcalls underunused0.17710. Sanitizedplans/actualrequests/summary at Pixel-Animation-Studio/output/planning-test-results/. No artwork/nativepixelproduction tested. Next separatelyscopedtest should producepixels againstfixedbrief/identity, not more speculativeprompttweaks. Source/Studio delivery receipts inrun/hosthistory; app has no remote.
+Status: stopped after one Nano attempt, generation outcome FAILED. CostUS$0.0055325/held0; generation record confirms MAX_TOKENS,1728reasoningtokens,0imagetokens. No image or Sonnet review; no retry/fallback. Phase exhausted for Nano and cannot resume; unused0.2944675 grants no new calls. Controls source independently reviewed,21newchecksPASS; source/record delivery receipt inrun. Next is offline reconsideration of image-aware token allocation and safe failure diagnostics before any separately authorized future test. Prior planning allowance/state untouched; no UI/general activation.
