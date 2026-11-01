@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [Bram150x150 resolution study](runs/2026-11-01-bram-150-static.md)
+Run: [Bram150 style variants](runs/2026-11-01-bram-style-variants.md)
 
-Status: complete. Native150x150 Bram and comparison at Pixel-Animation-Studio/output/bram-blender-150-v1. Visible character68x132, padding preserves proportions. Independent reviewer confirmed unchanged geometry/material/camera and exact saved-scene reproduction. More legible features; cheek/beard bulges remain modelling limitations. Root visually studied16x32/32x64 artist previews: evaluate representative silhouette/colour/identity, not full microdetail. Zero provider spending/calls, no animation or app changes. Next:user judges output; no automatic further work. Previous:2026-11-01-bram-blender-static.md.
+Status: complete. Actual current/A/B150x150 comparison at Pixel-Animation-Studio/output/bram-style-variants-final/comparison.png. A uses fixed colour bands and selective coloured outlines with baseline geometry; B uses identical rendering and local beard/moustache edits. Independent QA reproduced full raw/ID/outlined pipeline exactly, verified unchanged camera/body/hands and differences confined to head. Mechanical PASS/art PARTIAL: A more graphic, B more cohesive but pointed beard alters likeness. Native PNGs and editable A.blend/B.blend retained. Zero provider spending, no animation or platform changes. Next:user judges variants; no further automatic art work. Previous:2026-11-01-bram-150-static.md.
