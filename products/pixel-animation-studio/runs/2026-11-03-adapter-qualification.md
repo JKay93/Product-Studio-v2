@@ -69,3 +69,7 @@ User-facing result is a qualified research candidate, two documented feature gap
 
 Questions resolved: laptop compatibility is optional, pretrained adapters permitted, own training deferred. Open: actual load compatibility, logical-size artistic performance, alpha stage and fully reconciled training provenance. Qualification work is complete. Next proposed action is the fixed cloud pilot with safeguards/account access and explicit new total budget; no automatic provisioning, download, inference, prototype or commercial adoption follows this review. Prior Nano allowances and uncertain holds stay untouched.
 
+## User decision superseding the proposed pilot
+
+3 November 2026: after discussing local-only operation and the unresolved artistic capability, user explicitly says “Alright no go it is. Any new ideas”. The current pixel-generation direction is **NO-GO / parked**. The local/cloud pretrained-adapter pilot is not proceeding; no training, installation, model downloads, generation or spending follows. Preserve existing projects/art and financial history. This is a product stop decision, not a claim that all future pixel-art methods are impossible. New ideas are discussion only; no replacement product or implementation is selected. Next: clarify whether ideas should remain near game/pixel tools or cover different products.
+
