@@ -1,6 +1,8 @@
 <!-- studio {"id":"pixel-animation-studio:run:2026-11-02-goth-lady-context-test","scope":"pixel-animation-studio","type":"run","status":"complete"} -->
 # Goth lady: repeat preferred context method A
 
+Subsequent user artistic response: 'Not bad actually'; user moves on to four directional static sprites. Accepted front remains the identity reference; this does not reverse documented mechanical/grid/veil limitations. Follow-on scoped run: [Four directions](2026-11-02-goth-four-directions.md).
+
 User requests A with an adult goth lady: long black hair/purple highlights, fitted long dress, veil, long satin purple gloves and green irises. Target32x64. Previous A preferred; B redraw rejected and is not a fallback. No UI/platform/training/model comparison/paid review.
 
 O1 preparation complete: exact offline request `Pixel-Animation-Studio/output/goth-lady-prepared-2026-11-02/request-bundle.json`, SHA256 E4D379EB462F62A50887EE4F84192129E5685EDC06834DC86E7EDE6C2EE1E1C5. Same A model/provider/max3584/minimal/fixed32x64 style-density reference; character-specific simplification preserves identity/placement. Cyan working background protects purple clothing/hair and green eyes. Reference is style/density only. No executor changes, credentials, live call or spending.

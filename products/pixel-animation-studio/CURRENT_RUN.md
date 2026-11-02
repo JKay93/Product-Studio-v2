@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [Goth lady using context method A](runs/2026-11-02-goth-lady-context-test.md)
+Run: [Goth lady four static directions](runs/2026-11-02-goth-four-directions.md)
 
-Status: complete. One approved Nano call costUS$0.0679545; cumulative0.282534/held0 under0.45cap,6totalattempts/no retries. Original720x1456 retained; approximate46x85independent-axis reconstruction then lossy32x64conversion, native/8x/actualcomparison at Pixel-Animation-Studio/output/goth-lady-context-2026-11-02/. Greeneyes/purpledetails readable, veiltealtint and unverifieduniformsourcegrid remain. Independent controls/artifactsPASS/artistic-gridPARTIAL. No furtherattemptauthority under unused0.167466; next uservisualjudgment. Prior phases unchanged. [Previous paired run](runs/2026-11-02-paired-size-quality-tests.md) preserved; A preferred/B redraw rejected.
+Status: prepared offline, awaiting financial approval. User accepts goth direction and requests left/right/back; keep accepted front unchanged. Proposed one Nano image with three32x64direction slots/logical96x64, exact identity reference/brief saved under output/goth-four-directions-prepared-2026-11-02/. Prior spent0.282534/held0/6attempts; proposed one newattempt maximum0.22, cumulativecap0.51/no retries. No paidcall/executor changes. Next financialapproval, then reviewed execution and four-view native/8x comparison. [Previous completed goth test](runs/2026-11-02-goth-lady-context-test.md) retained; exactnativegrid unproven/veiltealtint disclosed. No walking/animation or platformwork.
