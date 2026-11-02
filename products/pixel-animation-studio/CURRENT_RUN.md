@@ -1,5 +1,5 @@
 # Pixel Animation Studio current run
 
-Run: [Offline sprite-grid inspection](runs/2026-11-02-sprite-grid-audit.md)
+Run: [Offline sprite transparency pass](runs/2026-11-02-sprite-transparency-pass.md)
 
-Status: complete. Independent character-edge measurements support an apparent32x64 lattice (22.75px cells, origin-4/0, horizontal crop4px each side). Exact flat-cell recovery fails; approximate32x64 reconstruction preserves readable identity without redesign. Labelled native/8x diagnostics and metrics at Pixel-Animation-Studio/output/sprite-grid-audit-2026-11-02/. Opaque checkerboard/glow remain; not proof of native authoring or reliable generation. Original hash unchanged, new cost0, no provider/runtime/credential access. No ongoing execution. Further recovery/transparency work only if requested; delivery receipts in run/host history.
+Status: complete. Transparent32x64 reconstructed sprite at Pixel-Animation-Studio/output/sprite-transparency-2026-11-02-v3/native-32x64.png with8x/light-dark previews and explicit mask decisions.1204transparent/844opaque, binary alpha,RGBunchanged,original hashes preserved. IndependentQA/2focusedtestsPASS. One warm lantern-edge pixel(24,33) retained and flagged for user review. No API/model spending or private-state access; prior0.079371 unchanged. Await user visual review before broader harness packaging/further sizes; no ongoing execution. Delivery receipts in run/host history.
