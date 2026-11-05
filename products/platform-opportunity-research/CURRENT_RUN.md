@@ -1,3 +1,3 @@
 # Current platform opportunity research run
 
-Read [Singapore SME distribution](runs/2026-11-05-singapore-sme-distribution.md). Research-only assessment of a segment-specific product and proposed email channel. Buyer-led buying clubs are off the shortlist; no product selected or outreach authorised.
+Read [Singapore owner time and affordable software](runs/2026-11-05-sg-solo-processes.md). Research and seven-page PDF complete, reviewed and accepted. The first discovery test is removing unnecessary client follow-up for small digital studios; bookkeeper handoff is the alternative. No paid demand, product selection or outreach. Prior [distribution study](runs/2026-11-05-singapore-sme-distribution.md) remains historical.

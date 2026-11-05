@@ -1,0 +1,18 @@
+<!-- studio {"id":"studio:run:platform-opportunity-research:2026-11-05-sg-solo-processes","scope":"platform-opportunity-research","type":"run","status":"complete"} -->
+# Singapore owner time and affordable software
+
+Goal: research concrete burdens among Singapore sole proprietors and small employer firms, compare products, practical prices and validation. Research only. Earlier dispatch and invoice pitches are not starting assumptions.
+
+- P1 Check business/population definitions, local surveys and firsthand accounts; compare evidence and buyer fit by workflow.
+- P2 Check competitive coverage, low-price economics, owner-time hypothesis, acquisition and falsification.
+- P3 Independent candidate review and concise user-facing findings. No product selection or customer outreach.
+
+Acceptance: separate observed burdens from hypotheses, monthly Singapore dollar price experiments from verified plans, and usable time from hours merely shifted. No blocking question. Builds and paid tests deferred.
+
+P1/P2 findings: ACRA recorded 124,739 live sole proprietorships at 31 March 2026. MOM counted 208,200 resident regular own-account workers in the year ending mid-2025, 179,200 of them primary; SingStat 369,500 SMEs in 2025. Counts describe different units and must not be summed. Reports and anecdotes identify uncertain demand, unclear freelance scope, business paperwork and customer-dependent delays. Directly reviewed providers and local competitors: [Design Magic](https://www.designmagic.com.sg/refunds-policy), [LocalLaunch](https://locallaunch.sg/how-i-work), [Content Snare](https://contentsnare.com/pricing/), [Copycastr](https://www.copycastr.com/about), [TutorDesk](https://tutordesk.app/), [ClassFlo](https://useflo.co/), [Dext](https://help.dext.com/en/articles/416736-how-to-request-paperwork-for-bank-transactions-in-dext), [ScopeGuard](https://scopeguard.io/), [Enterprise Singapore](https://www.enterprisesg.gov.sg/smecentre).
+
+Decision: test affordable, specific changes to how owners collect client decisions in an established digital-services workflow. Working setup inside existing tools is a comparator; a standalone product earns its place only through repeated voluntary paid use. Second discovery option is monthly bookkeeper handoff. Both pricing and any regained leisure time remain hypotheses. Earlier IT dispatch, invoice checker and market-wide buying clubs are excluded. No estimate of commercial incidence or paid demand from legal form or population count.
+
+Route source harness/role-routing.json SHA256 1C46027A5AABE051940D9F912FC39A77D1068F68E6B04FE4BC3DCDF7DA997E3F. Returned agents /root/sg_solo_sales and /root/sg_solo_admin productManager, /root/sg_research_pdf builder, /root/sg_owner_evidence_review qa. All requested gpt-6.1-sol with fork_turns none, reasoning medium except builder low. Host activation unknown. Orchestrator owns continuity. Candidate output under project output/pdf.
+
+P3 complete. Delivered local singapore_sme_owner_time.pdf, 7 pages and 21 source links, SHA-256 697D802ADEAA3D1552A222F3E38D8EE9990C8211619366BD9FAB431D1C55D473. QA verified competing credit-based offers, price arithmetic and final rendering after correcting two pricing fragments; final independent PASS and Orchestrator acceptance. Self-serve price scenarios S$9/project, S$19/solo/month, S$49/team/month, optional S$79 single setup; explicitly untested. Source counts do not estimate paying market size. Next action, if requested, compare a configured existing process against the proposed approach in paid repeat use. No interviews, outreach, purchase or product implementation undertaken.
