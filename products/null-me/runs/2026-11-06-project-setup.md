@@ -27,5 +27,17 @@ SHA-256 2A06A30F4160BDECC712E4CCBAB33C56005801C37669A18F28C5C10662DC4966.
 Only known setup records and four generated runtime files also exist.
 No Git workspace or remote was created locally.
 
-Status: setup in progress. Questions: none. Deferred: website design/build and
-its repository/hosting setup until requested. Next: scoped cleanup and verification.
+Outcome: complete. The 35 unchanged setup files plus the known local continuity
+records and four generated runtime files were removed. Cleanup verified absolute
+paths remain inside the named Portfolio workspace, checked hashes, rejected
+unrelated files and linked paths, and removed only empty directories afterward.
+Final directory inventory: Portfolio contains only null.me/; null.me contains only
+its project-specific AGENTS.md. No copied harness or old products remain.
+
+Orchestrator accepts this administrative setup based on the verified inventory;
+no application implementation or tests were needed. The local project instruction
+file refers to the canonical GitHub harness and products/null-me/ continuity.
+
+Status: complete. Questions/blockers: none. Deferred: website design/build and
+its application repository/hosting setup until requested. Next: define the website
+experience with the user. No local or hosted website has been built or deployed.
