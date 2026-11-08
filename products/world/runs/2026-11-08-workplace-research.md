@@ -1,0 +1,25 @@
+<!-- studio {"id":"world:run:2026-11-08-workplace-research","scope":"world","type":"run","status":"complete"} -->
+# Agent workplace research: feasibility, viability and desirability
+
+## Goal and authority
+User requests deep research and agent discussion on how to tackle the agent workplace direction: technical feasibility, business viability and technology desirability. Fixed approved boundary: no agent runtime or KMS; similarity to competitors is acceptable. Research, synthesis and recommendations only. No implementation, customer outreach, purchases, paid provider calls, live service changes or deployment. Preserve all existing application/data/financial/privacy constraints.
+
+## Tasks and acceptance
+- R1 Technical Specialist: complete. Standards/integration/enforcement feasibility and build-versus-reuse, primary sources, bounded architecture/proof recommendations.
+- R2 Product Manager: complete. Competitors, buyer/use case, commercial model, evidence limits and validation economics.
+- R3 Designer: complete. Employer/employee/developer desirability, adoption friction and service journey; evidence-backed product priorities.
+- R4 Root: complete. Triangulated sources, cross-discipline challenge and consolidated AGENT_WORKPLACE_RESEARCH.md with phased recommendations.
+- R5 Independent reviewer: PASS with no material corrections; eight critical primary-source areas and arithmetic independently checked. Root accepted report as research, not approval of its proposed product choices; scoped studio delivery verified in host history.
+Acceptance: address all three requested lenses, separating evidence from hypotheses; source and date important external claims; distinguish documented offerings from verified operations/adoption. Include direct competition without novelty bias, real integration/enforcement limits, recommended first segment/job, technology decisions/tradeoffs, cost/revenue assumptions and validation/stop criteria. Explain how agent discussion changed the recommendation. No universal compatibility/control guarantees or invented customer demand. A research recommendation does not approve a build or revise open product choices.
+
+## Decisions, questions and deferred work
+Approved boundaries remain in PRODUCT_DECISIONS.md#world:req:workplace-boundary and World-Rebuild/AGENTS.md. Desirability covers both employer/employee needs and willingness to adopt the technology/integration approach. Singapore is an accessible research context, not an approved exclusive market; geography/segment/MVP remain proposed. No blocking question before desk research. Interviews, empirical integrations, security assurance, production architecture validation and spending deferred until separately scoped.
+
+## Handoff
+Technical, PM and Designer research/discussion complete. Root consolidated AGENT_WORKPLACE_RESEARCH.md: recommended company-managed mixed-runtime internal handoff, evaluated gateway/IdP reuse, explicit source adapter and mediated-only enforcement, distinct credential/mandate/compatibility/reachability states, competition/business assumptions, phased validation and stop criteria. No dependency/version/MVP/buyer/pricing approved by research. Current Mastra docs say A2A0.3 while ADK supports relevant SDK0.3/1 with experimental caveats; a named pinned proof is required. No empirical compatibility or production security claim.
+
+Discussion changed the recommendation: personal BYOA payer/privacy challenges favor managed endpoints first; lookup-only proxy is insufficient A2A value; offline queues dropped from initial scope because uncertain redelivery complicates transport guarantees; pre-disclosure approval and source entitlements need explicit enforcement rather than gateway label. No runtime/KMS expansion.
+
+Dispatch receipts: /root/workplace_technical_research (technicalSpecialist), /root/workplace_business_research (productManager), /root/workplace_desirability_research (designer), /root/workplace_report_review (qa). Each requested gpt-6.1-sol / medium / fork none under SHA256 1C46027A5AABE051940D9F912FC39A77D1068F68E6B04FE4BC3DCDF7DA997E3F, roles read before dispatch. Actual activation/token/cost unknown. Specialist findings returned in chat; root owns this consolidation.
+
+Final independent review PASS: verified Mastra, ADK, agentgateway argument authorization/release, Microsoft licensing, AgentMesh suite/buying and Agen pricing; report economics calculations correct. Root accepts research completeness/source support and scope fidelity. Whitespace check passed; no application tests applicable. No blocking questions. Customer demand, actual compatibility, tested enforcement/security, measured operating cost and chosen MVP/price remain unvalidated. Next recommended product action is bounded problem discovery plus isolated interoperability/enforcement proof, not broad platform implementation. No outreach, purchases or live providers active. Only report, this record and CURRENT_RUN.md are eligible for studio delivery to verified JKay93/Product-Studio-v2; MyWorld and all services/data unchanged.
