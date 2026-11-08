@@ -13,7 +13,13 @@ The technology is sufficiently established to justify an integration proof. The 
 | Business viability | Worth testing; no validated revenue or demand for this offering | An accessible buyer has a recurring handoff, can authorize both endpoints, and will pay enough to cover integration and support |
 | User and technology desirability | Strong conditional rationale for managed mixed-runtime teams; personal BYOA remains less certain | Users retain their working tools, understand permissions, and prefer the complete experience to their current workaround |
 
-This assessment combines current public sources with independent technical, business and design research and discussion. No customers were interviewed, competitor products operated, integration proof executed or production security assessed. Product documentation establishes documented capabilities, not independently verified performance or adoption. Numerical commercial scenarios and validation thresholds below are proposed decision tools.
+The original 8 November assessment combined public sources with independent technical, business and design research and discussion. At that point no customers were interviewed, competitor products operated, integration proof executed or production security assessed. The following update records subsequent execution evidence. Product documentation establishes documented capabilities, not independently verified performance or adoption. Numerical commercial scenarios and validation thresholds below remain proposed decision tools.
+
+### Technical evidence added 9 November 2026
+
+Subsequent isolated execution demonstrated Mastra1.80.0 to Google ADK2.14.0 over A2A0.3.0 using deterministic model fixtures: twelve integration scenarios and seven authority test groups passed, including source-boundary revocation/expiry and no automatic resend after interruption. This establishes the tested SDK/transport/control combination, not live model quality or production security.
+
+The user's OpenClaw2026.9.3 on Hetzner passed SSH, OAuth-only model-route/zero-tool policy preflight and a zero-inference native preparation diagnostic. Two bounded CLI attempts produced no verified model/echo success; the second returned a native error with zero tool calls. That integration remains unverified, with execution closed after two attempts. Existing gateway configuration/service and installed source were preserved. These observations support runtime-specific tested contracts rather than universal compatibility claims. See [OpenClaw proof run](runs/2026-11-09-openclaw-proof.md) and [two-framework proof](runs/2026-11-09-workplace-proof.md). The analysis below retains its 8 November source date; new execution evidence does not establish customer demand.
 
 ## 1 The product responsibility
 
