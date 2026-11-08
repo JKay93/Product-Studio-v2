@@ -1,6 +1,12 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Isolated two runtime proof — 9 November 2026 [world:req:workplace-proof]
+
+User approves a technical proof using two existing agent runtimes with fictional data to test handoff, permissions and revocation, with agent collaboration. Keep no-runtime/no-KMS boundary: maintained frameworks execute their own agents; our proof contains only transport adapters, authorization/approval/revocation and evidence. Isolate it in World-Rebuild/proofs/workplace without modifying the existing app, data or services. Deterministic native model fixtures may prove execution/transport but must not be presented as actual model inference or business-quality validation.
+
+User offers existing OpenClaw with Codex subscription for a supported connection; first establish installed location/version and prepare a bounded test. Do not extract/copy subscription tokens, alter existing configuration/services, reuse provider keys, make paid API calls, enable billing, purchase or deploy. Preserve all reference checkouts and financial records. Exact runtime/SDK versions and compatibility results are proof evidence rather than a production stack decision. See [proof run](runs/2026-11-09-workplace-proof.md).
+
 ## Workplace boundary — 8 November 2026 [world:req:workplace-boundary]
 
 Approved user boundary: do not turn the product into another agent runtime or KMS. The user accepts similarity to existing companies; competitors are evidence of an established category, not an automatic reason to abandon it or broaden scope. Competitor existence alone does not prove adoption, demand or willingness to pay for our particular offering.
