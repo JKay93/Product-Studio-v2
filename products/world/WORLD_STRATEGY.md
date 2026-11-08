@@ -1,6 +1,14 @@
 <!-- studio {"id":"world:strategy:rebuild","scope":"world","type":"strategy","status":"proposed"} -->
 # World product strategy and delivery plan
 
+## Current direction notice — 8 November 2026
+
+The founder has approved a firm boundary: the product must not become another agent runtime or knowledge management system. Similarity to existing competitors is acceptable and is not itself a reason to change direction. The working framing is identity and company-authorized collaboration around existing agents; the precise MVP and commercial/technical choices remain to be scoped. See the authoritative [workplace boundary decision](PRODUCT_DECISIONS.md#workplace-boundary--8-november-2026-worldreqworkplace-boundary) and [current run](CURRENT_RUN.md).
+
+The 29 October strategy below is retained as historical context for World-Rebuild. Its recommendations to expand our own assistant runtime, Knowledge authoring or document workspace are superseded where they conflict with this boundary; they are not the next delivery plan. Existing delivered functionality, data and safeguards remain preserved. This notice authorizes no implementation, removal, migration, spending, outreach or deployment.
+
+---
+
 Version 1.1 · 29 October 2026 · Applies to World-Rebuild only
 
 **World should help a small business complete repeatable knowledge work using its own information, templates and operating rules, through one accessible assistant.** The customer should spend less time preparing and checking work without losing control over company decisions. The underlying runtime is a means to that outcome, not the product we sell.
