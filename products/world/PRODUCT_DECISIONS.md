@@ -1,6 +1,12 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+## Company-funded BYOA work — 10 November 2026 [world:req:company-funded-work]
+
+Latest user clarification, read from updates to "Building An Email Service" and followed by an explicit test request here: independently operated agents join company work with organizational identity, governed collaboration and direct company-funded supported model usage. Personal work remains personally funded. Reimbursement is an optional fallback, not the primary implementation of company funding. Agent Passport begins with agent/owner identity and separate current company mandate; portable work credentials remain later scope.
+
+Reuse existing runtimes and an existing funding gateway. User names OpenRouter for the next isolated OpenClaw proof. This supersedes earlier recommendations to exclude employer inference funding from the initial scope, while preserving no-runtime/no-KMS/no-model-hosting/no-custom-router boundaries. One supported runtime/provider/funding route is sufficient for the first funding proof; universal subscription portability is not claimed. No company/personal billing switch, budget assurance or runtime compatibility is considered proven by the prior communication proof. This direction does not authorize paid calls, inherited keys, new billing or account changes without a fresh designated funding source and explicit cumulative spending cap. See [funding proof run](runs/2026-11-10-company-funding.md).
+
 ## Isolated two runtime proof — 9 November 2026 [world:req:workplace-proof]
 
 User approves a technical proof using two existing agent runtimes with fictional data to test handoff, permissions and revocation, with agent collaboration. Keep no-runtime/no-KMS boundary: maintained frameworks execute their own agents; our proof contains only transport adapters, authorization/approval/revocation and evidence. Isolate it in World-Rebuild/proofs/workplace without modifying the existing app, data or services. Deterministic native model fixtures may prove execution/transport but must not be presented as actual model inference or business-quality validation.

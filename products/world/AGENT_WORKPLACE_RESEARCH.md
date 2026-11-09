@@ -3,6 +3,8 @@
 
 8 November 2026 · Founder decision report · Recommendations for validation
 
+10 November direction update: the founder includes company-funded approved model usage in the initial BYOA goal. Use existing gateways and supported runtime integrations; personal usage stays self-funded. This supersedes the original funding exclusion below. Reimbursement is a fallback. Current proof: native OpenClaw through hosted OpenRouter, with fresh sponsor credentials and spending authority still pending. See [approved decisions](PRODUCT_DECISIONS.md) and [funding run](runs/2026-11-10-company-funding.md). Communication/permission proofs do not establish funded usage or cost attribution.
+
 **Pursue a bounded validation of company-authorized collaboration between existing agents. Start with one company, two already useful agents in different runtimes, and one recurring handoff. Keep execution, model choice and company knowledge in their existing systems.**
 
 The technology is sufficiently established to justify an integration proof. The business case is plausible but not established. Desirability depends on completing useful work with less permission chasing and integration effort; an agent registry alone is unlikely to demonstrate that value. Similarity to AgentMesh and other competitors is acceptable. We need a reason for a particular customer to choose us, without inventing a new category or expanding into a runtime or KMS.
@@ -37,7 +39,7 @@ The product establishes who may participate and mediates specified interactions.
 | Mediation of supported A2A requests and governed resource/tool access | Business source records and their underlying access rules |
 | Records of what crossed our boundary and what was reported back | Responsibility for agent output quality and independently controlled business effects |
 
-Do not add a chat suite, workflow canvas, agent marketplace, knowledge editor, model router, employer inference billing or portable reputation score to make the first product look complete. Necessary identity, policy, approval and audit storage is part of the service, not a KMS. A request/status ledger is part of communication accountability, not authority to build autonomous scheduling.
+Do not add a chat suite, workflow canvas, agent marketplace, knowledge editor, model router, proprietary billing engine or portable reputation score to make the first product look complete. Company-funded approved inference should reuse an existing gateway and supported runtime route. Necessary identity, policy, approval and audit storage is part of the service, not a KMS. A request/status ledger is part of communication accountability, not authority to build autonomous scheduling.
 
 Agent Passport can begin as a stable identifier with owner, issuer, current company mandate and credential status. Portable professional history is a later issuer-and-trust problem. A signature does not establish competence or the truth of a work claim; changing the model, tools or instructions can also change performance. W3C Verifiable Credentials provides a possible representation for signed claims, not a complete authorization or reputation system. [W3C VC Data Model 2.0](https://www.w3.org/TR/vc-data-model-2.0/)
 
@@ -240,7 +242,7 @@ Test a company/workspace subscription with defined included agents, integrations
 
 A per-agent component may be understandable, but key rotation and redeployment must not arbitrarily inflate counts. An active governed registration tied to a responsible owner and endpoint is a starting definition to test. A workspace base absorbs fixed tenancy/support costs. Do not charge for an unlimited-control promise that cannot be enforced.
 
-The customer's existing runtime/provider continues to bear inference costs. A gateway's record of a request does not transfer an employee's subscription or provider bill to the employer. Employer inference sponsorship is excluded initially because it would add metering, billing and runtime-specific commercial dependencies.
+Original 8 November funding recommendation, superseded on 10 November: employer inference sponsorship was excluded initially. The approved direction now includes sponsor-funded model usage through an existing gateway, separately from personal usage. A gateway request record does not transfer an employee's subscription or bill: the supported work route must actually use the designated sponsor credential, and reported cost must be reconciled separately from estimates and uncertain outcomes.
 
 ### Illustrative economics rather than a forecast
 
@@ -303,4 +305,4 @@ Stop or narrow if customers have no repeated cross-agent job, cannot control byp
 
 The preferred next commitment is **customer problem discovery plus an isolated interoperability/enforcement proof**. It is premature to fund a broad workplace platform, but the evidence is sufficient to investigate a focused product. Keep the approved no-runtime/no-KMS boundary as a feature filter throughout.
 
-Open founder choices are the first reachable customer cohort, the single handoff, acceptable deployment/data path, and the next bounded research/proof budget. Technology choices should follow the pinned proof; pricing should follow buyer and support evidence. Portable professional credentials, personal-device connectors, cross-company federation and employer inference billing remain sequenced possibilities rather than first-release requirements.
+Open founder choices are the first reachable customer cohort, the single handoff, acceptable deployment/data path, and the next bounded research/proof budget. Technology choices should follow the pinned proof; pricing should follow buyer and support evidence. Portable professional credentials, personal-device connectors and cross-company federation remain sequenced possibilities. Company-funded supported usage is now part of the initial goal; the funded OpenRouter proof still needs its designated sponsor credential, model and cumulative cap.
