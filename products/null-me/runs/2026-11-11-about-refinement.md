@@ -13,3 +13,6 @@ Builder npmcheck0diagnostics/6testsPASS; staticbuildPASS; diffcheckPASS. Actual 
 Rest underline112.188px, arrow none; keyboardfocus underline151.387px/arrowtranslate4px/inkoutline,44pxheight. Aboutactive/dotink. Mobile390singlecol330.2px,lead18px;320no textoverflow;home320nooverflow,gap16,exacttaglineandinkdot. Explorelink navigated realProjects emptycollection and returned. Reducedmotion andfutureapp-link styles verifiedsource; actualpointerhover not separately exercised (same CSS state as keyboardfocus). Actual200%zoom remains launchverification limitation.
 Committed/pushed472b717c3e5d6778ee132f40aaea035b0120b4b9 to JKay93/portfolio main,remoteverified/localclean.
 Preview http://127.0.0.1:4321/about/ retained in visibleIABtab5 markedDeliverable;viewportreset;existinglocalserverretained. No publicdeployment. No blockers/questions. Next:userreview; futurehosting/domain/contact andactualzoomverification beforelaunch.
+
+## User correction — coral brand dots
+Reopened: user clarified dots must remain coral as brand accents; sparse coral also applies to primary app actions. Restore headline and favicon dots #E86645, retain charcoal nav/secondary links/focus and accessible app-link #BA492E. Update canonical guidance, inspect built desktop/mobile colours, independent review and repository delivery. No layout/copy changes. Root owns records/AGENTS.
