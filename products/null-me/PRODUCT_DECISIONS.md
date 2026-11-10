@@ -1,25 +1,16 @@
 <!-- studio {"id":"null-me:decision:product","scope":"null-me","type":"decision","status":"approved"} -->
-# null.me approved direction
+# Jaykay.space approved direction
 
-User-approved scope through 7 November 2026:
-- null.me is the studio website and home for future ideas/releases.
-- Main domain paths, including project detail slugs, use Astro with TypeScript.
-- React components may supply interactive pieces of the main site.
-- Each independent application may live on its own subdomain and use React with
-  its own framework, backend, codebase and deployment selected for that product.
-- Journey: landing page > select project > description, status and metrics >
-  Go to app > independent subdomain application.
-- Main website stays minimal, simple and easy to navigate.
-- The earlier studio's scrapped products are excluded.
-- Canonical shared harness and project continuity stay in Product-Studio-v2 on
-  GitHub. Application folder is Portfolio/null.me, an explicit location exception.
-- Main website source destination is private JKay93/portfolio, supplied by user.
-  Accepted work is delivered under standing repository authority.
+User-approved scope through 10 November 2026:
+- Renamed from null.me to Jaykay.space. A personal playground for Jing Kang's unusual projects with a studio feel; also supports portfolio use. Domain not yet purchased/verified. Earlier proposed jaykay.null.me portfolio is superseded by the new umbrella direction; no separate portfolio build requested now.
+- Single-screen landing at ordinary viewport sizes; small jaykay.space top-left, Projects/About/Contact top-right, centred Jaykay. with coral dot. Exact tagline: Unconventional ideas. Real products. Tight gap, no Projects by Jing Kang attribution line.
+- Funnel Display hero and Geist supporting text/navigation. Canvas#F4F2ED, ink#171717, accent#E86645, decorative divider#DAD7D0. User clarified navigation is coloured TEXT, no background highlight/underline; old exploration records showing fills are superseded. Readable tonal adjustment for small text is delegated implementation detail.
+- Projects/About/Contact are ordinary navigable pages. Contact explicitly placeholder until user provides destination. No fake email, form submission or profile link. No real projects yet; honest empty collection.
+- Main domain paths including project detail slugs use Astro/TypeScript, React islands only as needed. Independent subdomain applications may use React/own backend/codebase/deployment.
+- Journey: landing > project collection/details/status/metrics > Go to app > subdomain application.
+- Minimal, simple navigation; user-facing home targets no scrolling, but allow overflow for accessibility/small screens. Other pages scroll normally.
+- Earlier studio scrapped projects excluded. Never invent launches/users/metrics/testimonials/screenshots or domain ownership.
+- Canonical harness/continuity stay Product-Studio-v2 on GitHub. Keep legacy continuity slug products/null-me and folder Portfolio/null.me for now; do not duplicate/move merely for branding.
+- Main source destination private JKay93/portfolio. Accepted work delivered under standing repository authority.
 
-Current slice: set up runnable main-web foundation, developer commands and
-project content/routing infrastructure. No real release content or metrics
-sources have been supplied; preserve honest empty states. This is not permission
-to invent products, users, metrics, testimonials, screenshots or launch status.
-Domain ownership, hosting, analytics, live metrics, accounts/databases and actual
-subdomain app builds are unselected. No deployment or paid service is part of
-this foundation setup. Subsequent branding/content remains open.
+Current slice: implement visual design, functional navigation, local desktop/mobile verification and show live preview. User intends domain purchase tonight; hosting/public launch remain subsequent, not selected. No paid services/accounts/databases/analytics or actual independent apps part of this slice.
