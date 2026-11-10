@@ -14,3 +14,6 @@ User-approved scope through 10 November 2026:
 - Main source destination private JKay93/portfolio. Accepted work delivered under standing repository authority.
 
 Current slice: implement visual design, functional navigation, local desktop/mobile verification and show live preview. User intends domain purchase tonight; hosting/public launch remain subsequent, not selected. No paid services/accounts/databases/analytics or actual independent apps part of this slice.
+
+## Approved audit refinements — 10 November 2026
+User accepted evidence-based design-system audit and requested implementation. Canonical application docs/design-system.md replaces earlier exploratory specimen. Hero/tagline gap20px desktop/16px at<=600px; active navigation uses Geist600 alongside readable coral, other nav500, nofilledhighlight/underline. Semantic spacing roles clarify relationships; retain optical exceptions and chosen Funnel/Geist pair. Original decorative coral stays fordot;#BA492E interactive text. Normal one-screenhome permitsoverflow foraccessibility. No brand/content scopechanges.
