@@ -1,6 +1,8 @@
 <!-- studio {"id":"world:research:agent-workplace","scope":"world","type":"research","status":"proposed","links":[{"relation":"requires","target":"world:decision:product"}]} -->
 # Agent workplace feasibility viability and desirability
 
+Historical World-scoped copy. Active research context and subsequent direction now belong to [Mesh research](../mesh/RESEARCH.md), following the user's explicit separation request on 10 November 2026. Do not continue Mesh implementation in World-Rebuild.
+
 8 November 2026 · Founder decision report · Recommendations for validation
 
 10 November direction update: the founder includes company-funded approved model usage in the initial BYOA goal. Use existing gateways and supported runtime integrations; personal usage stays self-funded. This supersedes the original funding exclusion below. Reimbursement is a fallback. Current proof: native OpenClaw through hosted OpenRouter, with fresh sponsor credentials and spending authority still pending. See [approved decisions](PRODUCT_DECISIONS.md) and [funding run](runs/2026-11-10-company-funding.md). Communication/permission proofs do not establish funded usage or cost attribution.

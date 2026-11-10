@@ -1,6 +1,8 @@
 <!-- studio {"id":"world:decision:product","scope":"world","type":"decision","status":"approved"} -->
 # World product decisions
 
+Mesh separation, 10 November 2026: agent-mesh decisions and active work now belong to [Mesh](../mesh/PRODUCT_DECISIONS.md), at the user's explicit request. Workplace/funding entries below are retained as historical direction records; they do not require reusing the World application or its architecture for Mesh.
+
 ## Company-funded BYOA work — 10 November 2026 [world:req:company-funded-work]
 
 Latest user clarification, read from updates to "Building An Email Service" and followed by an explicit test request here: independently operated agents join company work with organizational identity, governed collaboration and direct company-funded supported model usage. Personal work remains personally funded. Reimbursement is an optional fallback, not the primary implementation of company funding. Agent Passport begins with agent/owner identity and separate current company mandate; portable work credentials remain later scope.

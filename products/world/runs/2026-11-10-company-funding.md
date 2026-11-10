@@ -1,5 +1,7 @@
-<!-- studio {"id":"world:run:2026-11-10-company-funding","scope":"world","type":"run","status":"active"} -->
+<!-- studio {"id":"world:run:2026-11-10-company-funding","scope":"world","type":"run","status":"superseded"} -->
 # Company-funded OpenClaw usage through an existing gateway
+
+Transferred to [Mesh's own product/run](../../mesh/runs/2026-11-10-mesh-separation.md) at the user's explicit request on 10 November 2026. This is historical continuity, not an active World implementation. The new user-designated key authenticated200 after source confirmation; no paid inference occurred and USD0 authority remains. Mesh/AGENTS.md and products/mesh govern future work; old proof histories/gates stay preserved and closed.
 
 Goal: test approved company-funded inference with native OpenClaw, personal usage separate, existing setup untouched, no runtime/KMS. User names existing OpenRouter access. Company funding is core BYOA scope; employee reimbursement is a fallback, not the intended funding mechanism. Prior collaboration proof is complete at MyWorld f03756520df16b5744b8634da9310579aff9902c/studio3171eae62a560f527bde4ea28554edded869d1bb, all gates closed; its nine attempts and unknown usage remain preserved.
 
