@@ -17,3 +17,6 @@ Current slice: implement visual design, functional navigation, local desktop/mob
 
 ## Approved audit refinements — 10 November 2026
 User accepted evidence-based design-system audit and requested implementation. Canonical application docs/design-system.md replaces earlier exploratory specimen. Hero/tagline gap20px desktop/16px at<=600px; active navigation uses Geist600 alongside readable coral, other nav500, nofilledhighlight/underline. Semantic spacing roles clarify relationships; retain optical exceptions and chosen Funnel/Geist pair. Original decorative coral stays fordot;#BA492E interactive text. Normal one-screenhome permitsoverflow foraccessibility. No brand/content scopechanges.
+
+## About page — 10 November 2026
+User requested an About page about Jaykay.space, informed by minimal website references. Keep focus on the space's ideas, experiments and products rather than a personal resume. Delegated initial implementation uses an editorial headline and offset short introduction, brief independent-maker credit and Projects link. No invented achievements, client services, team or releases. Initial design delivered for user review, not a claim of explicit approval of every copy/layout detail.
