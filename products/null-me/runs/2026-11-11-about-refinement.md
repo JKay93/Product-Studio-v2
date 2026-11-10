@@ -1,0 +1,7 @@
+<!-- studio {"id":"null-me:run:2026-11-11-about-refinement","scope":"null-me","type":"run","status":"draft"} -->
+# About copy and restrained interaction
+Goal: implement user-selected Curiosity takes shape. headline, improve The space copy, and implement discussed charcoal underline/arrow action state. Reserve coral for app-launch primary actions; ordinary nav/links/focus/decorative dots use primary palette.
+Tasks: R1 Builder copy/interaction/tokens/docs; R2 independent review; R3 root responsive/link/focus preview verification; R4 accepted source delivery and handoff.
+Acceptance: exact About headline, concise original site-focused copy, real Projects link with right arrow/underline extension/small arrow shift and reducedmotion support, charcoal nonprimary interactions and visible focus, app-link uses accessible coral, no fabricated app/products. Fonts/layout/mainhome tagline unchanged. npmcheck/build, independentreview, actualresponsiveinspection,Git remoteverification.
+Authority: user explicitly choseheadline and requested sectionrewrite/buttonstate following sparingcoral discussion. No deployment/new spending. Baseline b49cff2. Root ownsrecords/AGENTS; routing77d3fc3b200a99e66f1b17bebd1dd67d2889f354 builderlow/qa medium,gpt-6.1-sol/forknone,actualactivation/token/costunknown.
+Status active. No questions. Existingcapturefailure/200%zoomlimits to re-evaluate wherepossible; hosting/contact deferred.
