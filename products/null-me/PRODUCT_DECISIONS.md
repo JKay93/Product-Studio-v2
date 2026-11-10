@@ -1,10 +1,10 @@
 <!-- studio {"id":"null-me:decision:product","scope":"null-me","type":"decision","status":"approved"} -->
 # Jaykay.space approved direction
 
-User-approved scope through 10 November 2026:
+User-approved scope through 11 November 2026:
 - Renamed from null.me to Jaykay.space. A personal playground for Jing Kang's unusual projects with a studio feel; also supports portfolio use. Domain not yet purchased/verified. Earlier proposed jaykay.null.me portfolio is superseded by the new umbrella direction; no separate portfolio build requested now.
-- Single-screen landing at ordinary viewport sizes; small jaykay.space top-left, Projects/About/Contact top-right, centred Jaykay. with coral dot. Exact tagline: Unconventional ideas. Real products. Tight gap, no Projects by Jing Kang attribution line.
-- Funnel Display hero and Geist supporting text/navigation. Canvas#F4F2ED, ink#171717, accent#E86645, decorative divider#DAD7D0. User clarified navigation is coloured TEXT, no background highlight/underline; old exploration records showing fills are superseded. Readable tonal adjustment for small text is delegated implementation detail.
+- Single-screen landing at ordinary viewport sizes; small jaykay.space top-left, Projects/About/Contact top-right, centred Jaykay. with ink dot. Exact tagline: Unconventional ideas. Real products. Tight gap, no Projects by Jing Kang attribution line.
+- Funnel Display hero and Geist supporting text/navigation. Canvas#F4F2ED, ink#171717, accent#E86645, decorative divider#DAD7D0. Navigation uses the primary ink palette with a heavier current-page weight, no background highlight/underline. Coral is reserved for primary app-launch actions. Earlier coral navigation/decorative-dot rules are superseded.
 - Projects/About/Contact are ordinary navigable pages. Contact explicitly placeholder until user provides destination. No fake email, form submission or profile link. No real projects yet; honest empty collection.
 - Main domain paths including project detail slugs use Astro/TypeScript, React islands only as needed. Independent subdomain applications may use React/own backend/codebase/deployment.
 - Journey: landing > project collection/details/status/metrics > Go to app > subdomain application.
@@ -20,3 +20,6 @@ User accepted evidence-based design-system audit and requested implementation. C
 
 ## About page — 10 November 2026
 User requested an About page about Jaykay.space, informed by minimal website references. Keep focus on the space's ideas, experiments and products rather than a personal resume. Delegated initial implementation uses an editorial headline and offset short introduction, brief independent-maker credit and Projects link. No invented achievements, client services, team or releases. Initial design delivered for user review, not a claim of explicit approval of every copy/layout detail.
+
+## About headline and interactions — 11 November 2026
+User selected exact About headline "Curiosity takes shape." and requested improved The space copy and the discussed Explore projects state. Secondary action: charcoal text, fine underline at rest that extends toward a right arrow on hover/focus; arrow moves slightly, with movement disabled for reduced motion. Ink focus outline remains visible. Reserve coral for primary app-launch actions such as Go to app; ordinary navigation, secondary links and decorative dots use primary colours. This supersedes earlier coral navigation/heading dot use. Keep the homepage tagline "Unconventional ideas. Real products." unchanged.
