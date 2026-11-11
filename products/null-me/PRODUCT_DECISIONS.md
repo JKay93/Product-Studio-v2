@@ -65,3 +65,6 @@ User approves trying proposed Josue-inspired composition while keeping Clash/Gei
 
 ## Clarification: Josue reference concerns writing only — 12 November 2026
 User explicitly says not to change layout or anything, and that Josue was an example of how he wrote About me. Supersedes the interpreted expressive layout direction above. Restore existing portfolio layout/rotating titles/header/fonts/colours/section composition. Limit this revision to wording in existing About me paragraph. No oversized static statement or two-column introductory redesign. User's factual journey: sole frontend developer at NavDeck, expanded into UI/UX then product management; values interacting with users and solving problems. Earlier expressive candidate was uncommitted and discarded.
+
+## Portfolio About typography hierarchy — 12 November 2026
+User requests preview matching main About hierarchy within existing layout: larger opening sentence using shared editoriallead22px desktop/18pxmobile, supportingbody16px and shared24pxparagraphgaps. No needless attribution. Existing rightcopycolumn, leftAboutlabel, header/rotatingtitles/grid remain. Wording lead establishesPM/development/design, body explains journey/userproblem interest, closingJaykaylink. Applies to About only, not Contact.
