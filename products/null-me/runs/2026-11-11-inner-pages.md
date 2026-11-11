@@ -1,0 +1,10 @@
+<!-- studio {"id":"null-me:run:2026-11-11-inner-pages","scope":"null-me","type":"run","status":"draft"} -->
+# Consistent inner-page layout
+Goal: make Playground and Contact share the About page's editorial layout, with short new headlines in code.
+User explicitly requests matching layout including Contact, replacing rejected what-ifs tagline, short enough for large type. Delegated proposed copy: Playground "Ideas in play."; Contact "Say hello." Keep About exact "Curiosity takes shape.".
+Tasks I1 Builder shared inner-page composition/content; I2 root desktop/mobile visual verification; I3 independent QA; I4 accepted repository delivery.
+Acceptance: all three use same eyebrow, two-line Funnel h1/coral final dot, max1040 container, page padding, 64px desktop/40px mobile hero-to-divider gap and split section (small left label, right content up to560px; <=600px stack). Playground label Playground/headline Ideas / in play., section The collection, honest empty content, existing dynamic list/routes; Contact label Contact/headline Say / hello., section Get in touch, honest contact placeholder and existing home link. Remove old what-ifs headline/intro/metadata. Shared reuse preferred to future drift; About visual/content/action unchanged. Keep homepage/fonts/navcoralhover/routes/data/assets/contact authority. No fictionalitems,newdeps,forms,externalcontacts,hosting or galleryanimation scope.
+Checks npmcheck/build, diffcheck, desktop and390/320 mobile screenshots/reflow, active nav and links. No new literal-copy tests.
+Baseline clean7652ddf2e963ac7d9647dee2fdc824051ecd813b main JKay93/portfolio. Existing preview4321 available; embedded userpointer issue confirmed externalbrowserworks, do not claimrepair. Root can inspect rendered via supportedIAB tools.
+Routing77d3fc3b200a99e66f1b17bebd1dd67d2889f354 Buildergpt-6.1-sol/low/forknone and QAgpt-6.1-sol/medium/forknone; actualactivation/token/costunknown. Root owns records/AGENTS; accepted work commit/push authorized, no deployment.
+Status active. Questions none. Deferred realcontent/art/motiongallery,portfoliosubdomain,hosting/contactdestination.
