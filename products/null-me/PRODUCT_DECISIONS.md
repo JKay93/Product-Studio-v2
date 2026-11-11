@@ -2,10 +2,10 @@
 # Jaykay.space approved direction
 
 User-approved scope through 11 November 2026:
-- Renamed from null.me to Jaykay.space. A personal playground for Jing Kang's unusual projects with a studio feel; also supports portfolio use. Domain not yet purchased/verified. Earlier proposed jaykay.null.me portfolio is superseded by the new umbrella direction; no separate portfolio build requested now.
-- Single-screen landing at ordinary viewport sizes; small jaykay.space top-left, Projects/About/Contact top-right, centred Jaykay. with coral dot. Exact tagline: Unconventional ideas. Real products. Tight gap, no Projects by Jing Kang attribution line.
+- Renamed from null.me to Jaykay.space. A personal playground for Jing Kang’s unusual projects with a studio feel. The personal portfolio/case studies will live on a separate subdomain; its name and implementation are deferred. Main About and portfolio About can link between the space and its maker. Domain ownership is not verified.
+- Single-screen landing at ordinary viewport sizes; small jaykay.space top-left, Playground/About/Contact top-right, centred Jaykay. with coral dot. Exact tagline: Unconventional ideas. Real products. Tight gap, no Projects by Jing Kang attribution line.
 - Funnel Display hero and Geist supporting text/navigation. Canvas#F4F2ED, ink#171717, accent#E86645, decorative divider#DAD7D0. Navigation uses the primary ink palette with a heavier current-page weight, no background highlight/underline. Coral is used sparingly for brand dots and primary app-launch actions. Navigation and secondary links stay ink.
-- Projects/About/Contact are ordinary navigable pages. Contact explicitly placeholder until user provides destination. No fake email, form submission or profile link. No real projects yet; honest empty collection.
+- Playground/About/Contact are ordinary navigable pages. Contact explicitly placeholder until user provides destination. No fake email, form submission or profile link. No real projects yet; honest empty collection.
 - Main domain paths including project detail slugs use Astro/TypeScript, React islands only as needed. Independent subdomain applications may use React/own backend/codebase/deployment.
 - Journey: landing > project collection/details/status/metrics > Go to app > subdomain application.
 - Minimal, simple navigation; user-facing home targets no scrolling, but allow overflow for accessibility/small screens. Other pages scroll normally.
@@ -26,3 +26,6 @@ User selected exact About headline "Curiosity takes shape." and requested improv
 
 ## Brand accent clarification — 11 November 2026
 User confirmed restoring the coral headline and favicon dots (#E86645). Treat 60:30:10 as a visual balance guideline, not a literal pixel quota. Keep primary app links readable coral (#BA492E), and navigation/secondary actions/focus charcoal. No other design or copy changes requested.
+
+## Playground and portfolio separation — 11 November 2026
+User chose Playground for the main-site collection, with all things visitors can try together. Products/Experiments tabs and separate sections are superseded. Personal case studies and résumé content belong on a future portfolio subdomain; no subdomain name/setup is approved. The latest request authorizes a revised description directly in code. Bounded implementation uses existing /projects/ paths and honest empty content, naming links/headings Playground. Orchestrator-selected intro within delegated copywriting scope: “A few ‘what ifs’ you can actually try.” Exact wording remains open to user feedback. Existing full hover-preview/expansion design was explored in mockups with fictional items and text-free cover artwork; production gallery interaction/assets and actual content remain deferred. No fictional mockup project may be published as real work.
