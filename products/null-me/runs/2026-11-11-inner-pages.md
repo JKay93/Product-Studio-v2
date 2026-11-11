@@ -1,10 +1,17 @@
-<!-- studio {"id":"null-me:run:2026-11-11-inner-pages","scope":"null-me","type":"run","status":"draft"} -->
+<!-- studio {"id":"null-me:run:2026-11-11-inner-pages","scope":"null-me","type":"run","status":"complete"} -->
 # Consistent inner-page layout
 Goal: make Playground and Contact share the About page's editorial layout, with short new headlines in code.
 User explicitly requests matching layout including Contact, replacing rejected what-ifs tagline, short enough for large type. Delegated proposed copy: Playground "Ideas in play."; Contact "Say hello." Keep About exact "Curiosity takes shape.".
-Tasks I1 Builder shared inner-page composition/content; I2 root desktop/mobile visual verification; I3 independent QA; I4 accepted repository delivery.
+Tasks I1, I2, I3, I4 completed.
 Acceptance: all three use same eyebrow, two-line Funnel h1/coral final dot, max1040 container, page padding, 64px desktop/40px mobile hero-to-divider gap and split section (small left label, right content up to560px; <=600px stack). Playground label Playground/headline Ideas / in play., section The collection, honest empty content, existing dynamic list/routes; Contact label Contact/headline Say / hello., section Get in touch, honest contact placeholder and existing home link. Remove old what-ifs headline/intro/metadata. Shared reuse preferred to future drift; About visual/content/action unchanged. Keep homepage/fonts/navcoralhover/routes/data/assets/contact authority. No fictionalitems,newdeps,forms,externalcontacts,hosting or galleryanimation scope.
 Checks npmcheck/build, diffcheck, desktop and390/320 mobile screenshots/reflow, active nav and links. No new literal-copy tests.
 Baseline clean7652ddf2e963ac7d9647dee2fdc824051ecd813b main JKay93/portfolio. Existing preview4321 available; embedded userpointer issue confirmed externalbrowserworks, do not claimrepair. Root can inspect rendered via supportedIAB tools.
 Routing77d3fc3b200a99e66f1b17bebd1dd67d2889f354 Buildergpt-6.1-sol/low/forknone and QAgpt-6.1-sol/medium/forknone; actualactivation/token/costunknown. Root owns records/AGENTS; accepted work commit/push authorized, no deployment.
-Status active. Questions none. Deferred realcontent/art/motiongallery,portfoliosubdomain,hosting/contactdestination.
+Status complete. Questions none. Deferred realcontent/art/motiongallery,portfoliosubdomain,hosting/contactdestination.
+
+## Accepted result
+Shared src/layouts/InnerPage.astro preserves About’s layout and exact copy; Playground now Ideas / in play., Contact Say / hello. with honest empty/contact placeholders. Design system and local instructions updated. No homepage/global CSS/data changes.
+Builder /root/playground_copy reused requested gpt-6.1-sol low isolated route; independent reviewer /root/review_playground_copy reused requested gpt-6.1-sol medium isolated route. Routing refreshed before followups at recorded SHA. Reviewer PASS, root accepted. Actual model activation/token/cost unavailable.
+Validation: Astro check zero diagnostics, six tests PASS, build five pages, git diff --check PASS. Root rendered all three desktop,390px,320px with no horizontaloverflow; navigation, About explore and Contact home links verified through supported browser controls. Prior user embedded manual pointer issue not claimed repaired. Viewport reset and current Playground preview opened. Initial stale screenshot discarded from delivery; reviewer inspected corrected jaykay-playground-layout-final.jpg plus Contact desktop and Playground mobile.
+Evidence directory C:/Users/jingk/.codex/visualizations/2026/11/06/01a1afff-8abb-7362-ab66-7ba1a582a278/: jaykay-playground-layout-final.jpg, jaykay-contact-layout-desktop.jpg, jaykay-playground-layout-mobile.jpg. Do not use stale jaykay-playground-layout-desktop.jpg.
+Delivery: JKay93/portfolio main 40f3b8f6f7574e7f31e0005187235c3e9b95013d committed/pushed; remote main verified identical and local working tree clean. Local preview http://127.0.0.1:4321/projects/ and /contact/. No hosting/public deployment.
