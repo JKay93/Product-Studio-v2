@@ -1,4 +1,4 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"draft"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
 # Jaykay.space current run
-Active: [Four-font Playground comparison](runs/2026-11-11-inner-pages.md).
-User comparing Space Grotesk, Instrument Sans, Satoshi and Clash Display with Geist elsewhere. Build opt-in DEV preview on actual Playground, no permanent fontchoice; exclude controls/resources from production. Builder active, rootvisualQA and reviewer next. Baseline866a4b61a9079da47822b6b9053eb36fc8c9bee0 clean. Nohosting. Otherapproveddecisions unchanged.
+Completed: [Four-font Playground comparison](runs/2026-11-11-inner-pages.md).
+Preview http://localhost:4321/projects/?font-preview=1 switches Space Grotesk, Instrument Sans, Satoshi, Clash Display h1only; Geistrest. Same500weight/-.03em/40–96px. No permanentfontchoice; normalpagesFunnel600. Fourfontsloaded desktop/mobile320 pluskeyboard; check/build/six tests andindependentQA PASS. Productionexcludespreviewresources. Delivered portfolio/main728e64b951425da422659e864c91f5a76b25e2a6 remoteverifiedclean. Awaituserfontpreference; no requiredworkremaining. No hosting. Otherapproveddecisionsunchanged.
