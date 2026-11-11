@@ -53,3 +53,6 @@ User states 5.5 years as a Product Manager and requests a first visual page befo
 
 ## Portfolio introduction and layout — 11 November 2026
 User accepts Clash Display’s square full stops and requests portfolio layout align with the main website. Approves trying Josue-inspired fixed small greeting with changing large titles. Preview uses Hi, I’m Jing Kang.; Product manager first and Builder alternate, no invented thirdtitle. Fixed PMexperiencecopy remains. Sharedstudioheader/margins/spacing/editoriallabel-copy rows; selectedwork still honestplaceholdercollection. Nativepause/reducedmotion/staticfallback provided. This is a development-only concept, not productionportfolio/subdomain approval.
+
+## Portfolio order and restrained hero — 12 November 2026
+User defers titlewording, requests experiencecopy belong underAboutme, projects lower, removal of previewnotice andpausebutton. Implemented greeting/titleonlyhero > Aboutme > Selectedwork > Contact withnavorderaligned. Experience5.5years statedonce. Explicit pausebutton removal supersedes priorpreviewcontrol. Keeprotation3800ms/400ms and reducedmotion/staticfallback. Individualcase-studyplaceholderlabels stayuntilactualcontent; noprivacy/subdomain/deploymentchanges.
