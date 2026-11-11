@@ -1,4 +1,4 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"in-progress"} -->
 # Jaykay.space current run
-Completed: [Adopt Clash Display](runs/2026-11-11-inner-pages.md).
-Clash Display Medium500 for all headings, Geist elsewhere. Removed font comparison controls and unused Funnel assets. Local fonts with licenses; no external font requests. Check, six tests, build, desktop/mobile inspection and independent QA PASS. Delivered portfolio/main9477327ac197b1cd19508396d0710d8dcd8bd53a remote verified and clean. Preview http://localhost:4321/ open, desktop restored. No hosting or required work remaining. Await user feedback. Other approved decisions unchanged.
+In progress: [PM portfolio first preview](runs/2026-11-11-inner-pages.md).
+User has5.5years PM experience; show draft before career walkthrough. Build development-only /previews/portfolio/ with anonymous labelled placeholders and established design identity; no live studio changes or production draft. Explain search indexing limitations. Root verify desktop/mobile and independent review; save accepted draft. No hosting, domain selection or privacy/auth implementation. Baseline9477327ac197b1cd19508396d0710d8dcd8bd53a.
