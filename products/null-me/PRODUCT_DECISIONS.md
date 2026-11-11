@@ -32,3 +32,6 @@ User chose Playground for the main-site collection, with all things visitors can
 
 ## Navigation hover clarification — 11 November 2026
 User confirms live site clicks work in their external browser, with user-pointer trouble limited to embedded preview. User explicitly requests coral navigation hover text, no background highlight. This supersedes earlier ink-only hover directions: use existing readable coral #BA492E for nav hover (including current link), normal ink at rest, active weight600, pointer cursor and ink focus outline. No underline or filled highlight. No source click workaround or claim of embedded-browser repair.
+
+## Shared inner-page composition — 11 November 2026
+User explicitly requests Playground and Contact match About’s layout, with short large headlines, and rejects the what-ifs Playground tagline. Share eyebrow + two-line Funnel headline/coral dot + section spacing/divider + asymmetric left-label/right-copy layout; stack on mobile. About’s exact Curiosity takes shape. and copy remain unchanged. Delegated initial wording for user review: Playground “Ideas in play.” and Contact “Say hello.” Contact remains an honest placeholder until a destination is supplied, and Playground remains empty until real work is provided. The prior what-ifs intro is superseded. No homepage tagline or portfolio/subdomain changes.
