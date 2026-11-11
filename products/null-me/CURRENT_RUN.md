@@ -1,4 +1,4 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"in-progress"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
 # Jaykay.space current run
-In progress: [Rotating portfolio introduction](runs/2026-11-11-inner-pages.md).
-Update dev-only portfolio preview with fixed greeting, Product manager/Builder rotatingtitle, main-site header/margins/editorialsections. SquareClashpunctuation retained. Accessiblepause/reducedmotion/staticfallback, no newcareerclaims. Builder /root/clash_headings requestedroute gpt-6.1-sol low fork none verified77d3fc3b200a99e66f1b17bebd1dd67d2889f354; actualactivation/usageunknown. Baseline1665699d0d74c79d83988a75145cc23c56d7bde7. Rootbrowser+independentQA then acceptedrepo delivery. No hosting.
+Completed: [Rotating portfolio introduction](runs/2026-11-11-inner-pages.md).
+Dev-only localhost:4321/previews/portfolio/ open: fixed Hi, I’m Jing Kang; Product manager/Builder rotate; main-site header/margins/editorialrows. Pause/resume and stablemobilelayout; reducedmotion/noJS staticfallback. Confirmedfacts/placeholders unchanged. Check/six tests/build/desktop320mobile601tablet/independentQA PASS. Productionfivepages excludes allpreviewassets. Delivered portfolio/main d998835dfda9e4c22acb381c584b8c5b99e928c3 remoteverifiedclean. No hosting. Awaituserdesignfeedback andcareerwalkthrough; no remainingrequiredwork. SquareClashpunctuation approved.
