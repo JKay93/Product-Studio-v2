@@ -7,3 +7,6 @@ Acceptance: nav has visible primary-palette hover, pointer cursor and existing v
 Authority: user requests live navigation fix; existing accepted repository delivery authority, no deployment/new dependencies.
 Routing: blob77d3fc3b200a99e66f1b17bebd1dd67d2889f354 builder gpt-6.1-sol/low/forknone, QA gpt-6.1-sol/medium/forknone. Activation/token/cost unknown.
 Status active. No user decisions pending. Root owns records; workers source/QA only.
+
+## User clarification and revised acceptance
+User confirms website navigation works in their external browser; issue persists only in embedded preview. They explicitly request coral text hover, superseding ink-only navigation guidance. Set nav hover to existing readable coral #BA492E, no background highlight or underline; preserve ink at rest/current weight and ink focus outline. Pointer cursor retained. No website click workaround warranted. Prior native-browser inspection stopped because Windows Computer Use could not confidently identify Chrome URL; do not claim embedded preview repaired. Finish bounded CSS/docs correction, check/build and independent review. Reuse rendered layout evidence for unchanged geometry; inspect hover via supported browser surface if available.
