@@ -1,4 +1,4 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"in-progress"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
 # Jaykay.space current run
-In progress: [Shared typography tokens](runs/2026-11-11-inner-pages.md).
-User asks consistency andCSSvariables. Shared12pxmuted greeting/eyebrow, named typography roles consumed main+portfolio; preserveother typevalues/layout/rotation/draft exclusion. Builder /root/clash_headings verifiedroute gpt-6.1-sol low forknone77d3fc3. Baseline62ab6463a29efe0a030e40b61364c3ff2d8d577c. Rootcomputedstyle/visual andindependentQA thenrepo delivery. Actualactivation/usageunknown. No hosting.
+Complete: [Shared typography tokens](runs/2026-11-11-inner-pages.md).
+Shared12px muted greeting/eyebrow and named typography variables applied across main site and portfolio preview. Independent review PASS; Astro check/six tests/buildfivepages/diffcheck and desktop/mobile browser verification PASS. Delivered portfolio/main878ace1db23c484e3662053b78e619965185662c, remote verified, local treeclean. Local preview http://localhost:4321/previews/portfolio/. No hosting or requiredwork remaining. Next user feedback/career walkthrough.
