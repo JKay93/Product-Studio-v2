@@ -38,3 +38,6 @@ User explicitly requests Playground and Contact match About’s layout, with sho
 
 ## Contact headline preview and Playground copy — 11 November 2026
 User requests “Say hello.” on one natural line for visual comparison; supersedes Contact’s forced two-line treatment, preserving font, coral dot, spacing tokens and honest placeholder. About remains “Curiosity takes shape.” User rejects “Ideas in play.”; replacement is under discussion, not selected or implemented. User wants Playground headline to state what the page offers directly. Suggested “Things to try.” remains a proposal only. User confirmed embedded navigation works after app restart; current preview uses http://localhost:4321.
+
+## Selected Playground headline — 11 November 2026
+User selects exact “Go on. Try it.” and requests implementation/showing the page. Use existing two-line composition Go on. / Try it., ink first full stop and coral final full stop; replaces rejected “Ideas in play.” Other options remain unselected. User also confirms Contact looks better as single-line “Say hello.” Preserve that treatment. No other content/layout changes.
