@@ -1,4 +1,4 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"in-progress"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
 # Jaykay.space current run
-In progress: [Adopt Clash Display](runs/2026-11-11-inner-pages.md).
-User selected Clash Display headings and Geist elsewhere. Remove temporary font comparison and unused fonts, verify all pages desktop/mobile, independent review, accepted repository delivery. Builder /root/clash_headings requested gpt-6.1-sol low fork none at routing77d3fc3b200a99e66f1b17bebd1dd67d2889f354; actual activation and usage unknown. No hosting. Baseline portfolio/main728e64b951425da422659e864c91f5a76b25e2a6. Questions none.
+Completed: [Adopt Clash Display](runs/2026-11-11-inner-pages.md).
+Clash Display Medium500 for all headings, Geist elsewhere. Removed font comparison controls and unused Funnel assets. Local fonts with licenses; no external font requests. Check, six tests, build, desktop/mobile inspection and independent QA PASS. Delivered portfolio/main9477327ac197b1cd19508396d0710d8dcd8bd53a remote verified and clean. Preview http://localhost:4321/ open, desktop restored. No hosting or required work remaining. Await user feedback. Other approved decisions unchanged.
