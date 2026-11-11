@@ -68,3 +68,6 @@ User explicitly says not to change layout or anything, and that Josue was an exa
 
 ## Portfolio About typography hierarchy — 12 November 2026
 User requests preview matching main About hierarchy within existing layout: larger opening sentence using shared editoriallead22px desktop/18pxmobile, supportingbody16px and shared24pxparagraphgaps. No needless attribution. Existing rightcopycolumn, leftAboutlabel, header/rotatingtitles/grid remain. Wording lead establishesPM/development/design, body explains journey/userproblem interest, closingJaykaylink. Applies to About only, not Contact.
+
+## Selected personal About wording — 12 November 2026
+User selects opening option2 and authorizes applying final copy, retaining current layout/hierarchy. Lead: “I’m Jing Kang. I work in product, ask a lot of questions, and occasionally make something out of them.” Body: “I build products for a living. Apparently, that wasn’t enough, so I started Jaykay.space.” Closing: “It’s a home for odd little projects, unexpected experiments, and ideas I couldn’t quite leave alone.” Jaykay.space retains homepage link in body. Omit years of experience and frontend/design skill positioning from this introduction. No changes to header, rotating titles, layout or fonts.
