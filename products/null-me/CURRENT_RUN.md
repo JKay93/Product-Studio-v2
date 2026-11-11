@@ -1,4 +1,4 @@
 <!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
 # Jaykay.space current run
-Completed: [Inner pages and Contact refinement](runs/2026-11-11-inner-pages.md).
-Contact now previews “Say hello.” on one natural line; About and Playground layout preserved. Check/build/six tests, desktop/mobile and independent QA PASS. Delivered portfolio/main db36e82e3547987e3450658fd2d6f8c44e7567eb, remote verified and clean. User rejects Playground “Ideas in play.”; short direct replacement remains discussion only (“Things to try.” proposal), awaiting selection. No deployment. Preview http://localhost:4321/contact/; user confirmed embedded navigation now works after app restart. Future scope realcontent/contactdestination/gallerymotion/portfolio/hosting.
+Completed: [Inner-page headlines](runs/2026-11-11-inner-pages.md).
+User-selected Playground “Go on. Try it.” implemented on two lines, finaldotcoral. About “Curiosity takes shape.” retained; Contact “Say hello.” retained as approved singleline. Build/check/six tests, desktop/mobile and independent QA PASS. Delivered portfolio/main f0e3cdeee2ef0a95e0a219f61ca111673181e72a remoteverifiedclean. Preview http://localhost:4321/projects/. No deployment. No required work remaining. Future scope realcontent/contactdestination/gallerymotion/portfolio/hosting.
