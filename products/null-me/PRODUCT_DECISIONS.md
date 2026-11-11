@@ -41,3 +41,6 @@ User requests “Say hello.” on one natural line for visual comparison; supers
 
 ## Selected Playground headline — 11 November 2026
 User selects exact “Go on. Try it.” and requests implementation/showing the page. Use existing two-line composition Go on. / Try it., ink first full stop and coral final full stop; replaces rejected “Ideas in play.” Other options remain unselected. User also confirms Contact looks better as single-line “Say hello.” Preserve that treatment. No other content/layout changes.
+
+## Playground headline replacement — 11 November 2026
+User selects “Experiments with purpose.”, replacing “Go on. Try it.” Use two lines Experiments / with purpose with only finalcoraldot. User requests current typography inventory and may change headline typography later; no font change selected or authorized yet. Keep current Funnel Display600 and Geist system.
