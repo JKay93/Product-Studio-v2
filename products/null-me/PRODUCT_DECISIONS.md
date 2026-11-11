@@ -56,3 +56,6 @@ User accepts Clash Display’s square full stops and requests portfolio layout a
 
 ## Portfolio order and restrained hero — 12 November 2026
 User defers titlewording, requests experiencecopy belong underAboutme, projects lower, removal of previewnotice andpausebutton. Implemented greeting/titleonlyhero > Aboutme > Selectedwork > Contact withnavorderaligned. Experience5.5years statedonce. Explicit pausebutton removal supersedes priorpreviewcontrol. Keeprotation3800ms/400ms and reducedmotion/staticfallback. Individualcase-studyplaceholderlabels stayuntilactualcontent; noprivacy/subdomain/deploymentchanges.
+
+## Shared typography consistency — 12 November 2026
+User requests matching introductory labels and maintainable CSS variables rather than independent page hardcoding. Main-site eyebrow and portfolio greeting share 0.75rem (12px at default root), Geist Medium500, muted colour and line-height1.6. Page eyebrow uppercase/tracking and greeting sentencecase are explicit variants. Typography families, size roles, weights, line heights and tracking defined once as shared named CSS custom properties, including mobile role overrides; main and portfolio consume the same roles. Other established typography/layout/copy preserved.
