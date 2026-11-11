@@ -4,7 +4,7 @@
 User-approved scope through 11 November 2026:
 - Renamed from null.me to Jaykay.space. A personal playground for Jing Kang’s unusual projects with a studio feel. The personal portfolio/case studies will live on a separate subdomain; its name and implementation are deferred. Main About and portfolio About can link between the space and its maker. Domain ownership is not verified.
 - Single-screen landing at ordinary viewport sizes; small jaykay.space top-left, Playground/About/Contact top-right, centred Jaykay. with coral dot. Exact tagline: Unconventional ideas. Real products. Tight gap, no Projects by Jing Kang attribution line.
-- Funnel Display hero and Geist supporting text/navigation. Canvas#F4F2ED, ink#171717, accent#E86645, decorative divider#DAD7D0. Navigation uses the primary ink palette with a heavier current-page weight, no background highlight/underline. Coral is used sparingly for brand dots and primary app-launch actions. Navigation stays ink at rest and changes to readable coral on hover; secondary links stay ink.
+- Clash Display Medium (500) headings and Geist supporting text/navigation. Canvas#F4F2ED, ink#171717, accent#E86645, decorative divider#DAD7D0. Navigation uses the primary ink palette with a heavier current-page weight, no background highlight/underline. Coral is used sparingly for brand dots and primary app-launch actions. Navigation stays ink at rest and changes to readable coral on hover; secondary links stay ink.
 - Playground/About/Contact are ordinary navigable pages. Contact explicitly placeholder until user provides destination. No fake email, form submission or profile link. No real projects yet; honest empty collection.
 - Main domain paths including project detail slugs use Astro/TypeScript, React islands only as needed. Independent subdomain applications may use React/own backend/codebase/deployment.
 - Journey: landing > project collection/details/status/metrics > Go to app > subdomain application.
@@ -44,3 +44,6 @@ User selects exact “Go on. Try it.” and requests implementation/showing the 
 
 ## Playground headline replacement — 11 November 2026
 User selects “Experiments with purpose.”, replacing “Go on. Try it.” Use two lines Experiments / with purpose with only finalcoraldot. User requests current typography inventory and may change headline typography later; no font change selected or authorized yet. Keep current Funnel Display600 and Geist system.
+
+## Selected heading family — 11 November 2026
+User explicitly approves Clash Display for headings across the website and Geist for all other text. Supersedes earlier Funnel Display and unselected-font notes. Remove temporary four-font comparison controls and unused fonts. Preserve approved headline wording, coral final dots and page compositions. Use locally hosted selected fonts and retain their licenses. Implementation and visual verification tracked in the current run.
