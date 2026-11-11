@@ -47,3 +47,6 @@ User selects “Experiments with purpose.”, replacing “Go on. Try it.” Use
 
 ## Selected heading family — 11 November 2026
 User explicitly approves Clash Display for headings across the website and Geist for all other text. Supersedes earlier Funnel Display and unselected-font notes. Remove temporary four-font comparison controls and unused fonts. Preserve approved headline wording, coral final dots and page compositions. Use locally hosted selected fonts and retain their licenses. Implementation and visual verification tracked in the current run.
+
+## Personal portfolio first preview — 11 November 2026
+User states 5.5 years as a Product Manager and requests a first visual page before explaining career/projects. Authorized scope is a separate local development-only preview using anonymous clearly labelled placeholders; no fabricated employers, achievements, skills, product metrics or contact destinations. Production portfolio/subdomain name remains undecided. User wants name/Jaykay discoverability without product-search exposure. Proposed approach is public name-led intro with anonymous summaries and separate noindex named case studies; no guarantee of keyword-specific exclusion, noindex is not access control. Indexing architecture/password protection not yet selected or implemented.
