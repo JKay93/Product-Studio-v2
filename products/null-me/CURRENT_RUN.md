@@ -1,3 +1,3 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"in-progress"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
 # Jaykay.space current run
-In progress: [About me type hierarchy](runs/2026-11-11-inner-pages.md). Match main About lead/body roles inside existing portfolio right column; preserve layout/rotation. Builder, browser QA, independent review and accepted repository delivery. No hosting.
+Complete: [About me type hierarchy](runs/2026-11-11-inner-pages.md). Within unchanged portfolio layout, About now uses shared22px/18px mobile lead,16px supporting paragraphs and24px paragraphgaps. Header/rotation/grid/contact unchanged. IndependentQA/check/build/browserdesktop/mobile PASS. Delivered portfolio/main7a219b4947929ff1271cbd4e8d0cef956cf6fea7 remoteverifiedclean. Preview http://localhost:4321/previews/portfolio/. No hosting or requiredworkremaining. Next user feedback.
