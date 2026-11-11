@@ -1,4 +1,4 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"in-progress"} -->
 # Jaykay.space current run
-Completed12Nov2026: [Portfolio hero cleanup](runs/2026-11-11-inner-pages.md).
-Preview localhost:4321/previews/portfolio/ hero onlygreeting/title, thenAboutme(experienceonce),Selectedwork,Contact. Removed overallpreviewnotice/pausebutton atuserrequest. 3800msrotation/400mstransition unchanged; reducedmotion/noJSfallback. Individualcaseplaceholders remain. Check/six tests/buildfivepages/desktop320mobile/independentQA PASS. Delivered portfolio/main62ab6463a29efe0a030e40b61364c3ff2d8d577c remoteverifiedclean. Dev-only, no hosting. Awaituserfeedback/careerwalkthrough; no requiredworkremaining.
+In progress: [Shared typography tokens](runs/2026-11-11-inner-pages.md).
+User asks consistency andCSSvariables. Shared12pxmuted greeting/eyebrow, named typography roles consumed main+portfolio; preserveother typevalues/layout/rotation/draft exclusion. Builder /root/clash_headings verifiedroute gpt-6.1-sol low forknone77d3fc3. Baseline62ab6463a29efe0a030e40b61364c3ff2d8d577c. Rootcomputedstyle/visual andindependentQA thenrepo delivery. Actualactivation/usageunknown. No hosting.
