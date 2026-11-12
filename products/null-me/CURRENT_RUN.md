@@ -1,3 +1,3 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"in-progress"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
 # Jaykay.space current run
-In progress: [Screenshot-free case study preview](runs/2026-11-11-inner-pages.md). Isolated DEV-only anonymous onboarding concept using typography/diagrams/reportedresult with clear placeholders. Preserve existing portfolio. Builder, visual QA, independent review, repo delivery. No hosting; actualstory pending userwalkthrough.
+Complete: [Screenshot-free case study mockup](runs/2026-11-11-inner-pages.md). DEV-only /previews/case-study/onboarding/ uses reportedresult, schematicjourney and explicitstoryplaceholders; existingportfolio unchanged. Independentreview/check/build/browserdesktop/mobile PASS. Delivered portfolio/main8ee77cf0c57fb1adc74be9ed520bd79180f623fa remoteverifiedclean. Preview http://localhost:4321/previews/case-study/onboarding/ IABtab3; localdevsession9635 retained. No hosting. Requiredmockupwork complete; next user reviews concept andwalksthrough actualonboarding/measurementdetails.
