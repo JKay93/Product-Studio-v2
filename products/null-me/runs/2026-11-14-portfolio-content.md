@@ -1,0 +1,12 @@
+<!-- studio {"id":"null-me:run:2026-11-14-portfolio-content","scope":"null-me","type":"run","status":"active"} -->
+# Portfolio content
+Goal: populate existing development-only portfolio with discussed career content and show live preview, preserving layout, fonts, colours, rotating hero, About copy and contact placeholder.
+Authority: user explicitly asks build now without more interview questions; accepted code commit/push standing authority. No hosting/subdomain/indexing change.
+Baseline portfolio main 8ee77cf0c57fb1adc74be9ed520bd79180f623fa clean. Prior onboarding-only mockup rejected in appearance and scope; replace with full NavDeck story within existing editorial vocabulary.
+Tasks: P1 Builder content/card and linked case pages; P2 root rendered desktop/mobile preview; P3 independent reviewer; P4 accepted repository delivery and records.
+Acceptance: existing portfolio geometry/Clash500/Geist/palette retained; real NavDeck full-product case and shorter UUTalk work summary replace two placeholders; no fabricated screens, metrics, quotes, dates or causal attribution. Shared type tokens. Working links, keyboard access, 320px reflow. DEV-only noindex routes excluded from production; studio unchanged. npm check/build/diff, actual rendered inspection.
+Evidence sources: current conversation, available recent messages/summary in Validate Pre2022 Problem Statement; resume facts carried in current conversation context. User confirmed B2C intermittent report use, weak retention/willingness to pay; wide interviews, SME role/skills clarity; reused APIs for paid Web3 learner report/course recommendation partnership; second paid role taxonomy engagement starting middle managers. Product/UX/delivery owned; AI led CTO, business led partners. Company first year S$217k realised revenue, not ARR/personal sales. No need to lead with onboarding number.
+Decisions: retain approved About verbatim. NavDeck broad 0-to-1/evolution narrative; UUTalk shorter and avoid unsupported causal growth claims. Contact remains placeholder. Abstract covers remain existing decorative graphics, never claim original screenshots.
+Routing 77d3fc3b200a99e66f1b17bebd1dd67d2889f354: Builder gpt-6.1-sol low fork none; QA gpt-6.1-sol medium fork none. Actual activation/tokens/cost unknown.
+Questions: none blocking. Deferred public hosting, contact, portfolio subdomain/privacy, deeper case evidence; user wants complete first version now.
+Status: starting P1. Root owns governance/continuity.
