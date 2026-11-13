@@ -1,4 +1,4 @@
-<!-- studio {"id":"null-me:run:2026-11-14-portfolio-content","scope":"null-me","type":"run","status":"active"} -->
+<!-- studio {"id":"null-me:run:2026-11-14-portfolio-content","scope":"null-me","type":"run","status":"complete"} -->
 # Portfolio content
 Goal: populate existing development-only portfolio with discussed career content and show live preview, preserving layout, fonts, colours, rotating hero, About copy and contact placeholder.
 Authority: user explicitly asks build now without more interview questions; accepted code commit/push standing authority. No hosting/subdomain/indexing change.
@@ -10,3 +10,11 @@ Decisions: retain approved About verbatim. NavDeck broad 0-to-1/evolution narrat
 Routing 77d3fc3b200a99e66f1b17bebd1dd67d2889f354: Builder gpt-6.1-sol low fork none; QA gpt-6.1-sol medium fork none. Actual activation/tokens/cost unknown.
 Questions: none blocking. Deferred public hosting, contact, portfolio subdomain/privacy, deeper case evidence; user wants complete first version now.
 Status: starting P1. Root owns governance/continuity.
+
+## Completed outcome
+P1–P4 complete. Builder /root/portfolio_content requested gpt-6.1-sol low fork none; reviewer /root/review_portfolio_content requested gpt-6.1-sol medium fork none, routing refreshed at recorded hash before each dispatch; actual activation/usage unknown.
+Preserved portfolio hero/About/grid/fonts/colours, replaced placeholders with working links and supplied story content. Added src/lib/portfolio-preview.ts and replaced rejected onboarding route with navdeck/uutalk editorial previews. Root updated AGENTS. Main studio unchanged.
+Builder check0diagnostics/six tests/buildfivepages; dist excludes NavDeck,UUTalk,case-row,title-rotation,portfolio paths. Diffcheck PASS. Root browser1280/320 on allthreepages nohorizontaloverflow;601NavDeck96pxlabeltrack40pxgap. Card navigation, backtowork, keyboardEnter and wordmark navigation verified; existingrotation observed. QA read actualdiff/module/layout/dist and sixscreenshots PASS; source confirms described partnershipexpansion supported by referencedchat. Root accepted. Devtoolbar visible in mobilecaptures; devchrome only.
+Delivered portfolio/main bd28953e07293843d02ca27b23052a66933f841a; push successful, remote main independently verified identical, workingtree clean. Local network restriction on verification resolved using permitted network execution.
+Preview http://localhost:4321/previews/portfolio/#work open in IAB2/tab4 and marked deliverable. Existingtab3 stale error from stoppedserver; newtab loaded after restarting localdevsession99824, retained for userpreview. Desktop/mobile screenshots in threadvisualdirectory portfolio-content-desktop.png,portfolio-content-mobile.png,navdeck-case-desktop.png,navdeck-case-mobile.png,uutalk-desktop.png,uutalk-mobile.png,portfolio-selected-work.png. NavDeckdesktop refreshed after finalcopy.
+No deployment. Remaining requiredwork none; next user reviews content. Deferred contact/subdomain/privacy/hosting and richeroriginalassets as above.
