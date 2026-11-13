@@ -1,3 +1,3 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"active"} -->
 # Jaykay.space current run
-Complete: [Screenshot-free case study mockup](runs/2026-11-11-inner-pages.md). DEV-only /previews/case-study/onboarding/ uses reportedresult, schematicjourney and explicitstoryplaceholders; existingportfolio unchanged. Independentreview/check/build/browserdesktop/mobile PASS. Delivered portfolio/main8ee77cf0c57fb1adc74be9ed520bd79180f623fa remoteverifiedclean. Preview http://localhost:4321/previews/case-study/onboarding/ IABtab3; localdevsession9635 retained. No hosting. Requiredmockupwork complete; next user reviews concept andwalksthrough actualonboarding/measurementdetails.
+Active: [Portfolio content](runs/2026-11-14-portfolio-content.md). Preserve current layout; populate NavDeck case and UUTalk summary from discussed facts. Prior onboarding-only mockup rejected. Next implement, review desktop/mobile, deliver repo and preview. No deployment.
