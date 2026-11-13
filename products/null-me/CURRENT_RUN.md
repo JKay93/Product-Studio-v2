@@ -1,3 +1,3 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"active"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
 # Jaykay.space current run
-Active: [Portfolio content](runs/2026-11-14-portfolio-content.md). Preserve current layout; populate NavDeck case and UUTalk summary from discussed facts. Prior onboarding-only mockup rejected. Next implement, review desktop/mobile, deliver repo and preview. No deployment.
+Complete: [Portfolio content](runs/2026-11-14-portfolio-content.md). Existing layout/Clash/Geist/colours preserved; NavDeck case and UUTalk summary replace placeholders. DEV-only/noindex; production remains five studio pages. Independent QA, automated and desktop/mobile checks PASS. Delivered portfolio/main bd28953e07293843d02ca27b23052a66933f841a remote verified, tree clean. Preview http://localhost:4321/previews/portfolio/#work open IABtab4, devsession99824 retained. No hosting. Next user reviews; no required work remains.
