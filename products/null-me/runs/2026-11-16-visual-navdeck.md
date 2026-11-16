@@ -1,4 +1,4 @@
-<!-- studio {"id":"null-me:run:2026-11-16-visual-navdeck","scope":"null-me","type":"run","status":"active"} -->
+<!-- studio {"id":"null-me:run:2026-11-16-visual-navdeck","scope":"null-me","type":"run","status":"complete"} -->
 # Visual NavDeck preview
 Goal: user approves trying the proposed Billy-inspired selective visual presentation. Existing text-heavy case is rejected as too wordy. Update only NavDeck case preview; preserve portfolio landing/About, UUTalk, main site, fonts/palette/header.
 Source: prior actual browser review of https://jozue.fr/works/billy/: short role intro, large concept headline, product images, selective explanatory copy. Do not copy site assets/design exactly. No original NavDeck screenshots exist. Use labelled conceptual reconstruction in HTML/CSS/SVG based on known skills-to-careers/role gaps/learning model.
@@ -7,3 +7,8 @@ Acceptance: substantially less visible prose, target about250–300words max inc
 Authority: local-only preview, accepted repository delivery standing authority, no domain/contact/deployment. Current clean baseline bd28953e07293843d02ca27b23052a66933f841a.
 Routing current77d3fc3b200a99e66f1b17bebd1dd67d2889f354 Buildergpt-6.1-sol/low/forknone QAgpt-6.1-sol/medium/forknone. Rootownsrecords/AGENTS, actualactivation/usageunknown.
 Questions none. Deferred original assets, real live app link, contact, publication/privacy/subdomain. StatusstartingV1.
+
+## Outcome
+V1–V4 complete. Builder /root/visual_navdeck low and QA /root/review_visual_navdeck medium gpt-6.1-sol fork none at recorded routing hash. Activation/usage unknown. New NavDeckCase.astro component with short two-column intro, labelled skills-map reconstruction, two decision stories, company outcome and credits. Route selects component only forNavDeck; removed supersededNavDeckprose module. Portfolio landing/UUTalk/studio untouched. Root AGENTS updated.
+Check zero diagnostics, six tests pass, build five studio pages, no NavDeck content/style in dist, diffcheck pass. Independent source/dist/desktop/mobile review PASS, root accepted. Decorative01/02 retained as deliberate briefeddesignchoice. Root actual browser1280/320/601 nohorizontaloverflow; full diagram labels legible; keyboardEnterBacktowork and cardreturnverified; viewportreset. Root DOM232words vs reviewer233 count variation, about230 total. Screenshot navdeck-visual-desktop.jpg and navdeck-visual-mobile.jpg in threadvisualdir; desktop fullpage shown to user. Astrotoolbar transientdevchrome in mobilecapture overlays decorativeicononly.
+Delivered JKay93/portfolio main8dcb883b8a50cca2d23f53069b1fc8e45a601e6b, pushed and remoteverified identical, localtreeclean. Localpreview http://localhost:4321/previews/case-study/navdeck/ open IAB2/tab4 marked deliverable, devsession24216 retained. Earlieronboarding ambienttab staleerror; didnotreuseobsoletepath. No deployment. Requiredworknone, next userreviews visualdirection. Deferredoriginalassets/contact/publication unchanged.
