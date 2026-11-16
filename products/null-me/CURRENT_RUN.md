@@ -1,3 +1,3 @@
-<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"active"} -->
+<!-- studio {"id":"null-me:current-run","scope":"null-me","type":"reference","status":"complete"} -->
 # Jaykay.space current run
-Active: [Visual NavDeck preview](runs/2026-11-16-visual-navdeck.md). User wants shorter visual case inspired by reviewed Billy page. Preserve site identity and portfolio landing. Next implement, inspect, independently review and deliver. No deployment.
+Complete: [Visual NavDeck preview](runs/2026-11-16-visual-navdeck.md). Selective ~230wordcase with conceptualskillsdiagram/twodecisions/outcomecredits, fonts/palette preserved, landing/UUTalk unchanged. IndependentQA and check/build/browser1280/320/601 PASS. Delivered portfolio/main8dcb883b8a50cca2d23f53069b1fc8e45a601e6b remoteverifiedclean. Preview http://localhost:4321/previews/case-study/navdeck/ open IABtab4, server24216 retained. No deployment. Next userfeedback; requiredworknone.
