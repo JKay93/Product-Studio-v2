@@ -1,0 +1,9 @@
+<!-- studio {"id":"null-me:run:2026-11-16-visual-navdeck","scope":"null-me","type":"run","status":"active"} -->
+# Visual NavDeck preview
+Goal: user approves trying the proposed Billy-inspired selective visual presentation. Existing text-heavy case is rejected as too wordy. Update only NavDeck case preview; preserve portfolio landing/About, UUTalk, main site, fonts/palette/header.
+Source: prior actual browser review of https://jozue.fr/works/billy/: short role intro, large concept headline, product images, selective explanatory copy. Do not copy site assets/design exactly. No original NavDeck screenshots exist. Use labelled conceptual reconstruction in HTML/CSS/SVG based on known skills-to-careers/role gaps/learning model.
+Tasks: V1 Builder concise intro, large product visual, two short decision stories, compact company outcome/credits; V2 root desktop/mobile preview; V3 independent QA; V4 accepted commit/push and handoff.
+Acceptance: substantially less visible prose, target about250–300words max including labels/credits; legible broad visual not repeated About rows; semantic layout tokens/Clash500/Geist/sparse coral; no fictitious screens or people/numbers; S$217k realised company first-year-afterlaunch revenue correctly attributed. Paid Web3 skillsreport/course API and separate role taxonomy pilot; protect roadmap decision grounded in provided facts. Working back/nav, nooverflow320/601, check/build and five production pages exclude preview content/styles.
+Authority: local-only preview, accepted repository delivery standing authority, no domain/contact/deployment. Current clean baseline bd28953e07293843d02ca27b23052a66933f841a.
+Routing current77d3fc3b200a99e66f1b17bebd1dd67d2889f354 Buildergpt-6.1-sol/low/forknone QAgpt-6.1-sol/medium/forknone. Rootownsrecords/AGENTS, actualactivation/usageunknown.
+Questions none. Deferred original assets, real live app link, contact, publication/privacy/subdomain. StatusstartingV1.
